@@ -29,7 +29,7 @@ My programming journey began in 2016 with Python, but my curiosity quickly outpa
 </div>
 
 <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
-Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio centered on engaging gameplay loops and persistent progression systems.
+Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
 </div>
 
 <a name="skills"></a>
