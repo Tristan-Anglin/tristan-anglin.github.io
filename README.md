@@ -105,23 +105,23 @@ A high-action capstone project developed by an 11-person team. I led the systems
 </div>
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Full-Stack UI/UX Engineering</b><br/>
-  Designed and implemented the <b>entire UI/HUD system</b> from scratch. This includes the Main Menu, 4-player Lobby, and complex meta-game screens like the <b>Shop and Forge</b>, ensuring a seamless flow from the initial boot-up to the heat of combat.
+  <b>End-to-End UI/UX Engineering</b><br/>
+  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and meta-game screens like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> and <b>Keybind functionality</b>, as well as the <b>Save System UI</b> and the underlying logic for data management.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Boss Encounter & Technical Implementation</b><br/>
-  Engineered the full <b>Boss Fight logic and mechanics</b>. I developed a bespoke camera system to enhance the scale of the encounter and handled the technical animation pipeline—linking all assets to the codebase and managing state machines (Note: Models/Animations provided by Art team).
+  Designed and programmed the full <b>Boss Fight logic and mechanics</b>. I developed a bespoke camera system to enhance encounter scale and handled the technical animation pipeline—linking all assets to the codebase and managing state machines (Note: Models/Animations provided by Art team).
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Inventory & RPG Stat Systems</b><br/>
-  Developed the <b>Data-Driven Inventory</b> and character stat system. This handles item persistence, loot generation, and networked replication, allowing for real-time stat updates and equipment management in a co-op environment.
-</div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Networked Session Management</b><br/>
-  Architected the backend networking logic for 4-player co-op, including server-authoritative <b>RPCs</b>, session hosting/searching, and player handshakes to ensure stable connectivity.
+  Engineered the <b>Data-Driven Inventory</b> and character stat system. This handles item persistence, loot generation, and networked replication, allowing for real-time stat updates and equipment management in a co-op environment.
 </div>
 
-### Team Integration & Collaboration
+### Cross-Department Integration
+<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Technical Liaison & Feature Completion</b><br/>
+  Acted as a technical bridge by integrating peer-developed features into the core systems. This included building the <b>Objective UI</b> and linking it to in-game physical world objectives, and assisting teammates in troubleshooting and finalizing their individual tasks to ensure build stability.
+</div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Agile Leadership & Version Control</b><br/>
   Managed the technical roadmap for a team of 11 using <b>Jira</b> and <b>GitHub</b>. I am currently leading the final sprint to iron out technical debt and gameplay bugs before launch.
