@@ -107,7 +107,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>End-to-End UI/UX Engineering</b><br/>
-  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and meta-game screens like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> (with keybind functionality) and the <b>Save System UI</b> and data management logic.
+  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and important game menus like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> (with keybind functionality) and the <b>Save System UI</b> and data management logic.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Networked Systems & Session Management</b><br/>
