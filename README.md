@@ -105,30 +105,32 @@ A high-action capstone project developed by an 11-person team. I led the systems
 </div>
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Boss Encounter & Technical Animation</b><br/>
+  Designed and programmed the core <b>boss fight mechanics</b> and AI logic. I implemented a <b>unique camera system</b> tailored for the encounter and handled the technical implementation of all animations, linking them to the codebase via Animation Blueprints (note: boss models and raw animations provided by the art team).
+</div>
+<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>UI/UX Architecture</b><br/>
   Engineered a modular UI framework using <b>Unreal UMG</b>. This included a dynamic HUD and complex data-bound menu systems designed to scale across multiple resolutions and game states.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Networked Systems</b><br/>
-  Implemented server-authoritative <b>RPCs</b> for critical non-combat interactions, ensuring secure data handling and synchronized game states across all clients.
-</div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Lobby & Session Management</b><br/>
-  Architected the backend networking logic for a seamless 4-player co-op experience, handling session hosting, searching, and player handshakes.
+  <b>Networked Systems & Lobby</b><br/>
+  Architected the backend networking logic for a seamless 4-player co-op experience. Implemented server-authoritative <b>RPCs</b> for session management (hosting/searching) and critical non-combat interactions.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Data-Driven Inventory</b><br/>
   Developed a custom inventory and loot framework from the ground up, prioritizing networked persistence and efficient server-client replication.
 </div>
+
 ### Team Integration & Collaboration
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Version Control & Agile Workflow</b><br/>
-  Coordinated with a team of 11 using GitHub for repository management and <b>Jira</b> for task tracking, maintaining build stability and ensuring efficient code integration.
+  Coordinated with a team of 11 using GitHub for repository management and <b>Jira</b> for task tracking, maintaining build stability and ensuring efficient code integration during the final production push.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Systems Interoperability</b><br/>
   Acted as a technical bridge, ensuring UI and Networking frameworks integrated successfully with systems like <b>Procedural Level Generation</b>.
 </div>
+
 <p align="right"><a href="#top">↑ Back to Top</a></p>
 <hr style="border: 0.5px solid #333;" />
 
