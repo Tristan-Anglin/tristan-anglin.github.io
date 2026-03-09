@@ -103,24 +103,53 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </a>
   <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
+You’re absolutely right—that was an oversight on my part. I should not have consolidated those into one point, as the networking architecture is a massive technical feat on its own, especially for a co-op game.
+
+I’ve brought it back as its own distinct section and updated the "Team Integration" part to reflect your role in finalizing others' features.
+
+HTML
+
+<a name="blood-lineage"></a>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
+  <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
+</div>
+<div style="display: flex; justify-content: space-between; margin-top: 8px;">
+  <b>3D Co-op Musou RPG</b>
+  <b>Lead UI & Systems Developer</b>
+</div>
+<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+A high-action capstone project developed by an 11-person team. I architected the core gameplay systems and the entire UI suite. <b>Project Status:</b> Currently in the final month of development, prioritizing bug-fixing, polish, and balancing for gold master.
+</div>
+<div align="center" style="margin: 25px 0;">
+  <a href="https://youtu.be/JS1HKKYCaRg" target="_blank">
+    <img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg" alt="Blood & Lineage Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+  </a>
+  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
+</div>
+
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>End-to-End UI/UX Engineering</b><br/>
-  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and meta-game screens like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> and <b>Keybind functionality</b>, as well as the <b>Save System UI</b> and the underlying logic for data management.
+  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and meta-game screens like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> (with keybind functionality) and the <b>Save System UI</b> and data management logic.
+</div>
+<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Networked Systems & Session Management</b><br/>
+  Architected the backend networking logic for a 4-player co-op experience. Implemented server-authoritative <b>RPCs</b> for critical interactions and handled session hosting, searching, and player handshakes to ensure stable connectivity.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Boss Encounter & Technical Implementation</b><br/>
-  Designed and programmed the full <b>Boss Fight logic and mechanics</b>. I developed a bespoke camera system to enhance encounter scale and handled the technical animation pipeline—linking all assets to the codebase and managing state machines (Note: Models/Animations provided by Art team).
+  Designed and programmed the full <b>Boss Fight logic and mechanics</b>. I developed a bespoke camera system for the encounter and handled the technical animation pipeline—linking all assets to the codebase and managing state machines.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Inventory & RPG Stat Systems</b><br/>
-  Engineered the <b>Data-Driven Inventory</b> and character stat system. This handles item persistence, loot generation, and networked replication, allowing for real-time stat updates and equipment management in a co-op environment.
+  Engineered a <b>Data-Driven Inventory</b> and character stat system handling item persistence, loot generation, and networked replication for real-time equipment management in a co-op environment.
 </div>
 
 ### Cross-Department Integration
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Technical Liaison & Feature Completion</b><br/>
-  Acted as a technical bridge by integrating peer-developed features into the core systems. This included building the <b>Objective UI</b> and linking it to in-game physical world objectives, and assisting teammates in troubleshooting and finalizing their individual tasks to ensure build stability.
+  Acted as a technical bridge by integrating peer-developed features into core systems. This included building the <b>Objective UI</b> and linking it to in-game physical world objectives, and assisting teammates in troubleshooting and finalizing their individual tasks to ensure build stability.
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Agile Leadership & Version Control</b><br/>
