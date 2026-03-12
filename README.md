@@ -31,19 +31,19 @@
       </div>
     </td>
 
-    <td width="45%" valign="top" align="center" style="border: none;">
+    <td width="45%" valign="top" align="center" style="border: none; line-height: 1.2;">
       <a name="skills"></a>
-      <p><b>Engines & Programming</b></p>
-      <img src="https://skillicons.dev/icons?i=unreal,unity,cpp,cs,py,java&theme=dark" height="40" />
+      <div style="margin-bottom: 4px;"><b>Programming & Engines</b></div>
+      <img src="https://skillicons.dev/icons?i=cpp,cs,py,java,unreal,unity&theme=dark" height="40" />
 
-      <p><b>Workflow & Version Control</b></p>
+      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Workflow & Version Control</b></div>
       <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
       <img src="https://skillicons.dev/icons?i=git,mysql,nodejs,cmake&theme=dark" height="40" style="vertical-align: middle;" />
 
-      <p><b>Development Environments</b></p>
+      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Development Environments</b></div>
       <img src="https://skillicons.dev/icons?i=visualstudio,vscode,eclipse&theme=dark" height="40" />
 
-      <p><b>Art, Audio & UI Design</b></p>
+      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Art, Audio & UI Design</b></div>
       <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
       <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="40" style="vertical-align: middle;" />
     </td>
