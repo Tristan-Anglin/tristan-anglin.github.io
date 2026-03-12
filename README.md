@@ -60,8 +60,6 @@
   </tr>
 </table>
 
----
-
 <p align="center" style="font-size: 1.2em; margin-top: 15px;">
   <strong>Featured Projects</strong>
   <br />
