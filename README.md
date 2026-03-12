@@ -166,9 +166,8 @@ A technical exercise in engine-level programming, built from the ground up using
   </a>
 </div>
 
-<h3 style="margin-bottom: -1px;">Core Contributions</h3>
-
----
+<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Custom OpenGL Engine & Y-Sorting</b>
@@ -225,9 +224,10 @@ Built entirely from the ground up in Java, Your Dark Side represents my final ma
     <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
-<h3 style="margin-bottom: -1px;">Core Contributions</h3>
 
----
+<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Modular Class Framework</b>
@@ -280,9 +280,9 @@ This project represents my first deep dive into the RPG genre and complex system
     <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
-<h3 style="margin-bottom: -1px;">Core Contributions</h3>
 
----
+<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>RPG Systems Architecture</b>
@@ -335,9 +335,9 @@ As my first step into game development, Hit & Run was built in Python on the iPa
     <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
-<h3 style="margin-bottom: -1px;">Core Contributions</h3>
 
----
+<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Survival Loop Architecture</b>
