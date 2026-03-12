@@ -8,67 +8,44 @@
 
 <p align="center">
   <a href="https://tristananglin.github.io/Resume 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>
+  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
+  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
   <br />
-  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://discord.gg/tristan_a" target="_blank"><img src="https://img.shields.io/badge/DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="30" /></a>&nbsp;
+  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
   <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
   <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
 </p>
 
 ---
 
-<a name="about"></a>
-<div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
-Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
-</div>
+<table border="0">
+  <tr>
+    <td width="55%" valign="top" style="border: none;">
+      <a name="about"></a>
+      <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
+        Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
+      </div>
+      <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
+        My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop, "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
+      </div>
+      <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
+        Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
+      </div>
+    </td>
 
-<div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
-My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop, "Your Dark Side," while pursuing a degree in Computer Science and Engineering. I soon realized my true calling wasn't just in general software—it was in the technical architecture and creative heart of game design.
-</div>
+    <td width="45%" valign="top" align="center" style="border: none;">
+      <a name="skills"></a>
+      <p><b>Engines & Programming</b></p>
+      <img src="https://skillicons.dev/icons?i=unreal,unity,cpp,cs,py,java&theme=dark" height="45" />
+      
+      <p><b>Workflow & Environments</b></p>
+      <img src="https://skillicons.dev/icons?i=git,visualstudio,vscode,cmake,mysql,nodejs&theme=dark" height="45" />
 
-<div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
-Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
-</div>
-
-<a name="skills"></a>
-<p align="center"><b>Engines & Programming</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=unreal&theme=dark" title="Unreal Engine" alt="Unreal Engine" height="48" />
-  <img src="https://skillicons.dev/icons?i=unity&theme=dark" title="Unity" alt="Unity" height="48" />
-  <img src="https://skillicons.dev/icons?i=cpp&theme=dark" title="C++" alt="C++" height="48" />
-  <img src="https://skillicons.dev/icons?i=cs&theme=dark" title="C#" alt="C#" height="48" />
-  <img src="https://skillicons.dev/icons?i=py&theme=dark" title="Python" alt="Python" height="48" />
-  <img src="https://skillicons.dev/icons?i=java&theme=dark" title="Java" alt="Java" height="48" />
-</p>
-
-<p align="center"><b>Workflow & Version Control</b></p>
-<p align="center">
-  <img src="assets/Icons/JiraIcon.png" width="48" height="48" style="vertical-align: middle; border-radius: 10px; margin-right: 1px; transform: translateY(-20px);" title="Jira" alt="Jira" />
-  <img src="https://skillicons.dev/icons?i=git&theme=dark" title="Git" alt="Git" height="48" />
-  <img src="https://skillicons.dev/icons?i=mysql&theme=dark" title="MySQL" alt="MySQL" height="48" />
-  <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" title="Node.js" alt="Node.js" height="48" />
-  <img src="https://skillicons.dev/icons?i=cmake&theme=dark" title="CMake" alt="CMake" height="48" />
-</p>
-
-<p align="center"><b>Development Environments</b></p>
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=visualstudio&theme=dark" title="Visual Studio" alt="Visual Studio" height="48" />
-  <img src="https://skillicons.dev/icons?i=vscode&theme=dark" title="VS Code" alt="VS Code" height="48" />
-  <img src="https://skillicons.dev/icons?i=eclipse&theme=dark" title="Eclipse" alt="Eclipse" height="48" />
-</p>
-
-<p align="center"><b>Art, Audio & UI Design</b></p>
-<p align="center">
-  <img src="assets/Icons/3dsmaxIcon.png" width="48" height="48" style="vertical-align: middle; border-radius: 10px; margin-right: 1px; transform: translateY(-20px);" title="3ds Max" alt="3ds Max" />
-  <img src="https://skillicons.dev/icons?i=blender&theme=dark" title="Blender" alt="Blender" height="48" />
-  <img src="https://skillicons.dev/icons?i=photoshop&theme=dark" title="Adobe Photoshop" alt="Adobe Photoshop" height="48" />
-  <img src="https://skillicons.dev/icons?i=illustrator&theme=dark" title="Adobe Illustrator" alt="Adobe Illustrator" height="48" />
-  <img src="https://skillicons.dev/icons?i=pr&theme=dark" title="Adobe Premiere Pro" alt="Adobe Premiere Pro" height="48" />
-  <img src="https://skillicons.dev/icons?i=au&theme=dark" title="Adobe Audition" alt="Adobe Audition" height="48" />
-</p>
-<a name="projects"></a>
+      <p><b>Art, Audio & UI Design</b></p>
+      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="45" />
+    </td>
+  </tr>
+</table>
 
 ---
 
