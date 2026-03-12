@@ -152,7 +152,6 @@ A technical exercise in engine-level programming, built from the ground up using
   <a href="https://www.youtube.com/watch?v=cCLGPVTF1Aw" target="_blank">
     <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
-  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
 
 ### Core Contributions
@@ -233,7 +232,6 @@ This project represents my first deep dive into the RPG genre and complex system
   <a href="https://www.youtube.com/watch?v=HNQjJI9nPDQ" target="_blank">
     <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
-  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
@@ -271,7 +269,6 @@ As my first step into game development, Hit & Run was built in Python on the iPa
   <a href="https://www.youtube.com/watch?v=FSjgXKFcKIo" target="_blank">
     <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
-  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
