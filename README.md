@@ -85,13 +85,14 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </a>
 </div>
 
-<h3 style="margin-bottom: -5px;">Core Contributions</h3>
+<h3 style="margin-bottom: -3px;">Core Contributions</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>End-to-End UI/UX Engineering</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Engineered</b> the entire UI suite from scratch, including the Main Menu, 4-player Lobby, Shop, and Forge.</li>
-    <li><b>Developed</b> a comprehensive Settings Menu with custom keybinding functionality.</li>
-    <li><b>Architected</b> the Save System UI alongside the underlying data management logic.</li>
+    <li><b>Engineered</b> the primary game navigation flow, including the Main Menu and splash screens.</li>
+    <li><b>Developed</b> a 4-player Lobby system to handle character selection and player readiness states.</li>
+    <li><b>Designed</b> interactive merchant interfaces for the Shop and Forge systems.</li>
+    <li><b>Implemented</b> dynamic HUD elements to provide real-time feedback for high-action combat.</li>
   </ul>
 </div>
 
@@ -121,13 +122,14 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </ul>
 </div>
 
-<h3 style="margin-bottom: -5px;">Cross-Department Integration</h3>
+<h3 style="margin-bottom: -3px;">Cross-Department Integration</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Technical Liaison & Feature Completion</b>
+  <b>Technical Liaison & Systems Architecture</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Integrated</b> peer-developed features into core systems to act as a bridge between departments.</li>
-    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers.</li>
-    <li><b>Assisted</b> teammates in troubleshooting and finalizing tasks to ensure build stability.</li>
+    <li><b>Architected</b> the Settings UI and keybinding framework, enabling teammates to independently integrate additional options.</li>
+    <li><b>Established</b> the Save System UI and data structures, providing the functional foundation for disk-level serialization.</li>
+    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers for the design team.</li>
+    <li><b>Assisted</b> teammates in troubleshooting and finalizing individual tasks to ensure build stability.</li>
   </ul>
 </div>
 
