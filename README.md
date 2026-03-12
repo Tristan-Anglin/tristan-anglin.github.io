@@ -39,14 +39,15 @@
       <img src="https://skillicons.dev/icons?i=unreal,unity,cpp,cs,py,java&theme=dark" height="45" />
       
       <p><b>Workflow & Environments</b></p>
-      <img src="https://skillicons.dev/icons?i=git,visualstudio,vscode,cmake,mysql,nodejs&theme=dark" height="45" />
+      <img src="https://skillicons.dev/icons?i=git,visualstudio,vscode,cmake,mysql,nodejs&theme=dark" height="45" style="vertical-align: middle;" />
+      <img src="assets/Icons/JiraIcon.png" height="45" title="Jira" style="vertical-align: middle; margin-left: 4px;" />
 
       <p><b>Art, Audio & UI Design</b></p>
-      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="45" />
+      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="45" style="vertical-align: middle;" />
+      <img src="assets/Icons/3dsmaxIcon.png" height="45" title="3ds Max" style="vertical-align: middle; margin-left: 4px;" />
     </td>
   </tr>
 </table>
-
 ---
 
 <p align="center" style="font-size: 1.2em; margin-top: 15px;">
