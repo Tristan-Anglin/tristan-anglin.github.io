@@ -16,11 +16,9 @@
   <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
 </p>
 
----
-
 <table border="0">
   <tr>
-    <td width="50%" valign="top">
+    <td width="55%" valign="top" style="border: none;">
       <a name="about"></a>
       <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
         Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
@@ -32,33 +30,27 @@
         Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
       </div>
     </td>
-    
-    <td width="50%" valign="top">
+
+    <td width="45%" valign="top" align="center" style="border: none;">
       <a name="skills"></a>
-      <p align="center"><b>Engines & Programming</b><br />
-        <img src="https://skillicons.dev/icons?i=unreal&theme=dark" title="Unreal Engine" height="40" />
-        <img src="https://skillicons.dev/icons?i=unity&theme=dark" title="Unity" height="40" />
-        <img src="https://skillicons.dev/icons?i=cpp&theme=dark" title="C++" height="40" />
-        <img src="https://skillicons.dev/icons?i=cs&theme=dark" title="C#" height="40" />
-        <img src="https://skillicons.dev/icons?i=py&theme=dark" title="Python" height="40" />
-        <img src="https://skillicons.dev/icons?i=java&theme=dark" title="Java" height="40" />
-      </p>
-      <p align="center"><b>Workflow & Version Control</b><br />
-        <img src="assets/Icons/JiraIcon.png" width="40" height="40" style="border-radius: 5px;" title="Jira" />
-        <img src="https://skillicons.dev/icons?i=git&theme=dark" title="Git" height="40" />
-        <img src="https://skillicons.dev/icons?i=mysql&theme=dark" title="MySQL" height="40" />
-        <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" title="Node.js" height="40" />
-        <img src="https://skillicons.dev/icons?i=cmake&theme=dark" title="CMake" height="40" />
-      </p>
-      <p align="center"><b>Art, Audio & UI</b><br />
-        <img src="assets/Icons/3dsmaxIcon.png" width="40" height="40" style="border-radius: 5px;" title="3ds Max" />
-        <img src="https://skillicons.dev/icons?i=blender&theme=dark" title="Blender" height="40" />
-        <img src="https://skillicons.dev/icons?i=photoshop&theme=dark" title="Adobe Photoshop" height="40" />
-        <img src="https://skillicons.dev/icons?i=illustrator&theme=dark" title="Adobe Illustrator" height="40" />
-      </p>
+      <p><b>Engines & Programming</b></p>
+      <img src="https://skillicons.dev/icons?i=unreal,unity,cpp,cs,py,java&theme=dark" height="40" />
+
+      <p><b>Workflow & Version Control</b></p>
+      <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
+      <img src="https://skillicons.dev/icons?i=git,mysql,nodejs,cmake&theme=dark" height="40" style="vertical-align: middle;" />
+
+      <p><b>Development Environments</b></p>
+      <img src="https://skillicons.dev/icons?i=visualstudio,vscode,eclipse&theme=dark" height="40" />
+
+      <p><b>Art, Audio & UI Design</b></p>
+      <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
+      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="40" style="vertical-align: middle;" />
     </td>
   </tr>
 </table>
+
+<br />
 
 <p align="center" style="font-size: 1.2em; margin-top: 15px;">
   <strong>Featured Projects</strong>
