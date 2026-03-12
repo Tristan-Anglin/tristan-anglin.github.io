@@ -149,7 +149,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
 A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://www.youtube.com/watch?v=cCLGPVTF1Aw" target="_blank">
+  <a href="https://www.youtube.com/watch?v=cCLGPVTF1Aw" target="_blank" class="video-thumb">
     <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
@@ -187,10 +187,9 @@ A technical exercise in engine-level programming, built from the ground up using
 Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://www.youtube.com/watch?v=8z6vDdhrYUA" target="_blank">
+  <a href="https://www.youtube.com/watch?v=8z6vDdhrYUA" target="_blank" class="video-thumb">
     <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
-  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
 ### Core Contributions
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
@@ -229,7 +228,7 @@ Built entirely from the ground up in Java, Your Dark Side represents my final ma
 This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://www.youtube.com/watch?v=HNQjJI9nPDQ" target="_blank">
+  <a href="https://www.youtube.com/watch?v=HNQjJI9nPDQ" target="_blank" class="video-thumb">
     <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
