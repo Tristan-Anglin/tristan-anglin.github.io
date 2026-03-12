@@ -103,7 +103,6 @@ A high-action capstone project developed by an 11-person team. I led the systems
          alt="Blood & Lineage Gameplay"
          style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
-  <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
 
 ### Core Contributions
