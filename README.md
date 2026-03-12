@@ -86,31 +86,57 @@ A high-action capstone project developed by an 11-person team. I led the systems
 </div>
 
 ### Core Contributions
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>End-to-End UI/UX Engineering</b><br/>
-  Developed the <b>entire UI suite</b> from scratch, including the Main Menu, 4-player Lobby, and important game menus like the <b>Shop and Forge</b>. I engineered the <b>Settings Menu</b> (with keybind functionality) and the <b>Save System UI</b> and data management logic.
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>End-to-End UI/UX Engineering</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Engineered</b> the entire UI suite from scratch, including the Main Menu, 4-player Lobby, Shop, and Forge.</li>
+    <li><b>Developed</b> a comprehensive Settings Menu with custom keybinding functionality.</li>
+    <li><b>Architected</b> the Save System UI alongside the underlying data management logic.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Networked Systems & Session Management</b><br/>
-  Architected the backend networking logic for a 4-player co-op experience. Implemented server-authoritative <b>RPCs</b> for critical interactions and handled session hosting, searching, and player handshakes to ensure stable connectivity.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Networked Systems & Session Management</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Architected</b> backend networking logic for a stable 4-player co-op experience.</li>
+    <li><b>Implemented</b> server-authoritative RPCs for critical gameplay interactions.</li>
+    <li><b>Managed</b> session hosting, searching, and player handshakes to ensure reliable connectivity.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Boss Encounter & Technical Implementation</b><br/>
-  Designed and programmed the full <b>Boss Fight logic and mechanics</b>. I developed a bespoke camera system for the encounter and handled the technical animation pipeline—linking all assets to the codebase and managing state machines.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Boss Encounter & Technical Implementation</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Programmed</b> the full logic and mechanical flow for boss encounters.</li>
+    <li><b>Developed</b> a bespoke camera system specifically tuned for high-action boss fights.</li>
+    <li><b>Managed</b> the technical animation pipeline, linking assets to codebase state machines.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Inventory & RPG Stat Systems</b><br/>
-  Engineered a <b>Data-Driven Inventory</b> and character stat system handling item persistence, loot generation, and networked replication for real-time equipment management in a co-op environment.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Inventory & RPG Stat Systems</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Engineered</b> a data-driven inventory system supporting item persistence and loot generation.</li>
+    <li><b>Implemented</b> networked replication for character stats and real-time equipment management.</li>
+  </ul>
 </div>
 
 ### Cross-Department Integration
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Technical Liaison & Feature Completion</b><br/>
-  Acted as a technical bridge by integrating peer-developed features into core systems. This included building the <b>Objective UI</b> and linking it to in-game physical world objectives, and assisting teammates in troubleshooting and finalizing their individual tasks to ensure build stability.
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Technical Liaison & Feature Completion</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Integrated</b> peer-developed features into core systems to act as a bridge between departments.</li>
+    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers.</li>
+    <li><b>Assisted</b> teammates in troubleshooting and finalizing tasks to ensure build stability.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Agile Leadership & Version Control</b><br/>
-  Managed the technical roadmap for a team of 11 using <b>Jira</b> and <b>GitHub</b>. I am currently leading the final sprint to iron out technical debt and gameplay bugs before launch.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Agile Leadership & Version Control</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Managed</b> the technical roadmap for an 11-person team using Jira and GitHub.</li>
+    <li><b>Led</b> final sprint efforts to resolve technical debt and gameplay bugs before launch.</li>
+  </ul>
 </div>
 
 <p align="right"><a href="#top">↑ Back to Top</a></p>
