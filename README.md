@@ -118,7 +118,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   <b>Inventory & RPG Stat Systems</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
     <li><b>Engineered</b> a data-driven inventory system supporting item persistence and loot generation.</li>
-    <li><b>Implemented</b> networked replication for character stats and real-time equipment management.</li>
+    <li><b>Implemented</b> networked replication for character stats and real-time equipment management including visual equipment changes.</li>
   </ul>
 </div>
 
@@ -128,7 +128,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   <ul style="margin-top: 5px; margin-bottom: 0;">
     <li><b>Architected</b> the Settings UI and keybinding framework, enabling teammates to independently integrate additional options.</li>
     <li><b>Established</b> the Save System UI and data structures, providing the functional foundation for disk-level serialization.</li>
-    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers for the design team.</li>
+    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers.</li>
     <li><b>Assisted</b> teammates in troubleshooting and finalizing individual tasks to ensure build stability.</li>
   </ul>
 </div>
