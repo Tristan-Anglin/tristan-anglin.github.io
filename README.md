@@ -98,8 +98,10 @@ Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and
 A high-action capstone project developed by an 11-person team. I led the systems architecture, utilizing <b>Jira</b> for agile sprint management and <b>GitHub</b> for version control to synchronize workflows across art, design, and programming departments.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://youtu.be/JS1HKKYCaRg" target="_blank">
-    <img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg" alt="Blood & Lineage Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+  <a href="https://youtu.be/JS1HKKYCaRg" target="_blank" class="video-thumb">
+    <img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg"
+         alt="Blood & Lineage Gameplay"
+         style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
   <p style="margin-top: 12px;"><i>(Click to watch gameplay trailer)</i></p>
 </div>
