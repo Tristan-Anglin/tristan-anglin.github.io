@@ -85,7 +85,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </a>
 </div>
 
-<h3 style="margin-top: 10px; margin-bottom: 0px;">Core Contributions</h3>
+<h3 style="margin-bottom: -1px;">Core Contributions</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>End-to-End UI/UX Engineering</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
@@ -122,7 +122,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </ul>
 </div>
 
-<h3 style="margin-top: 10px; margin-bottom: 0px;">Cross-Department Integration</h3>
+<h3 style="margin-bottom: -1px;">Cross-Department Integration</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Technical Liaison & Systems Architecture</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
@@ -162,25 +162,45 @@ A technical exercise in engine-level programming, built from the ground up using
   </a>
 </div>
 
-### Core Contributions
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Custom OpenGL Engine & Y-Sorting</b><br/>
-  Developed a lightweight 2D rendering engine in C++. Implemented <b>Top-Down Depth Sorting</b> by dynamically ordering the draw calls based on tower Y-coordinates, ensuring correct visual layering where foreground structures naturally overlap those behind them.
+<h3 style="margin-bottom: -1px;">Core Contributions</h3>
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Custom OpenGL Engine & Y-Sorting</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Developed</b> a lightweight 2D rendering engine from the ground up using Modern C++ and OpenGL.</li>
+    <li><b>Implemented</b> a dynamic Top-Down Depth Sorting (Y-sorting) system to manage draw call ordering.</li>
+    <li><b>Optimized</b> visual layering to ensure foreground structures naturally overlap background entities.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Dynamic Pathfinding</b><br/>
-  Engineered a tile-based grid system utilizing the A* Search Algorithm, allowing enemies to recalculate paths in real-time as the player places walls, ensuring a valid path to the objective always exists.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Dynamic Pathfinding</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Engineered</b> a tile-based grid system utilizing the A* Search Algorithm for enemy navigation.</li>
+    <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place or remove walls.</li>
+    <li><b>Integrated</b> validation logic to ensure a valid path to the objective is maintained at all times.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Tower Mechanics & Evolution</b><br/>
-  Created a hover-state system for real-time range visualization. Built a progression system where towers "level up" based on kill count, triggering <b>stat scaling</b> and <b>visual transformations</b> (sprite swaps) to reflect increased power.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Tower Mechanics & Evolution</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Created</b> a hover-state system for real-time range visualization and player feedback.</li>
+    <li><b>Built</b> a kill-based progression system that triggers dynamic stat scaling for towers.</li>
+    <li><b>Programmed</b> visual transformations via automated sprite swaps to reflect tower "level up" states.</li>
+  </ul>
 </div>
-<div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Grid & Placement Logic</b><br/>
-  Built a robust snapping and validation system for player-built structures, ensuring towers and obstacles interact correctly with the navigation mesh and enemy hitboxes.
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+  <b>Grid & Placement Logic</b>
+  <ul style="margin-top: 5px; margin-bottom: 0;">
+    <li><b>Developed</b> a robust snapping and validation system for tile-based structure placement.</li>
+    <li><b>Architected</b> interaction logic between player-built obstacles and the underlying navigation mesh.</li>
+    <li><b>Managed</b> collision detection to ensure accurate interactions with enemy hitboxes.</li>
+  </ul>
 </div>
+
 <p align="right"><a href="#top">↑ Back to Top</a></p>
-<hr style="border: 0.5px solid #333;" />
 
 <a name="darkside"></a>
 <div style="display: flex; justify-content: space-between; align-items: center;">
