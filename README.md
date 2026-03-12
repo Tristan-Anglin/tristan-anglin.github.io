@@ -85,7 +85,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </a>
 </div>
 
-<h3 style="margin-top: 5px; margin-bottom: -2px;">Core Contributions</h3>
+<h3 style="margin-top: 5px; margin-bottom: -1px;">Core Contributions</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>End-to-End UI/UX Engineering</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
@@ -122,7 +122,7 @@ A high-action capstone project developed by an 11-person team. I led the systems
   </ul>
 </div>
 
-<h3 style="margin-top: 5px; margin-bottom: -2px;">Cross-Department Integration</h3>
+<h3 style="margin-top: 5px; margin-bottom: -1px;">Cross-Department Integration</h3>
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
   <b>Technical Liaison & Systems Architecture</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
