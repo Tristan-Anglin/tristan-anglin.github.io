@@ -265,7 +265,7 @@ This project represents my first deep dive into the RPG genre and complex system
 As my first step into game development, Hit & Run was built in Python on the iPad to explore the core architecture of a functional game loop. This project served as my primary classroom for learning scaling difficulty and persistent progression systems—foundational concepts that have informed every project since.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://www.youtube.com/watch?v=FSjgXKFcKIo" target="_blank">
+  <a href="https://www.youtube.com/watch?v=FSjgXKFcKIo" target="_blank" class="video-thumb">
     <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </a>
 </div>
