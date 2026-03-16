@@ -204,7 +204,7 @@ A technical exercise in engine-level programming, built from the ground up using
   <b>Dynamic Pathfinding</b>
   <ul style="margin-top: 5px; margin-bottom: 0;">
     <li><b>Engineered</b> a tile-based grid system utilizing the A* Search Algorithm for enemy navigation.</li>
-    <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place or remove walls.</li>
+    <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place walls.</li>
     <li><b>Integrated</b> validation logic to ensure a valid path to the objective is maintained at all times.</li>
   </ul>
 </div>
