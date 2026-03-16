@@ -29,24 +29,35 @@
       <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
         Since specializing in Game Development in 2023, I have maintained a 3.85 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
       </div>
-    </td>
+<td width="45%" valign="top" align="center" style="border: none; line-height: 1.5;">
+  <a name="skills"></a>
+  
+  <div style="margin-bottom: 15px;">
+    <div style="margin-bottom: 4px;"><b>Programming & Engines</b></div>
+    <img src="https://skillicons.dev/icons?i=cpp,cs,py,java,unreal,unity&theme=dark" height="40" />
+  </div>
 
-    <td width="45%" valign="top" align="center" style="border: none; line-height: 1.2;">
-      <a name="skills"></a>
-      <div style="margin-bottom: 4px;"><b>Programming & Engines</b></div>
-      <img src="https://skillicons.dev/icons?i=cpp,cs,py,java,unreal,unity&theme=dark" height="40" />
+  <div style="margin-bottom: 15px;">
+    <div style="margin-bottom: 4px;"><b>Workflow & Version Control</b></div>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 4px;">
+      <img src="assets/Icons/JiraIcon.png" height="40" style="border-radius: 5px;" />
+      <img src="https://skillicons.dev/icons?i=git,mysql,nodejs,cmake&theme=dark" height="40" />
+    </div>
+  </div>
 
-      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Workflow & Version Control</b></div>
-      <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
-      <img src="https://skillicons.dev/icons?i=git,mysql,nodejs,cmake&theme=dark" height="40" style="vertical-align: middle;" />
+  <div style="margin-bottom: 15px;">
+    <div style="margin-bottom: 4px;"><b>Development Environments</b></div>
+    <img src="https://skillicons.dev/icons?i=visualstudio,vscode,eclipse&theme=dark" height="40" />
+  </div>
 
-      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Development Environments</b></div>
-      <img src="https://skillicons.dev/icons?i=visualstudio,vscode,eclipse&theme=dark" height="40" />
-
-      <div style="margin-top: 12px; margin-bottom: 4px;"><b>Art, Audio & UI Design</b></div>
-      <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
-      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="40" style="vertical-align: middle;" />
-    </td>
+  <div style="margin-bottom: 15px;">
+    <div style="margin-bottom: 4px;"><b>Art, Audio & UI Design</b></div>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 4px;">
+      <img src="assets/Icons/3dsmaxIcon.png" height="40" style="border-radius: 5px;" />
+      <img src="https://skillicons.dev/icons?i=blender,photoshop,illustrator,pr,au&theme=dark" height="40" />
+    </div>
+  </div>
+</td>
   </tr>
 </table>
 
