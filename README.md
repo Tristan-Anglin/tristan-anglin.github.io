@@ -116,7 +116,7 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <ul style="margin-top: 5px; margin-bottom: 0;">
 <li><b>Engineered</b> the primary game navigation flow, including Main Menu, Splash Screens, and "How to Play" implementations.</li>
 <li><b>Developed</b> a 4-player Lobby system to handle character selection and networked player readiness states.</li>
-<li><b>Designed</b> and programmed interactive interfaces for the <b>Inventory, Forge and Armory</b> systems.</li>
+<li><b>Designed</b> and programmed interactive interfaces for the <b>Forge and Armory</b> systems.</li>
 <li><b>Integrated</b> custom-designed icons, motion graphics, and visual effects to create a high-fidelity HUD and UI feedback loop.</li>
 </ul>
 </div>
