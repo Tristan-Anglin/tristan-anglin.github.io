@@ -108,9 +108,66 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 </a>
 </div>
 
-<img width="282" height="589" alt="image" src="https://github.com/user-attachments/assets/8ed83269-eafd-404c-8542-347a5ee26c8a" />
+<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Full-Stack UI/UX Engineering</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Engineered</b> the primary game navigation flow, including Main Menu, Splash Screens, and "How to Play" tutorials.</li>
+<li><b>Developed</b> a 4-player Lobby system to handle character selection and networked player readiness states.</li>
+<li><b>Designed</b> and programmed interactive interfaces for the <b>Forge and Armory</b> systems, linking UI data to backend item stats.</li>
+<li><b>Integrated</b> custom-designed icons, motion graphics, and visual effects to create a high-fidelity HUD and UI feedback loop.</li>
+</ul>
+</div>
 
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Boss Encounter & AI Programming</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Programmed</b> the complete logic for boss encounters, including multi-phase state machines and specialized <b>Boss AI</b> behavior.</li>
+<li><b>Developed</b> a bespoke <b>Boss Camera System</b> to maintain visibility during high-action, large-scale combat sequences.</li>
+<li><b>Managed</b> the technical <b>Animation Integration</b>, ensuring frame-accurate transitions between attack patterns and hit-reactions.</li>
+<li><b>Optimized</b> boss-related VFX and environmental triggers to maintain performance during intensive 4-player combat.</li>
+</ul>
+</div>
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Networked Architecture & Session Management</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Architected</b> the Base Game Framework and backend networking logic for a stable 4-player co-op experience.</li>
+<li><b>Implemented</b> server-authoritative RPCs for critical gameplay interactions and <b>Minimap Networking</b>.</li>
+<li><b>Managed</b> session hosting, player handshakes, and a robust <b>Spectating & End-Game</b> system for seamless match transitions.</li>
+</ul>
+</div>
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Gameplay Systems & RPG Mechanics</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Engineered</b> a data-driven <b>Inventory & Upgrade</b> system supporting item persistence and procedural loot generation.</li>
+<li><b>Developed</b> a comprehensive <b>Save File System</b> capable of serializing complex character data across play sessions.</li>
+<li><b>Implemented</b> networked <b>Stats Systems</b>, ensuring synchronized health, mana, and damage calculations across all clients.</li>
+</ul>
+</div>
+
+<h3 style="margin-top: 30px; margin-bottom: 5px;">Cross-Department Integration</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Technical Liaison & Asset Support</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Architected</b> the Settings UI and keybinding framework, enabling modular integration of options by the design team.</li>
+<li><b>Contributed</b> to the art pipeline by providing <b>Prop Modelling</b> and <b>Environmental Asset</b> support to meet project deadlines.</li>
+<li><b>Established</b> the Objective UI system and linked it directly to physical world triggers and mission logic.</li>
+</ul>
+</div>
+
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
+<b>Agile Leadership & Final Delivery</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Directed</b> the technical roadmap, personally implementing the highest volume of game systems to ensure launch stability.</li>
+<li><b>Led</b> final sprint efforts to resolve technical debt, gameplay bugs, and asset integration issues before the capstone deadline.</li>
+</ul>
+</div>
 <p align="right"><a href="#top">↑ Back to Top</a></p>
 <hr style="border: 0.5px solid #333;" />
 
