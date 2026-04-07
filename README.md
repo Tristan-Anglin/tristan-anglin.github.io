@@ -101,8 +101,8 @@
 A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
 </div>
 <div align="center" style="margin: 25px 0;">
-<a href="https://youtu.be/JS1HKKYCaRg" target="_blank" class="video-thumb">
-<img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg"
+<a href="https://youtu.be/Gjiw-aj9o4w" target="_blank" class="video-thumb">
+<img src="https://img.youtube.com/vi/Gjiw-aj9o4w/maxresdefault.jpg"
 alt="Blood & Lineage Gameplay"
 style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
 </a>
