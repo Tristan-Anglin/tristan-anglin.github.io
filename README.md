@@ -88,83 +88,76 @@
 ---
 
 <a name="blood-lineage"></a>
+
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
-  <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
+<img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
+<img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
 </div>
 <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-  <b>3D Co-op Musou RPG</b>
-  <b>Lead UI & Systems Developer</b>
+<b>3D Co-op Musou RPG</b>
+<b>Lead Systems Architect & UI Programmer</b>
 </div>
 <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
-A high-action capstone project developed by an 11-person team. I led the systems architecture, utilizing <b>Jira</b> for agile sprint management and <b>GitHub</b> for version control to synchronize workflows across art, design, and programming departments.
+A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
 </div>
 <div align="center" style="margin: 25px 0;">
-  <a href="https://youtu.be/JS1HKKYCaRg" target="_blank" class="video-thumb">
-    <img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg"
-         alt="Blood & Lineage Gameplay"
-         style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-  </a>
+<a href="https://youtu.be/JS1HKKYCaRg" target="_blank" class="video-thumb">
+<img src="https://img.youtube.com/vi/JS1HKKYCaRg/maxresdefault.jpg"
+alt="Blood & Lineage Gameplay"
+style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+</a>
 </div>
 
 <h3 style="margin-bottom: 5px;">Core Contributions</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>End-to-End UI/UX Engineering</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Engineered</b> the primary game navigation flow, including the Main Menu and splash screens.</li>
-    <li><b>Developed</b> a 4-player Lobby system to handle character selection and player readiness states.</li>
-    <li><b>Designed</b> interactive merchant interfaces for the Shop and Forge systems.</li>
-    <li><b>Implemented</b> dynamic HUD elements to provide real-time feedback for high-action combat.</li>
-  </ul>
+<b>Full-Stack UI/UX Engineering</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Engineered</b> the primary game navigation flow, including Main Menu, Splash Screens, and "How to Play" implementations.</li>
+<li><b>Developed</b> a 4-player Lobby system to handle character selection and networked player readiness states.</li>
+<li><b>Designed</b> and programmed interactive merchant interfaces for the <b>Shop, Forge, and Armory</b> systems.</li>
+<li><b>Integrated</b> custom-designed icons, motion graphics, and visual effects to create a high-fidelity HUD and UI feedback loop.</li>
+</ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Networked Systems & Session Management</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Architected</b> backend networking logic for a stable 4-player co-op experience.</li>
-    <li><b>Implemented</b> server-authoritative RPCs for critical gameplay interactions.</li>
-    <li><b>Managed</b> session hosting, searching, and player handshakes to ensure reliable connectivity.</li>
-  </ul>
+<b>Networked Architecture & Session Management</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Architected</b> the Base Game Framework and backend networking logic for a stable 4-player co-op experience.</li>
+<li><b>Implemented</b> server-authoritative RPCs for critical gameplay interactions and <b>Minimap Networking</b>.</li>
+<li><b>Managed</b> session hosting, player handshakes, and a robust <b>Spectating & End-Game</b> system.</li>
+</ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Boss Encounter & Technical Implementation</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Programmed</b> the full logic and mechanical flow for boss encounters.</li>
-    <li><b>Developed</b> a bespoke camera system specifically tuned for high-action boss fights.</li>
-    <li><b>Managed</b> the technical animation pipeline, linking assets to codebase state machines.</li>
-  </ul>
-</div>
-
-<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Inventory & RPG Stat Systems</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Engineered</b> a data-driven inventory system supporting item persistence and loot generation.</li>
-    <li><b>Implemented</b> networked replication for character stats and real-time equipment management including visual equipment changes.</li>
-  </ul>
+<b>Gameplay Systems & RPG Mechanics</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Programmed</b> the full logic, mechanical flow, and bespoke camera systems for high-action Boss encounters.</li>
+<li><b>Engineered</b> a data-driven <b>Inventory & Upgrade</b> system supporting item persistence and loot generation.</li>
+<li><b>Developed</b> a comprehensive <b>Save File System</b> and networked replication for character stats and equipment.</li>
+<li><b>Managed</b> the technical animation pipeline, linking 3D assets to complex codebase state machines.</li>
+</ul>
 </div>
 
 <h3 style="margin-top: 30px; margin-bottom: 5px;">Cross-Department Integration</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Technical Liaison & Systems Architecture</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Architected</b> the Settings UI and keybinding framework, enabling teammates to independently integrate additional options.</li>
-    <li><b>Established</b> the Save System UI and data structures, providing the functional foundation for disk-level serialization.</li>
-    <li><b>Built</b> the Objective UI and linked it directly to physical world triggers.</li>
-    <li><b>Assisted</b> teammates in troubleshooting and finalizing individual tasks to ensure build stability.</li>
-  </ul>
+<b>Technical Liaison & Asset Support</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Architected</b> the Settings UI and keybinding framework, enabling modular integration of new options by the team.</li>
+<li><b>Contributed</b> to the art pipeline by providing <b>Prop Modelling</b> and <b>Environmental Asset</b> support to meet project deadlines.</li>
+<li><b>Established</b> the Objective UI system and linked it directly to physical world triggers and mission logic.</li>
+</ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-  <b>Agile Leadership & Version Control</b>
-  <ul style="margin-top: 5px; margin-bottom: 0;">
-    <li><b>Managed</b> the technical roadmap for an 11-person team using Jira and GitHub.</li>
-    <li><b>Led</b> final sprint efforts to resolve technical debt and gameplay bugs before launch.</li>
-  </ul>
+<b>Agile Leadership & Final Delivery</b>
+<ul style="margin-top: 5px; margin-bottom: 0;">
+<li><b>Directed</b> the technical roadmap, personally implementing the highest volume of game systems to ensure launch stability.</li>
+<li><b>Led</b> final sprint efforts to resolve technical debt, gameplay bugs, and asset integration issues before the capstone deadline.</li>
+</ul>
 </div>
 
 <p align="right"><a href="#top">↑ Back to Top</a></p>
