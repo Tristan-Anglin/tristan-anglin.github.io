@@ -116,7 +116,7 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <ul style="margin-top: 5px; margin-bottom: 0;">
 <li><b>Engineered</b> the primary game navigation flow, including Main Menu, Splash Screens, and "How to Play" implementations.</li>
 <li><b>Developed</b> a 4-player Lobby system to handle character selection and networked player readiness states.</li>
-<li><b>Designed</b> and programmed interactive merchant interfaces for the <b>Shop, Forge, and Armory</b> systems.</li>
+<li><b>Designed</b> and programmed interactive item interfaces for the <b>Forge, and Armory</b> systems.</li>
 <li><b>Integrated</b> custom-designed icons, motion graphics, and visual effects to create a high-fidelity HUD and UI feedback loop.</li>
 </ul>
 </div>
@@ -136,7 +136,6 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <li><b>Programmed</b> the full logic, mechanical flow, and bespoke camera systems for high-action Boss encounters.</li>
 <li><b>Engineered</b> a data-driven <b>Inventory & Upgrade</b> system supporting item persistence and loot generation.</li>
 <li><b>Developed</b> a comprehensive <b>Save File System</b> and networked replication for character stats and equipment.</li>
-<li><b>Managed</b> the technical animation pipeline, linking 3D assets to complex codebase state machines.</li>
 </ul>
 </div>
 
