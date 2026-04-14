@@ -111,7 +111,7 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <h3 style="margin-bottom: 5px;">Process: Layout to High-Fidelity</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
-<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; align-items: start; margin-bottom: 25px;">
+<div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 30px; align-items: start; margin-bottom: 25px;">
   
   <div style="display: flex; flex-direction: column; gap: 30px;">
     
@@ -128,13 +128,13 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
   </div>
 
   <div style="text-align: center;">
-    <img src="InventoryFinal.PNG" alt="Step 2" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+    <img src="InventoryFinal.PNG" alt="Step 2" style="max-height: 600px; width: auto; max-width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
     <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
   </div>
 
 </div>
 
-<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9;">
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9; line-height: 1.5;">
   "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets, custom iconography, and motion graphics."
 </div>
 
