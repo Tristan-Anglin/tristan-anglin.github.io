@@ -111,26 +111,26 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <h3 style="margin-bottom: 5px;">Process: Layout to High-Fidelity</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
-<div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;">
-  <div style="flex: 1.5; text-align: center;">
+<div style="display: flex; flex-wrap: wrap; gap: 25px; align-items: flex-start; margin-bottom: 25px;">
+  <div style="flex: 1.4; min-width: 300px; text-align: center;">
     <img src="InventoryWireframe.png" alt="Inventory Wireframe" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
-    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
+    <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
   </div>
 
-  <div style="flex: 1; display: flex; flex-direction: column; gap: 20px; align-items: center;">
-    <div style="text-align: center;">
+  <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 25px; align-items: center;">
+    <div style="text-align: center; width: 100%;">
       <img src="InventoryFinal.PNG" alt="Final Inventory UI" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 2:</b> Final Asset Integration</p>
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
     </div>
 
-    <div style="text-align: center;">
-      <img src="HUDFinal.PNG" alt="Final HUD" style="width: 100%; max-width: 320px; border-radius: 8px; border: 2px solid #a5472d;">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
+    <div style="text-align: center; width: 100%;">
+      <img src="HUDFinal.PNG" alt="Final HUD" style="width: 90%; max-width: 300px; border-radius: 8px; border: 2px solid #a5472d;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
     </div>
   </div>
 </div>
 
-<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9;">
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9; line-height: 1.5;">
   "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets, custom iconography, and motion graphics."
 </div>
 
