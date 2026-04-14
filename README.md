@@ -126,68 +126,64 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
   "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets and motion graphics."
 </div>
 
-<h3 style="margin-bottom: 5px;">Core Contributions</h3>
+This is an impressive amount of technical depth. To align your portfolio with the A4 Careers Rubric, we need to move away from the generic "Lead Systems Architect" descriptions and use your specific technical achievements (like the Server-Authoritative Forge and the Networked Prediction Mesh) to prove your expertise.
+
+Here is the reworked HTML. I have restructured the sections to match your actual work, emphasizing the Refactored Architecture and Networked Systems which are high-value skills for recruiters.
+
+HTML
+<h3 style="margin-bottom: 5px;">Core Contributions: Blood & Lineage</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Full-Stack UI/UX Engineering</b>
+<b>Technical Architecture & Networked Framework</b>
 <ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Engineered</b> the primary game navigation flow, including Main Menu, Splash Screens, and "How to Play" tutorials.</li>
-<li><b>Developed</b> a 4-player Lobby system to handle character selection and networked player readiness states.</li>
-<li><b>Designed</b> and programmed interactive interfaces for the <b>Forge and Armory</b> systems, linking UI data to backend item stats.</li>
-<li><b>Integrated</b> custom-designed icons, motion graphics, and visual effects to create a high-fidelity HUD and UI feedback loop.</li>
+<li><b>Refactored</b> the core engine architecture to a <b>Character/Controller/State</b> model, ensuring clean separation of movement, UI management, and persistent networked data.</li>
+<li><b>Architected</b> a persistent progression system utilizing <b>Seamless Travel</b>, allowing PlayerState data (stats, inventory, meta-progression) to carry over between game zones.</li>
+<li><b>Engineered</b> a Class-Locked Signature Weapon System with dynamic scaling to prevent gameplay soft-locks while maintaining combat viability across difficulty tiers.</li>
+<li><b>Implemented</b> server-authoritative logic for loot rarity, item drops, and currency transactions to ensure synchronized state across all 4 clients.</li>
 </ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Boss Encounter & AI Programming</b>
+<b>Full-Stack UI/UX Engineering & Iconography</b>
 <ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Programmed</b> the complete logic for boss encounters, including multi-phase state machines and specialized <b>Boss AI</b> behavior.</li>
-<li><b>Developed</b> a bespoke <b>Boss Camera System</b> to maintain visibility during high-action, large-scale combat sequences.</li>
-<li><b>Managed</b> the technical <b>Animation Integration</b>, ensuring frame-accurate transitions between attack patterns and hit-reactions.</li>
-<li><b>Optimized</b> boss-related VFX and environmental triggers to maintain performance during intensive 4-player combat.</li>
+<li><b>Developed</b> a comprehensive suite of 20+ networked interfaces, including a 4-player Lobby with real-time readiness states and a dynamic 3D <b>Skeletal Mesh Preview</b> in the equipment menu.</li>
+<li><b>Designed and Vectorized</b> a custom library of 50+ icons for classes, attributes, equipment, and difficulty tiers to establish a cohesive visual identity.</li>
+<li><b>Programmed</b> complex UI logic for the <b>Forge and Armory</b>, including a weighted probability engine for cross-item merging and bulk-sell functionality by rarity tier.</li>
+<li><b>Integrated</b> dynamic HUD feedback, such as real-time mana cost scaling based on Intelligence stats and low-health post-process vignettes.</li>
 </ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Networked Architecture & Session Management</b>
+<b>Boss Encounter Design & AI (Hades)</b>
 <ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Architected</b> the Base Game Framework and backend networking logic for a stable 4-player co-op experience.</li>
-<li><b>Implemented</b> server-authoritative RPCs for critical gameplay interactions and <b>Minimap Networking</b>.</li>
-<li><b>Managed</b> session hosting, player handshakes, and a robust <b>Spectating & End-Game</b> system for seamless match transitions.</li>
+<li><b>Architected</b> the multi-phase Hades encounter, managing complex state transitions, multi-spin sweep logic, and fireball barrage sequences.</li>
+<li><b>Engineered</b> a <b>Networked Prediction Mesh</b> system that generates visual telegraphs on all clients before attacks execute, ensuring fair dodge-windows in high-latency environments.</li>
+<li><b>Developed</b> a dynamic difficulty scaling system that adjusts boss damage, attack frequency, and rotation counts based on the global difficulty tier and boss health.</li>
+<li><b>Implemented</b> cinematic-to-gameplay transitions, including an opening sequence that teaches mechanical cues for the "Obelisk Slam" phase.</li>
 </ul>
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Gameplay Systems & RPG Mechanics</b>
+<b>Advanced Systems & UX Optimization</b>
 <ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Engineered</b> a data-driven <b>Inventory & Upgrade</b> system supporting item persistence and procedural loot generation.</li>
-<li><b>Developed</b> a comprehensive <b>Save File System</b> capable of serializing complex character data across play sessions.</li>
-<li><b>Implemented</b> networked <b>Stats Systems</b>, ensuring synchronized health, mana, and damage calculations across all clients.</li>
+<li><b>Created</b> a modular <b>Inventory Actor Component</b> for clean replication of item data via replicated structs, optimizing network bandwidth.</li>
+<li><b>Developed</b> "Quality of Life" systems, including a "New Item" exclamation state that clears on hover and an <b>Auto-Equip</b> algorithm that parses inventory for highest-value stats.</li>
+<li><b>Implemented</b> an interactive, multi-section tutorial scene with custom camera logic to guide new players through complex RPG mechanics.</li>
 </ul>
 </div>
 
-<h3 style="margin-top: 30px; margin-bottom: 5px;">Cross-Department Integration</h3>
+<h3 style="margin-top: 30px; margin-bottom: 5px;">Process & Individual Impact</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Technical Liaison & Asset Support</b>
-<ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Architected</b> the Settings UI and keybinding framework, enabling modular integration of options by the design team.</li>
-<li><b>Contributed</b> to the art pipeline by providing <b>Prop Modelling</b> and <b>Environmental Asset</b> support to meet project deadlines.</li>
-<li><b>Established</b> the Objective UI system and linked it directly to physical world triggers and mission logic.</li>
-</ul>
+<b>Individual Contribution & Leadership</b>
+<p style="margin-top: 5px; margin-bottom: 0;">
+As the Lead Systems Architect, I personally implemented the highest volume of game systems, ranging from the core networking handshake to the final post-game statistics screen. I managed the technical roadmap via <b>Jira</b>, directed the integration of assets from the art department, and led the final sprint to resolve technical debt and ensure launch-day stability for the technology showcase.
+</p>
 </div>
 
-<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-<b>Agile Leadership & Final Delivery</b>
-<ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Directed</b> the technical roadmap, personally implementing the highest volume of game systems to ensure launch stability.</li>
-<li><b>Led</b> final sprint efforts to resolve technical debt, gameplay bugs, and asset integration issues before the capstone deadline.</li>
-</ul>
-</div>
 <p align="right"><a href="#top">↑ Back to Top</a></p>
-<hr style="border: 0.5px solid #333;" />
 
 <a name="tower-defense"></a>
 <div style="display: flex; justify-content: space-between; align-items: center;">
