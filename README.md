@@ -111,19 +111,25 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <h3 style="margin-bottom: 5px;">Process: Layout to High-Fidelity</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
-<div style="display: flex; gap: 15px; margin-bottom: 25px;">
-  <div style="flex: 1; text-align: center;">
-    <img src="assets/BloodLineage/UI_Wireframe.png" alt="UI Wireframe/Draft" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
-    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Early Layout & Functional Blockout</p>
+<div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;">
+  <div style="flex: 1.5; text-align: center;">
+    <img src="assets/BloodLineage/InventoryWireframe.png" alt="Inventory Wireframe" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
+    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
   </div>
+
   <div style="flex: 1; text-align: center;">
-    <img src="assets/BloodLineage/UI_Final.png" alt="Final UI Integration" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Final Inventory UI</p>
+    <img src="assets/BloodLineage/InventoryFinal.png" alt="Final Inventory UI" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 2:</b> Final Asset Integration</p>
+  </div>
+
+  <div style="flex: 1.2; text-align: center;">
+    <img src="assets/BloodLineage/HUDFinal.png" alt="Final HUD" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
   </div>
 </div>
 
-<div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em;">
-  "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets and motion graphics."
+<div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9;">
+  "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets, custom iconography, and motion graphics."
 </div>
 
 <h3 style="margin-bottom: 5px;">Core Contributions: Blood & Lineage</h3>
@@ -142,7 +148,7 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
 <b>Full-Stack UI/UX Engineering & Iconography</b>
 <ul style="margin-top: 5px; margin-bottom: 0;">
-<li><b>Developed</b> a comprehensive suite of 20+ networked interfaces, including a 4-player Lobby with real-time readiness states and a dynamic 3D <b>Skeletal Mesh Preview</b> in the equipment menu.</li>
+<li><b>Developed</b> a comprehensive suite of 20+ networked interfaces, including a 4-player Lobby with real-time updates and a dynamic 3D <b>Preview</b>.</li>
 <li><b>Designed and Vectorized</b> a custom library of 50+ icons for classes, attributes, equipment, and difficulty tiers to establish a cohesive visual identity.</li>
 <li><b>Programmed</b> complex UI logic for the <b>Forge and Armory</b>, including a weighted probability engine for cross-item merging and bulk-sell functionality by rarity tier.</li>
 <li><b>Integrated</b> dynamic HUD feedback, such as real-time mana cost scaling based on Intelligence stats and low-health post-process vignettes.</li>
