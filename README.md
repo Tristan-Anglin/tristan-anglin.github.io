@@ -108,6 +108,24 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 </a>
 </div>
 
+<h3 style="margin-bottom: 5px;">Process: Layout to High-Fidelity</h3>
+<div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+
+<div style="display: flex; gap: 15px; margin-bottom: 25px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/BloodLineage/UI_Wireframe.png" alt="UI Wireframe/Draft" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
+    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Early Layout & Functional Blockout</p>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img src="assets/BloodLineage/UI_Final.png" alt="Final UI Integration" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Final Integrated HUD & VFX</p>
+  </div>
+</div>
+
+<div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em;">
+  "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets and motion graphics."
+</div>
+
 <h3 style="margin-bottom: 5px;">Core Contributions</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
