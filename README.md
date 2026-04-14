@@ -118,7 +118,7 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
   </div>
   <div style="flex: 1; text-align: center;">
     <img src="assets/BloodLineage/UI_Final.png" alt="Final UI Integration" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Final Integrated HUD & VFX</p>
+    <p style="font-size: 0.9em; color: #8b949e; margin-top: 8px;">Final Inventory UI</p>
   </div>
 </div>
 
@@ -126,11 +126,6 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
   "My workflow prioritizes a 'system-first' approach. I begin with functional blockouts to validate user flow and networked state synchronization before integrating final art assets and motion graphics."
 </div>
 
-This is an impressive amount of technical depth. To align your portfolio with the A4 Careers Rubric, we need to move away from the generic "Lead Systems Architect" descriptions and use your specific technical achievements (like the Server-Authoritative Forge and the Networked Prediction Mesh) to prove your expertise.
-
-Here is the reworked HTML. I have restructured the sections to match your actual work, emphasizing the Refactored Architecture and Networked Systems which are high-value skills for recruiters.
-
-HTML
 <h3 style="margin-bottom: 5px;">Core Contributions: Blood & Lineage</h3>
 <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
 
