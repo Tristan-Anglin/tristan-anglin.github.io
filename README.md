@@ -113,24 +113,25 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 
 <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 30px; align-items: start; margin-bottom: 25px;">
   
-  <div style="text-align: center;">
-    <img src="InventoryWireframe.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
-    <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
-  </div>
-
   <div style="display: flex; flex-direction: column; gap: 30px;">
     
     <div style="text-align: center;">
-      <img src="InventoryFinal.PNG" alt="Step 2" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
+      <img src="InventoryWireframe.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
     </div>
 
     <div style="text-align: center;">
-      <img src="HUDFinal.PNG" alt="Step 3" style="width: 100%; max-width: 280px; margin: 0 auto; border-radius: 8px; border: 2px solid #a5472d;">
+      <img src="HUDFinal.PNG" alt="Step 3" style="width: 100%; max-width: 320px; margin: 0 auto; border-radius: 8px; border: 2px solid #a5472d;">
       <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
     </div>
 
   </div>
+
+  <div style="text-align: center;">
+    <img src="InventoryFinal.PNG" alt="Step 2" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+    <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
+  </div>
+
 </div>
 
 <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9;">
