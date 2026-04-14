@@ -113,18 +113,20 @@ style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; bo
 
 <div style="display: flex; gap: 20px; align-items: flex-start; margin-bottom: 25px;">
   <div style="flex: 1.5; text-align: center;">
-    <img src="InventoryWireframe.png" alt="Inventory Wireframe" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
+    <img src="assets/BloodLineage/InventoryWireframe.png" alt="Inventory Wireframe" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
     <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
   </div>
 
-  <div style="flex: 1; text-align: center;">
-    <img src="InventoryFinal.PNG" alt="Final Inventory UI" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 2:</b> Final Asset Integration</p>
-  </div>
+  <div style="flex: 1; display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    <div style="text-align: center;">
+      <img src="assets/BloodLineage/InventoryFinal.png" alt="Final Inventory UI" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 2:</b> Final Asset Integration</p>
+    </div>
 
-  <div style="flex: 1.2; text-align: center;">
-    <img src="HUDFinal.PNG" alt="Final HUD" style="width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-    <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
+    <div style="text-align: center;">
+      <img src="assets/BloodLineage/HUDFinal.png" alt="Final HUD" style="width: 100%; max-width: 320px; border-radius: 8px; border: 2px solid #a5472d;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
+    </div>
   </div>
 </div>
 
