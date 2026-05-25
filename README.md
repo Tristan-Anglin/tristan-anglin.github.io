@@ -176,9 +176,9 @@
   </table>
 </div>
 
-<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
+<div align="center" style="display: flex; justify-content: center; align-items: center; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
   
-  <img src="myselfLevelup.jpg" alt="Tristan Anglin" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+  <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="height: 350px; width: auto; max-width: 100%; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15); object-fit: cover;" />
   
 </div>
 
