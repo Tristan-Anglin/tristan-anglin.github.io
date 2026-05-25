@@ -242,17 +242,15 @@
 </div>
   <div align="center" style="margin: 25px 0;">
     
-    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
-      <iframe 
-        src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=0&modestbranding=1" 
-        title="Blood & Lineage Gameplay"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        allow="autoplay; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+    <video 
+      src="assets/videos/blood_lineage_loop.mp4" 
+      autoplay 
+      muted 
+      loop 
+      playsinline
+      style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); object-fit: cover; pointer-events: none;">
+    </video>
 
-    </div>
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
