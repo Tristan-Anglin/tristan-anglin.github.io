@@ -122,7 +122,7 @@
       min-height: 54px !important;
     }
     .tab-meta {
-      font-size: 0.75em;
+      font-size: 0.85em;
       opacity: 0.65;
       margin-top: 4px;
       font-weight: normal;
