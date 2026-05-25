@@ -174,12 +174,12 @@
       </td>
     </tr>
   </table>
-</div>
 
-<div align="center" style="width: 100%; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
+  <div align="center" style="width: 100%; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
   
   <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
   
+</div>
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none;">
