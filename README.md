@@ -166,7 +166,7 @@
 
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<div id="about-tab" class="portfolio-tab active-content" style="display: block;">
+<div id="about-tab" class="portfolio-tab" style="display: block;">
   <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
     <tr style="border: none;">
       <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
@@ -253,7 +253,7 @@
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; margin-bottom: 25px;">
     <div style="display: flex; flex-direction: column; gap: 20px;">
@@ -277,7 +277,7 @@
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions: Blood & Lineage</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
     <b style="color: #ffffff;">Technical Architecture & Networked Framework</b>
@@ -319,7 +319,7 @@
   </div>
 
   <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Process & Individual Impact</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; color: #f0f6fc;">
     <b style="color: #ffffff;">Individual Contribution & Leadership</b>
@@ -354,7 +354,7 @@
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
     <b style="color: #ffffff;">Custom OpenGL Engine & Y-Sorting</b>
@@ -418,7 +418,7 @@
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
     <b style="color: #ffffff;">Modular Class Framework</b>
@@ -478,7 +478,7 @@
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
     <b style="color: #ffffff;">RPG Systems Architecture</b>
@@ -537,3 +537,31 @@
     </div>
   </div>
 </div>
+
+<script>
+function switchTab(event, tabId) {
+  // Hide all active tab containers safely
+  var tabs = document.getElementsByClassName("portfolio-tab");
+  for (var i = 0; i < tabs.length; i++) {
+    tabs[i].style.display = "none";
+    tabs[i].classList.remove("active-content");
+  }
+  
+  // Clear the active class flag from all layout buttons
+  var buttons = document.getElementsByClassName("tab-btn");
+  for (var j = 0; j < buttons.length; j++) {
+    buttons[j].classList.remove("active-tab");
+  }
+  
+  // Show target selection layout and activate target button item
+  var targetTab = document.getElementById(tabId);
+  if (targetTab) {
+    targetTab.style.display = "block";
+    targetTab.classList.add("active-content");
+  }
+  
+  if (event && event.currentTarget) {
+    event.currentTarget.classList.add("active-tab");
+  }
+}
+</script>
