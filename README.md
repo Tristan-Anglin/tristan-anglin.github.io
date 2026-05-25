@@ -164,7 +164,7 @@
   </button>
 </div>
 
-<hr />
+<hr style="border: 0; border-top: 2px solid #a5472d; margin: 20px 0;" />
 
 <div id="about-tab" class="portfolio-tab active-content" style="display: block;">
   <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
@@ -221,7 +221,7 @@
     </tr>
   </table>
 
-  <div align="center" style="width: 100%; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
+<div align="center" style="width: 100%; padding-bottom: 30px; border-top: 2px solid #a5472d; padding-top: 25px;">
   
   <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
   
