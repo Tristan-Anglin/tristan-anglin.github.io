@@ -247,13 +247,12 @@
       <iframe 
         src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=0&modestbranding=1" 
         title="Blood & Lineage Gameplay"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; pointer-events: none;"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
 
     </div>
-
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
