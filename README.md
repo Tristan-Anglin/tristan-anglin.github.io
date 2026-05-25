@@ -221,7 +221,9 @@
     </tr>
   </table>
 
-<div align="center" style="width: 100%; padding-bottom: 30px; border-top: 2px solid #a5472d; padding-top: 25px;">
+<div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
+
+<div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
   
   <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
   
