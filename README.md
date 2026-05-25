@@ -176,8 +176,14 @@
   </table>
 </div>
 
-<div align="center" style="margin-top: 30px; margin-bottom: 15px;">
-    <img src="myself.jpg" alt="Tristan Anglin" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+<div align="center" style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; padding-bottom: 30px; border-top: 1px solid #30363d; padding-top: 25px;">
+  
+  <img src="myself.jpg" alt="Tristan Anglin" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+
+  <a href="https://youtu.be/HNQjJI9nPDQ" target="_blank" class="video-thumb" style="display: block; width: 100%; max-width: 400px; cursor: pointer; text-decoration: none; border-radius: 12px; position: relative;">
+    <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Phase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+  </a>
+
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none;">
