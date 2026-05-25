@@ -239,11 +239,21 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
-  </div>
+</div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://youtu.be/tgr0kjX5Q0Q" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/tgr0kjX5Q0Q/maxresdefault.jpg" alt="Blood & Lineage Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-    </a>
+    
+    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+      
+      <iframe 
+        src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=1&modestbranding=1" 
+        title="Blood & Lineage Gameplay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
