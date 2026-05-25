@@ -630,6 +630,7 @@
     </div>
   </div>
 <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
     <b style="color: #ffffff;">Progression Economy & Multi-Currency Shops</b>
     <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
