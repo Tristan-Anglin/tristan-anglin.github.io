@@ -327,6 +327,30 @@
       As the Lead Systems Architect, I personally implemented the highest volume of game systems, ranging from the core networking handshake to the final post-game statistics screen. I managed the technical roadmap via <b>Jira</b>, directed the integration of assets from the art department, and led the final sprint to resolve technical debt and ensure launch-day stability for the technology showcase.
     </p>
   </div>
+
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+      <b style="color: #ffffff;">The Challenge: Network Desynchronization</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Architecting a 4-player co-op Musou game introduced severe replication challenges. Systems that performed flawlessly in standalone testing frequently failed on clients due to race conditions, localized state tracking, and network latency during high-density enemy swarms.
+      </p>
+    </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+      <b style="color: #ffffff;">The Resolution: Authority & Validation</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Shifted the architecture to a strict server-authoritative model. Implemented RPC handshakes for critical actions (loot drops, spell casts) and decoupled cosmetic UI rendering on clients from the underlying replicated gameplay states, stabilizing sync rates across all four connections.
+      </p>
+    </div>
+  </div>
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+      In future multiplayer titles, I will adopt a <b>"network-first" prototyping rule</b>. No gameplay feature will be built in isolation; every system profile will be integrated with replication parameters from day one, using network emulation tools to stress-test latency margins throughout production.
+    </p>
+  </div>
 </div>
 
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
@@ -391,6 +415,29 @@
       <li><b>Managed</b> collision detection to ensure accurate interactions with enemy hitboxes.</li>
     </ul>
   </div>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+      <b style="color: #ffffff;">The Challenge: Math Shaders & Pathing Depth</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Building an engine from scratch meant handling raw matrices. I encountered geometric complications getting vertex shaders to accurately rotate projectiles toward target headings, alongside performance bottlenecks when multiple active entities computed A* path calculations on a mutable grid simultaneously.
+      </p>
+    </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+      <b style="color: #ffffff;">The Resolution: Matrix Transforms & Caching</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Resolved sprite transformation defects by normalizing directional vectors and feeding precise arctangent orientations directly into the shader pipeline. Optimized navigation data by caching computed paths, only forcing an A* re-evaluation when structural map changes invalidated the current grid node layout.
+      </p>
+    </div>
+  </div>
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+      To maximize lower-level execution efficiency, I would swap out standard pathfinding references for a <b>Flow Field / Vector Field navigation model</b>. This would allow an infinite number of swarm entities to share a single directional vector grid, completely eliminating per-unit CPU overhead.
+    </p>
+  </div>
 </div>
 
 <div id="darkside" class="portfolio-tab" style="display: none;">
@@ -450,6 +497,29 @@
       <li><b>Designed</b> an extensible spell architecture for easy integration of new combat mechanics and effects.</li>
       <li><b>Developed</b> a real-time minimap system featuring entity tracking and dynamic zoom capabilities.</li>
     </ul>
+  </div>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+      <b style="color: #ffffff;">The Challenge: The Scope Creep Trap</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        As an early project, the initial vision over-scoped heavily on content scale. Trying to build multiple sweeping features simultaneously without a concrete framework threatened to leave the project completely unplayable and fractured.
+      </p>
+    </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+      <b style="color: #ffffff;">The Resolution: Pivoting to System Foundations</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Halted wide-scale asset development and shifted focus to isolating core modular data. Successfully targeted and polished the underlying mechanics: creating an extensible inventory loop, working out class selection persistence, and stabilizing the mathematical equations governing RPG stat scaling.
+      </p>
+    </div>
+  </div>
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+      This project taught me the vital importance of producing a **Minimum Viable Product (MVP)**. I would now implement a strict milestone pipeline, ensuring the core transactional loop and gameplay states are rock-solid before mapping out extensive horizontal mechanics or game content blocks.
+    </p>
   </div>
 </div>
 
@@ -511,6 +581,29 @@
       <li><b>Integrated</b> functional UI elements to bridge technical systems with user feedback.</li>
     </ul>
   </div>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+      <b style="color: #ffffff;">The Challenge: Platform Limits & Over-scoping</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Attempting a sprawling, feature-heavy classic RPG while coding entirely on an iPad environment led to immediate scope management and technical hurdles. The feature set grew faster than the architectural framework could support.
+      </p>
+    </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+      <b style="color: #ffffff;">The Resolution: Mechanics-First Isolation</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Stripped out secondary systemic systems to safeguard production. Focused purely on establishing working architectural baselines: locking down the database structures for player inventories, debugging enemy AI detection states, and deploying a functional numerical prototype.
+      </p>
+    </div>
+  </div>
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+      This project served as my early wake-up call regarding design constraints. Today, I approach pre-production by establishing a formal **Technical Design Document (TDD)**, using functional mockups to isolate systemic bottlenecks and protect scope limits before writing execution code.
+    </p>
+  </div>
 </div>
 
 <div id="hit-run" class="portfolio-tab" style="display: none;">
@@ -561,6 +654,29 @@
       <li><b>Scripted</b> dynamic AI spawning algorithms that increase enemy crowd density, scale base movement speed, and augment health pools as rounds progress to create intense "swarm" scenarios.</li>
       <li><b>Optimized</b> 2D collision handling to smoothly process a high volume of simultaneous enemy hitboxes overlapping the player viewport.</li>
     </ul>
+  </div>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+      <b style="color: #ffffff;">The Challenge: Coordinate & Rendering Failures</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        The prototype was initially structured around a traditional side-scrolling engine with a moving ground plane. This architecture generated persistent visual artifacting, tracking tearing, and logic bugs where collision boundaries routinely misaligned during high-velocity updates.
+      </p>
+    </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+      <b style="color: #ffffff;">The Resolution: Clever Paradigm Reversal</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+        Instead of getting bogged down in cosmetic background scrolling, I flipped the layout vector. I clamped the player viewport to a clean, stationary backdrop and transferred the kinetic motion logic directly onto the incoming enemy swarm objects—preserving the intended gameplay feel while erasing the bugs.
+      </p>
+    </div>
+  </div>
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+      This taught me that player perception dictates mechanical design. Knowing what I know now about rendering loops, I would solve the original problem by running a **parallax texture shader offset** on a single static quad mesh, giving the perfect optical illusion of distance travel at zero performance or collision cost.
+    </p>
   </div>
 </div>
 
