@@ -388,3 +388,22 @@
     </ul>
   </div>
 </div>
+
+<script>
+function switchTab(event, tabId) {
+  const tabs = document.getElementsByClassName("portfolio-tab");
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].classList.remove("active-content");
+  }
+
+  const buttons = document.getElementsByClassName("tab-btn");
+  for (let i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active-tab");
+  }
+
+  document.getElementById(tabId).classList.add("active-content");
+  event.currentTarget.classList.add("active-tab");
+  
+  document.querySelector('.tab-container').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
