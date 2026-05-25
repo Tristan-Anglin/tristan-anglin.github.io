@@ -178,7 +178,6 @@
 
 <div align="center" style="margin-top: 30px; margin-bottom: 15px;">
     <img src="myself.jpg" alt="Tristan Anglin" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
-  </div>
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none;">
