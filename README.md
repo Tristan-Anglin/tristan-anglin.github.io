@@ -164,7 +164,7 @@
   </button>
 </div>
 
-<hr style="border: 0; border-top: 2px solid #a5472d; margin: 20px 0;" />
+<hr style="border: 0; border-top: 2px solid #bd4c2a; margin: 20px 0; box-shadow: 0px 0px 8px rgba(189, 76, 42, 0.4);" />
 
 <div id="about-tab" class="portfolio-tab active-content" style="display: block;">
   <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
@@ -225,7 +225,6 @@
   
   <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
   
-</div>
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none;">
