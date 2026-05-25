@@ -1,7 +1,7 @@
 <a name="top"></a>
 <div align="center">
-<h1 style="font-size: 3em; margin-bottom: 0px;">Tristan Anglin</h1>
-<p style="font-size: 1.2em; margin-top: 15px;">
+<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff;">Tristan Anglin</h1>
+<p style="font-size: 1.2em; margin-top: 15px; color: #f0f6fc;">
   <strong>Game Developer | Systems Architect & UI Designer</strong>
 </p>
 </div>
@@ -27,24 +27,24 @@
 
 <hr />
 
-<div id="about-tab" class="portfolio-tab active-content">
-  <table border="0">
-    <tr>
-      <td width="55%" valign="top" style="border: none;">
-        <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
+<div id="about-tab" class="portfolio-tab active-content" style="display: block;">
+  <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
+    <tr style="border: none;">
+      <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
+        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
           Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
         </div>
-        <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
-          My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop, "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
+        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+          My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
         </div>
-        <div style="background: #161b22; padding: 10px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 8px;">
+        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
           Since specializing in Game Development in 2023, I have maintained a 3.86 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
         </div>
       </td>
 
-      <td width="45%" valign="top" align="center" style="border: none; line-height: 1.8;">
-        <div style="margin-bottom: 12px;">
-          <b>Programming & Engines</b><br/>
+      <td width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
+        <div style="margin-bottom: 15px;">
+          <b style="color: #ffffff;">Programming & Engines</b><br/>
           <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40" />
           <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="40" />
           <img src="https://skillicons.dev/icons?i=py&theme=dark" height="40" />
@@ -53,8 +53,8 @@
           <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="40" />
         </div>
 
-        <div style="margin-bottom: 12px;">
-          <b>Workflow & Version Control</b><br/>
+        <div style="margin-bottom: 15px;">
+          <b style="color: #ffffff;">Workflow & Version Control</b><br/>
           <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
           <img src="https://skillicons.dev/icons?i=git&theme=dark" height="40" style="vertical-align: middle;" />
           <img src="https://skillicons.dev/icons?i=mysql&theme=dark" height="40" style="vertical-align: middle;" />
@@ -62,15 +62,15 @@
           <img src="https://skillicons.dev/icons?i=cmake&theme=dark" height="40" style="vertical-align: middle;" />
         </div>
 
-        <div style="margin-bottom: 12px;">
-          <b>Development Environments</b><br/>
+        <div style="margin-bottom: 15px;">
+          <b style="color: #ffffff;">Development Environments</b><br/>
           <img src="https://skillicons.dev/icons?i=visualstudio&theme=dark" height="40" />
           <img src="https://skillicons.dev/icons?i=vscode&theme=dark" height="40" />
           <img src="https://skillicons.dev/icons?i=eclipse&theme=dark" height="40" />
         </div>
 
-        <div style="margin-bottom: 12px;">
-          <b>Art, Audio & UI Design</b><br/>
+        <div style="margin-bottom: 15px;">
+          <b style="color: #ffffff;">Art, Audio & UI Design</b><br/>
           <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
           <img src="https://skillicons.dev/icons?i=blender&theme=dark" height="40" style="vertical-align: middle;" />
           <img src="https://skillicons.dev/icons?i=photoshop&theme=dark" height="40" style="vertical-align: middle;" />
@@ -84,31 +84,31 @@
 </div>
 
 
-<div id="blood-lineage" class="portfolio-tab">
+<div id="blood-lineage" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b>3D Co-op Musou RPG</b>
-    <b>Lead Systems Architect & UI Programmer</b>
+    <b style="color: #f0f6fc;">3D Co-op Musou RPG</b>
+    <b style="color: #f0f6fc;">Lead Systems Architect & UI Programmer</b>
   </div>
-  <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
   </div>
   <div align="center" style="margin: 25px 0;">
     <a href="https://youtu.be/tgr0kjX5Q0Q" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/tgr0kjX5Q0Q/maxresdefault.jpg" alt="Blood & Lineage Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+      <img src="https://img.youtube.com/vi/tgr0kjX5Q0Q/maxresdefault.jpg" alt="Blood & Lineage Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
     </a>
   </div>
 
-  <h3 style="margin-bottom: 5px;">Process: </h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 30px; align-items: start; margin-bottom: 25px;">
-    <div style="display: flex; flex-direction: column; gap: 30px;">
+  <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; margin-bottom: 25px;">
+    <div style="display: flex; flex-direction: column; gap: 20px;">
       <div style="text-align: center;">
-        <img src="InventoryWireframe.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: 1px solid #333;">
+        <img src="InventoryWireframe.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: 1px solid #30363d;">
         <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
       </div>
       <div style="text-align: center;">
@@ -117,7 +117,7 @@
       </div>
     </div>
     <div style="text-align: center;">
-      <img src="InventoryFinal.PNG" alt="Step 2" style="max-height: 600px; width: auto; max-width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
+      <img src="InventoryFinal.PNG" alt="Step 2" style="max-height: 550px; width: auto; max-width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
       <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
     </div>
   </div>
@@ -126,12 +126,12 @@
     "My workflow prioritizes systems first. I begin with functional blockouts and networked state before integrating final art assets, custom iconography, and motion graphics."
   </div>
 
-  <h3 style="margin-bottom: 5px;">Core Contributions: Blood & Lineage</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions: Blood & Lineage</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Technical Architecture & Networked Framework</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Technical Architecture & Networked Framework</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Refactored</b> the core engine architecture to a <b>Character/Controller/State</b> model, ensuring clean separation of movement, UI management, and persistent networked data.</li>
       <li><b>Architected</b> a persistent progression system utilizing <b>Seamless Travel</b>, allowing PlayerState data (stats, inventory, meta-progression) to carry over between game zones.</li>
       <li><b>Engineered</b> a Class-Locked Signature Weapon System with dynamic scaling to prevent gameplay soft-locks while maintaining combat viability across difficulty tiers.</li>
@@ -139,9 +139,9 @@
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Full-Stack UI/UX Engineering & Iconography</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Full-Stack UI/UX Engineering & Iconography</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Developed</b> a comprehensive suite of 20+ networked interfaces, including a 4-player Lobby with real-time updates and a dynamic 3D <b>Preview</b>.</li>
       <li><b>Designed and Vectorized</b> a custom library of 50+ icons for classes, attributes, equipment, and difficulty tiers to establish a cohesive visual identity.</li>
       <li><b>Programmed</b> complex UI logic for the <b>Forge and Armory</b>, including a weighted probability engine for cross-item merging and bulk-sell functionality by rarity tier.</li>
@@ -149,9 +149,9 @@
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Boss Encounter Design & AI (Hades)</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Boss Encounter Design & AI (Hades)</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Architected</b> the multi-phase Hades encounter, managing complex state transitions, multi-spin sweep logic, and fireball barrage sequences.</li>
       <li><b>Engineered</b> a <b>Networked Prediction Mesh</b> system that generates visual telegraphs on all clients before attacks execute, ensuring fair dodge-windows in high-latency environments.</li>
       <li><b>Developed</b> a dynamic difficulty scaling system that adjusts boss damage, attack frequency, and rotation counts based on the global difficulty tier and boss health.</li>
@@ -159,78 +159,78 @@
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Advanced Systems & UX Optimization</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Advanced Systems & UX Optimization</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Created</b> a modular <b>Inventory Actor Component</b> for clean replication of item data via replicated structs, optimizing network bandwidth.</li>
       <li><b>Developed</b> "Quality of Life" systems, including a "New Item" exclamation state that clears on hover and an <b>Auto-Equip</b> algorithm that parses inventory for highest-value stats.</li>
       <li><b>Implemented</b> an interactive, multi-section tutorial scene with custom camera logic to guide new players through complex RPG mechanics.</li>
     </ul>
   </div>
 
-  <h3 style="margin-top: 30px; margin-bottom: 5px;">Process & Individual Impact</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Process & Individual Impact</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Individual Contribution & Leadership</b>
-    <p style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Individual Contribution & Leadership</b>
+    <p style="margin-top: 5px; margin-bottom: 0; line-height: 1.6;">
       As the Lead Systems Architect, I personally implemented the highest volume of game systems, ranging from the core networking handshake to the final post-game statistics screen. I managed the technical roadmap via <b>Jira</b>, directed the integration of assets from the art department, and led the final sprint to resolve technical debt and ensure launch-day stability for the technology showcase.
     </p>
   </div>
 </div>
 
 
-<div id="tower-defense" class="portfolio-tab">
+<div id="tower-defense" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge&logo=cplusplus&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2024-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b>2D Tile-Based Strategy TD</b>
-    <b>Solo Developer</b>
+    <b style="color: #f0f6fc;">2D Tile-Based Strategy TD</b>
+    <b style="color: #f0f6fc;">Solo Developer</b>
   </div>
-  <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
   </div>
   <div align="center" style="margin: 25px 0;">
     <a href="https://www.youtube.com/watch?v=cCLGPVTF1Aw" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+      <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
     </a>
   </div>
 
-  <h3 style="margin-bottom: 5px;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Custom OpenGL Engine & Y-Sorting</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Custom OpenGL Engine & Y-Sorting</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Developed</b> a lightweight 2D rendering engine from the ground up using Modern C++ and OpenGL.</li>
       <li><b>Implemented</b> a dynamic Top-Down Depth Sorting (Y-sorting) system to manage draw call ordering.</li>
       <li><b>Optimized</b> visual layering to ensure foreground structures naturally overlap background entities.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Dynamic Pathfinding</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Dynamic Pathfinding</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Engineered</b> a tile-based grid system utilizing the A* Search Algorithm for enemy navigation.</li>
       <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place walls.</li>
       <li><b>Integrated</b> validation logic to ensure a valid path to the objective is maintained at all times.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Tower Mechanics & Evolution</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Tower Mechanics & Evolution</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Created</b> a hover-state system for real-time range visualization and player feedback.</li>
       <li><b>Built</b> a kill-based progression system that triggers dynamic stat scaling for towers.</li>
       <li><b>Programmed</b> visual transformations via automated sprite swaps to reflect tower "level up" states.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Grid & Placement Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Grid & Placement Logic</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Developed</b> a robust snapping and validation system for tile-based structure placement.</li>
       <li><b>Architected</b> interaction logic between player-built obstacles and the underlying navigation mesh.</li>
       <li><b>Managed</b> collision detection to ensure accurate interactions with enemy hitboxes.</li>
@@ -239,52 +239,52 @@
 </div>
 
 
-<div id="darkside" class="portfolio-tab">
+<div id="darkside" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=openjdk&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b>2D Tile-Based Fantasy RPG</b>
-    <b>Solo Developer</b>
+    <b style="color: #f0f6fc;">2D Tile-Based Fantasy RPG</b>
+    <b style="color: #f0f6fc;">Solo Developer</b>
   </div>
-  <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </div>
 
-  <h3 style="margin-bottom: 5px;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Modular Class Framework</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Modular Class Framework</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Engineered</b> a multi-class selection system as the foundation for character state management.</li>
       <li><b>Implemented</b> attribute scaling logic to handle unique progression paths for different classes.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Inventory & Economy Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Inventory & Economy Logic</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Developed</b> a robust inventory system and NPC interaction framework for merchant economies.</li>
       <li><b>Programmed</b> complex item valuation and transactional logic for buying/selling mechanics.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>A* Pathfinding Implementation</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">A* Pathfinding Implementation</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Integrated</b> advanced A* pathfinding algorithms to ensure intelligent enemy AI navigation.</li>
       <li><b>Optimized</b> path calculation for complex, tile-based fantasy environments.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Spell Framework & Minimap</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Spell Framework & Minimap</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Designed</b> an extensible spell architecture for easy integration of new combat mechanics and effects.</li>
       <li><b>Developed</b> a real-time minimap system featuring entity tracking and dynamic zoom capabilities.</li>
     </ul>
@@ -292,52 +292,52 @@
 </div>
 
 
-<div id="dungeon" class="portfolio-tab">
+<div id="dungeon" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b>2D Dungeon Crawler RPG</b>
-    <b>Solo Developer</b>
+    <b style="color: #f0f6fc;">2D Dungeon Crawler RPG</b>
+    <b style="color: #f0f6fc;">Solo Developer</b>
   </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </div>
 
-  <h3 style="margin-bottom: 5px;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>RPG Systems Architecture</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">RPG Systems Architecture</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Designed</b> a multi-class selection system featuring 8 unique character classes.</li>
       <li><b>Implemented</b> discrete starting attribute sets to differentiate class-based gameplay.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Combat & Enemy AI</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Combat & Enemy AI</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Developed</b> a real-time combat engine supporting 8-directional movement and hit detection.</li>
       <li><b>Programmed</b> enemy homing logic to dynamically track and engage the player.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Loot & Progression Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Loot & Progression Logic</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Scripted</b> a dynamic reward system that triggers randomized XP, gold, and item drops upon enemy defeat.</li>
       <li><b>Engineered</b> a persistent inventory and leveling framework to track character progression.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>UI/UX Prototyping</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">UI/UX Prototyping</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Architected</b> a multi-scene menu flow, including dungeon selection and inventory management interfaces.</li>
       <li><b>Integrated</b> functional UI elements to bridge technical systems with user feedback.</li>
     </ul>
@@ -345,44 +345,44 @@
 </div>
 
 
-<div id="hit-run" class="portfolio-tab">
+<div id="hit-run" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b>2D Survival Endless Scroller</b>
-    <b>Solo Developer</b>
+    <b style="color: #f0f6fc;">2D Survival Endless Scroller</b>
+    <b style="color: #f0f6fc;">Solo Developer</b>
   </div>
-  <div style="background: #161b22; padding: 10px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; margin-top: 10px;">
+  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     As my first step into game development, Hit & Run was built in Python on the iPad to explore the core architecture of a functional game loop. This project served as my primary classroom for learning scaling difficulty and persistent progression systems—foundational concepts that have informed every project since.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 95%; max-width: 800px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
   </div>
 
-  <h3 style="margin-bottom: 5px;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 15px; border-radius: 2px;"></div>
+  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Survival Loop Architecture</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Survival Loop Architecture</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Engineered</b> a stationary combat loop managing high-volume enemy convergence on a fixed player position.</li>
       <li><b>Developed</b> a scaling difficulty system to handle persistent intensity across long-term play sessions.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Combat Mechanics</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Combat Mechanics</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Implemented</b> a non-targeting swing mechanic that calculates damage for all enemies within a frontal arc.</li>
       <li><b>Integrated</b> a real-time cooldown system dynamically tied to a character "Haste" stat.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px;">
-    <b>Persistent Progression</b>
-    <ul style="margin-top: 5px; margin-bottom: 0;">
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Persistent Progression</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
       <li><b>Engineered</b> a multi-tiered reward system and a comprehensive shop framework for permanent stat upgrades.</li>
       <li><b>Managed</b> rare currency logic to handle ability unlocks and persistent player progression.</li>
     </ul>
@@ -391,19 +391,28 @@
 
 <script>
 function switchTab(event, tabId) {
+  // Hide all tabs using direct style object manipulation
   const tabs = document.getElementsByClassName("portfolio-tab");
   for (let i = 0; i < tabs.length; i++) {
+    tabs[i].style.setProperty('display', 'none', 'important');
     tabs[i].classList.remove("active-content");
   }
 
+  // Deactivate all button highlights
   const buttons = document.getElementsByClassName("tab-btn");
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].classList.remove("active-tab");
   }
 
-  document.getElementById(tabId).classList.add("active-content");
+  // Actively display chosen tab
+  const activeTab = document.getElementById(tabId);
+  activeTab.style.setProperty('display', 'block', 'important');
+  activeTab.classList.add("active-content");
+  
+  // Highlight clicked button
   event.currentTarget.classList.add("active-tab");
   
+  // Smooth scroll back up to the tab window bar
   document.querySelector('.tab-container').scrollIntoView({ behavior: 'smooth' });
 }
 </script>
