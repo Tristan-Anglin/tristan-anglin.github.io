@@ -109,13 +109,14 @@
   <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
 </p>
 
-<div class="tab-container">
+<div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">Overview & Skills</button>
-  <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">Blood & Lineage</button>
-  <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">Tower Defense</button>
-  <button class="tab-btn" onclick="switchTab(event, 'darkside')">Your Dark Side</button>
-  <button class="tab-btn" onclick="switchTab(event, 'dungeon')">Dungeon Crawler</button>
-  <button class="tab-btn" onclick="switchTab(event, 'hit-run')">Hit & Run</button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">Blood & Lineage ('26 UE5)</button>
+  <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">Tower Defense ('24 C++)</button>
+  <button class="tab-btn" onclick="switchTab(event, 'darkside')">Your Dark Side ('23 Java)</button>
+  <button class="tab-btn" onclick="switchTab(event, 'dungeon')">Dungeon Crawler ('17 Python)</button>
+  <button class="tab-btn" onclick="switchTab(event, 'hit-run')">Hit & Run ('16 Python)</button>
 </div>
 
 <hr />
