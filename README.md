@@ -221,12 +221,11 @@
     </tr>
   </table>
 
-<div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
-  
-  <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
-  
+  <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
+    <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+  </div>
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none;">
@@ -240,11 +239,9 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
-</div>
+  </div>
   <div align="center" style="margin: 25px 0;">
-    
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
       <iframe 
         src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=1&modestbranding=1" 
         title="Blood & Lineage Gameplay"
@@ -252,9 +249,7 @@
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
-
     </div>
-
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
@@ -334,7 +329,6 @@
   </div>
 </div>
 
-
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge&logo=cplusplus&logoColor=white" height="35"/>
@@ -346,11 +340,9 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
-</div>
+  </div>
   <div align="center" style="margin: 25px 0;">
-    
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
       <iframe 
         src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
         title="Tower Defense Gameplay"
@@ -358,9 +350,7 @@
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
-
     </div>
-
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -403,7 +393,6 @@
   </div>
 </div>
 
-
 <div id="darkside" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=openjdk&logoColor=white" height="35"/>
@@ -415,11 +404,9 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
-</div>
+  </div>
   <div align="center" style="margin: 25px 0;">
-    
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
       <iframe 
         src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
         title="Your Dark Side Gameplay"
@@ -427,9 +414,7 @@
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
-
     </div>
-
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -468,7 +453,6 @@
   </div>
 </div>
 
-
 <div id="dungeon" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
@@ -480,11 +464,9 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
-</div>
+  </div>
   <div align="center" style="margin: 25px 0;">
-    
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
       <iframe 
         src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
         title="Dungeon Crawler Gameplay"
@@ -492,9 +474,7 @@
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
-
     </div>
-
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -533,7 +513,6 @@
   </div>
 </div>
 
-
 <div id="hit-run" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
     <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
@@ -544,12 +523,10 @@
     <b style="color: #f0f6fc;">Solo Developer</b>
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    As my first step into game development, Hit & Run was built in Python on the iPad to explore the core architecture of a functional game loop. This project served as my primary classroom for learning scaling difficulty and persistent progression systems—foundational concepts that have informed every project since.
-</div>
+    As my first step into game development, Hit & Run was a crucial layout experiment parsing 2D hit detection logic and continuous speed scaling.
+  </div>
   <div align="center" style="margin: 25px 0;">
-    
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      
       <iframe 
         src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
         title="Hit & Run Gameplay"
@@ -557,63 +534,6 @@
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
       </iframe>
-
     </div>
-
-  </div>
-
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="height: 2px; background: #a5472d; margin-bottom: 20px; border-radius: 2px;"></div>
-
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Survival Loop Architecture</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Engineered</b> a stationary combat loop managing high-volume enemy convergence on a fixed player position.</li>
-      <li><b>Developed</b> a scaling difficulty system to handle persistent intensity across long-term play sessions.</li>
-    </ul>
-  </div>
-
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Combat Mechanics</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Implemented</b> a non-targeting swing mechanic that calculates damage for all enemies within a frontal arc.</li>
-      <li><b>Integrated</b> a real-time cooldown system dynamically tied to a character "Haste" stat.</li>
-    </ul>
-  </div>
-
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Persistent Progression</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Engineered</b> a multi-tiered reward system and a comprehensive shop framework for permanent stat upgrades.</li>
-      <li><b>Managed</b> rare currency logic to handle ability unlocks and persistent player progression.</li>
-    </ul>
   </div>
 </div>
-
-<script>
-function switchTab(event, tabId) {
-  // Hide all tabs using direct style object manipulation
-  const tabs = document.getElementsByClassName("portfolio-tab");
-  for (let i = 0; i < tabs.length; i++) {
-    tabs[i].style.setProperty('display', 'none', 'important');
-    tabs[i].classList.remove("active-content");
-  }
-
-  // Deactivate all button highlights
-  const buttons = document.getElementsByClassName("tab-btn");
-  for (let i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove("active-tab");
-  }
-
-  // Actively display chosen tab
-  const activeTab = document.getElementById(tabId);
-  activeTab.style.setProperty('display', 'block', 'important');
-  activeTab.classList.add("active-content");
-  
-  // Highlight clicked button
-  event.currentTarget.classList.add("active-tab");
-  
-  // Smooth scroll back up to the tab window bar
-  document.querySelector('.tab-container').scrollIntoView({ behavior: 'smooth' });
-}
-</script>
