@@ -536,6 +536,24 @@
       </iframe>
     </div>
   </div>
+<h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Hit Detection & Boundary Logic</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+      <li><b>Programmed</b> precise 2D axis-aligned bounding box (AABB) formulas to manage instant collision responses.</li>
+      <li><b>Constructed</b> runtime boundary constraints ensuring the main avatar remained cleanly clamped within active viewport zones.</li>
+    </ul>
+  </div>
+
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Progression Mechanics</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+      <li><b>Designed</b> a persistent frame-count translation system tracking score calculations accurately in real time.</li>
+      <li><b>Implemented</b> automated velocity modifiers that increment enemy speed dynamically based on elapsed time milestones.</li>
+    </ul>
+  </div>
 </div>
 
 <script>
