@@ -93,9 +93,9 @@
 
 <a name="top"></a>
 <div align="center">
-<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important;">Tristan Anglin</h1>
-<p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important;">
-  <strong>Game Developer | Systems Architect & UI Designer</strong>
+<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
+<p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
+  <strong style="color: #ffffff !important; opacity: 1 !important;">Game Developer | Systems Architect & UI Designer</strong>
 </p>
 </div>
 
