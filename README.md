@@ -16,6 +16,11 @@
     box-shadow: none !important;
     border: none !important;
   }
+
+  /* Force headers to remain clean white against the dark theme */
+  .wrapper h1, .wrapper h2, .wrapper h3, .wrapper h4, h1, h2, h3 {
+    color: #ffffff !important;
+  }
   
   section {
     background-color: #0d1117 !important;
@@ -29,12 +34,67 @@
   header {
     display: none !important;
   }
+
+  /* Center alignment layout for the portfolio tabs */
+  .tab-container {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin: 20px 0 !important;
+    flex-wrap: wrap !important;
+    background-color: transparent !important;
+  }
+
+  .tab-btn {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    border: 1px solid #30363d !important;
+    padding: 8px 16px !important;
+    font-size: 0.95em !important;
+    font-weight: bold !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    text-decoration: none !important;
+  }
+
+  .tab-btn:hover {
+    border-color: #a5472d !important;
+    background-color: #1f242c !important;
+    color: #ffffff !important;
+  }
+
+  .tab-btn.active-tab {
+    background-color: #a5472d !important;
+    color: #ffffff !important;
+    border-color: #a5472d !important;
+    box-shadow: 0px 0px 10px rgba(165, 71, 45, 0.4) !important;
+  }
+
+  /* Image Thumbnails & Overlays */
+  .video-thumb {
+    position: relative;
+    display: inline-block;
+  }
+
+  .video-thumb::after {
+    content: "▶";
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0.85;
+  }
 </style>
 
 <a name="top"></a>
 <div align="center">
-<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff;">Tristan Anglin</h1>
-<p style="font-size: 1.2em; margin-top: 15px; color: #f0f6fc;">
+<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important;">Tristan Anglin</h1>
+<p style="font-size: 1.2em; margin-top: 15px; color: #ffffff;">
   <strong>Game Developer | Systems Architect & UI Designer</strong>
 </p>
 </div>
@@ -226,7 +286,7 @@
     A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://www.youtube.com/watch?v=cCLGPVTF1Aw" target="_blank" class="video-thumb">
+    <a href="https://youtu.be/cCLGPVTF1Aw" target="_blank" class="video-thumb">
       <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
     </a>
   </div>
@@ -285,7 +345,9 @@
     Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <a href="https://youtu.be/8z6vDdhrYUA" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    </a>
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -338,7 +400,9 @@
     This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <a href="https://youtu.be/HNQjJI9nPDQ" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    </a>
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -391,7 +455,9 @@
     As my first step into game development, Hit & Run was built in Python on the iPad to explore the core architecture of a functional game loop. This project served as my primary classroom for learning scaling difficulty and persistent progression systems—foundational concepts that have informed every project since.
   </div>
   <div align="center" style="margin: 25px 0;">
-    <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    <a href="https://youtu.be/FSjgXKFcKIo" target="_blank" class="video-thumb">
+      <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
+    </a>
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
