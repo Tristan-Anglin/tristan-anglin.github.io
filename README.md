@@ -243,7 +243,7 @@
   <div align="center" style="margin: 25px 0;">
     
     <video 
-      src="assets/videos/blood_lineage_loop.mp4" 
+      src="assets/videos/Blood & Lineage.mp4" 
       autoplay 
       muted 
       loop 
