@@ -109,14 +109,59 @@
   <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
 </p>
 
-<div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;">
-  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">Overview & Skills</button>
+<div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
   
-  <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">Blood & Lineage ('26 UE5)</button>
-  <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">Tower Defense ('24 C++)</button>
-  <button class="tab-btn" onclick="switchTab(event, 'darkside')">Your Dark Side ('23 Java)</button>
-  <button class="tab-btn" onclick="switchTab(event, 'dungeon')">Dungeon Crawler ('17 Python)</button>
-  <button class="tab-btn" onclick="switchTab(event, 'hit-run')">Hit & Run ('16 Python)</button>
+  <style>
+    .tab-btn {
+      display: inline-flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      line-height: 1.2 !important;
+      padding: 8px 16px !important;
+      min-height: 54px !important;
+    }
+    .tab-meta {
+      font-size: 0.75em;
+      opacity: 0.65;
+      margin-top: 4px;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+    }
+    .active-tab .tab-meta {
+      opacity: 0.85;
+    }
+  </style>
+
+  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
+    <span>Overview & Skills</span>
+    <span class="tab-meta">Core Profile</span>
+  </button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
+    <span>Blood & Lineage</span>
+    <span class="tab-meta">2026 • UE5</span>
+  </button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
+    <span>Tower Defense</span>
+    <span class="tab-meta">2024 • C++</span>
+  </button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'darkside')">
+    <span>Your Dark Side</span>
+    <span class="tab-meta">2023 • Java</span>
+  </button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'dungeon')">
+    <span>Dungeon Crawler</span>
+    <span class="tab-meta">2017 • Python</span>
+  </button>
+  
+  <button class="tab-btn" onclick="switchTab(event, 'hit-run')">
+    <span>Hit & Run</span>
+    <span class="tab-meta">2016 • Python</span>
+  </button>
 </div>
 
 <hr />
