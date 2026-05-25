@@ -1,9 +1,26 @@
 @import "{{ site.theme }}";
 
-html, body, p, li, span, div, em, i {
+/* Force Minimal Theme Wrapper to Full Width and Dark Palette */
+html, body {
   background-color: #0d1117 !important;
   color: #f0f6fc !important;
-  opacity: 1 !important;   
+}
+
+.wrapper {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  background-color: #0d1117 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Ensure content takes full available width */
+section {
+  width: 100% !important;
+  max-width: 900px !important;
+  float: none !important;
+  padding: 0 !important;
 }
 
 .video-thumb {
@@ -22,17 +39,6 @@ html, body, p, li, span, div, em, i {
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0.85;
-}
-
-.container-lg, .wrapper, section {
-  background-color: #0d1117 !important;
-  color: #f0f6fc !important;
-  box-shadow: none !important;
-  border: none !important;
-  width: 100% !important;
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  float: none !important;
 }
 
 h1, h2, h3, h4, h5, h6, 
@@ -100,21 +106,20 @@ hr {
   gap: 10px !important;
   margin: 20px 0 !important;
   flex-wrap: wrap !important;
-  background-color: transparent !important; /* Overrides global div background */
+  background-color: transparent !important;
 }
 
 .tab-btn {
   background-color: #161b22 !important;
   color: #c9d1d9 !important;
-  border: 2px solid #333 !important;
-  padding: 10px 20px !important;
-  font-size: 1em !important;
+  border: 1px solid #30363d !important;
+  padding: 8px 16px !important;
+  font-size: 0.95em !important;
   font-weight: bold !important;
   border-radius: 6px !important;
   cursor: pointer !important;
   transition: all 0.2s ease !important;
   text-decoration: none !important;
-  opacity: 1 !important;
 }
 
 .tab-btn:hover {
@@ -130,25 +135,18 @@ hr {
   box-shadow: 0px 0px 10px rgba(165, 71, 45, 0.4) !important;
 }
 
-/* Hidden state handles visibility via the JS toggler */
+/* Inline style definitions help bypass layout engine overrides */
 .portfolio-tab {
-  display: none !important;
+  display: none;
 }
 
 .portfolio-tab.active-content {
   display: block !important;
 }
 
-/* Fix background for internal layout cells inside tabs */
 .portfolio-tab div, 
 .portfolio-tab td, 
 .portfolio-tab ul, 
 .portfolio-tab li {
   background-color: transparent !important;
-}
-
-/* Maintain dark palette cards for text summaries */
-.portfolio-tab div[style*="background: #161b22"], 
-.portfolio-tab div[style*="background:#161b22"] {
-  background-color: #161b22 !important;
 }
