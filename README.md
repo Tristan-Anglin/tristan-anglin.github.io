@@ -537,21 +537,29 @@
     </div>
   </div>
 <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
-
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Hit Detection & Boundary Logic</b>
+    <b style="color: #ffffff;">Progression Economy & Multi-Currency Shops</b>
     <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Programmed</b> precise 2D axis-aligned bounding box (AABB) formulas to manage instant collision responses.</li>
-      <li><b>Constructed</b> runtime boundary constraints ensuring the main avatar remained cleanly clamped within active viewport zones.</li>
+      <li><b>Engineered</b> an integrated economy system featuring a Stat Shop and a Spell Shop for mid-run power scaling.</li>
+      <li><b>Implemented</b> transactional logic for purchasing new magical abilities and upgrading multi-tier spell profiles.</li>
+      <li><b>Programmed</b> attribute modification systems that dynamically recalculate core player stats, including Haste (attack speed), Armor (flat flat damage reduction), and Dodge (percentage-based avoidance).</li>
     </ul>
   </div>
 
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Progression Mechanics</b>
+    <b style="color: #ffffff;">Resource Management & Spell Architecture</b>
     <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Designed</b> a persistent frame-count translation system tracking score calculations accurately in real time.</li>
-      <li><b>Implemented</b> automated velocity modifiers that increment enemy speed dynamically based on elapsed time milestones.</li>
+      <li><b>Developed</b> a dynamic Mana resource loop to regulate spell casting, complete with passive regeneration states and casting thresholds.</li>
+      <li><b>Designed</b> an extensible framework for diverse spell behaviors, linking ability cooldowns, area-of-effect parameters, and damage logic directly to player stats.</li>
+    </ul>
+  </div>
+
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+    <b style="color: #ffffff;">Round-Based Enemy Scaling & Swarm AI</b>
+    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+      <li><b>Architected</b> a round-based survival system with automated wave progression and escalating difficulty curves.</li>
+      <li><b>Scripted</b> dynamic AI spawning algorithms that increase enemy crowd density, scale base movement speed, and augment health pools as rounds progress to create intense "swarm" scenarios.</li>
+      <li><b>Optimized</b> 2D collision handling to smoothly process a high volume of simultaneous enemy hitboxes overlapping the player viewport.</li>
     </ul>
   </div>
 </div>
