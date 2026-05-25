@@ -1,3 +1,36 @@
+<style>
+  /* Hard override for the entire viewport background */
+  html, body {
+    background-color: #0d1117 !important;
+    background: #0d1117 !important;
+    color: #f0f6fc !important;
+  }
+  
+  /* Hard override for Jekyll's layout container */
+  .wrapper {
+    background-color: #0d1117 !important;
+    background: #0d1117 !important;
+    max-width: 900px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+  
+  section {
+    background-color: #0d1117 !important;
+    background: #0d1117 !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    float: none !important;
+    padding: 0 !important;
+  }
+
+  header {
+    display: none !important;
+  }
+</style>
+
 <a name="top"></a>
 <div align="center">
 <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff;">Tristan Anglin</h1>
