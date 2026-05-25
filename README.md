@@ -345,11 +345,21 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
-  </div>
+</div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://youtu.be/cCLGPVTF1Aw" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/cCLGPVTF1Aw/maxresdefault.jpg" alt="Tower Defense Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-    </a>
+    
+    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+      
+      <iframe 
+        src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
+        title="Tower Defense Gameplay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -404,11 +414,21 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
-  </div>
+</div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://youtu.be/8z6vDdhrYUA" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/8z6vDdhrYUA/maxresdefault.jpg" alt="YourDarkSide Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-    </a>
+    
+    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+      
+      <iframe 
+        src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
+        title="Your Dark Side Gameplay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -459,11 +479,21 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
-  </div>
+</div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://youtu.be/HNQjJI9nPDQ" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/HNQjJI9nPDQ/maxresdefault.jpg" alt="Dungeon Crawler Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-    </a>
+    
+    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+      
+      <iframe 
+        src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
+        title="Dungeon Crawler Gameplay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
@@ -514,11 +544,21 @@
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     As my first step into game development, Hit & Run was built in Python on the iPad to explore the core architecture of a functional game loop. This project served as my primary classroom for learning scaling difficulty and persistent progression systems—foundational concepts that have informed every project since.
-  </div>
+</div>
   <div align="center" style="margin: 25px 0;">
-    <a href="https://youtu.be/FSjgXKFcKIo" target="_blank" class="video-thumb">
-      <img src="https://img.youtube.com/vi/FSjgXKFcKIo/maxresdefault.jpg" alt="Hit & Run Gameplay" style="width: 100%; max-width: 850px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2);">
-    </a>
+    
+    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+      
+      <iframe 
+        src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
+        title="Hit & Run Gameplay"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+
+    </div>
+
   </div>
 
   <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
