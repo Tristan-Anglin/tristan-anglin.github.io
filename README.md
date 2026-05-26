@@ -228,18 +228,34 @@
   </div>
 </div>
 
-<div id="blood-lineage" class="portfolio-tab" style="display: none;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
+<div id="blood-lineage" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
+  
+  <!-- Header Section -->
+  <div style="display: flex; justify-content: space-between; align-items: center; wrap: wrap; gap: 10px;">
     <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
   </div>
-  <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b style="color: #f0f6fc;">3D Co-op Musou RPG</b>
-    <b style="color: #f0f6fc;">Lead Systems Architect & UI Programmer</b>
+  
+  <div style="display: flex; justify-content: space-between; margin-top: 12px; border-bottom: 1px solid #30363d; padding-bottom: 12px; flex-wrap: wrap; gap: 5px;">
+    <b style="color: #f0f6fc; font-size: 1.1em;">3D Co-op Musou RPG (Capstone Project)</b>
+    <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
   </div>
-  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    A high-action capstone project developed by an 11-person team. I architected the core gameplay framework and led the development of 20+ interconnected systems, managing the technical roadmap via <b>Jira</b> and <b>GitHub</b> to ensure cross-department stability.
+
+  <!-- Project Overview & Impact Summary -->
+  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 20px 0; align-items: center;">
+    <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
+      Led the technical roadmap and framework development for an 11-person team. Personally architected the core gameplay loops, server-authoritative multiplayer infrastructure, and a comprehensive suite of UI/UX systems. Managed cross-department stability and build delivery utilizing <b>Jira</b> and <b>GitHub</b>.
+    </div>
+    <!-- Quick Impact Metrics Box -->
+    <div style="background: #0d1117; border: 1px solid #30363d; padding: 12px; border-radius: 8px; text-align: center;">
+      <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">20+</div>
+      <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">Networked Systems</div>
+      <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">50+</div>
+      <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px;">Vector UI Assets</div>
+    </div>
   </div>
+
+  <!-- Gameplay Showcase Video -->
   <div align="center" style="margin: 25px 0;">
     <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
       <iframe 
@@ -252,103 +268,115 @@
     </div>
   </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Process:</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+  <!-- Technical Process Gallery -->
+  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">UI/UX Pipeline & Progression</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 20px 0; opacity: 0.7;"></div>
 
-  <div style="display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; align-items: start; margin-bottom: 25px;">
-    <div style="display: flex; flex-direction: column; gap: 20px;">
-      <div style="text-align: center;">
-        <img src="InventoryWireframe.png" alt="Step 1" style="width: 100%; border-radius: 8px; border: 1px solid #30363d;">
-        <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 1:</b> Functional Layout & UX Blockout</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="HUDFinal.PNG" alt="Step 3" style="width: 100%; max-width: 320px; margin: 0 auto; border-radius: 8px; border: 2px solid #a5472d;">
-        <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 3:</b> Real-time HUD & Feedback Loop</p>
-      </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 20px;">
+    <div style="text-align: center; background: #161b22; padding: 10px; border-radius: 8px; border: 1px solid #30363d;">
+      <img src="InventoryWireframe.png" alt="UX Wireframe" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 1:</b> Layout Wireframe & UX Blockout</p>
     </div>
-    <div style="text-align: center;">
-      <img src="InventoryFinal.PNG" alt="Step 2" style="max-height: 550px; width: auto; max-width: 100%; border-radius: 8px; border: 2px solid #a5472d;">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px;"><b>Step 2:</b> Final Asset Integration</p>
+    <div style="text-align: center; background: #161b22; padding: 10px; border-radius: 8px; border: 1px solid #30363d;">
+      <img src="InventoryFinal.PNG" alt="Inventory Layout" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 2:</b> Vector Art Integration & Core Logic</p>
+    </div>
+    <div style="text-align: center; background: #161b22; padding: 10px; border-radius: 8px; border: 1px solid #a5472d;">
+      <img src="HUDFinal.PNG" alt="Final HUD" style="width: 100%; height: 160px; object-fit: cover; border-radius: 6px;">
+      <p style="font-size: 0.85em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 3:</b> Dynamic HUD & Feedback Loop</p>
     </div>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 30px; font-style: italic; font-size: 0.95em; color: #c9d1d9; line-height: 1.5;">
-    "My workflow prioritizes systems first. I begin with functional blockouts and networked state before integrating final art assets, custom iconography, and motion graphics."
+  <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 35px; font-style: italic; font-size: 0.9em; color: #c9d1d9; line-height: 1.5;">
+    "My workflow prioritizes networking and system state first. I engineer structural foundations and client/server validation profiles before implementing vector aesthetics, custom animations, and responsive motion graphics."
   </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions: Blood & Lineage</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+  <!-- Deep-Dive Breakdown of Roles -->
+  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Core Contributions Breakdown</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Technical Architecture & Networked Framework</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Refactored</b> the core engine architecture to a <b>Character/Controller/State</b> model, ensuring clean separation of movement, UI management, and persistent networked data.</li>
-      <li><b>Architected</b> a persistent progression system utilizing <b>Seamless Travel</b>, allowing PlayerState data (stats, inventory, meta-progression) to carry over between game zones.</li>
-      <li><b>Engineered</b> a Class-Locked Signature Weapon System with dynamic scaling to prevent gameplay soft-locks while maintaining combat viability across difficulty tiers.</li>
-      <li><b>Implemented</b> server-authoritative logic for loot rarity, item drops, and currency transactions to ensure synchronized state across all 4 clients.</li>
+  <!-- Section 1 -->
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+      <b style="color: #ffffff; font-size: 1.1em;">Multiplayer Architecture & Systems Framework</b>
+      <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">C++ / Blueprints / Replication</span>
+    </div>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+      <li><b>Architected Core Separation:</b> Refactored codebase into a clean model splitting logic across <i>Character</i> (combat/movement), <i>Player Controller</i> (UI/Inputs), and <i>Player State</i> (persistent multiplayer variables).</li>
+      <li><b>Engineered Seamless Travel Persistence:</b> Designed a deep state copying system carrying player data (stats, inventory, meta-progression) across multiplayer level transitions safely.</li>
+      <li><b>Implemented Multi-user Handshakes:</b> Developed server-authoritative logic for synchronized loot drops, currency accumulation, and player interactions for up to 4 concurrent clients.</li>
+      <li><b>Prevented Design Soft-locks:</b> Built an automated, scaling Class-Locked Signature Weapon system ensuring players remain continuously viable without the risk of destroying primary weapon items.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Full-Stack UI/UX Engineering & Iconography</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a comprehensive suite of 20+ networked interfaces, including a 4-player Lobby with real-time updates and a dynamic 3D <b>Preview</b>.</li>
-      <li><b>Designed and Vectorized</b> a custom library of 50+ icons for classes, attributes, equipment, and difficulty tiers to establish a cohesive visual identity.</li>
-      <li><b>Programmed</b> complex UI logic for the <b>Forge and Armory</b>, including a weighted probability engine for cross-item merging and bulk-sell functionality by rarity tier.</li>
-      <li><b>Integrated</b> dynamic HUD feedback, such as real-time mana cost scaling based on Intelligence stats and low-health post-process vignettes.</li>
+  <!-- Section 2 -->
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+      <b style="color: #ffffff; font-size: 1.1em;">Full-Stack UI/UX Engineering & Animation</b>
+      <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">UMG / Slate / Motion Design</span>
+    </div>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+      <li><b>Interface Suite Development:</b> Programmed over 20+ intricate screens including a networked 4-Player Match Lobby, interactive Keybind Remappers, Save Management Profiles, and specialized Armory systems.</li>
+      <li><b>Dynamic HUD & State Feedback:</b> Built a responsive player HUD factoring formula-based calculations (e.g., Intelligence stats dynamically adjusting displayed mana costs in real-time) and low-health UI vignettes.</li>
+      <li><b>Polished Motion Design:</b> Coded custom UMG transforms for UI behaviors, including contextual inventory item hover shimmies, slide-in matchmaking panels, and custom progression roll animations.</li>
+      <li><b>Graphic Asset Production:</b> Hand-crafted and vectorized a cohesive library of 50+ custom flat-design icons spanning difficulty tiers, classes, stats, and equipment matrices.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Boss Encounter Design & AI (Hades)</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Architected</b> the multi-phase Hades encounter, managing complex state transitions, multi-spin sweep logic, and fireball barrage sequences.</li>
-      <li><b>Engineered</b> a <b>Networked Prediction Mesh</b> system that generates visual telegraphs on all clients before attacks execute, ensuring fair dodge-windows in high-latency environments.</li>
-      <li><b>Developed</b> a dynamic difficulty scaling system that adjusts boss damage, attack frequency, and rotation counts based on the global difficulty tier and boss health.</li>
-      <li><b>Implemented</b> cinematic-to-gameplay transitions, including an opening sequence that teaches mechanical cues for the "Obelisk Slam" phase.</li>
+  <!-- Section 3 -->
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+      <b style="color: #ffffff; font-size: 1.1em;">Advanced Economy Mechanics (Forge & Armory)</b>
+      <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">Data Structures / Math Logic</span>
+    </div>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+      <li><b>Modular Optimization:</b> Programmed a highly decoupled <i>Inventory Actor Component</i> using replicated structs to pass layout configurations cleanly while safeguarding limited network bandwidth.</li>
+      <li><b>Cross-Item Forging Logic:</b> Created an algebraic upgrading suite handling dual-input asset compression that handles custom rarity distributions using secure, server-side weighted tables.</li>
+      <li><b>Secure Transaction Loop:</b> Enforced strict server validation across all Armory global vendor shops, protecting inventory state changes and bulk item clearances.</li>
+      <li><b>QoL Algorithms:</b> Wrote item parsing automation enabling one-click optimal "Auto-Equip" sweeps alongside an unexamined inventory tracker engine.</li>
     </ul>
   </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Advanced Systems & UX Optimization</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Created</b> a modular <b>Inventory Actor Component</b> for clean replication of item data via replicated structs, optimizing network bandwidth.</li>
-      <li><b>Developed</b> "Quality of Life" systems, including a "New Item" exclamation state that clears on hover and an <b>Auto-Equip</b> algorithm that parses inventory for highest-value stats.</li>
-      <li><b>Implemented</b> an interactive, multi-section tutorial scene with custom camera logic to guide new players through complex RPG mechanics.</li>
+  <!-- Section 4 -->
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+      <b style="color: #ffffff; font-size: 1.1em;">Boss AI & Networked Encounter Design (Hades)</b>
+      <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">AI Behavior / Gameplay Scripting</span>
+    </div>
+    <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+      <li><b>Multi-Phase State Machinery:</b> Programmed the complex, multi-tiered Hades encounter sequencing behaviors, custom animation blends, and phase transition logic.</li>
+      <li><b>Network Prediction Meshes:</b> Engineered an original approach generating synchronized visual telegraph projections locally across clients instantly, keeping gameplay tight under latency.</li>
+      <li><b>Adaptive Combat Scaling:</b> Constructed real-time algorithmic triggers adapting sweep speeds, rotation frequencies, and projectile volume attributes tied directly to lobby-wide chosen difficulty settings.</li>
+      <li><b>Cinematic Integrations:</b> Synchronized camera blends linking cinematic entryways directly into actionable combat frames to organically telegraph impending mechanical threats.</li>
     </ul>
   </div>
 
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Process & Individual Impact</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+  <!-- Technical Post-Mortem -->
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Engineering Post-Mortem</h3>
+  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 10px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Individual Contribution & Leadership</b>
-    <p style="margin-top: 5px; margin-bottom: 0; line-height: 1.6;">
-      As the Lead Systems Architect, I personally implemented the highest volume of game systems, ranging from the core networking handshake to the final post-game statistics screen. I managed the technical roadmap via <b>Jira</b>, directed the integration of assets from the art department, and led the final sprint to resolve technical debt and ensure launch-day stability for the technology showcase.
-    </p>
-  </div>
-
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 15px;">
     <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
-      <b style="color: #ffffff;">The Challenge: Network Desynchronization</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Architecting a 4-player co-op Musou game introduced severe replication challenges. Systems that performed flawlessly in standalone testing frequently failed on clients due to race conditions, localized state tracking, and network latency during high-density enemy swarms.
+      <b style="color: #ffffff;">The Challenge: Network Synchronization</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
+        Architecting a 4-player co-op Musou game introduced severe replication challenges. Systems that performed flawlessly in standalone environments suffered from client-side race conditions and severe tracking variance during high-density enemy swarms.
       </p>
     </div>
     <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Authority & Validation</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Shifted the architecture to a strict server-authoritative model. Implemented RPC handshakes for critical actions (loot drops, spell casts) and decoupled cosmetic UI rendering on clients from the underlying replicated gameplay states, stabilizing sync rates across all four connections.
+      <b style="color: #ffffff;">The Resolution: Server-Authoritative Logic</b>
+      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
+        Enforced strict server-authoritative logic. Implemented secure RPC handshakes for vital systems (loot states, spell tracking) and decoupled local client-side UI visual execution completely from back-end replicated states to secure stability.
       </p>
     </div>
   </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
-    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
-    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      In future multiplayer titles, I will adopt a <b>"network-first" prototyping rule</b>. No gameplay feature will be built in isolation; every system profile will be integrated with replication parameters from day one, using network emulation tools to stress-test latency margins throughout production.
+  
+  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #ffffff;">Architectural Blueprint & Deliverables</b>
+      <span style="font-size: 0.8em; color: #8b949e;">📄 <a href="#" style="color: #4285F4; text-decoration: none; font-weight: bold;">Inventory System TDD Available</a></span>
+    </div>
+    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
+      Moving forward, I treat replication parameter testing as an absolute first-step prototyping step. Every gameplay component profile is integrated with custom network emulation layers on day one to proactively neutralize latency risks.
     </p>
   </div>
 </div>
