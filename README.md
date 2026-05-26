@@ -394,7 +394,7 @@
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="Forge_Logic_Flow.png" alt="Weighted Forging Compression Rules" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+            <img src="ForgeCalculation.PNG" alt="Weighted Forging Compression Rules" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Weighted Forging Flow Logic</span>
           </div>
         </div>
