@@ -176,9 +176,9 @@
         <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
           My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
         </div>
-        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-          Since specializing in Game Development in 2023, I have maintained a 3.86 GPA and dedicated myself to building a portfolio of modular core systems and dynamic user interfaces.
-        </div>
+<div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+  A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
+</div>
       </td>
 
       <td width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
