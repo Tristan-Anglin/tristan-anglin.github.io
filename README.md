@@ -243,7 +243,7 @@
     }
   </script>
 
-  <div style="display: flex; justify-content: space-between; align-items: center; wrap: wrap; gap: 10px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
     <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
   </div>
@@ -289,7 +289,7 @@
       <img src="InventoryFinal.PNG" alt="Inventory Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #0d1117; border-radius: 6px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
       <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px; margin-bottom: 0;"><b>Phase 2:</b> Vector Art Integration & Core Logic</p>
     </div>
-    <div style="text-align: center; background: #161b22; padding: 12px; border-radius: 8px; border: 1px solid #a5472d;">
+    <div style="text-align: center; background: #161b22; padding: 12px; border-radius: 8px; border: 1px solid #30363d;">
       <img src="HUDFinal.PNG" alt="Final HUD" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #0d1117; border-radius: 6px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
       <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px; margin-bottom: 0;"><b>Phase 3:</b> Dynamic HUD & Feedback Loop</p>
     </div>
@@ -307,14 +307,40 @@
       <b style="color: #ffffff; font-size: 1.1em;">Multiplayer Architecture & Systems Framework</b>
       <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">C++ / Blueprints / Replication</span>
     </div>
-    <ul style="margin: 0 0 15px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+    
+    <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
       <li><b>Architected Core Separation:</b> Refactored codebase into a clean model splitting logic across <i>Character</i> (combat/movement), <i>Player Controller</i> (UI/Inputs), and <i>Player State</i> (persistent multiplayer variables).</li>
       <li><b>Engineered Seamless Travel Persistence:</b> Designed a deep state copying system carrying player data (stats, inventory, meta-progression) across multiplayer level transitions safely.</li>
       <li><b>Implemented Multi-user Handshakes:</b> Developed server-authoritative logic for synchronized loot drops, currency accumulation, and player interactions for up to 4 concurrent clients.</li>
       <li><b>Prevented Design Soft-locks:</b> Built an automated, scaling Class-Locked Signature Weapon system ensuring players remain continuously viable without the risk of destroying primary weapon items.</li>
     </ul>
-    <div style="text-align: left; margin-top: 10px;">
-      <img src="Architecture_Diagram.png" alt="Architecture Breakdown" onclick="zoomImage(this)" style="max-width: 350px; width: 100%; height: auto; border-radius: 6px; border: 1px solid #30363d; cursor: zoom-in;" onerror="this.style.display='none'">
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 15px; margin-top: 15px;">
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">PlayerState Data Serialization</b>
+          <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
+            During seamless travel transitions, the engine destroys and regenerates Actor states. To prevent loss of progress, `CopyProperties` intercepts the tear-down to manually pass player statistics, currencies, and deeply copied inventory outer arrays over to the newly instantiated world state.
+          </p>
+        </div>
+        <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="CopyProperties.PNG" alt="Player State Data Serialization Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand CopyProperties.cpp</span>
+        </div>
+      </div>
+
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Level Transition UI Garbage Culling</b>
+          <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
+            World destruction without proactive UI tracking results in fatal engine null-pointer references. This architectural cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
+          </p>
+        </div>
+        <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="CleanUI.PNG" alt="UI Garbage Collection Culling Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand CleanUI.cpp</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -390,7 +416,7 @@
       <span style="font-size: 0.8em; color: #8b949e;">📄 <a href="#" style="color: #4285F4; text-decoration: none; font-weight: bold;">Inventory System TDD Available</a></span>
     </div>
     <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
-      Moving forward, I treat replication parameter testing as an absolute first-step prototyping step. Every gameplay component profile is integrated with custom network emulation layers on day one to proactively neutralize latency risks.
+      In future multiplayer titles, I adopt a network-first prototyping rule. No gameplay component profile is built in isolation; systems are integrated with replication parameters and network emulation layers from day one to neutralize latency margins.
     </p>
   </div>
 </div>
