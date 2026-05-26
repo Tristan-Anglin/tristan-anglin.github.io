@@ -277,24 +277,6 @@
     </div>
   </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">UI/UX Pipeline & Progression</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 20px 0; opacity: 0.7;"></div>
-
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 25px;">
-    <div style="text-align: center; background: #161b22; padding: 12px; border-radius: 8px; border: 1px solid #30363d;">
-      <img src="InventoryWireframe.png" alt="UX Wireframe" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #0d1117; border-radius: 6px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px; margin-bottom: 0;"><b>Phase 1:</b> Layout Wireframe & UX Blockout</p>
-    </div>
-    <div style="text-align: center; background: #161b22; padding: 12px; border-radius: 8px; border: 1px solid #30363d;">
-      <img src="InventoryFinal.PNG" alt="Inventory Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #0d1117; border-radius: 6px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px; margin-bottom: 0;"><b>Phase 2:</b> Vector Art Integration & Core Logic</p>
-    </div>
-    <div style="text-align: center; background: #161b22; padding: 12px; border-radius: 8px; border: 1px solid #30363d;">
-      <img src="HUDFinal.PNG" alt="Final HUD" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #0d1117; border-radius: 6px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
-      <p style="font-size: 0.85em; color: #8b949e; margin-top: 10px; margin-bottom: 0;"><b>Phase 3:</b> Dynamic HUD & Feedback Loop</p>
-    </div>
-  </div>
-
   <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #6e7681; margin-bottom: 35px; font-style: italic; font-size: 0.9em; color: #c9d1d9; line-height: 1.5;">
     "My workflow prioritizes networking and system state first. I engineer structural foundations and client/server validation profiles before implementing vector aesthetics, custom animations, and responsive motion graphics."
   </div>
@@ -302,7 +284,7 @@
   <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Core Contributions Breakdown</h3>
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
       <b style="color: #ffffff; font-size: 1.1em;">Multiplayer Architecture & Systems Framework</b>
       <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">C++ / Blueprints / Replication</span>
@@ -324,7 +306,7 @@
           </p>
         </div>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="Copy Properties.PNG" alt="Player State Data Serialization Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="CopyProperties.PNG" alt="Player State Data Serialization Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand CopyProperties.cpp</span>
         </div>
       </div>
@@ -337,58 +319,98 @@
           </p>
         </div>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="Clean UI.PNG" alt="UI Garbage Collection Culling Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="CleanUI.PNG" alt="UI Garbage Collection Culling Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand CleanUI.cpp</span>
         </div>
       </div>
     </div>
   </div>
 
-  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
       <b style="color: #ffffff; font-size: 1.1em;">Full-Stack UI/UX Engineering & Animation</b>
       <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">UMG / Slate / Motion Design</span>
     </div>
-    <ul style="margin: 0 0 15px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+    
+    <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
       <li><b>Interface Suite Development:</b> Programmed over 20+ intricate screens including a networked 4-Player Match Lobby, interactive Keybind Remappers, Save Management Profiles, and specialized Armory systems.</li>
       <li><b>Dynamic HUD & State Feedback:</b> Built a responsive player HUD factoring formula-based calculations (e.g., Intelligence stats dynamically adjusting displayed mana costs in real-time) and low-health UI vignettes.</li>
       <li><b>Polished Motion Design:</b> Coded custom UMG transforms for UI behaviors, including contextual inventory item hover shimmies, slide-in matchmaking panels, and custom progression roll animations.</li>
       <li><b>Graphic Asset Production:</b> Hand-crafted and vectorized a cohesive library of 50+ custom flat-design icons spanning difficulty tiers, classes, stats, and equipment matrices.</li>
     </ul>
-    <div style="text-align: left; margin-top: 10px;">
-      <img src="UI_Layout_Breakdown.png" alt="UI Framework Breakdown" onclick="zoomImage(this)" style="max-width: 350px; width: 100%; height: auto; border-radius: 6px; border: 1px solid #30363d; cursor: zoom-in;" onerror="this.style.display='none'">
+
+    <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">Visual Breakdown: System Prototyping to Production Assets</b>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+      <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
+        <img src="InventoryWireframe.png" alt="UX Wireframe Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 1:</b> Screen Wireframe & Core Functional Grid</p>
+      </div>
+      <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
+        <img src="InventoryFinal.PNG" alt="Inventory Layout Art Integration" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 2:</b> Vector Asset Pipeline Integration</p>
+      </div>
+      <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
+        <img src="HUDFinal.PNG" alt="Final Tactical HUD Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 3:</b> Responsive HUD State & Math Links</p>
+      </div>
     </div>
   </div>
 
-  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
       <b style="color: #ffffff; font-size: 1.1em;">Advanced Economy Mechanics (Forge & Armory)</b>
       <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">Data Structures / Math Logic</span>
     </div>
-    <ul style="margin: 0 0 15px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-      <li><b>Modular Optimization:</b> Programmed a highly decoupled <i>Inventory Actor Component</i> using replicated structs to pass layout configurations cleanly while safeguarding limited network bandwidth.</li>
-      <li><b>Cross-Item Forging Logic:</b> Created an algebraic upgrading suite handling dual-input asset compression that handles custom rarity distributions using secure, server-side weighted tables.</li>
-      <li><b>Secure Transaction Loop:</b> Enforced strict server validation across all Armory global vendor shops, protecting inventory state changes and bulk item clearances.</li>
-      <li><b>QoL Algorithms:</b> Wrote item parsing automation enabling one-click optimal "Auto-Equip" sweeps alongside an unexamined inventory tracker engine.</li>
-    </ul>
-    <div style="text-align: left; margin-top: 10px;">
-      <img src="Forge_System_Flow.png" alt="Forge Logic Breakdown" onclick="zoomImage(this)" style="max-width: 350px; width: 100%; height: auto; border-radius: 6px; border: 1px solid #30363d; cursor: zoom-in;" onerror="this.style.display='none'">
+    
+    <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+      <div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+          <li><b>Modular Optimization:</b> Programmed a highly decoupled <i>Inventory Actor Component</i> using replicated structs to pass layout configurations cleanly while safeguarding limited network bandwidth.</li>
+          <li><b>Cross-Item Forging Logic:</b> Created an algebraic upgrading suite handling dual-input asset compression that handles custom rarity distributions using secure, server-side weighted tables.</li>
+          <li><b>Secure Transaction Loop:</b> Enforced strict server validation across all Armory global vendor shops, protecting inventory state changes and bulk item clearances.</li>
+          <li><b>QoL Algorithms:</b> Wrote item parsing automation enabling one-click optimal "Auto-Equip" sweeps alongside an unexamined inventory tracker engine.</li>
+        </ul>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 5px;">
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
+          <img src="Inventory_Struct_Data.png" alt="Replicated Struct Backend Framework" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Inventory Struct Framework</span>
+        </div>
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
+          <img src="Forge_Logic_Flow.png" alt="Weighted Forging Compression Rules" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Weighted Forging Flow Logic</span>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; color: #f0f6fc;">
+  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
       <b style="color: #ffffff; font-size: 1.1em;">Boss AI & Networked Encounter Design (Hades)</b>
       <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">AI Behavior / Gameplay Scripting</span>
     </div>
-    <ul style="margin: 0 0 15px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-      <li><b>Multi-Phase State Machinery:</b> Programmed the complex, multi-tiered Hades encounter sequencing behaviors, custom animation blends, and phase transition logic.</li>
-      <li><b>Network Prediction Meshes:</b> Engineered an original approach generating synchronized visual telegraph projections locally across clients instantly, keeping gameplay tight under latency.</li>
-      <li><b>Adaptive Combat Scaling:</b> Constructed real-time algorithmic triggers adapting sweep speeds, rotation frequencies, and projectile volume attributes tied directly to lobby-wide chosen difficulty settings.</li>
-      <li><b>Cinematic Integrations:</b> Synchronized camera blends linking cinematic entryways directly into actionable combat frames to organically telegraph impending mechanical threats.</li>
-    </ul>
-    <div style="text-align: left; margin-top: 10px;">
-      <img src="Hades_AI_State_Machine.png" alt="Hades AI Breakdown" onclick="zoomImage(this)" style="max-width: 350px; width: 100%; height: auto; border-radius: 6px; border: 1px solid #30363d; cursor: zoom-in;" onerror="this.style.display='none'">
+    
+    <div style="display: grid; grid-template-columns: 1fr; gap: 15px;">
+      <div>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+          <li><b>Multi-Phase State Machinery:</b> Programmed the complex, multi-tiered Hades encounter sequencing behaviors, custom animation blends, and phase transition logic.</li>
+          <li><b>Network Prediction Meshes:</b> Engineered an original approach generating synchronized visual telegraph projections locally across clients instantly, keeping gameplay tight under latency.</li>
+          <li><b>Adaptive Combat Scaling:</b> Constructed real-time algorithmic triggers adapting sweep speeds, rotation frequencies, and projectile volume attributes tied directly to lobby-wide chosen difficulty settings.</li>
+          <li><b>Cinematic Integrations:</b> Synchronized camera blends linking cinematic entryways directly into actionable combat frames to organically telegraph impending mechanical threats.</li>
+        </ul>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 5px;">
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
+          <img src="Hades_State_Machine.png" alt="Multi-Phase Encounter State Machine" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Boss State Machine Graph</span>
+        </div>
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
+          <img src="Telegraph_Prediction_Mesh.png" alt="Network Predictive Telegraph Mesh" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Client Predictive Projection Mesh</span>
+        </div>
+      </div>
     </div>
   </div>
 
