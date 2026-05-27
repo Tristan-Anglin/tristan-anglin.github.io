@@ -92,23 +92,31 @@
 </style>
 
 <a name="top"></a>
-<canvas id="particle-canvas"></canvas>
-<div align="center">
-<h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
-<p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
-  <strong style="color: #ffffff !important; opacity: 1 !important;">Game Developer | Systems Architect & UI Designer</strong>
-</p>
-</div>
 
-<p align="center">
-  <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
-  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
-  <br />
-  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
-</p>
+<table background="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmt0N3I1Nm9tZ3B3YmpxY2ZpN3AyYms4YTM0bXp0Zmd4ZXg0dG9yayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9/M486ddGThfK2A/giphy.gif" style="width: 100%; border-collapse: collapse; background-size: cover; border: none;">
+  <tr>
+    <td style="padding: 30px 10px; border: none; background: transparent;">
+      
+      <div align="center">
+        <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important;">Tristan Anglin</h1>
+        <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; background: transparent !important;">
+          <strong>Game Developer | Systems Architect & UI Designer</strong>
+        </p>
+      </div>
+
+      <p align="center">
+        <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
+        <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
+        <br />
+        <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
+      </p>
+
+    </td>
+  </tr>
+</table>
 
 <div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
   
@@ -894,14 +902,4 @@ function switchTab(event, tabId) {
   animate();
 </script>
 
-<style>
-  #particle-canvas {
-    position: fixed; /* Pulls it out of the normal layout flow */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;      /* Sends it behind your content */
-    pointer-events: none; 
-  }
-</style>
+
