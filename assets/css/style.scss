@@ -10,41 +10,89 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Crucial to hide the horizontal scrollbar as stars leave the screen */
 }
 
-/* Attach the space dust directly to the root HTML node */
-html::before {
+/* Base configuration for the shooting star tracking fields */
+html::before, html::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 2px;
-  height: 2px;
+  width: 100vw;
+  height: 100vh;
   background: transparent;
-  
-  /* EXPANDED PARTICLE FIELD (Tripled density, switched to project accent red #bd4c2a) */
-  box-shadow: 
-    15vw 10vh #bd4c2a, 85vw 15vh rgba(189,76,42,0.4), 45vw 35vh #bd4c2a, 
-    70vw 40vh rgba(189,76,42,0.5), 20vw 60vh #bd4c2a, 80vw 75vh rgba(189,76,42,0.6), 
-    40vw 85vh #bd4c2a, 90vw 55vh rgba(189,76,42,0.3), 10vw 30vh #bd4c2a,
-    60vw 20vh rgba(189,76,42,0.5), 30vw 70vh #bd4c2a, 65vw 85vh rgba(189,76,42,0.4),
-    5vw 45vh #bd4c2a, 25vw 15vh rgba(189,76,42,0.3), 95vw 80vh #bd4c2a,
-    50vw 65vh rgba(189,76,42,0.6), 75vw 5vh #bd4c2a, 35vw 95vh rgba(189,76,42,0.4),
-    88vw 25vh #bd4c2a, 55vw 50vh rgba(189,76,42,0.5), 18vw 80vh #bd4c2a,
-    63vw 12vh rgba(189,76,42,0.4), 32vw 42vh #bd4c2a, 78vw 92vh rgba(189,76,42,0.5),
-    12vw 90vh #bd4c2a, 82vw 48vh rgba(189,76,42,0.3), 48vw 18vh #bd4c2a,
-    68vw 68vh rgba(189,76,42,0.6), 28vw 28vh #bd4c2a, 84vw 88vh rgba(189,76,42,0.4);
-    
-  /* SPEED BOOST: Reduced animation time from 30s to 12s for a quicker drift loop */
-  animation: cosmicDrift 12s infinite ease-in-out;
   z-index: 0;
   pointer-events: none;
 }
 
-@keyframes cosmicDrift {
-  0% { transform: translateY(0px) translateX(0px); }
-  50% { transform: translateY(-45px) translateX(25px); opacity: 0.8; } /* Slightly increased travel distance */
-  100% { transform: translateY(0px) translateX(0px); }
+/* ==========================================
+   LAYER 1: High Density, Mid-Speed Stream
+   ========================================== */
+html::before {
+  box-shadow: 
+    10vw 5vh #bd4c2a, 25vw 12vh rgba(189,76,42,0.4), 40vw 22vh #bd4c2a, 
+    55vw 8vh rgba(189,76,42,0.6), 70vw 31vh #bd4c2a, 85vw 19vh rgba(189,76,42,0.5),
+    95vw 42vh #bd4c2a, 5vw 61vh rgba(189,76,42,0.3), 20vw 52vh #bd4c2a,
+    35vw 73vh rgba(189,76,42,0.7), 50vw 64vh #bd4c2a, 65vw 82vh rgba(189,76,42,0.4),
+    80vw 91vh #bd4c2a, 92vw 71vh rgba(189,76,42,0.5), 15vw 85vh #bd4c2a,
+    48vw 48vh rgba(189,76,42,0.6), 73vw 53vh #bd4c2a, 31vw 38vh rgba(189,76,42,0.4),
+    62vw 15vh #bd4c2a, 88vw 62vh rgba(189,76,42,0.5), 3vw 28vh #bd4c2a;
+  
+  /* Constant momentum linear loop */
+  animation: starStreamFast 8s linear infinite;
+}
+
+/* ==========================================
+   LAYER 2: Ambient Background Micro-Specks (Slower Depth)
+   ========================================== */
+html::after {
+  box-shadow: 
+    8vw 18vh rgba(189,76,42,0.3), 18vw 8vh #bd4c2a, 29vw 49vh rgba(189,76,42,0.4),
+    44vw 11vh #bd4c2a, 52vw 57vh rgba(189,76,42,0.2), 68vw 26vh #bd4c2a,
+    78vw 84vh rgba(189,76,42,0.5), 89vw 39vh #bd4c2a, 97vw 88vh rgba(189,76,42,0.2),
+    12vw 76vh #bd4c2a, 22vw 93vh rgba(189,76,42,0.4), 37vw 33vh #bd4c2a,
+    59vw 78vh rgba(189,76,42,0.3), 74vw 69vh #bd4c2a, 82vw 3vh rgba(189,76,42,0.5),
+    6vw 50vh #bd4c2a, 51vw 95vh rgba(189,76,42,0.3), 86vw 12vh #bd4c2a;
+    
+  animation: starStreamSlow 14s linear infinite;
+}
+
+/* Constant velocity directional animations (Drifting down and left off-screen) */
+@keyframes starStreamFast {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1; /* Fade in quickly as they enter the screen frame */
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    /* Moves an entire viewport width and height away to cleanly clear the frame bounds */
+    transform: translateY(100vh) translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes starStreamSlow {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.7;
+  }
+  92% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) translateX(-100vw);
+    opacity: 0;
+  }
 }
 
 /* Force ALL possible Jekyll minimal layout containers to be completely transparent */
@@ -59,6 +107,7 @@ html::before {
   position: relative;
   z-index: 1;
 }
+
 /* Hide the theme's default side header sidebar */
 header {
   display: none !important;
