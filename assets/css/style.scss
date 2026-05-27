@@ -10,88 +10,37 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden; /* Crucial to hide the horizontal scrollbar as stars leave the screen */
 }
 
-/* Base configuration for the shooting star tracking fields */
-html::before, html::after {
+/* Crisp Vector Shooting Stars Field */
+html::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: transparent;
+  
+  /* High-density crisp vector dot patterns encoded to bypass Sass conflicts */
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='%23bd4c2a' opacity='0.7'%3E%3Ccircle cx='40' cy='60' r='1'/%3E%3Ccircle cx='180' cy='120' r='1.5'/%3E%3Ccircle cx='320' cy='40' r='1'/%3E%3Ccircle cx='110' cy='280' r='1.5'/%3E%3Ccircle cx='270' cy='210' r='1'/%3E%3Ccircle cx='350' cy='330' r='1.5'/%3E%3C/g%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Cg fill='%23bd4c2a' opacity='0.4'%3E%3Ccircle cx='90' cy='140' r='1'/%3E%3Ccircle cx='240' cy='480' r='1.5'/%3E%3Ccircle cx='410' cy='220' r='1'/%3E%3Ccircle cx='520' cy='510' r='2'/%3E%3Ccircle cx='150' cy='350' r='1.2'/%3E%3Ccircle cx='480' cy='80' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  
+  background-repeat: repeat !important;
+  
+  /* Shifts background positions over time to simulate infinite, full-screen sweeping momentum */
+  animation: shootingDrift 14s linear infinite;
   z-index: 0;
   pointer-events: none;
 }
 
-/* ==========================================
-   LAYER 1: High Density, Mid-Speed Stream
-   ========================================== */
-html::before {
-  box-shadow: 
-    10vw 5vh #bd4c2a, 25vw 12vh rgba(189,76,42,0.4), 40vw 22vh #bd4c2a, 
-    55vw 8vh rgba(189,76,42,0.6), 70vw 31vh #bd4c2a, 85vw 19vh rgba(189,76,42,0.5),
-    95vw 42vh #bd4c2a, 5vw 61vh rgba(189,76,42,0.3), 20vw 52vh #bd4c2a,
-    35vw 73vh rgba(189,76,42,0.7), 50vw 64vh #bd4c2a, 65vw 82vh rgba(189,76,42,0.4),
-    80vw 91vh #bd4c2a, 92vw 71vh rgba(189,76,42,0.5), 15vw 85vh #bd4c2a,
-    48vw 48vh rgba(189,76,42,0.6), 73vw 53vh #bd4c2a, 31vw 38vh rgba(189,76,42,0.4),
-    62vw 15vh #bd4c2a, 88vw 62vh rgba(189,76,42,0.5), 3vw 28vh #bd4c2a;
-  
-  /* Constant momentum linear loop */
-  animation: starStreamFast 8s linear infinite;
-}
-
-/* ==========================================
-   LAYER 2: Ambient Background Micro-Specks (Slower Depth)
-   ========================================== */
-html::after {
-  box-shadow: 
-    8vw 18vh rgba(189,76,42,0.3), 18vw 8vh #bd4c2a, 29vw 49vh rgba(189,76,42,0.4),
-    44vw 11vh #bd4c2a, 52vw 57vh rgba(189,76,42,0.2), 68vw 26vh #bd4c2a,
-    78vw 84vh rgba(189,76,42,0.5), 89vw 39vh #bd4c2a, 97vw 88vh rgba(189,76,42,0.2),
-    12vw 76vh #bd4c2a, 22vw 93vh rgba(189,76,42,0.4), 37vw 33vh #bd4c2a,
-    59vw 78vh rgba(189,76,42,0.3), 74vw 69vh #bd4c2a, 82vw 3vh rgba(189,76,42,0.5),
-    6vw 50vh #bd4c2a, 51vw 95vh rgba(189,76,42,0.3), 86vw 12vh #bd4c2a;
-    
-  animation: starStreamSlow 14s linear infinite;
-}
-
-/* Constant velocity directional animations (Drifting down and left off-screen) */
-@keyframes starStreamFast {
+@keyframes shootingDrift {
   0% {
-    transform: translateY(0) translateX(0);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1; /* Fade in quickly as they enter the screen frame */
-  }
-  90% {
-    opacity: 1;
+    background-position: 0px 0px, 0px 0px;
   }
   100% {
-    /* Moves an entire viewport width and height away to cleanly clear the frame bounds */
-    transform: translateY(100vh) translateX(-100vw);
-    opacity: 0;
-  }
-}
-
-@keyframes starStreamSlow {
-  0% {
-    transform: translateY(0) translateX(0);
-    opacity: 0;
-  }
-  8% {
-    opacity: 0.7;
-  }
-  92% {
-    opacity: 0.7;
-  }
-  100% {
-    transform: translateY(100vh) translateX(-100vw);
-    opacity: 0;
+    /* Shifts coordinates diagonally, forcing the patterns to loop off-screen beautifully */
+    background-position: -400px 400px, -600px 600px;
   }
 }
 
