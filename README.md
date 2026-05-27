@@ -179,43 +179,45 @@
 <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
   A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
 </div>
-      </td>
+</td>
 
       <td width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
         <div style="margin-bottom: 15px;">
           <b style="color: #ffffff;">Programming & Engines</b><br/>
-          <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=py&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=java&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="40" />
+          <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40" alt="C++" title="C++" />
+          <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="40" alt="C#" title="C#" />
+          <img src="https://skillicons.dev/icons?i=py&theme=dark" height="40" alt="Python" title="Python" />
+          <img src="https://skillicons.dev/icons?i=java&theme=dark" height="40" alt="Java" title="Java" />
+          <img src="https://skillicons.dev/icons?i=html&theme=dark" height="40" alt="HTML5" title="HTML5" />
+          <img src="https://skillicons.dev/icons?i=js&theme=dark" height="40" alt="JavaScript" title="JavaScript" />
+          <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="40" alt="Unreal Engine" title="Unreal Engine" />
+          <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="40" alt="Unity" title="Unity" />
         </div>
 
         <div style="margin-bottom: 15px;">
           <b style="color: #ffffff;">Workflow & Version Control</b><br/>
-          <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
-          <img src="https://skillicons.dev/icons?i=git&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=mysql&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=cmake&theme=dark" height="40" style="vertical-align: middle;" />
+          <img src="assets/Icons/JiraIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" alt="Jira" title="Jira" />
+          <img src="https://skillicons.dev/icons?i=git&theme=dark" height="40" style="vertical-align: middle;" alt="Git" title="Git" />
+          <img src="https://skillicons.dev/icons?i=mysql&theme=dark" height="40" style="vertical-align: middle;" alt="MySQL" title="MySQL" />
+          <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" height="40" style="vertical-align: middle;" alt="Node.js" title="Node.js" />
+          <img src="https://skillicons.dev/icons?i=cmake&theme=dark" height="40" style="vertical-align: middle;" alt="CMake" title="CMake" />
         </div>
 
         <div style="margin-bottom: 15px;">
           <b style="color: #ffffff;">Development Environments</b><br/>
-          <img src="https://skillicons.dev/icons?i=visualstudio&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=vscode&theme=dark" height="40" />
-          <img src="https://skillicons.dev/icons?i=eclipse&theme=dark" height="40" />
+          <img src="https://skillicons.dev/icons?i=visualstudio&theme=dark" height="40" alt="Visual Studio" title="Visual Studio" />
+          <img src="https://skillicons.dev/icons?i=vscode&theme=dark" height="40" alt="VS Code" title="VS Code" />
+          <img src="https://skillicons.dev/icons?i=eclipse&theme=dark" height="40" alt="Eclipse" title="Eclipse" />
         </div>
 
         <div style="margin-bottom: 15px;">
           <b style="color: #ffffff;">Art, Audio & UI Design</b><br/>
-          <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" />
-          <img src="https://skillicons.dev/icons?i=blender&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=photoshop&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=illustrator&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=pr&theme=dark" height="40" style="vertical-align: middle;" />
-          <img src="https://skillicons.dev/icons?i=au&theme=dark" height="40" style="vertical-align: middle;" />
+          <img src="assets/Icons/3dsmaxIcon.png" height="40" style="vertical-align: middle; border-radius: 5px;" alt="3ds Max" title="3ds Max" />
+          <img src="https://skillicons.dev/icons?i=blender&theme=dark" height="40" style="vertical-align: middle;" alt="Blender" title="Blender" />
+          <img src="https://skillicons.dev/icons?i=photoshop&theme=dark" height="40" style="vertical-align: middle;" alt="Adobe Photoshop" title="Adobe Photoshop" />
+          <img src="https://skillicons.dev/icons?i=illustrator&theme=dark" height="40" style="vertical-align: middle;" alt="Adobe Illustrator" title="Adobe Illustrator" />
+          <img src="https://skillicons.dev/icons?i=pr&theme=dark" height="40" style="vertical-align: middle;" alt="Adobe Premiere Pro" title="Adobe Premiere Pro" />
+          <img src="https://skillicons.dev/icons?i=au&theme=dark" height="40" style="vertical-align: middle;" alt="Adobe Audition" title="Adobe Audition" />
         </div>
       </td>
     </tr>
