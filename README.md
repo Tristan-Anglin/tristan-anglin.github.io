@@ -797,6 +797,10 @@
   </div>
 </div>
 
+</td>
+  </tr>
+</table>
+
 <script>
 function switchTab(event, tabId) {
   // Hide all active tab containers safely
