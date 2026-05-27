@@ -1,15 +1,21 @@
 @import "{{ site.theme }}";
 
-/* Force the entire page background and typography colors */
+/* Force the entire page background, typography, and inject ambient floating space specks */
 html, body {
   background-color: #0d1117 !important;
   color: #f0f6fc !important;
+  
+  /* Inline SVG space dust matrix */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800"><style>@keyframes drift { 0% { transform: translateY(0px) translateX(0px); } 50% { transform: translateY(-40px) translateX(20px); } 100% { transform: translateY(0px) translateX(0px); } } .spec { animation: drift 25s infinite ease-in-out; fill: %23ffffff; opacity: 0.25; } .slow { animation-duration: 45s; opacity: 0.15; } .fast { animation-duration: 15s; opacity: 0.4; }</style><circle class="spec fast" cx="120" cy="80" r="1"/><circle class="spec" cx="340" cy="280" r="1.5"/><circle class="spec slow" cx="560" cy="150" r="2"/><circle class="spec fast" cx="710" cy="450" r="1"/><circle class="spec" cx="200" cy="600" r="1.5"/><circle class="spec slow" cx="450" cy="720" r="2.5"/><circle class="spec fast" cx="620" cy="680" r="1"/><circle class="spec" cx="80" cy="400" r="2"/><circle class="spec slow" cx="300" cy="500" r="1.5"/></svg>') !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: repeat !important;
 }
 
 /* Force Jekyll's minimal theme container to match the dark background */
 .wrapper {
-  background: #0d1117 !important;
-  background-color: #0d1117 !important;
+  background: transparent !important; /* Changed to transparent so specks show through */
+  background-color: transparent !important;
   max-width: 900px !important;
   width: 100% !important;
   margin: 0 auto !important;
@@ -19,7 +25,7 @@ html, body {
 
 /* Force the main content area to take full layout width without shifting */
 section {
-  background-color: #0d1117 !important;
+  background-color: transparent !important; /* Changed to transparent so specks show through */
   width: 100% !important;
   max-width: 900px !important;
   float: none !important;
