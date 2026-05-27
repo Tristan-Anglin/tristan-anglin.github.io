@@ -893,3 +893,15 @@ function switchTab(event, tabId) {
   }
   animate();
 </script>
+
+<style>
+  #particle-canvas {
+    position: fixed; /* Pulls it out of the normal layout flow */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;      /* Sends it behind your content */
+    pointer-events: none; 
+  }
+</style>
