@@ -465,10 +465,12 @@
     <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge&logo=cplusplus&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2024-333333?style=for-the-badge" height="35"/>
   </div>
-  <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b style="color: #f0f6fc;">2D Tile-Based Strategy TD</b>
-    <b style="color: #f0f6fc;">Solo Developer</b>
+  
+  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+    <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Strategy TD</b>
+    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
   </div>
+  
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
   </div>
