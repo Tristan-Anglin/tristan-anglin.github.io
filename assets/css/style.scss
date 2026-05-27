@@ -1,3 +1,6 @@
+---
+---
+
 @import "{{ site.theme }}";
 
 /* Force the entire page background and typography colors */
@@ -9,7 +12,7 @@ html, body {
   min-height: 100vh;
 }
 
-/* Attach the space dust directly to the root HTML node to bypass body clipping */
+/* Attach the space dust directly to the root HTML node */
 html::before {
   content: "";
   position: fixed;
