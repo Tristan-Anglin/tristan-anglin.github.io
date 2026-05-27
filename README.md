@@ -183,15 +183,13 @@
 
       <td width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
         <div style="margin-bottom: 15px;">
-          <b style="color: #ffffff;">Programming & Engines</b><br/>
+          <b style="color: #ffffff;">Programming</b><br/>
           <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40" alt="C++" title="C++" />
           <img src="https://skillicons.dev/icons?i=cs&theme=dark" height="40" alt="C#" title="C#" />
           <img src="https://skillicons.dev/icons?i=py&theme=dark" height="40" alt="Python" title="Python" />
           <img src="https://skillicons.dev/icons?i=java&theme=dark" height="40" alt="Java" title="Java" />
           <img src="https://skillicons.dev/icons?i=html&theme=dark" height="40" alt="HTML5" title="HTML5" />
           <img src="https://skillicons.dev/icons?i=js&theme=dark" height="40" alt="JavaScript" title="JavaScript" />
-          <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="40" alt="Unreal Engine" title="Unreal Engine" />
-          <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="40" alt="Unity" title="Unity" />
         </div>
 
         <div style="margin-bottom: 15px;">
@@ -204,10 +202,12 @@
         </div>
 
         <div style="margin-bottom: 15px;">
-          <b style="color: #ffffff;">Development Environments</b><br/>
+          <b style="color: #ffffff;">Development Environments & Engines</b><br/>
           <img src="https://skillicons.dev/icons?i=visualstudio&theme=dark" height="40" alt="Visual Studio" title="Visual Studio" />
           <img src="https://skillicons.dev/icons?i=vscode&theme=dark" height="40" alt="VS Code" title="VS Code" />
           <img src="https://skillicons.dev/icons?i=eclipse&theme=dark" height="40" alt="Eclipse" title="Eclipse" />
+          <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="40" alt="Unreal Engine" title="Unreal Engine" />
+          <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="40" alt="Unity" title="Unity" />
         </div>
 
         <div style="margin-bottom: 15px;">
