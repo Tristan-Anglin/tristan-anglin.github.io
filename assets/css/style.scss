@@ -7,12 +7,10 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
 }
 
-/* Pure CSS Space Dust - Completely bypasses SVG/Jekyll compiler bugs */
-body::before {
+/* Attach the space dust directly to the root HTML node to bypass body clipping */
+html::before {
   content: "";
   position: fixed;
   top: 0;
@@ -20,12 +18,12 @@ body::before {
   width: 2px;
   height: 2px;
   background: transparent;
-  /* Generates a sharp field of tiny space specks across the screen viewport */
+  /* Generates crisp vector space specks mapped across the viewport dimensions */
   box-shadow: 
-    15vw 10vh #fff, 85vw 15vh rgba(255,255,255,0.4), 45vw 35vh #fff, 
-    70vw 40vh rgba(255,255,255,0.3), 20vw 60vh #fff, 80vw 75vh rgba(255,255,255,0.5), 
-    40vw 85vh #fff, 90vw 55vh rgba(255,255,255,0.2), 10vw 30vh #fff,
-    60vw 20vh rgba(255,255,255,0.4), 30vw 70vh #fff, 65vw 85vh rgba(255,255,255,0.3);
+    15vw 10vh #ffffff, 85vw 15vh rgba(255,255,255,0.4), 45vw 35vh #ffffff, 
+    70vw 40vh rgba(255,255,255,0.3), 20vw 60vh #ffffff, 80vw 75vh rgba(255,255,255,0.5), 
+    40vw 85vh #ffffff, 90vw 55vh rgba(255,255,255,0.2), 10vw 30vh #ffffff,
+    60vw 20vh rgba(255,255,255,0.4), 30vw 70vh #ffffff, 65vw 85vh rgba(255,255,255,0.3);
   animation: cosmicDrift 30s infinite ease-in-out;
   z-index: 0;
   pointer-events: none;
@@ -37,8 +35,8 @@ body::before {
   100% { transform: translateY(0px) translateX(0px); }
 }
 
-/* Force Jekyll's minimal theme container to be transparent so dust is visible */
-.wrapper {
+/* Force ALL possible Jekyll minimal layout containers to be completely transparent */
+.wrapper, .container, #wrapper, #container, section, #main_content {
   background: transparent !important;
   background-color: transparent !important;
   max-width: 900px !important;
@@ -47,16 +45,7 @@ body::before {
   box-shadow: none !important;
   border: none !important;
   position: relative;
-  z-index: 1; /* Pushes content wrapper safely above the background specks */
-}
-
-/* Force the main content area to take full layout width without shifting */
-section {
-  background-color: transparent !important;
-  width: 100% !important;
-  max-width: 900px !important;
-  float: none !important;
-  padding: 0 !important;
+  z-index: 1; /* Floating content cards sit safely above the drifting dust layer */
 }
 
 /* Hide the theme's default side header sidebar */
