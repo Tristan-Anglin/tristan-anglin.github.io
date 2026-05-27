@@ -281,7 +281,7 @@
     "My workflow prioritizes networking and system state first. I engineer structural foundations and client/server validation profiles before implementing vector aesthetics, custom animations, and responsive motion graphics."
   </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Core Contributions Breakdown</h3>
+  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Core Contributions</h3>
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
@@ -431,7 +431,7 @@
     </div>
   </div>
 
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Engineering Post-Mortem</h3>
+  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Technical Post-Mortem</h3>
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
 
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-bottom: 15px;">
@@ -554,9 +554,9 @@
     <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=openjdk&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35"/>
   </div>
-  <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b style="color: #f0f6fc;">2D Tile-Based Fantasy RPG</b>
-    <b style="color: #f0f6fc;">Solo Developer</b>
+  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+    <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Fantasy RPG</b>
+    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
@@ -637,9 +637,9 @@
     <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35"/>
   </div>
-  <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b style="color: #f0f6fc;">2D Dungeon Crawler RPG</b>
-    <b style="color: #f0f6fc;">Solo Developer</b>
+  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+    <b style="color: #f0f6fc; font-size: 1.1em;">2D Dungeon Crawler RPG</b>
+    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
@@ -720,9 +720,9 @@
     <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35"/>
   </div>
-  <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-    <b style="color: #f0f6fc;">2D Survival Endless Scroller</b>
-    <b style="color: #f0f6fc;">Solo Developer</b>
+  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+    <b style="color: #f0f6fc; font-size: 1.1em;">2D Endless Survival</b>
+    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
   </div>
   <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
     As my first step into game development, Hit & Run was a crucial layout experiment parsing 2D hit detection logic and continuous speed scaling.
