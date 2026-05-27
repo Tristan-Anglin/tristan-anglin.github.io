@@ -836,65 +836,7 @@ function switchTab(event, tabId) {
   setCanvasSize();
   window.addEventListener('resize', setCanvasSize);
 
-  
-  // Particle Blueprint
-  class Particle {
-    constructor() {
-      this.x = Math.random() * canvas.width;
-      this.y = Math.random() * canvas.height;
-      this.size = Math.random() * 2 + 0.5; // Small, elegant dot sizes
-      this.speedX = (Math.random() * 0.2) - 0.1; // Slow drift X
-      this.speedY = (Math.random() * 0.2) - 0.1; // Slow drift Y
-      this.alpha = Math.random() * 0.5 + 0.1; // Varied opacities
-    }
-
-    update() {
-      this.x += this.speedX;
-      this.y += this.speedY;
-
-      // Screen edge wrapping loops
-      if (this.x < 0) this.x = canvas.width;
-      if (this.x > canvas.width) this.x = 0;
-      if (this.y < 0) this.y = canvas.height;
-      if (this.y > canvas.height) this.y = 0;
-    }
-
-    draw() {
-      ctx.save();
-      ctx.globalAlpha = this.alpha;
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      // Utilizing a subtle tint of your project highlight red
-      ctx.fillStyle = '#bd4c2a'; 
-      ctx.fill();
-      ctx.restore();
-    }
-  }
-
-  // Initialize array loop
-  function init() {
-    particlesArray = [];
-    for (let i = 0; i < numberOfParticles; i++) {
-      particlesArray.push(new Particle());
-    }
-  }
-  init();
-
-  // Animation Loop
-  function animate() {
-    // Clear canvas cleanly every frame
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
-    for (let i = 0; i < particlesArray.length; i++) {
-      particlesArray[i].update();
-      particlesArray[i].draw();
-    }
-    requestAnimationFrame(animate);
-  }
-  animate();
-</script>
-
-<style>
+  <style>
   /* Target the absolute highest background layout wrapper in GitHub */
   .markdown-body {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800"><style>@keyframes float { 0% { transform: translateY(0px) translateX(0px); } 50% { transform: translateY(-30px) translateX(15px); } 100% { transform: translateY(0px) translateX(0px); } } .star { animation: float 25s infinite ease-in-out; fill: %23ffffff; opacity: 0.25; } .slow { animation-duration: 40s; opacity: 0.15; } .fast { animation-duration: 15s; opacity: 0.4; }</style><rect width="100%" height="100%" fill="%230d1117"/><circle class="star fast" cx="120" cy="80" r="1"/><circle class="star" cx="340" cy="280" r="1.5"/><circle class="star slow" cx="560" cy="150" r="2"/><circle class="star fast" cx="710" cy="450" r="1"/><circle class="star" cx="200" cy="600" r="1.5"/><circle class="star slow" cx="450" cy="720" r="2.5"/><circle class="star fast" cx="620" cy="680" r="1"/><circle class="star" cx="80" cy="400" r="2"/><circle class="star slow" cx="300" cy="500" r="1.5"/></svg>') !important;
