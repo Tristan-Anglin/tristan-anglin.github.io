@@ -1,31 +1,58 @@
 @import "{{ site.theme }}";
 
-/* Force the entire page background, typography, and inject ambient floating space specks */
+/* Force the entire page background and typography colors */
 html, body {
   background-color: #0d1117 !important;
   color: #f0f6fc !important;
-  
-  /* Fully URL-Encoded SVG particle field (Bypasses Sass compiler conflicts) */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cstyle%3E@keyframes drift %7B 0%25 %7B transform: translateY(0px) translateX(0px); %7D 50%25 %7B transform: translateY(-40px) translateX(20px); %7D 100%25 %7B transform: translateY(0px) translateX(0px); %7D %7D .spec %7B animation: drift 25s infinite ease-in-out; fill: %23ffffff; opacity: 0.25; %7D .slow %7B animation-duration: 45s; opacity: 0.15; %7D .fast %7B animation-duration: 15s; opacity: 0.4; %7D%3C/style%3E%3Ccircle class='spec fast' cx='120' cy='80' r='1'/%3E%3Ccircle class='spec' cx='340' cy='280' r='1.5'/%3E%3Ccircle class='spec slow' cx='560' cy='150' r='2'/%3E%3Ccircle class='spec fast' cx='710' cy='450' r='1'/%3E%3Ccircle class='spec' cx='200' cy='600' r='1.5'/%3E%3Ccircle class='spec slow' cx='450' cy='720' r='2.5'/%3E%3Ccircle class='spec fast' cx='620' cy='680' r='1'/%3E%3Ccircle class='spec' cx='80' cy='400' r='2'/%3E%3Ccircle class='spec slow' cx='300' cy='500' r='1.5'/%3E%3C/svg%3E") !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-repeat: repeat !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* Force Jekyll's minimal theme container to match the dark background */
+/* Pure CSS Space Dust - Completely bypasses SVG/Jekyll compiler bugs */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  /* Generates a sharp field of tiny space specks across the screen viewport */
+  box-shadow: 
+    15vw 10vh #fff, 85vw 15vh rgba(255,255,255,0.4), 45vw 35vh #fff, 
+    70vw 40vh rgba(255,255,255,0.3), 20vw 60vh #fff, 80vw 75vh rgba(255,255,255,0.5), 
+    40vw 85vh #fff, 90vw 55vh rgba(255,255,255,0.2), 10vw 30vh #fff,
+    60vw 20vh rgba(255,255,255,0.4), 30vw 70vh #fff, 65vw 85vh rgba(255,255,255,0.3);
+  animation: cosmicDrift 30s infinite ease-in-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes cosmicDrift {
+  0% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-30px) translateX(15px); opacity: 0.6; }
+  100% { transform: translateY(0px) translateX(0px); }
+}
+
+/* Force Jekyll's minimal theme container to be transparent so dust is visible */
 .wrapper {
-  background: transparent !important; 
+  background: transparent !important;
   background-color: transparent !important;
   max-width: 900px !important;
   width: 100% !important;
   margin: 0 auto !important;
   box-shadow: none !important;
   border: none !important;
+  position: relative;
+  z-index: 1; /* Pushes content wrapper safely above the background specks */
 }
 
 /* Force the main content area to take full layout width without shifting */
 section {
-  background-color: transparent !important; 
+  background-color: transparent !important;
   width: 100% !important;
   max-width: 900px !important;
   float: none !important;
