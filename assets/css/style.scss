@@ -21,20 +21,29 @@ html::before {
   width: 2px;
   height: 2px;
   background: transparent;
-  /* Generates crisp vector space specks mapped across the viewport dimensions */
+  
+  /* EXPANDED PARTICLE FIELD (Tripled density, switched to project accent red #bd4c2a) */
   box-shadow: 
-    15vw 10vh #ffffff, 85vw 15vh rgba(255,255,255,0.4), 45vw 35vh #ffffff, 
-    70vw 40vh rgba(255,255,255,0.3), 20vw 60vh #ffffff, 80vw 75vh rgba(255,255,255,0.5), 
-    40vw 85vh #ffffff, 90vw 55vh rgba(255,255,255,0.2), 10vw 30vh #ffffff,
-    60vw 20vh rgba(255,255,255,0.4), 30vw 70vh #ffffff, 65vw 85vh rgba(255,255,255,0.3);
-  animation: cosmicDrift 30s infinite ease-in-out;
+    15vw 10vh #bd4c2a, 85vw 15vh rgba(189,76,42,0.4), 45vw 35vh #bd4c2a, 
+    70vw 40vh rgba(189,76,42,0.5), 20vw 60vh #bd4c2a, 80vw 75vh rgba(189,76,42,0.6), 
+    40vw 85vh #bd4c2a, 90vw 55vh rgba(189,76,42,0.3), 10vw 30vh #bd4c2a,
+    60vw 20vh rgba(189,76,42,0.5), 30vw 70vh #bd4c2a, 65vw 85vh rgba(189,76,42,0.4),
+    5vw 45vh #bd4c2a, 25vw 15vh rgba(189,76,42,0.3), 95vw 80vh #bd4c2a,
+    50vw 65vh rgba(189,76,42,0.6), 75vw 5vh #bd4c2a, 35vw 95vh rgba(189,76,42,0.4),
+    88vw 25vh #bd4c2a, 55vw 50vh rgba(189,76,42,0.5), 18vw 80vh #bd4c2a,
+    63vw 12vh rgba(189,76,42,0.4), 32vw 42vh #bd4c2a, 78vw 92vh rgba(189,76,42,0.5),
+    12vw 90vh #bd4c2a, 82vw 48vh rgba(189,76,42,0.3), 48vw 18vh #bd4c2a,
+    68vw 68vh rgba(189,76,42,0.6), 28vw 28vh #bd4c2a, 84vw 88vh rgba(189,76,42,0.4);
+    
+  /* SPEED BOOST: Reduced animation time from 30s to 12s for a quicker drift loop */
+  animation: cosmicDrift 12s infinite ease-in-out;
   z-index: 0;
   pointer-events: none;
 }
 
 @keyframes cosmicDrift {
   0% { transform: translateY(0px) translateX(0px); }
-  50% { transform: translateY(-30px) translateX(15px); opacity: 0.6; }
+  50% { transform: translateY(-45px) translateX(25px); opacity: 0.8; } /* Slightly increased travel distance */
   100% { transform: translateY(0px) translateX(0px); }
 }
 
@@ -48,9 +57,8 @@ html::before {
   box-shadow: none !important;
   border: none !important;
   position: relative;
-  z-index: 1; /* Floating content cards sit safely above the drifting dust layer */
+  z-index: 1;
 }
-
 /* Hide the theme's default side header sidebar */
 header {
   display: none !important;
