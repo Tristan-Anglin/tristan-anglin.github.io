@@ -255,7 +255,7 @@
 
   <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 20px 0; align-items: center;">
     <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
-      Led the technical roadmap and framework development for an 11-person team. Personally architected the core gameplay loops, server-authoritative multiplayer infrastructure, and a comprehensive suite of UI/UX systems. Managed cross-department stability and build delivery utilizing <b>Jira</b> and <b>GitHub</b>.
+      Led the technical roadmap and framework development for an 11-person team. Personally architected the core gameplay loops, server-sided multiplayer infrastructure, and a comprehensive suite of UI/UX systems. Managed cross-department stability and build delivery utilizing <b>Jira</b> and <b>GitHub</b>.
     </div>
     <div style="background: #0d1117; border: 1px solid #30363d; padding: 12px; border-radius: 8px; text-align: center;">
       <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">20+</div>
@@ -293,14 +293,14 @@
     <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
       <li><b>Architected Core Separation:</b> Refactored codebase into a clean model splitting logic across <i>Character</i> (combat/movement), <i>Player Controller</i> (UI/Inputs), and <i>Player State</i> (persistent multiplayer variables).</li>
       <li><b>Engineered Seamless Travel Persistence:</b> Designed a deep state copying system carrying player data (stats, inventory, meta-progression) across multiplayer level transitions safely.</li>
-      <li><b>Implemented Multi-user Handshakes:</b> Developed server-authoritative logic for synchronized loot drops, currency accumulation, and player interactions for up to 4 concurrent clients.</li>
+      <li><b>Implemented Networking:</b> Developed server-sided logic for synchronized loot drops, currency accumulation, and player interactions for up to 4 concurrent clients.</li>
       <li><b>Prevented Design Soft-locks:</b> Built an automated, scaling Class-Locked Signature Weapon system ensuring players remain continuously viable without the risk of destroying primary weapon items.</li>
     </ul>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 15px; margin-top: 15px;">
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">PlayerState Data Serialization</b>
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">PlayerState Data</b>
           <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
             During seamless travel transitions, the engine destroys and regenerates Actor states. To prevent loss of progress, `CopyProperties` intercepts the tear-down to manually pass player statistics, currencies, and deeply copied inventory outer arrays over to the newly instantiated world state.
           </p>
@@ -313,7 +313,7 @@
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
         <div>
-          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Level Transition UI Garbage Culling</b>
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">UI Culling</b>
           <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
             World destruction without proactive UI tracking results in fatal engine null-pointer references. This architectural cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
           </p>
@@ -442,9 +442,9 @@
       </p>
     </div>
     <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Server-Authoritative Logic</b>
+      <b style="color: #ffffff;">The Resolution: Server-sided Logic</b>
       <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
-        Enforced strict server-authoritative logic. Implemented secure RPC handshakes for vital systems (loot states, spell tracking) and decoupled local client-side UI visual execution completely from back-end replicated states to secure stability.
+        Enforced strict server-sided logic. Implemented networking for vital systems (loot states, spell tracking) and decoupled local client-side UI visual execution completely from back-end replicated states to secure stability.
       </p>
     </div>
   </div>
