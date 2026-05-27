@@ -158,14 +158,3 @@ hr {
 .portfolio-tab li {
   background-color: transparent !important;
 }
-
-/* Particle Canvas Background */
-#particle-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; /* Pushes it behind all text and wrappers */
-  pointer-events: none; /* Allows user to click right through it */
-}
