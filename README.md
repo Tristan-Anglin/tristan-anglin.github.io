@@ -114,10 +114,6 @@
         <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
       </p>
 
-    </td>
-  </tr>
-</table>
-
 <div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
   
   <style>
@@ -800,6 +796,10 @@
     </p>
   </div>
 </div>
+
+    </td>
+  </tr>
+</table>
 
 <script>
 function switchTab(event, tabId) {
