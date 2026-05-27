@@ -93,22 +93,26 @@
 
 <a name="top"></a>
 
-<div align="center">
-  <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
-  <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
-    <strong style="color: #ffffff !important; opacity: 1 !important;">Game Developer | Systems Architect & UI Designer</strong>
-  </p>
-</div>
+<table background="https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/assets/pixabay-space.jpg" style="width: 100%; border-collapse: collapse; border: none;">
+  <tr>
+    <td style="padding: 20px; border: none; background: transparent;">
 
-<p align="center">
-  <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
-  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
-  <br />
-  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
-</p>
+      <div align="center">
+        <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important;">Tristan Anglin</h1>
+        <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; background: transparent !important;">
+          <strong>Game Developer | Systems Architect & UI Designer</strong>
+        </p>
+      </div>
+
+      <p align="center">
+        <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
+        <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
+        <br />
+        <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
+        <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
+      </p>
 
 <div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
   
