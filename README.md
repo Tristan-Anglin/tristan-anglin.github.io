@@ -93,26 +93,22 @@
 
 <a name="top"></a>
 
-<table background="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmt0N3I1Nm9tZ3B3YmpxY2ZpN3AyYms4YTM0bXp0Zmd4ZXg0dG9yayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3R9/M486ddGThfK2A/giphy.gif" style="width: 100%; border-collapse: collapse; background-size: cover; border: none;">
-  <tr>
-    <td style="padding: 30px 10px; border: none; background: transparent;">
-      
-      <div align="center">
-        <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important;">Tristan Anglin</h1>
-        <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; background: transparent !important;">
-          <strong>Game Developer | Systems Architect & UI Designer</strong>
-        </p>
-      </div>
+<div align="center">
+  <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
+  <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
+    <strong style="color: #ffffff !important; opacity: 1 !important;">Game Developer | Systems Architect & UI Designer</strong>
+  </p>
+</div>
 
-      <p align="center">
-        <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
-        <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
-        <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
-        <br />
-        <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
-        <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
-        <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
-      </p>
+<p align="center">
+  <a href="https://tristananglin.github.io/Tristan Anglin FULL 2026.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
+  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
+  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
+  <br />
+  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
+  <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
+  <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
+</p>
 
 <div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
   
@@ -797,10 +793,6 @@
   </div>
 </div>
 
-    </td>
-  </tr>
-</table>
-
 <script>
 function switchTab(event, tabId) {
   // Hide all active tab containers safely
@@ -902,4 +894,18 @@ function switchTab(event, tabId) {
   animate();
 </script>
 
+<style>
+  /* Target the absolute highest background layout wrapper in GitHub */
+  .markdown-body {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800"><style>@keyframes float { 0% { transform: translateY(0px) translateX(0px); } 50% { transform: translateY(-30px) translateX(15px); } 100% { transform: translateY(0px) translateX(0px); } } .star { animation: float 25s infinite ease-in-out; fill: %23ffffff; opacity: 0.25; } .slow { animation-duration: 40s; opacity: 0.15; } .fast { animation-duration: 15s; opacity: 0.4; }</style><rect width="100%" height="100%" fill="%230d1117"/><circle class="star fast" cx="120" cy="80" r="1"/><circle class="star" cx="340" cy="280" r="1.5"/><circle class="star slow" cx="560" cy="150" r="2"/><circle class="star fast" cx="710" cy="450" r="1"/><circle class="star" cx="200" cy="600" r="1.5"/><circle class="star slow" cx="450" cy="720" r="2.5"/><circle class="star fast" cx="620" cy="680" r="1"/><circle class="star" cx="80" cy="400" r="2"/><circle class="star slow" cx="300" cy="500" r="1.5"/></svg>') !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-repeat: repeat !important;
+  }
 
+  /* Keep table layouts transparent so they don't block the stars */
+  td, th {
+    background: transparent !important;
+    border: none !important;
+  }
+</style>
