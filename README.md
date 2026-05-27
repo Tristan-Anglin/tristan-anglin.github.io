@@ -92,6 +92,7 @@
 </style>
 
 <a name="top"></a>
+<canvas id="particle-canvas"></canvas>
 <div align="center">
 <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
 <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
@@ -818,4 +819,77 @@ function switchTab(event, tabId) {
     event.currentTarget.classList.add("active-tab");
   }
 }
+</script>
+
+<script>
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+
+  let particlesArray = [];
+  const numberOfParticles = 45; // Keeps it clean and optimized
+
+  // Set sizing
+  function setCanvasSize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  setCanvasSize();
+  window.addEventListener('resize', setCanvasSize);
+
+  
+  // Particle Blueprint
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 2 + 0.5; // Small, elegant dot sizes
+      this.speedX = (Math.random() * 0.2) - 0.1; // Slow drift X
+      this.speedY = (Math.random() * 0.2) - 0.1; // Slow drift Y
+      this.alpha = Math.random() * 0.5 + 0.1; // Varied opacities
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+
+      // Screen edge wrapping loops
+      if (this.x < 0) this.x = canvas.width;
+      if (this.x > canvas.width) this.x = 0;
+      if (this.y < 0) this.y = canvas.height;
+      if (this.y > canvas.height) this.y = 0;
+    }
+
+    draw() {
+      ctx.save();
+      ctx.globalAlpha = this.alpha;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      // Utilizing a subtle tint of your project highlight red
+      ctx.fillStyle = '#bd4c2a'; 
+      ctx.fill();
+      ctx.restore();
+    }
+  }
+
+  // Initialize array loop
+  function init() {
+    particlesArray = [];
+    for (let i = 0; i < numberOfParticles; i++) {
+      particlesArray.push(new Particle());
+    }
+  }
+  init();
+
+  // Animation Loop
+  function animate() {
+    // Clear canvas cleanly every frame
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    for (let i = 0; i < particlesArray.length; i++) {
+      particlesArray[i].update();
+      particlesArray[i].draw();
+    }
+    requestAnimationFrame(animate);
+  }
+  animate();
 </script>
