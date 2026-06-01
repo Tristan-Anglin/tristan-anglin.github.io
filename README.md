@@ -45,15 +45,21 @@
     max-width: 900px !important;
   }
 
-  /* Unified styling for shield-style anchor buttons */
+  /* FIX: Centers the badge without forcing it to stretch out of proportion */
   .link-btn {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
-    height: 40px !important;
+    height: 35px !important; /* Fixed height tracking typical for-the-badge specs */
     box-sizing: border-box !important;
     transition: transform 0.2s ease, filter 0.2s ease !important;
+  }
+
+  /* Protects the vector asset's intrinsic dimensions */
+  .link-btn img {
+    height: 100% !important;
+    width: auto !important; /* Prevents horizontal stretching distortion */
   }
 
   .link-btn:hover {
@@ -75,7 +81,7 @@
   /* Responsive adjustment for mobile viewports */
   @media (max-width: 768px) {
     .tab-container, .link-container {
-      grid-template-columns: repeat(2, 1fr) !important; /* Dynamically balances into 2 columns on mobile */
+      grid-template-columns: repeat(2, 1fr) !important;
     }
   }
 
@@ -155,25 +161,25 @@
   </p>
 </div>
 
-<!-- Clean, Polished 3x2 Link Grid Pattern -->
+<!-- Fixed Layout: Grid aligned, but badges keep natural scaling dimensions -->
 <div class="link-container">
   <a class="link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" />
   </a>
   <a class="link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" />
   </a>
   <a class="link-btn" href="mailto:tmanglin00@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
   <a class="link-btn" href="https://github.com/TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" />
   </a>
   <a class="link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
-    <img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" />
   </a>
   <a class="link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" style="width:100%; height:100%;" />
+    <img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" />
   </a>
 </div>
 <!-- Unified 3x2 Grid Layout Wrapper -->
