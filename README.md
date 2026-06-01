@@ -140,28 +140,28 @@
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
-    <span>Blood & Lineage</span>
-    <span class="tab-meta">Sept 2025 - April 2026 • UE5</span>
+    <span>Blood & Lineage • UE5</span>
+    <span class="tab-meta">Sept 2025 - April 2026</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
-    <span>Tower Defense</span>
-    <span class="tab-meta">Dec 2024 - Dec 2024 • C++</span>
+    <span>Tower Defense • C++</span>
+    <span class="tab-meta">Dec 2024 - Dec 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
-    <span>Your Dark Side</span>
-    <span class="tab-meta">2023 • Java</span>
+    <span>Your Dark Side • Java</span>
+    <span class="tab-meta">2023</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'dungeon')">
-    <span>Dungeon Crawler</span>
-    <span class="tab-meta">2017 • Python</span>
+    <span>Dungeon Crawler • Python</span>
+    <span class="tab-meta">2017</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'hit-run')">
-    <span>Hit & Run</span>
-    <span class="tab-meta">2016 • Python</span>
+    <span>Hit & Run • Python</span>
+    <span class="tab-meta">2016</span>
   </button>
 </div>
 
