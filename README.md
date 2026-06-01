@@ -155,7 +155,7 @@
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
     <span>Tower Defense • C++</span>
-    <span class="tab-meta">Jan 2024 - April 2024</span>
+    <span class="tab-meta">Dec 2024 - Dec 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
