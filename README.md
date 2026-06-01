@@ -176,7 +176,7 @@
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
     <span>Resume</span>
-    <span class="link-meta">Google Docs / PDF</span>
+    <span class="link-meta">PDF</span>
   </a>
   <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
     <span>LinkedIn</span>
@@ -184,15 +184,15 @@
   </a>
   <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
     <span>Email</span>
-    <span class="link-meta">tmanglin00@gmail.com</span>
+    <span class="link-meta">Reach out</span>
   </a>
   <a class="custom-link-btn" href="https://github.com/TristanAnglin" target="_blank">
     <span>GitHub</span>
-    <span class="link-meta">Source Code Codebase</span>
+    <span class="link-meta">Source Code</span>
   </a>
   <a class="custom-link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
     <span>Instagram</span>
-    <span class="link-meta">@tristananglin_</span>
+    <span class="link-meta">Dev Logs</span>
   </a>
   <a class="custom-link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
     <span>YouTube</span>
