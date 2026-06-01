@@ -35,27 +35,46 @@
     display: none !important;
   }
 
-  /* Center alignment layout for the portfolio tabs */
+  /* Robust 3x2 Grid alignment layout for the portfolio tabs */
   .tab-container {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 10px !important;
-    margin: 20px 0 !important;
-    flex-wrap: wrap !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 100%) !important; /* Default fallback stack */
+    grid-template-columns: repeat(3, 1fr) !important;  /* Locks to 3 identical column units */
+    gap: 12px !important;
+    margin: 25px 0 !important;
     background-color: transparent !important;
+    width: 100% !important;
+    max-width: 900px !important;
+  }
+
+  /* Responsive adjustment for small mobile viewports */
+  @media (max-width: 768px) {
+    .tab-container {
+      grid-template-columns: repeat(2, 1fr) !important; /* Drops to 2x3 grid on phones */
+    }
   }
 
   .tab-btn {
     background-color: #161b22 !important;
     color: #c9d1d9 !important;
     border: 1px solid #30363d !important;
-    padding: 8px 16px !important;
     font-size: 0.95em !important;
     font-weight: bold !important;
     border-radius: 6px !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
     text-decoration: none !important;
+    
+    /* Layout Scaffolding Requirements */
+    display: inline-flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1.3 !important;
+    padding: 10px 8px !important;
+    min-height: 64px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .tab-btn:hover {
@@ -69,6 +88,18 @@
     color: #ffffff !important;
     border-color: #a5472d !important;
     box-shadow: 0px 0px 10px rgba(165, 71, 45, 0.4) !important;
+  }
+
+  .tab-meta {
+    font-size: 0.82em !important;
+    opacity: 0.60 !important;
+    margin-top: 4px !important;
+    font-weight: normal !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .active-tab .tab-meta {
+    opacity: 0.85 !important;
   }
 
   /* Image Thumbnails & Overlays */
@@ -110,30 +141,8 @@
   <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
 </p>
 
-<div class="tab-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; align-items: stretch;">
-  
-  <style>
-    .tab-btn {
-      display: inline-flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      justify-content: center !important;
-      line-height: 1.2 !important;
-      padding: 8px 16px !important;
-      min-height: 54px !important;
-    }
-    .tab-meta {
-      font-size: 0.9em;
-      opacity: 0.65;
-      margin-top: 4px;
-      font-weight: normal;
-      letter-spacing: 0.5px;
-    }
-    .active-tab .tab-meta {
-      opacity: 0.85;
-    }
-  </style>
-
+<!-- Unified 3x2 Grid Layout Wrapper -->
+<div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
     <span>Overview & Skills</span>
     <span class="tab-meta">Core Profile</span>
@@ -146,7 +155,7 @@
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
     <span>Tower Defense • C++</span>
-    <span class="tab-meta">Dec 2024 - Dec 2024</span>
+    <span class="tab-meta">Jan 2024 - April 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
