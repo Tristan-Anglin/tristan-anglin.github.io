@@ -46,11 +46,21 @@
   }
 
   .link-container {
-    margin: 20px auto 15px auto !important;
+    margin: 20px auto 20px auto !important;
   }
 
   .tab-container {
-    margin: 25px 0 !important;
+    margin: 20px 0 25px 0 !important;
+  }
+
+  /* NEW: Dynamic portfolio section divider line matching your highlight colors */
+  .section-divider {
+    height: 1px !important;
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 10px auto !important;
+    background: linear-gradient(90deg, rgba(165,71,45,0) 0%, rgba(165,71,45,0.7) 25%, rgba(165,71,45,0.7) 75%, rgba(165,71,45,0) 100%) !important;
+    border: none !important;
   }
 
   /* Responsive adjustment for mobile viewports */
@@ -101,16 +111,16 @@
 
   /* SOCIAL LINKS: Distinct Slate/Steel Blue Palette */
   .custom-link-btn {
-    background-color: #1f2937 !important; /* Noticeably different tint than project buttons */
+    background-color: #1f2937 !important; 
     color: #e5e7eb !important;
     border: 1px solid #4b5563 !important;
   }
 
   .custom-link-btn:hover {
-    background-color: #374151 !important;
+    background-color: #243042 !important;
     border-color: #9ca3af !important;
     color: #ffffff !important;
-    transform: translateY(-2px) !important;
+    transform: translateY(-1px) !important;
   }
 
   /* Muted metadata labels inside buttons */
@@ -162,7 +172,7 @@
   </p>
 </div>
 
-<!-- Unified External Link Grid Pattern built to match tabs exactly -->
+<!-- Global External Link Grid Container -->
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
     <span>Resume</span>
@@ -189,6 +199,10 @@
     <span class="link-meta">Gameplay Showcases</span>
   </a>
 </div>
+
+<!-- Clean Visual Divisor Break -->
+<div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
+
 <!-- Unified 3x2 Grid Layout Wrapper -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
