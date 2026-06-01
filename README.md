@@ -35,47 +35,22 @@
     display: none !important;
   }
 
-  /* Robust 3-Column Grid for the Professional Links */
-  .link-container {
+  /* Both containers share the same robust grid rules */
+  .link-container, .tab-container {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 12px !important;
-    margin: 20px auto 10px auto !important;
     width: 100% !important;
     max-width: 900px !important;
-  }
-
-  /* FIX: Centers the badge without forcing it to stretch out of proportion */
-  .link-btn {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    height: 35px !important; /* Fixed height tracking typical for-the-badge specs */
     box-sizing: border-box !important;
-    transition: transform 0.2s ease, filter 0.2s ease !important;
   }
 
-  /* Protects the vector asset's intrinsic dimensions */
-  .link-btn img {
-    height: 100% !important;
-    width: auto !important; /* Prevents horizontal stretching distortion */
+  .link-container {
+    margin: 20px auto 15px auto !important;
   }
 
-  .link-btn:hover {
-    transform: translateY(-2px) !important;
-    filter: brightness(1.15) !important;
-  }
-
-  /* Robust 3x2 Grid alignment layout for the portfolio tabs */
   .tab-container {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 12px !important;
     margin: 25px 0 !important;
-    background-color: transparent !important;
-    width: 100% !important;
-    max-width: 900px !important;
   }
 
   /* Responsive adjustment for mobile viewports */
@@ -85,17 +60,14 @@
     }
   }
 
-  .tab-btn {
-    background-color: #161b22 !important;
-    color: #c9d1d9 !important;
-    border: 1px solid #30363d !important;
+  /* Base styling shared across ALL buttons for unified layout math */
+  .tab-btn, .custom-link-btn {
     font-size: 0.95em !important;
     font-weight: bold !important;
     border-radius: 6px !important;
     cursor: pointer !important;
     transition: all 0.2s ease !important;
     text-decoration: none !important;
-    
     display: inline-flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -105,6 +77,13 @@
     min-height: 64px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+  }
+
+  /* PROJECT TABS: Dark Charcoal Palette */
+  .tab-btn {
+    background-color: #161b22 !important;
+    color: #c9d1d9 !important;
+    border: 1px solid #30363d !important;
   }
 
   .tab-btn:hover {
@@ -120,12 +99,34 @@
     box-shadow: 0px 0px 10px rgba(165, 71, 45, 0.4) !important;
   }
 
-  .tab-meta {
+  /* SOCIAL LINKS: Distinct Slate/Steel Blue Palette */
+  .custom-link-btn {
+    background-color: #1f2937 !important; /* Noticeably different tint than project buttons */
+    color: #e5e7eb !important;
+    border: 1px solid #4b5563 !important;
+  }
+
+  .custom-link-btn:hover {
+    background-color: #374151 !important;
+    border-color: #9ca3af !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+  }
+
+  /* Muted metadata labels inside buttons */
+  .tab-meta, .link-meta {
     font-size: 0.82em !important;
-    opacity: 0.60 !important;
     margin-top: 4px !important;
     font-weight: normal !important;
     letter-spacing: 0.3px !important;
+  }
+
+  .tab-meta {
+    opacity: 0.60 !important;
+  }
+
+  .link-meta {
+    opacity: 0.50 !important;
   }
 
   .active-tab .tab-meta {
@@ -161,25 +162,31 @@
   </p>
 </div>
 
-<!-- Fixed Layout: Grid aligned, but badges keep natural scaling dimensions -->
+<!-- Unified External Link Grid Pattern built to match tabs exactly -->
 <div class="link-container">
-  <a class="link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
-    <img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" />
+  <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
+    <span>Resume</span>
+    <span class="link-meta">Google Docs / PDF</span>
   </a>
-  <a class="link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" />
+  <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
+    <span>LinkedIn</span>
+    <span class="link-meta">Professional Network</span>
   </a>
-  <a class="link-btn" href="mailto:tmanglin00@gmail.com">
-    <img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
+    <span>Email</span>
+    <span class="link-meta">tmanglin00@gmail.com</span>
   </a>
-  <a class="link-btn" href="https://github.com/TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" />
+  <a class="custom-link-btn" href="https://github.com/TristanAnglin" target="_blank">
+    <span>GitHub</span>
+    <span class="link-meta">Source Code Codebase</span>
   </a>
-  <a class="link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
-    <img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" />
+  <a class="custom-link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
+    <span>Instagram</span>
+    <span class="link-meta">@tristananglin_</span>
   </a>
-  <a class="link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
-    <img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" />
+  <a class="custom-link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
+    <span>YouTube</span>
+    <span class="link-meta">Gameplay Showcases</span>
   </a>
 </div>
 <!-- Unified 3x2 Grid Layout Wrapper -->
