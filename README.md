@@ -96,7 +96,7 @@
 <div align="center">
   <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
   <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
-    <strong style="color: #ffffff !important; opacity: 1 !important;">Game Developer | Systems Architect & UI Designer</strong>
+    <strong style="color: #ffffff !important; opacity: 1 !important;">Technical UI Designer | Gameplay Systems Architect</strong>
   </p>
 </div>
 
@@ -141,12 +141,12 @@
   
   <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
     <span>Blood & Lineage</span>
-    <span class="tab-meta">2026 • UE5</span>
+    <span class="tab-meta">Sept 2025 - April 2026 • UE5</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
     <span>Tower Defense</span>
-    <span class="tab-meta">2024 • C++</span>
+    <span class="tab-meta">Dec 2024 - Dec 2024 • C++</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
