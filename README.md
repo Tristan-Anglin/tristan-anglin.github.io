@@ -35,11 +35,36 @@
     display: none !important;
   }
 
+  /* Robust 3-Column Grid for the Professional Links */
+  .link-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
+    margin: 20px auto 10px auto !important;
+    width: 100% !important;
+    max-width: 900px !important;
+  }
+
+  /* Unified styling for shield-style anchor buttons */
+  .link-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 40px !important;
+    box-sizing: border-box !important;
+    transition: transform 0.2s ease, filter 0.2s ease !important;
+  }
+
+  .link-btn:hover {
+    transform: translateY(-2px) !important;
+    filter: brightness(1.15) !important;
+  }
+
   /* Robust 3x2 Grid alignment layout for the portfolio tabs */
   .tab-container {
     display: grid !important;
-    grid-template-columns: repeat(3, 100%) !important; /* Default fallback stack */
-    grid-template-columns: repeat(3, 1fr) !important;  /* Locks to 3 identical column units */
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 12px !important;
     margin: 25px 0 !important;
     background-color: transparent !important;
@@ -47,10 +72,10 @@
     max-width: 900px !important;
   }
 
-  /* Responsive adjustment for small mobile viewports */
+  /* Responsive adjustment for mobile viewports */
   @media (max-width: 768px) {
-    .tab-container {
-      grid-template-columns: repeat(2, 1fr) !important; /* Drops to 2x3 grid on phones */
+    .tab-container, .link-container {
+      grid-template-columns: repeat(2, 1fr) !important; /* Dynamically balances into 2 columns on mobile */
     }
   }
 
@@ -65,7 +90,6 @@
     transition: all 0.2s ease !important;
     text-decoration: none !important;
     
-    /* Layout Scaffolding Requirements */
     display: inline-flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -131,16 +155,27 @@
   </p>
 </div>
 
-<p align="center">
-  <a href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank"><img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://linkedin.com/in/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" height="30" /></a>&nbsp;
-  <a href="mailto:tmanglin00@gmail.com"><img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" height="30" /></a>
-  <br />
-  <a href="https://github.com/TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.instagram.com/tristananglin_" target="_blank"><img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" height="30" /></a>&nbsp;
-  <a href="https://www.youtube.com/@TristanAnglin" target="_blank"><img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" height="30" /></a>
-</p>
-
+<!-- Clean, Polished 3x2 Link Grid Pattern -->
+<div class="link-container">
+  <a class="link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/RESUME-28a745?style=for-the-badge&logo=googledocs&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+  <a class="link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-0077B5?style=for-the-badge&logo=LINKEDIN&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+  <a class="link-btn" href="mailto:tmanglin00@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-4285F4?style=for-the-badge&logo=gmail&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+  <a class="link-btn" href="https://github.com/TristanAnglin" target="_blank">
+    <img src="https://img.shields.io/badge/GITHUB-333333?style=for-the-badge&logo=github&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+  <a class="link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
+    <img src="https://img.shields.io/badge/INSTAGRAM-833AB4?style=for-the-badge&logo=instagram&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+  <a class="link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
+    <img src="https://img.shields.io/badge/YOUTUBE-CD201F?style=for-the-badge&logo=youtube&logoColor=white" style="width:100%; height:100%;" />
+  </a>
+</div>
 <!-- Unified 3x2 Grid Layout Wrapper -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
