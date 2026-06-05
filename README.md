@@ -53,7 +53,7 @@
     margin: 20px 0 25px 0 !important;
   }
 
-  /* NEW: Dynamic portfolio section divider line matching your highlight colors */
+  /* Dynamic portfolio section divider line matching highlight colors */
   .section-divider {
     height: 1px !important;
     width: 100% !important;
@@ -70,13 +70,16 @@
     }
   }
 
-  /* Base styling shared across ALL buttons for unified layout math */
+  /* Base styling shared across ALL buttons with upgraded micro-interactions */
   .tab-btn, .custom-link-btn {
     font-size: 0.95em !important;
     font-weight: bold !important;
     border-radius: 6px !important;
     cursor: pointer !important;
-    transition: all 0.2s ease !important;
+    transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+                background-color 0.25s ease, 
+                border-color 0.25s ease, 
+                box-shadow 0.25s ease !important;
     text-decoration: none !important;
     display: inline-flex !important;
     flex-direction: column !important;
@@ -87,6 +90,7 @@
     min-height: 64px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    backface-visibility: hidden !important;
   }
 
   /* PROJECT TABS: Dark Charcoal Palette */
@@ -100,13 +104,16 @@
     border-color: #a5472d !important;
     background-color: #1f242c !important;
     color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3) !important;
   }
 
   .tab-btn.active-tab {
     background-color: #a5472d !important;
     color: #ffffff !important;
-    border-color: #a5472d !important;
-    box-shadow: 0px 0px 10px rgba(165, 71, 45, 0.4) !important;
+    border-color: #e6633e !important;
+    box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.5), inset 0px 1px 0px rgba(255,255,255,0.2) !important;
+    transform: none !important;
   }
 
   /* SOCIAL LINKS: Distinct Slate/Steel Blue Palette */
@@ -118,9 +125,10 @@
 
   .custom-link-btn:hover {
     background-color: #243042 !important;
-    border-color: #9ca3af !important;
+    border-color: #718096 !important;
     color: #ffffff !important;
-    transform: translateY(-1px) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(36, 48, 66, 0.5) !important;
   }
 
   /* Muted metadata labels inside buttons */
@@ -141,6 +149,28 @@
 
   .active-tab .tab-meta {
     opacity: 0.85 !important;
+  }
+
+  /* Interactive Bio Cards */
+  .bio-card {
+    transition: border-left-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease !important;
+  }
+
+  .bio-card:hover {
+    background-color: #1c212a !important;
+    border-left-color: #e6633e !important;
+    transform: translateX(4px);
+  }
+
+  /* Tech Stack Icon Hover states */
+  .skill-group img {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.2s ease !important;
+    margin: 4px !important;
+  }
+
+  .skill-group img:hover {
+    transform: scale(1.15) translateY(-2px) !important;
+    filter: drop-shadow(0px 0px 8px rgba(165, 71, 45, 0.6)) brightness(1.1) !important;
   }
 
   /* Image Thumbnails & Overlays */
@@ -172,7 +202,6 @@
   </p>
 </div>
 
-<!-- Global External Link Grid Container -->
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
     <span>Resume</span>
@@ -200,10 +229,8 @@
   </a>
 </div>
 
-<!-- Clean Visual Divisor Break -->
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Unified 3x2 Grid Layout Wrapper -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
     <span>Overview & Skills</span>
@@ -242,18 +269,18 @@
   <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
     <tr style="border: none;">
       <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
-        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
           Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
         </div>
-        <div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
           My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
         </div>
-<div style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-  A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
-</div>
-</td>
+        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+          A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
+        </div>
+      </td>
 
-      <td width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
+      <td class="skill-group" width="45%" valign="top" align="center" style="border: none; background: transparent; line-height: 1.8;">
         <div style="margin-bottom: 15px;">
           <b style="color: #ffffff;">Programming</b><br/>
           <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="40" alt="C++" title="C++" />
@@ -298,7 +325,11 @@
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
   <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
-    <img src="myselfLevelup.jpg" alt="Tristan Anglin - Level Up Showcase" style="width: 100%; height: auto; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.15);" />
+    <img src="myselfLevelup.jpg" 
+         alt="Tristan Anglin - Level Up Showcase" 
+         style="width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 10px 30px rgba(0,0,0,0.5), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
+         onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
+         onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 10px 30px rgba(0,0,0,0.5), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
   </div>
 </div>
 
