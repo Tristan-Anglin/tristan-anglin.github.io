@@ -1,15 +1,16 @@
 <style>
-  /* Hard override for the entire viewport background */
+  /* Hard override for the entire viewport background with upgraded ambient depth lighting */
   html, body {
     background-color: #0d1117 !important;
-    background: #0d1117 !important;
+    /* Fixed background radial gradient creates a subtle light cone behind your header */
+    background: radial-gradient(circle at 50% 15%, #1a1615 0%, #0d1117 60%) !important;
+    background-attachment: fixed !important;
     color: #f0f6fc !important;
   }
   
   /* Hard override for Jekyll's layout container */
   .wrapper {
-    background-color: #0d1117 !important;
-    background: #0d1117 !important;
+    background: transparent !important;
     max-width: 900px !important;
     width: 100% !important;
     margin: 0 auto !important;
@@ -23,8 +24,7 @@
   }
   
   section {
-    background-color: #0d1117 !important;
-    background: #0d1117 !important;
+    background: transparent !important;
     width: 100% !important;
     max-width: 900px !important;
     float: none !important;
@@ -35,7 +35,7 @@
     display: none !important;
   }
 
-  /* Both containers share the same robust grid rules */
+  /* Both containers share the same robust grid rules with premium card shadow depth */
   .link-container, .tab-container {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -46,11 +46,11 @@
   }
 
   .link-container {
-    margin: 20px auto 20px auto !important;
+    margin: 25px auto 25px auto !important;
   }
 
   .tab-container {
-    margin: 20px 0 25px 0 !important;
+    margin: 25px 0 30px 0 !important;
   }
 
   /* Dynamic portfolio section divider line matching highlight colors */
@@ -91,6 +91,8 @@
     width: 100% !important;
     box-sizing: border-box !important;
     backface-visibility: hidden !important;
+    /* Gives buttons a sleeker default lift off the background lighting */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.03) !important;
   }
 
   /* PROJECT TABS: Dark Charcoal Palette */
@@ -104,16 +106,16 @@
     border-color: #a5472d !important;
     background-color: #1f242c !important;
     color: #ffffff !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45), 0px 0px 10px rgba(165, 71, 45, 0.2) !important;
   }
 
   .tab-btn.active-tab {
     background-color: #a5472d !important;
     color: #ffffff !important;
     border-color: #e6633e !important;
-    box-shadow: 0px 0px 15px rgba(165, 71, 45, 0.5), inset 0px 1px 0px rgba(255,255,255,0.2) !important;
-    transform: none !important;
+    box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.6), inset 0px 1px 0px rgba(255,255,255,0.25) !important;
+    transform: translateY(-1px) !important;
   }
 
   /* SOCIAL LINKS: Distinct Slate/Steel Blue Palette */
@@ -127,8 +129,8 @@
     background-color: #243042 !important;
     border-color: #718096 !important;
     color: #ffffff !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4), 0px 0px 8px rgba(36, 48, 66, 0.5) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(59, 130, 246, 0.15) !important;
   }
 
   /* Muted metadata labels inside buttons */
@@ -151,14 +153,15 @@
     opacity: 0.85 !important;
   }
 
-  /* Completely Static Text Blocks (No shifts or background highlights) */
+  /* Completely Static Text Blocks with sharp base presentation shadows */
   .bio-card {
     background: #161b22;
-    padding: 12px 15px;
+    padding: 14px 18px;
     border-radius: 8px;
     border-left: 5px solid #a5472d;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     color: #f0f6fc;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25) !important;
   }
 
   /* Tech Stack Icon Hover states */
@@ -194,10 +197,10 @@
 
 <a name="top"></a>
 
-<div align="center">
-  <h1 style="font-size: 3em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important;">Tristan Anglin</h1>
-  <p style="font-size: 1.2em; margin-top: 15px; color: #ffffff !important; opacity: 1 !important; background: transparent !important;">
-    <strong style="color: #ffffff !important; opacity: 1 !important;">Technical UI Designer | Gameplay Systems Architect</strong>
+<div align="center" style="margin-top: 15px;">
+  <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 4px 12px rgba(0,0,0,0.6);">Tristan Anglin</h1>
+  <p style="font-size: 1.2em; margin-top: 12px; color: #ffffff !important; opacity: 1 !important; background: transparent !important; letter-spacing: 0.5px;">
+    <strong style="color: #ffffff !important; opacity: 0.95 !important;">Technical UI Designer | Gameplay Systems Architect</strong>
   </p>
 </div>
 
@@ -326,9 +329,9 @@
   <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
     <img src="myselfLevelup.jpg" 
          alt="Tristan Anglin - Level Up Showcase" 
-         style="width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 10px 30px rgba(0,0,0,0.5), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
-         onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
-         onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 10px 30px rgba(0,0,0,0.5), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
+         style="width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
+         onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
+         onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
   </div>
 </div>
 
