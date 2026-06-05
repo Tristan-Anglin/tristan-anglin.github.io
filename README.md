@@ -1,16 +1,15 @@
 <style>
-  /* Hard override for the entire viewport background with upgraded ambient depth lighting */
+  /* Hard override for the entire viewport background */
   html, body {
     background-color: #0d1117 !important;
-    /* Fixed background radial gradient creates a subtle light cone behind your header */
-    background: radial-gradient(circle at 50% 15%, #1a1615 0%, #0d1117 60%) !important;
-    background-attachment: fixed !important;
+    background: #0d1117 !important;
     color: #f0f6fc !important;
   }
   
   /* Hard override for Jekyll's layout container */
   .wrapper {
     background: transparent !important;
+    background-color: transparent !important;
     max-width: 900px !important;
     width: 100% !important;
     margin: 0 auto !important;
@@ -33,6 +32,31 @@
 
   header {
     display: none !important;
+  }
+
+  /* Core localized glow behind your title banner to bypass theme clipping */
+  .hero-glow-container {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .hero-glow-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 120px;
+    background: #a5472d;
+    opacity: 0.18; /* Clean, non-distracting ambient aura */
+    filter: blur(70px); /* Creates the soft light scatter */
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
   }
 
   /* Both containers share the same robust grid rules with premium card shadow depth */
@@ -91,7 +115,6 @@
     width: 100% !important;
     box-sizing: border-box !important;
     backface-visibility: hidden !important;
-    /* Gives buttons a sleeker default lift off the background lighting */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.03) !important;
   }
 
@@ -197,7 +220,7 @@
 
 <a name="top"></a>
 
-<div align="center" style="margin-top: 15px;">
+<div align="center" class="hero-glow-container">
   <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 4px 12px rgba(0,0,0,0.6);">Tristan Anglin</h1>
   <p style="font-size: 1.2em; margin-top: 12px; color: #ffffff !important; opacity: 1 !important; background: transparent !important; letter-spacing: 0.5px;">
     <strong style="color: #ffffff !important; opacity: 0.95 !important;">Technical UI Designer | Gameplay Systems Architect</strong>
