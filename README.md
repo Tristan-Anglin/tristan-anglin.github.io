@@ -34,12 +34,12 @@
     display: none !important;
   }
 
-  /* Core localized glow behind your title banner to bypass theme clipping */
+  /* HIGH-VISIBILTY HERO GLOW: Uses mix-blend-mode to force illumination on dark colors */
   .hero-glow-container {
     position: relative;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    padding: 20px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 10px;
     z-index: 1;
   }
 
@@ -49,12 +49,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 250px;
-    height: 120px;
-    background: #a5472d;
-    opacity: 0.18; /* Clean, non-distracting ambient aura */
-    filter: blur(70px); /* Creates the soft light scatter */
-    border-radius: 50%;
+    width: 350px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(189, 76, 42, 0.45) 0%, rgba(165, 71, 45, 0) 70%);
+    filter: blur(40px); /* Tighter blur so it doesn't wash out */
+    mix-blend-mode: plus-lighter; /* Forces the background pixels to actually light up */
     z-index: -1;
     pointer-events: none;
   }
@@ -70,11 +69,11 @@
   }
 
   .link-container {
-    margin: 25px auto 25px auto !important;
+    margin: 20px auto 20px auto !important;
   }
 
   .tab-container {
-    margin: 25px 0 30px 0 !important;
+    margin: 20px 0 25px 0 !important;
   }
 
   /* Dynamic portfolio section divider line matching highlight colors */
@@ -115,7 +114,8 @@
     width: 100% !important;
     box-sizing: border-box !important;
     backface-visibility: hidden !important;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.03) !important;
+    /* Added a subtle internal top border highlight to simulate game UI panel lighting */
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
   }
 
   /* PROJECT TABS: Dark Charcoal Palette */
@@ -130,14 +130,14 @@
     background-color: #1f242c !important;
     color: #ffffff !important;
     transform: translateY(-3px) !important;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45), 0px 0px 10px rgba(165, 71, 45, 0.2) !important;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1), 0px 8px 20px rgba(0, 0, 0, 0.45), 0px 0px 10px rgba(165, 71, 45, 0.2) !important;
   }
 
   .tab-btn.active-tab {
     background-color: #a5472d !important;
     color: #ffffff !important;
     border-color: #e6633e !important;
-    box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.6), inset 0px 1px 0px rgba(255,255,255,0.25) !important;
+    box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.6), inset 0px 1px 0px rgba(255,255,255,0.3) !important;
     transform: translateY(-1px) !important;
   }
 
@@ -153,7 +153,7 @@
     border-color: #718096 !important;
     color: #ffffff !important;
     transform: translateY(-4px) !important;
-    box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(59, 130, 246, 0.15) !important;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1), 0px 10px 22px rgba(0, 0, 0, 0.5), 0px 0px 12px rgba(59, 130, 246, 0.15) !important;
   }
 
   /* Muted metadata labels inside buttons */
@@ -220,13 +220,15 @@
 
 <a name="top"></a>
 
+<!-- Enhanced Glow Container -->
 <div align="center" class="hero-glow-container">
-  <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 4px 12px rgba(0,0,0,0.6);">Tristan Anglin</h1>
-  <p style="font-size: 1.2em; margin-top: 12px; color: #ffffff !important; opacity: 1 !important; background: transparent !important; letter-spacing: 0.5px;">
-    <strong style="color: #ffffff !important; opacity: 0.95 !important;">Technical UI Designer | Gameplay Systems Architect</strong>
+  <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 2px 10px rgba(0,0,0,0.9); font-weight: 800;">Tristan Anglin</h1>
+  <p style="font-size: 1.2em; margin-top: 10px; color: #ffffff !important; opacity: 0.9 !important; background: transparent !important; letter-spacing: 0.8px;">
+    <strong style="color: #ffffff !important;">Technical UI Designer | Gameplay Systems Architect</strong>
   </p>
 </div>
 
+<!-- Global External Link Grid Container -->
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
     <span>Resume</span>
@@ -254,8 +256,10 @@
   </a>
 </div>
 
+<!-- Clean Visual Divisor Break -->
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
+<!-- Unified 3x2 Grid Layout Wrapper -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
     <span>Overview & Skills</span>
@@ -349,6 +353,7 @@
 
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
+  <!-- Presentation Frame for Showcase Photo -->
   <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
     <img src="myselfLevelup.jpg" 
          alt="Tristan Anglin - Level Up Showcase" 
