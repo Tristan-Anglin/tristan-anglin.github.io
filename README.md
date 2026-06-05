@@ -151,15 +151,14 @@
     opacity: 0.85 !important;
   }
 
-  /* Interactive Bio Cards */
+  /* Completely Static Text Blocks (No shifts or background highlights) */
   .bio-card {
-    transition: border-left-color 0.3s ease, background-color 0.3s ease, transform 0.3s ease !important;
-  }
-
-  .bio-card:hover {
-    background-color: #1c212a !important;
-    border-left-color: #e6633e !important;
-    transform: translateX(4px);
+    background: #161b22;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 5px solid #a5472d;
+    margin-bottom: 12px;
+    color: #f0f6fc;
   }
 
   /* Tech Stack Icon Hover states */
@@ -269,13 +268,13 @@
   <table border="0" style="width: 100%; border-collapse: collapse; border: none;">
     <tr style="border: none;">
       <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
-        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+        <div class="bio-card">
           Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
         </div>
-        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+        <div class="bio-card">
           My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
         </div>
-        <div class="bio-card" style="background: #161b22; padding: 12px 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+        <div class="bio-card">
           A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
         </div>
       </td>
