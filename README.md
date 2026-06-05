@@ -34,28 +34,13 @@
     display: none !important;
   }
 
-  /* HIGH-VISIBILTY HERO GLOW: Uses mix-blend-mode to force illumination on dark colors */
-  .hero-glow-container {
+  /* Clean, non-glowing container for the name banner */
+  .hero-banner-container {
     position: relative;
-    margin-top: 35px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     padding: 10px;
     z-index: 1;
-  }
-
-  .hero-glow-container::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(189, 76, 42, 0.45) 0%, rgba(165, 71, 45, 0) 70%);
-    filter: blur(40px); /* Tighter blur so it doesn't wash out */
-    mix-blend-mode: plus-lighter; /* Forces the background pixels to actually light up */
-    z-index: -1;
-    pointer-events: none;
   }
 
   /* Both containers share the same robust grid rules with premium card shadow depth */
@@ -114,7 +99,7 @@
     width: 100% !important;
     box-sizing: border-box !important;
     backface-visibility: hidden !important;
-    /* Added a subtle internal top border highlight to simulate game UI panel lighting */
+    /* Subtle internal top border highlight to simulate crisp game UI panel lighting */
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
   }
 
@@ -220,9 +205,9 @@
 
 <a name="top"></a>
 
-<!-- Enhanced Glow Container -->
-<div align="center" class="hero-glow-container">
-  <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 2px 10px rgba(0,0,0,0.9); font-weight: 800;">Tristan Anglin</h1>
+<!-- Clean Header Container (Glow Removed) -->
+<div align="center" class="hero-banner-container">
+  <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 2px 8px rgba(0,0,0,0.8); font-weight: 800;">Tristan Anglin</h1>
   <p style="font-size: 1.2em; margin-top: 10px; color: #ffffff !important; opacity: 0.9 !important; background: transparent !important; letter-spacing: 0.8px;">
     <strong style="color: #ffffff !important;">Technical UI Designer | Gameplay Systems Architect</strong>
   </p>
