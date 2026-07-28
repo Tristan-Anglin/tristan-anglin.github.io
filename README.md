@@ -290,7 +290,6 @@
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
     <span style="display: inline-flex; align-items: center; line-height: 1;">
-      <img src="https://skillicons.dev/icons?i=gamemaker&theme=dark" height="18" style="margin-right: 6px; margin-top: -2px;" alt="Profile" />
       Overview & Skills
     </span>
     <span class="tab-meta">Core Profile</span>
@@ -310,7 +309,7 @@
       Tower Defense 
       <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="C++" />
     </span>
-    <span class="tab-meta">Dec 2024 - Dec 2024</span>
+    <span class="tab-meta">Dec 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
@@ -738,10 +737,15 @@
 </div>
 
 <div id="darkside" class="portfolio-tab" style="display: none;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=java&logoColor=white" height="35"/>
-    <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35"/>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge" height="35" alt="Your Dark Side"/>
+    <img src="https://skillicons.dev/icons?i=java&theme=dark" height="30" style="display: block;" alt="Java" />
   </div>
+  
+  <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35" alt="2023"/>
+</div>
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
     <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Fantasy RPG</b>
     <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
