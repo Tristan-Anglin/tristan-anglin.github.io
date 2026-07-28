@@ -435,7 +435,7 @@
   <div>
     <span class="steam-badge" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 8px; font-weight: bold;">
       <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.2em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Coming to Steam"></i>
-      Steam page coming soon
+      Coming soon
     </span>
   </div>
   
