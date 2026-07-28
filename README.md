@@ -431,10 +431,11 @@
     <img src="https://skillicons.dev/icons?i=unreal" height="30" style="display: block;" alt="Unreal Engine" />
   </div>
   
-  <!-- Middle: Shifted Steam Status -->
+  <!-- Middle: Centered Steam Status with Steam Icon -->
   <div>
-    <span class="steam-badge" style="padding: 6px 12px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 4px;">
-      🎮 Steam page coming soon
+    <span class="steam-badge" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 8px; font-weight: bold;">
+      <img src="https://skillicons.dev/icons?i=steam" height="18" style="display: block;" alt="Steam" />
+      Steam page coming soon
     </span>
   </div>
   
@@ -442,7 +443,7 @@
   <img src="https://img.shields.io/badge/Sept%202025%20--%20April%202026-333333?style=for-the-badge" height="35" alt="Sept 2025 - April 2026"/>
 </div>
 
-<!-- This metadata block now renders perfectly right below it -->
+<!-- Metadata block renders perfectly right below it -->
 <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
   <b style="color: #f0f6fc; font-size: 1.1em;">3D Co-op Musou RPG (Capstone Project)</b>
   <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
