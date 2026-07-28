@@ -424,10 +424,17 @@
     }
   </script>
 
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-    <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
-    <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Left Side: Title Badge + Logos -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-31577a?style=for-the-badge" height="35" alt="Blood & Lineage"/>
+    <img src="https://skillicons.dev/icons?i=steam" height="30" style="display: block;" alt="Steam" />
+    <img src="https://skillicons.dev/icons?i=unreal" height="30" style="display: block;" alt="Unreal Engine" />
   </div>
+  
+  <!-- Right Side: Year/Date Badge -->
+  <img src="https://img.shields.io/badge/Sept%202025%20--%20April%202026-333333?style=for-the-badge" height="35" alt="Sept 2025 - April 2026"/>
+</div>
 
   <!-- Steam / Publishing status badge (update href once the store page is live) -->
   <div style="margin-top: 14px;">
@@ -647,10 +654,16 @@
 </div>
 
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge&logo=cplusplus&logoColor=white" height="35"/>
-    <img src="https://img.shields.io/badge/2024-333333?style=for-the-badge" height="35"/>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Left Side: Title Badge + C++ Logo -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Tower%20Defense-00599c?style=for-the-badge" height="35" alt="Tower Defense"/>
+    <img src="https://skillicons.dev/icons?i=cpp" height="30" style="display: block;" alt="C++" />
   </div>
+  
+  <!-- Right Side: Year/Date Badge -->
+  <img src="https://img.shields.io/badge/Dec%202024-333333?style=for-the-badge" height="35" alt="Dec 2024"/>
+</div>
   
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
     <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Strategy TD</b>
@@ -826,10 +839,16 @@
 </div>
 
 <div id="dungeon" class="portfolio-tab" style="display: none;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
-    <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35"/>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Left Side: Title Badge + Python Logo -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Dungeon%20Crawler-3776ab?style=for-the-badge" height="35" alt="Dungeon Crawler"/>
+    <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
   </div>
+  
+  <!-- Right Side: Year Badge -->
+  <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35" alt="2017"/>
+</div>
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
     <b style="color: #f0f6fc; font-size: 1.1em;">2D Dungeon Crawler RPG</b>
     <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
@@ -910,10 +929,16 @@
 </div>
 
 <div id="hit-run" class="portfolio-tab" style="display: none;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge&logo=python&logoColor=white" height="35"/>
-    <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35"/>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Left Side: Title Badge + Python Logo -->
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <img src="https://img.shields.io/badge/Hit%20%26%20Run-3776ab?style=for-the-badge" height="35" alt="Hit & Run"/>
+    <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
   </div>
+  
+  <!-- Right Side: Year Badge -->
+  <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35" alt="2016"/>
+</div>
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
     <b style="color: #f0f6fc; font-size: 1.1em;">2D Endless Survival</b>
     <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
