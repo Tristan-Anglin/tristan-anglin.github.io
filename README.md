@@ -1,3 +1,6 @@
+<!-- Include Font Awesome Icons Library at the Top -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 <style>
   /* Hard override for the entire viewport background */
   html, body {
@@ -101,6 +104,12 @@
     backface-visibility: hidden !important;
     /* Subtle internal top border highlight to simulate crisp game UI panel lighting */
     box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.05), 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Project tabs icon positioning */
+  .tab-btn span i {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   /* PROJECT TABS: Dark Charcoal Palette */
@@ -242,7 +251,7 @@
     <strong style="color: #ffffff !important;">Gameplay Programmer | Systems & UI Architect</strong>
   </p>
   <p style="font-size: 0.95em; margin-top: 0px; color: #da765b !important; opacity: 0.95 !important; background: transparent !important; letter-spacing: 0.4px;">
-    Actively seeking Gameplay Programmer / Software Engineer opportunities
+    Actively seeking opportunities
   </p>
 </div>
 
@@ -277,35 +286,35 @@
 <!-- Clean Visual Divisor Break -->
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Unified 3x2 Grid Layout Wrapper -->
+<!-- Unified 3x2 Grid Layout Wrapper with Icons Embedded -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
-    <span>Overview & Skills</span>
+    <span><i class="fa-solid fa-user-gear"></i> Overview & Skills</span>
     <span class="tab-meta">Core Profile</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
-    <span>Blood & Lineage • UE5</span>
+    <span>Blood & Lineage <i class="fa-brands fa-steam" style="color: #66c0f4;" title="Coming to Steam"></i> • <i class="fa-solid fa-cubes"></i> UE5</span>
     <span class="tab-meta">Sept 2025 - April 2026</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
-    <span>Tower Defense • C++</span>
+    <span>Tower Defense • <i class="fa-solid fa-code"></i> C++</span>
     <span class="tab-meta">Dec 2024 - Dec 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
-    <span>Your Dark Side • Java</span>
+    <span>Your Dark Side • <i class="fa-brands fa-java"></i> Java</span>
     <span class="tab-meta">2023</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'dungeon')">
-    <span>Dungeon Crawler • Python</span>
+    <span>Dungeon Crawler • <i class="fa-brands fa-python"></i> Python</span>
     <span class="tab-meta">2017</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'hit-run')">
-    <span>Hit & Run • Python</span>
+    <span>Hit & Run • <i class="fa-brands fa-python"></i> Python</span>
     <span class="tab-meta">2016</span>
   </button>
 </div>
