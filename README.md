@@ -201,6 +201,36 @@
     pointer-events: none;
     opacity: 0.85;
   }
+
+  /* Coming Soon / Steam badge styling */
+  .steam-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: #161b22 !important;
+    border: 1px solid #30363d !important;
+    color: #8b949e !important;
+    font-weight: bold !important;
+    font-size: 0.85em !important;
+    padding: 8px 14px !important;
+    border-radius: 20px !important;
+    cursor: default !important;
+    opacity: 0.9;
+  }
+
+  /* Footer */
+  .site-footer {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #30363d;
+    text-align: center;
+    color: #8b949e;
+    font-size: 0.85em;
+  }
+
+  .site-footer .link-container {
+    margin: 15px auto 10px auto !important;
+  }
 </style>
 
 <a name="top"></a>
@@ -208,8 +238,11 @@
 <!-- Clean Header Container (Glow Removed) -->
 <div align="center" class="hero-banner-container">
   <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 2px 8px rgba(0,0,0,0.8); font-weight: 800;">Tristan Anglin</h1>
-  <p style="font-size: 1.2em; margin-top: 10px; color: #ffffff !important; opacity: 0.9 !important; background: transparent !important; letter-spacing: 0.8px;">
-    <strong style="color: #ffffff !important;">Technical UI Designer | Gameplay Systems Architect</strong>
+  <p style="font-size: 1.2em; margin-top: 10px; margin-bottom: 6px; color: #ffffff !important; opacity: 0.9 !important; background: transparent !important; letter-spacing: 0.8px;">
+    <strong style="color: #ffffff !important;">Gameplay Programmer | Systems & UI Architect</strong>
+  </p>
+  <p style="font-size: 0.95em; margin-top: 0px; color: #da765b !important; opacity: 0.95 !important; background: transparent !important; letter-spacing: 0.4px;">
+    Actively seeking Gameplay Programmer / Software Engineer opportunities
   </p>
 </div>
 
@@ -342,6 +375,7 @@
   <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
     <img src="myselfLevelup.jpg" 
          alt="Tristan Anglin - Level Up Showcase" 
+         loading="lazy"
          style="width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
          onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
@@ -367,6 +401,13 @@
     <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge&logo=unrealengine&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2026-333333?style=for-the-badge" height="35"/>
   </div>
+
+  <!-- Steam / Publishing status badge (update href once the store page is live) -->
+  <div style="margin-top: 14px;">
+    <span class="steam-badge">
+      🎮 Publishing in progress — Steam page coming soon
+    </span>
+  </div>
   
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
     <b style="color: #f0f6fc; font-size: 1.1em;">3D Co-op Musou RPG (Capstone Project)</b>
@@ -390,6 +431,7 @@
       <iframe 
         src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=1&modestbranding=1" 
         title="Blood & Lineage Gameplay"
+        loading="lazy"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
@@ -426,7 +468,7 @@
           </p>
         </div>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="Copy Properties.PNG" alt="Player State Data Serialization Code" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="Copy Properties.PNG" alt="Player State Data Serialization Code" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand</span>
         </div>
       </div>
@@ -439,7 +481,7 @@
           </p>
         </div>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="Clean UI.PNG" alt="UI Culling" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="Clean UI.PNG" alt="UI Culling" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand</span>
         </div>
       </div>
@@ -462,15 +504,15 @@
     <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">Visual Breakdown: System Prototyping to Production Assets</b>
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
       <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
-        <img src="InventoryWireframe.png" alt="UX Wireframe Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="InventoryWireframe.png" alt="UX Wireframe Layout" loading="lazy" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
         <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 1:</b> Screen Wireframe & Core Functional Grid</p>
       </div>
       <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
-        <img src="InventoryFinal.PNG" alt="Inventory Layout Art Integration" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="InventoryFinal.PNG" alt="Inventory Layout Art Integration" loading="lazy" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
         <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 2:</b> Vector Asset Pipeline Integration</p>
       </div>
       <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
-        <img src="HUDFinal.PNG" alt="Final Tactical HUD Layout" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        <img src="HUDFinal.PNG" alt="Final Tactical HUD Layout" loading="lazy" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
         <p style="font-size: 0.8em; color: #8b949e; margin-top: 8px; margin-bottom: 0;"><b>Phase 3:</b> Responsive HUD State & Drag Contexts</p>
       </div>
     </div>
@@ -501,7 +543,7 @@
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="ItemObject.PNG" alt="Replicated Struct and UItemObject" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="ItemObject.PNG" alt="Replicated Struct and UItemObject" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand</span>
           </div>
         </div>
@@ -514,7 +556,7 @@
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="ForgeCalculation.PNG" alt="Forge Fusion" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+            <img src="ForgeCalculation.PNG" alt="Forge Fusion" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 220px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand</span>
           </div>
         </div>
@@ -540,11 +582,11 @@
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 5px;">
         <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
-          <img src="Hades_State_Machine.png" alt="Multi-Phase Encounter State Machine" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <img src="Hades_State_Machine.png" alt="Multi-Phase Encounter State Machine" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Boss State Machine Graph</span>
         </div>
         <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
-          <img src="Telegraph_Prediction_Mesh.png" alt="Network Predictive Telegraph Mesh" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
+          <img src="Telegraph_Prediction_Mesh.png" alt="Network Predictive Telegraph Mesh" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Client Predictive Projection Mesh</span>
         </div>
       </div>
@@ -570,10 +612,7 @@
   </div>
   
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 20px;">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px;">
-      <b style="color: #ffffff;">Architectural Blueprint & Deliverables</b>
-      <span style="font-size: 0.8em; color: #8b949e;">📄 <a href="#" style="color: #4285F4; text-decoration: none; font-weight: bold;">Inventory System TDD Available</a></span>
-    </div>
+    <b style="color: #ffffff;">Architectural Blueprint & Deliverables</b>
     <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.9em; line-height: 1.5; color: #c9d1d9;">
       In future multiplayer titles, I adopt a network-first prototyping rule. No gameplay component profile is built in isolation; systems are integrated with replication parameters and network emulation layers from day one to neutralize latency margins.
     </p>
@@ -599,6 +638,7 @@
       <iframe 
         src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
         title="Tower Defense Gameplay"
+        loading="lazy"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
@@ -686,6 +726,7 @@
       <iframe 
         src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
         title="Your Dark Side Gameplay"
+        loading="lazy"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
@@ -769,6 +810,7 @@
       <iframe 
         src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
         title="Dungeon Crawler Gameplay"
+        loading="lazy"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
@@ -852,6 +894,7 @@
       <iframe 
         src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
         title="Hit & Run Gameplay"
+        loading="lazy"
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         allow="autoplay; encrypted-media; picture-in-picture" 
         allowfullscreen>
@@ -905,9 +948,29 @@
   <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
     <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
     <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      This taught me that player perception dictates mechanical design. Knowing what I know now about rendering loops, I would solve the original problem by running a **parallax texture shader offset** on a single static quad mesh, giving the perfect optical illusion of distance travel at zero performance or collision cost.
+      This taught me that player perception dictates mechanical design. Knowing what I know now about rendering loops, I would solve the original problem by running a <b>parallax texture shader offset</b> on a single static quad mesh, giving the perfect optical illusion of distance travel at zero performance or collision cost.
     </p>
   </div>
+</div>
+
+<!-- Footer with repeated contact links so recruiters don't have to scroll back up -->
+<div class="site-footer">
+  <p>Thanks for reading — let's talk.</p>
+  <div class="link-container" style="grid-template-columns: repeat(3, 1fr) !important;">
+    <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
+      <span>Resume</span>
+      <span class="link-meta">PDF</span>
+    </a>
+    <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
+      <span>LinkedIn</span>
+      <span class="link-meta">Professional Network</span>
+    </a>
+    <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
+      <span>Email</span>
+      <span class="link-meta">Reach out</span>
+    </a>
+  </div>
+  <p style="margin-top: 20px;"><a href="#top" style="color: #da765b; text-decoration: none; font-weight: bold;">↑ Back to top</a></p>
 </div>
 
 <script>
@@ -952,3 +1015,4 @@ function switchTab(event, tabId) {
   }
   setCanvasSize();
   window.addEventListener('resize', setCanvasSize);
+</script>
