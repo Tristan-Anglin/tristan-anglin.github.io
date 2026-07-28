@@ -286,53 +286,53 @@
 <!-- Clean Visual Divisor Break -->
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Unified 3x2 Grid Layout Wrapper with Matching Stack Icons -->
+<!-- Unified 3x2 Grid Layout Wrapper (Cleaned Up & Re-aligned) -->
 <div class="tab-container">
   <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
-    <span>
-      <img src="https://skillicons.dev/icons?i=gamemaker&theme=dark" height="18" style="vertical-align: middle; margin-right: 4px;" alt="Profile" />
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
+      <img src="https://skillicons.dev/icons?i=gamemaker&theme=dark" height="18" style="margin-right: 6px; margin-top: -2px;" alt="Profile" />
       Overview & Skills
     </span>
     <span class="tab-meta">Core Profile</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
-    <span>
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
       Blood & Lineage 
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 0.95em; margin-left: 2px;" title="Coming to Steam"></i> • 
-      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="18" style="vertical-align: middle; margin-left: 2px;" alt="UE5" /> UE5
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 0.95em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Coming to Steam"></i>
+      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="18" style="margin-top: -2px;" alt="UE5" />
     </span>
     <span class="tab-meta">Sept 2025 - April 2026</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
-    <span>
-      Tower Defense • 
-      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="18" style="vertical-align: middle; margin-left: 2px;" alt="C++" /> C++
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
+      Tower Defense 
+      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="C++" />
     </span>
     <span class="tab-meta">Dec 2024 - Dec 2024</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'darkside')">
-    <span>
-      Your Dark Side • 
-      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="18" style="vertical-align: middle; margin-left: 2px;" alt="Java" /> Java
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
+      Your Dark Side 
+      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Java" />
     </span>
     <span class="tab-meta">2023</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'dungeon')">
-    <span>
-      Dungeon Crawler • 
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="vertical-align: middle; margin-left: 2px;" alt="Python" /> Python
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
+      Dungeon Crawler 
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Python" />
     </span>
     <span class="tab-meta">2017</span>
   </button>
   
   <button class="tab-btn" onclick="switchTab(event, 'hit-run')">
-    <span>
-      Hit & Run • 
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="vertical-align: middle; margin-left: 2px;" alt="Python" /> Python
+    <span style="display: inline-flex; align-items: center; line-height: 1;">
+      Hit & Run 
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Python" />
     </span>
     <span class="tab-meta">2016</span>
   </button>
@@ -739,7 +739,7 @@
 
 <div id="darkside" class="portfolio-tab" style="display: none;">
   <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=openjdk&logoColor=white" height="35"/>
+    <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge&logo=java&logoColor=white" height="35"/>
     <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35"/>
   </div>
   <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
