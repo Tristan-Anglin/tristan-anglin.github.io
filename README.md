@@ -613,17 +613,6 @@
           <li><b>Cinematic Integrations:</b> Synchronized camera blends linking cinematic entryways directly into actionable combat frames to organically telegraph impending mechanical threats.</li>
         </ul>
       </div>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 5px;">
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
-          <img src="Hades_State_Machine.png" alt="Multi-Phase Encounter State Machine" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
-          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Boss State Machine Graph</span>
-        </div>
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center;">
-          <img src="Telegraph_Prediction_Mesh.png" alt="Network Predictive Telegraph Mesh" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; height: auto; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
-          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">View Client Predictive Projection Mesh</span>
-        </div>
-      </div>
     </div>
   </div>
 
