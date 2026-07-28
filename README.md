@@ -981,26 +981,6 @@
   </div>
 </div>
 
-<!-- Footer with repeated contact links so recruiters don't have to scroll back up -->
-<div class="site-footer">
-  <p>Thanks for reading — let's talk.</p>
-  <div class="link-container" style="grid-template-columns: repeat(3, 1fr) !important;">
-    <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
-      <span>Resume</span>
-      <span class="link-meta">PDF</span>
-    </a>
-    <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
-      <span>LinkedIn</span>
-      <span class="link-meta">Professional Network</span>
-    </a>
-    <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
-      <span>Email</span>
-      <span class="link-meta">Reach out</span>
-    </a>
-  </div>
-  <p style="margin-top: 20px;"><a href="#top" style="color: #da765b; text-decoration: none; font-weight: bold;">↑ Back to top</a></p>
-</div>
-
 <script>
 function switchTab(event, tabId) {
   // Hide all active tab containers safely
