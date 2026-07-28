@@ -424,29 +424,29 @@
     }
   </script>
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <!-- Left Side: Title Badge + Logos -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+  <!-- Left Side: Title Badge + Unreal Logo -->
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-31577a?style=for-the-badge" height="35" alt="Blood & Lineage"/>
-    <img src="https://skillicons.dev/icons?i=steam" height="30" style="display: block;" alt="Steam" />
+    <img src="https://img.shields.io/badge/Blood%20%26%20Lineage-a5472d?style=for-the-badge" height="35" alt="Blood & Lineage"/>
     <img src="https://skillicons.dev/icons?i=unreal" height="30" style="display: block;" alt="Unreal Engine" />
+  </div>
+  
+  <!-- Middle: Shifted Steam Status -->
+  <div>
+    <span class="steam-badge" style="padding: 6px 12px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 4px;">
+      🎮 Steam page coming soon
+    </span>
   </div>
   
   <!-- Right Side: Year/Date Badge -->
   <img src="https://img.shields.io/badge/Sept%202025%20--%20April%202026-333333?style=for-the-badge" height="35" alt="Sept 2025 - April 2026"/>
 </div>
 
-  <!-- Steam / Publishing status badge (update href once the store page is live) -->
-  <div style="margin-top: 14px;">
-    <span class="steam-badge">
-      🎮 Steam page coming soon
-    </span>
-  </div>
-  
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">3D Co-op Musou RPG (Capstone Project)</b>
-    <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
-  </div>
+<!-- This metadata block now renders perfectly right below it -->
+<div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+  <b style="color: #f0f6fc; font-size: 1.1em;">3D Co-op Musou RPG (Capstone Project)</b>
+  <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
+</div>
 
   <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 20px 0; align-items: center;">
     <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
@@ -657,7 +657,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <!-- Left Side: Title Badge + C++ Logo -->
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Tower%20Defense-00599c?style=for-the-badge" height="35" alt="Tower Defense"/>
+    <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge" height="35" alt="Tower Defense"/>
     <img src="https://skillicons.dev/icons?i=cpp" height="30" style="display: block;" alt="C++" />
   </div>
   
@@ -842,7 +842,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <!-- Left Side: Title Badge + Python Logo -->
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Dungeon%20Crawler-3776ab?style=for-the-badge" height="35" alt="Dungeon Crawler"/>
+    <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge" height="35" alt="Dungeon Crawler"/>
     <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
   </div>
   
@@ -932,7 +932,7 @@
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <!-- Left Side: Title Badge + Python Logo -->
   <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Hit%20%26%20Run-3776ab?style=for-the-badge" height="35" alt="Hit & Run"/>
+    <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge" height="35" alt="Hit & Run"/>
     <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
   </div>
   
