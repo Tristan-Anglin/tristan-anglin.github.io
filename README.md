@@ -414,7 +414,7 @@
   <!-- Steam / Publishing status badge (update href once the store page is live) -->
   <div style="margin-top: 14px;">
     <span class="steam-badge">
-      🎮 Publishing in progress — Steam page coming soon
+      🎮 Steam page coming soon
     </span>
   </div>
   
