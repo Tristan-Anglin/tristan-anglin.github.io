@@ -245,7 +245,7 @@
   body:has(#blood-lineage[style*="display: block"]) {
   background: 
     linear-gradient(rgba(13, 17, 23, 0.88), rgba(13, 17, 23, 0.88)), 
-    url('4characters.jpg') !important; /* Update this filename to match your image file */
+    url('4characters.png') !important; /* Update this filename to match your image file */
   background-size: cover !important;
   background-position: center 15% !important;
   background-repeat: no-repeat !important;
