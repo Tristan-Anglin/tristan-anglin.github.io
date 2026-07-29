@@ -286,23 +286,26 @@
 <!-- Clean Visual Divisor Break -->
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Unified 3x2 Grid Layout Wrapper (Cleaned Up & Re-aligned) -->
+<!-- Unified Grid Layout Wrapper with Full-Width Overview -->
 <div class="tab-container">
-  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
+  <!-- Full-Width Overview Tab (Spans all 3 columns) -->
+  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')" style="grid-column: 1 / -1 !important;">
+    <span style="display: inline-flex; align-items: center; line-height: 1; font-size: 1.1em;">
       Overview & Skills
     </span>
     <span class="tab-meta">Core Profile</span>
   </button>
-
+  
+  <!-- Project Tabs (Perfectly distributed 3x2 grid underneath) -->
   <button class="tab-btn" onclick="switchTab(event, 'round-based-survival')">
     <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Round Based Survival  
+      Round Based Survival 
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 0.95em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Planned Steam Release"></i>
       <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="18" style="margin-top: -2px;" alt="Unity" />
     </span>
     <span class="tab-meta">In Development</span>
   </button>
-  
+
   <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
     <span style="display: inline-flex; align-items: center; line-height: 1;">
       Blood & Lineage 
