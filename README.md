@@ -297,7 +297,7 @@
 
   <button class="tab-btn" onclick="switchTab(event, 'round-based-survival')">
     <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Round Based Survival 
+      Round Based Survival  
       <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="18" style="margin-top: -2px;" alt="Unity" />
     </span>
     <span class="tab-meta">In Development</span>
