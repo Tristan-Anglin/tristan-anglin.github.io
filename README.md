@@ -241,29 +241,29 @@
     margin: 15px auto 10px auto !important;
   }
 
-/* Container for the characters backdrop hidden by default */
+/* Standalone Backdrop Base State */
 .tab-backdrop-bg {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1; /* Sits perfectly behind all content panels */
+  z-index: -1; /* Keeps it behind all text panels */
   background: 
     linear-gradient(rgba(13, 17, 23, 0.88), rgba(13, 17, 23, 0.88)), 
     url('4characters.png') no-repeat;
   background-size: contain;
   background-position: center 65%;
   
-  /* Initial state: Off-screen at the bottom and invisible */
+  /* Start off-screen at the bottom and invisible */
   transform: translateY(100vh);
   opacity: 0;
   transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.5s ease-in-out;
   pointer-events: none;
 }
 
-/* Animate Up state: Triggered instantly when the tab parent opens */
-.portfolio-tab[style*="display: block"] .tab-backdrop-bg {
+/* Slide Up & Fade In ONLY when the Blood & Lineage tab is active */
+body:has(#blood-lineage[style*="display: block"]) .tab-backdrop-bg {
   transform: translateY(0);
   opacity: 1;
 }
