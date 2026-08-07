@@ -1095,14 +1095,19 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <script>
   function switchTab(tabId, btn) {
-    // 1. Find the specific portfolio project this button belongs to
-    const projectContainer = btn.closest('.portfolio-tab') || document;
+    // 1. Find the target tab first
+    const activeTab = document.getElementById(tabId);
+    if (!activeTab) return; // Stop if the tab doesn't exist to prevent crashes
 
-    // 2. Hide ONLY the tab contents within this specific project
+    // 2. Find the specific portfolio project this tab belongs to
+    // By using the tab itself to find the container, we don't rely on the button!
+    const projectContainer = activeTab.closest('.portfolio-tab') || document;
+
+    // 3. Hide ONLY the tabs within this specific project
     const contents = projectContainer.querySelectorAll('.tab-content');
     contents.forEach(content => content.style.display = 'none');
 
-    // 3. Reset ONLY the buttons within this specific project
+    // 4. Reset ONLY the buttons within this specific project
     const buttons = projectContainer.querySelectorAll('.tab-btn');
     buttons.forEach(button => {
       button.style.background = '#0d1117';
@@ -1111,14 +1116,11 @@ body:has(#blood-lineage[style*="display: block"]) {
       button.classList.remove('active');
     });
 
-    // 4. Show the target tab
-    const activeTab = document.getElementById(tabId);
-    if (activeTab) {
-      activeTab.style.display = 'block';
-    }
+    // 5. Show the target tab
+    activeTab.style.display = 'block';
 
-    // 5. Highlight the clicked button
-    if (btn) {
+    // 6. Safely highlight the clicked button (only if it was properly passed)
+    if (btn && typeof btn.style !== 'undefined') {
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
       btn.style.border = '1px solid #30363d';
@@ -1127,7 +1129,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     }
   }
 
-  // Safely initialize canvas without crashing the rest of the page
+  // Safely initialize canvas
   document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particle-canvas');
     if (!canvas) return; 
