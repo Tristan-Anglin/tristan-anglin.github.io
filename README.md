@@ -1112,30 +1112,36 @@ body:has(#blood-lineage[style*="display: block"]) {
       activeTab.style.display = 'block';
     }
 
-    btn.style.background = '#161b22';
-    btn.style.color = '#ffffff';
-    btn.style.border = '1px solid #30363d';
-    btn.style.borderBottom = '3px solid #a5472d';
-    btn.classList.add('active');
+    if (btn) {
+      btn.style.background = '#161b22';
+      btn.style.color = '#ffffff';
+      btn.style.border = '1px solid #30363d';
+      btn.style.borderBottom = '3px solid #a5472d';
+      btn.classList.add('active');
+    }
   }
 
   function zoomImage(img) {
-    window.open(img.src, '_blank');
+    if (img && img.src) {
+      window.open(img.src, '_blank');
+    }
   }
-</script>
 
-<script>
-  const canvas = document.getElementById('particle-canvas');
-  const ctx = canvas.getContext('2d');
+  // Safely initialize canvas once the DOM is fully loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('particle-canvas');
+    if (!canvas) return; // Prevents null reference errors if the canvas element is missing or renamed
 
-  let particlesArray = [];
-  const numberOfParticles = 45; // Keeps it clean and optimized
+    const ctx = canvas.getContext('2d');
+    let particlesArray = [];
+    const numberOfParticles = 45;
 
-  // Set sizing
-  function setCanvasSize() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  setCanvasSize();
-  window.addEventListener('resize', setCanvasSize);
+    function setCanvasSize() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize);
+  });
 </script>
