@@ -1012,85 +1012,98 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <div id="hit-run" class="portfolio-tab" style="display: none;">
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <!-- Left Side: Title Badge + Python Logo -->
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge" height="35" alt="Hit & Run"/>
-    <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
-  </div>
-  
-  <!-- Right Side: Year Badge -->
-  <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35" alt="2016"/>
-</div>
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">2D Endless Survival</b>
-    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
-  </div>
-  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    As my first step into game development, Hit & Run was a crucial layout experiment parsing 2D hit detection logic and continuous speed scaling.
-  </div>
-  <div align="center" style="margin: 25px 0;">
-    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      <iframe 
-        src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
-        title="Hit & Run Gameplay"
-        loading="lazy"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        allow="autoplay; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <!-- Start of Wrapper Sub-Tab -->
+  <div class="tab-content" style="display: block;">
+    
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Side: Title Badge + Python Logo -->
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.shields.io/badge/Hit%20%26%20Run-a5472d?style=for-the-badge" height="35" alt="Hit & Run"/>
+        <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
+      </div>
+      
+      <!-- Right Side: Year Badge -->
+      <img src="https://img.shields.io/badge/2016-333333?style=for-the-badge" height="35" alt="2016"/>
     </div>
-  </div>
-<h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Progression Economy & Multi-Currency Shops</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Engineered</b> an integrated economy system featuring a Stat Shop and a Spell Shop for mid-run power scaling.</li>
-      <li><b>Implemented</b> transactional logic for purchasing new magical abilities and upgrading multi-tier spell profiles.</li>
-      <li><b>Programmed</b> attribute modification systems that dynamically recalculate core player stats, including Haste (attack speed), Armor (flat flat damage reduction), and Dodge (percentage-based avoidance).</li>
-    </ul>
-  </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Resource Management & Spell Architecture</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a dynamic Mana resource loop to regulate spell casting, complete with passive regeneration states and casting thresholds.</li>
-      <li><b>Designed</b> an extensible framework for diverse spell behaviors, linking ability cooldowns, area-of-effect parameters, and damage logic directly to player stats.</li>
-    </ul>
-  </div>
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #f0f6fc; font-size: 1.1em;">2D Endless Survival</b>
+      <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Round-Based Enemy Scaling & Swarm AI</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Architected</b> a round-based survival system with automated wave progression and escalating difficulty curves.</li>
-      <li><b>Scripted</b> dynamic AI spawning algorithms that increase enemy crowd density, scale base movement speed, and augment health pools as rounds progress to create intense "swarm" scenarios.</li>
-      <li><b>Optimized</b> 2D collision handling to smoothly process a high volume of simultaneous enemy hitboxes overlapping the player viewport.</li>
-    </ul>
-  </div>
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
+      As my first step into game development, Hit & Run was a crucial layout experiment parsing 2D hit detection logic and continuous speed scaling.
+    </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
-      <b style="color: #ffffff;">The Challenge: Coordinate & Rendering Failures</b>
+    <div align="center" style="margin: 25px 0;">
+      <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
+          title="Hit & Run Gameplay"
+          loading="lazy"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allow="autoplay; encrypted-media; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- EVERYTHING ELSE IS NOW INSIDE THE WRAPPER -->
+    <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Progression Economy & Multi-Currency Shops</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Engineered</b> an integrated economy system featuring a Stat Shop and a Spell Shop for mid-run power scaling.</li>
+        <li><b>Implemented</b> transactional logic for purchasing new magical abilities and upgrading multi-tier spell profiles.</li>
+        <li><b>Programmed</b> attribute modification systems that dynamically recalculate core player stats, including Haste (attack speed), Armor (flat damage reduction), and Dodge (percentage-based avoidance).</li>
+      </ul>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Resource Management & Spell Architecture</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Developed</b> a dynamic Mana resource loop to regulate spell casting, complete with passive regeneration states and casting thresholds.</li>
+        <li><b>Designed</b> an extensible framework for diverse spell behaviors, linking ability cooldowns, area-of-effect parameters, and damage logic directly to player stats.</li>
+      </ul>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Round-Based Enemy Scaling & Swarm AI</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Architected</b> a round-based survival system with automated wave progression and escalating difficulty curves.</li>
+        <li><b>Scripted</b> dynamic AI spawning algorithms that increase enemy crowd density, scale base movement speed, and augment health pools as rounds progress.</li>
+        <li><b>Optimized</b> 2D collision handling to smoothly process a high volume of simultaneous enemy hitboxes.</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+        <b style="color: #ffffff;">The Challenge: Coordinate & Rendering Failures</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          The prototype was initially structured around a traditional side-scrolling engine with a moving ground plane. This architecture generated persistent visual artifacting, tracking tearing, and logic bugs where collision boundaries routinely misaligned.
+        </p>
+      </div>
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+        <b style="color: #ffffff;">The Resolution: Clever Paradigm Reversal</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Instead of getting bogged down in cosmetic background scrolling, I flipped the layout vector. I clamped the player viewport to a clean, stationary backdrop and transferred the kinetic motion logic directly onto the incoming enemy swarm objects.
+        </p>
+      </div>
+    </div>
+    
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+      <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
       <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        The prototype was initially structured around a traditional side-scrolling engine with a moving ground plane. This architecture generated persistent visual artifacting, tracking tearing, and logic bugs where collision boundaries routinely misaligned during high-velocity updates.
+        This taught me that player perception dictates mechanical design. Knowing what I know now, I would solve the original problem by running a <b>parallax texture shader offset</b> on a single static quad mesh, giving the perfect optical illusion of distance travel at zero performance or collision cost.
       </p>
     </div>
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Clever Paradigm Reversal</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Instead of getting bogged down in cosmetic background scrolling, I flipped the layout vector. I clamped the player viewport to a clean, stationary backdrop and transferred the kinetic motion logic directly onto the incoming enemy swarm objects—preserving the intended gameplay feel while erasing the bugs.
-      </p>
-    </div>
-  </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
-    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
-    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      This taught me that player perception dictates mechanical design. Knowing what I know now about rendering loops, I would solve the original problem by running a <b>parallax texture shader offset</b> on a single static quad mesh, giving the perfect optical illusion of distance travel at zero performance or collision cost.
-    </p>
-  </div>
+
+  </div> <!-- End of wrapper sub-tab -->
 </div>
 
 <script>
