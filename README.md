@@ -1138,7 +1138,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     let tabId = null;
     let btn = null;
 
-    // Smart argument parser: automatically detects strings, events, and DOM elements in any order
+    // Smart argument parser
     [arg1, arg2].forEach(arg => {
       if (typeof arg === 'string') {
         tabId = arg;
@@ -1164,23 +1164,26 @@ body:has(#blood-lineage[style*="display: block"]) {
       return;
     }
 
-    // Determine if the target is a sub-tab (.tab-content) or a main tab (.portfolio-tab)
     const isSub = target.classList.contains('tab-content');
 
     if (!isSub) {
       // --- MAIN PROJECT / SECTION TAB ---
+      // 1. Hide all main portfolio tabs
       document.querySelectorAll('.portfolio-tab').forEach(tab => {
         tab.style.setProperty('display', 'none', 'important');
       });
 
+      // 2. Show the selected main tab container
       target.style.setProperty('display', 'block', 'important');
 
+      // 3. Handle inner sub-tabs IF they exist, otherwise ensure children are visible
       const subTabs = target.querySelectorAll('.tab-content');
       if (subTabs.length > 0) {
         subTabs.forEach((sub, idx) => {
           sub.style.setProperty('display', idx === 0 ? 'block' : 'none', 'important');
         });
 
+        // Highlight first sub-tab button if present
         const firstSubBtn = target.querySelector('.tab-btn');
         if (firstSubBtn && firstSubBtn.parentElement) {
           const subBtns = firstSubBtn.parentElement.querySelectorAll('.tab-btn');
@@ -1248,7 +1251,6 @@ body:has(#blood-lineage[style*="display: block"]) {
       setCanvasSize();
       window.addEventListener('resize', setCanvasSize);
 
-      // Particle Class Definition
       class Particle {
         constructor() {
           this.x = Math.random() * canvas.width;
@@ -1266,7 +1268,7 @@ body:has(#blood-lineage[style*="display: block"]) {
           else if (this.y < 0) this.y = canvas.height;
         }
         draw() {
-          ctx.fillStyle = 'rgba(165, 71, 45, 0.4)'; // Styled with your accent color
+          ctx.fillStyle = 'rgba(165, 71, 45, 0.4)';
           ctx.beginPath();
           ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
           ctx.fill();
