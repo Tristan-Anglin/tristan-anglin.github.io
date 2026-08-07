@@ -737,7 +737,7 @@ body:has(#blood-lineage[style*="display: block"]) {
       </ul>
     </div>
   </div>
-
+</div>
 </div>
 
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
