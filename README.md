@@ -1185,7 +1185,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     // 6. Force show the selected tab container
     activeTab.style.setProperty('display', 'block', 'important');
 
-    // 7. ROBUST CONTENT SAFETY NET (Universal for all projects now)
+    // 7. Handle Sub-Tabs vs Single-Page Projects
     if (!isSubTab) {
       const innerTabs = activeTab.querySelectorAll('.tab-content');
       
@@ -1222,9 +1222,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       window.addEventListener('resize', setCanvasSize);
     }
     
-
+    // Automatically load About Tab on page start
     const defaultTabId = 'about-tab';
-    const defaultButton = document.querySelector('.tab-btn');
+    const defaultButton = document.querySelector(`[onclick*="${defaultTabId}"]`) || document.querySelector('.tab-btn');
     if (document.getElementById(defaultTabId)) {
       switchTab(defaultTabId, defaultButton);
     }
