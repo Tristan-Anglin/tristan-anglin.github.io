@@ -1158,7 +1158,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     const container = isSubTab ? activeTab.closest('.portfolio-tab') : document;
     const selectorToHide = isSubTab ? '.tab-content' : '.portfolio-tab';
 
-    // 4. Hide all active panels in this scope (using !important to override CSS)
+    // 4. Hide all active panels in this scope
     const contents = container.querySelectorAll(selectorToHide);
     contents.forEach(content => {
       content.style.setProperty('display', 'none', 'important');
@@ -1182,15 +1182,14 @@ body:has(#blood-lineage[style*="display: block"]) {
       btn.classList.add('active', 'active-tab');
     }
 
-    // 6. Force show the selected tab container (bypassing CSS !important conflicts)
+    // 6. Force show the selected tab container
     activeTab.style.setProperty('display', 'block', 'important');
 
-    // 7. ROBUST CONTENT SAFETY NET
+    // 7. ROBUST CONTENT SAFETY NET (Universal for all projects now)
     if (!isSubTab) {
       const innerTabs = activeTab.querySelectorAll('.tab-content');
       
       if (innerTabs.length > 0) {
-        // Case A: Project HAS sub-tabs (like Blood & Lineage)
         let anyVisible = Array.from(innerTabs).some(tab => window.getComputedStyle(tab).display !== 'none');
         if (!anyVisible) {
           innerTabs[0].style.setProperty('display', 'block', 'important');
@@ -1203,17 +1202,11 @@ body:has(#blood-lineage[style*="display: block"]) {
             firstInnerBtn.classList.add('active');
           }
         }
-      } else {
-  // Case B: Project DOES NOT have sub-tabs 
-  // Target a specific wrapper class instead of all generic divs
-  activeTab.querySelectorAll('.project-main-content').forEach(wrapper => {
-    wrapper.style.setProperty('display', 'block', 'important');
-  });
-}
+      }
     }
   }
 
- // Safe Canvas & Default Tab Initialization
+  // Safe Canvas & Default Tab Initialization
   document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
@@ -1229,6 +1222,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       window.addEventListener('resize', setCanvasSize);
     }
     
+    // Automatically load Blood & Lineage on page start
+    const defaultTabId = 'blood-lineage';
+    const defaultButton = document.querySelector('.tab-btn');
     if (document.getElementById(defaultTabId)) {
       switchTab(defaultTabId, defaultButton);
     }
