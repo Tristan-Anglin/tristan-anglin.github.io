@@ -1148,6 +1148,27 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     // 6. Show the selected tab
     activeTab.style.display = 'block';
+
+    // 7. AUTO-OPEN SAFETY NET: Automatically open the first inner sub-tab for any main project
+    if (!isSubTab) {
+      const innerTabs = activeTab.querySelectorAll('.tab-content');
+      if (innerTabs.length > 0) {
+        let anyVisible = Array.from(innerTabs).some(tab => tab.style.display === 'block');
+        if (!anyVisible) {
+          innerTabs[0].style.display = 'block';
+          
+          // Highlight the first sub-tab button if it exists
+          const firstInnerBtn = activeTab.querySelector('.tab-btn');
+          if (firstInnerBtn) {
+            firstInnerBtn.style.background = '#161b22';
+            firstInnerBtn.style.color = '#ffffff';
+            firstInnerBtn.style.border = '1px solid #30363d';
+            firstInnerBtn.style.borderBottom = '3px solid #a5472d';
+            firstInnerBtn.classList.add('active');
+          }
+        }
+      }
+    }
   }
 
   // Safe Canvas Initialization
