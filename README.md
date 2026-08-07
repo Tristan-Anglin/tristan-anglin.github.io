@@ -1095,42 +1095,41 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <script>
 function switchTab(tabId, btnElement) {
-  if (!btnElement) return;
+  // Handle cases where parameters might be passed in either order or as event
+  var targetId = typeof tabId === 'string' ? tabId : btnElement;
+  var targetBtn = (btnElement && btnElement.nodeType) ? btnElement : (event ? event.currentTarget : null);
 
-  // 1. Get the local wrapper holding both the tab navigation and content divs for THIS game
-  const localSection = btnElement.parentElement.parentElement;
-  if (!localSection) return;
+  // 1. Hide all tab content elements across the page
+  var allTabs = document.querySelectorAll('.tab-content, .portfolio-tab');
+  for (var i = 0; i < allTabs.length; i++) {
+    allTabs[i].style.display = 'none';
+    allTabs[i].classList.remove('active-content');
+  }
 
-  // 2. Hide ONLY the tab-content panels inside this specific game wrapper
-  const localTabs = localSection.querySelectorAll('.tab-content');
-  localTabs.forEach(tab => {
-    tab.style.display = 'none';
-    tab.classList.remove('active-content');
-  });
+  // 2. Reset inline styles on all tab buttons
+  var allButtons = document.querySelectorAll('.tab-btn');
+  for (var j = 0; j < allButtons.length; j++) {
+    allButtons[j].classList.remove('active', 'active-tab');
+    allButtons[j].style.background = '#0d1117';
+    allButtons[j].style.color = '#8b949e';
+    allButtons[j].style.border = '1px solid transparent';
+  }
 
-  // 3. Reset ONLY the buttons inside this specific game's navigation bar
-  const navBar = btnElement.parentElement;
-  const localButtons = navBar.querySelectorAll('.tab-btn');
-  localButtons.forEach(btn => {
-    btn.classList.remove('active');
-    btn.style.background = '#0d1117';
-    btn.style.color = '#8b949e';
-    btn.style.border = '1px solid transparent';
-  });
-
-  // 4. Reveal the target tab panel
-  const targetTab = document.getElementById(tabId);
+  // 3. Display the requested tab panel
+  var targetTab = document.getElementById(targetId);
   if (targetTab) {
     targetTab.style.display = 'block';
     targetTab.classList.add('active-content');
   }
 
-  // 5. Highlight the active button
-  btnElement.classList.add('active');
-  btnElement.style.background = '#161b22';
-  btnElement.style.color = '#ffffff';
-  btnElement.style.border = '1px solid #30363d';
-  btnElement.style.borderBottom = '3px solid #a5472d';
+  // 4. Highlight the clicked button
+  if (targetBtn) {
+    targetBtn.classList.add('active', 'active-tab');
+    targetBtn.style.background = '#161b22';
+    targetBtn.style.color = '#ffffff';
+    targetBtn.style.border = '1px solid #30363d';
+    targetBtn.style.borderBottom = '3px solid #a5472d';
+  }
 }
 </script>
 
