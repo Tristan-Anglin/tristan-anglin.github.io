@@ -922,93 +922,103 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <div id="dungeon" class="portfolio-tab" style="display: none;">
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <!-- Left Side: Title Badge + Python Logo -->
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge" height="35" alt="Dungeon Crawler"/>
-    <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
-  </div>
-  
-  <!-- Right Side: Year Badge -->
-  <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35" alt="2017"/>
-</div>
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">2D Dungeon Crawler RPG</b>
-    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
-  </div>
-  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
-  </div>
-  <div align="center" style="margin: 25px 0;">
-    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      <iframe 
-        src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
-        title="Dungeon Crawler Gameplay"
-        loading="lazy"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        allow="autoplay; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <!-- Added Wrapper Sub-Tab -->
+  <div class="tab-content" style="display: block;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Side: Title Badge + Python Logo -->
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.shields.io/badge/Dungeon%20Crawler-a5472d?style=for-the-badge" height="35" alt="Dungeon Crawler"/>
+        <img src="https://skillicons.dev/icons?i=python" height="30" style="display: block;" alt="Python" />
+      </div>
+      
+      <!-- Right Side: Year Badge -->
+      <img src="https://img.shields.io/badge/2017-333333?style=for-the-badge" height="35" alt="2017"/>
     </div>
-  </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #f0f6fc; font-size: 1.1em;">2D Dungeon Crawler RPG</b>
+      <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">RPG Systems Architecture</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Designed</b> a multi-class selection system featuring 8 unique character classes.</li>
-      <li><b>Implemented</b> discrete starting attribute sets to differentiate class-based gameplay.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
+      This project represents my first deep dive into the RPG genre and complex system architecture. Developed entirely on an iPad, this was an ambitious leap from previous work, driven by a passion for dungeon crawlers. It stands as a milestone where I successfully implemented interlocking systems like inventory management, class-based stats, and enemy AI.
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Combat & Enemy AI</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a real-time combat engine supporting 8-directional movement and hit detection.</li>
-      <li><b>Programmed</b> enemy homing logic to dynamically track and engage the player.</li>
-    </ul>
-  </div>
+    <div align="center" style="margin: 25px 0;">
+      <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
+          title="Dungeon Crawler Gameplay"
+          loading="lazy"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allow="autoplay; encrypted-media; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Loot & Progression Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Scripted</b> a dynamic reward system that triggers randomized XP, gold, and item drops upon enemy defeat.</li>
-      <li><b>Engineered</b> a persistent inventory and leveling framework to track character progression.</li>
-    </ul>
-  </div>
+    <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">UI/UX Prototyping</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Architected</b> a multi-scene menu flow, including dungeon selection and inventory management interfaces.</li>
-      <li><b>Integrated</b> functional UI elements to bridge technical systems with user feedback.</li>
-    </ul>
-  </div>
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">RPG Systems Architecture</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Designed</b> a multi-class selection system featuring 8 unique character classes.</li>
+        <li><b>Implemented</b> discrete starting attribute sets to differentiate class-based gameplay.</li>
+      </ul>
+    </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
-      <b style="color: #ffffff;">The Challenge: Platform Limits & Over-scoping</b>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Combat & Enemy AI</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Developed</b> a real-time combat engine supporting 8-directional movement and hit detection.</li>
+        <li><b>Programmed</b> enemy homing logic to dynamically track and engage the player.</li>
+      </ul>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Loot & Progression Logic</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Scripted</b> a dynamic reward system that triggers randomized XP, gold, and item drops upon enemy defeat.</li>
+        <li><b>Engineered</b> a persistent inventory and leveling framework to track character progression.</li>
+      </ul>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">UI/UX Prototyping</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Architected</b> a multi-scene menu flow, including dungeon selection and inventory management interfaces.</li>
+        <li><b>Integrated</b> functional UI elements to bridge technical systems with user feedback.</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+        <b style="color: #ffffff;">The Challenge: Platform Limits & Over-scoping</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Attempting a sprawling, feature-heavy classic RPG while coding entirely on an iPad environment led to immediate scope management and technical hurdles. The feature set grew faster than the architectural framework could support.
+        </p>
+      </div>
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+        <b style="color: #ffffff;">The Resolution: Mechanics-First Isolation</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Stripped out secondary systemic systems to safeguard production. Focused purely on establishing working architectural baselines: locking down the database structures for player inventories, debugging enemy AI detection states, and deploying a functional numerical prototype.
+        </p>
+      </div>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+      <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
       <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Attempting a sprawling, feature-heavy classic RPG while coding entirely on an iPad environment led to immediate scope management and technical hurdles. The feature set grew faster than the architectural framework could support.
+        This project served as my early wake-up call regarding design constraints. Today, I approach pre-production by establishing a formal <b>Technical Design Document (TDD)</b>, using functional mockups to isolate systemic bottlenecks and protect scope limits before writing execution code.
       </p>
     </div>
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Mechanics-First Isolation</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Stripped out secondary systemic systems to safeguard production. Focused purely on establishing working architectural baselines: locking down the database structures for player inventories, debugging enemy AI detection states, and deploying a functional numerical prototype.
-      </p>
-    </div>
-  </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
-    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
-    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      This project served as my early wake-up call regarding design constraints. Today, I approach pre-production by establishing a formal **Technical Design Document (TDD)**, using functional mockups to isolate systemic bottlenecks and protect scope limits before writing execution code.
-    </p>
-  </div>
+
+  </div> <!-- End of wrapper sub-tab -->
 </div>
 
 <div id="hit-run" class="portfolio-tab" style="display: none;">
