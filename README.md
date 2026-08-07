@@ -1097,48 +1097,42 @@ body:has(#blood-lineage[style*="display: block"]) {
   function switchTab(arg1, arg2) {
     let tabId, btn;
 
-    // 1. Auto-detect how the HTML passed the parameters
+    // 1. Auto-detect parameters
     if (typeof arg1 === 'string') {
-      // Handles sub-tabs: switchTab('bl-tab-overview', this)
       tabId = arg1;
       btn = arg2;
     } else {
-      // Handles main tabs: switchTab(event, 'blood-lineage')
       tabId = arg2;
-      btn = arg1.currentTarget;
+      btn = arg1 ? arg1.currentTarget : null;
     }
 
-    // 2. Find the tab we want to open
+    // 2. Find the target tab
     const activeTab = document.getElementById(tabId);
     if (!activeTab) {
       console.warn("Could not find a tab with the ID:", tabId);
       return; 
     }
 
-    // 3. Determine if this is a main project tab or a sub-tab
+    // 3. Determine if main project tab or sub-tab
     const isSubTab = activeTab.classList.contains('tab-content');
-    
-    // Find the correct boundary container
     const container = isSubTab ? activeTab.closest('.portfolio-tab') : document;
-    
-    // Find the correct class to hide
     const selectorToHide = isSubTab ? '.tab-content' : '.portfolio-tab';
 
     // 4. Hide all active panels in this scope
     const contents = container.querySelectorAll(selectorToHide);
     contents.forEach(content => content.style.display = 'none');
 
-    // 5. Safely reset ONLY the buttons in the same menu group
+    // 5. Reset button styles in this group
     if (btn && btn.parentElement) {
       const buttons = btn.parentElement.querySelectorAll('.tab-btn');
       buttons.forEach(button => {
-        button.style.background = 'transparent'; // Resets to default
+        button.style.background = 'transparent';
         button.style.color = '#8b949e';
         button.style.border = '1px solid transparent';
         button.classList.remove('active', 'active-tab');
       });
 
-      // Apply active styling to the clicked button
+      // Style active button
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
       btn.style.border = '1px solid #30363d';
@@ -1146,18 +1140,18 @@ body:has(#blood-lineage[style*="display: block"]) {
       btn.classList.add('active', 'active-tab');
     }
 
-    // 6. Show the selected tab
+    // 6. Show the selected tab container
     activeTab.style.display = 'block';
 
-    // 7. AUTO-OPEN SAFETY NET: Automatically open the first inner sub-tab for any main project
+    // 7. ROBUST CONTENT SAFETY NET
     if (!isSubTab) {
       const innerTabs = activeTab.querySelectorAll('.tab-content');
+      
       if (innerTabs.length > 0) {
+        // Case A: Project HAS sub-tabs (like Blood & Lineage)
         let anyVisible = Array.from(innerTabs).some(tab => tab.style.display === 'block');
         if (!anyVisible) {
           innerTabs[0].style.display = 'block';
-          
-          // Highlight the first sub-tab button if it exists
           const firstInnerBtn = activeTab.querySelector('.tab-btn');
           if (firstInnerBtn) {
             firstInnerBtn.style.background = '#161b22';
@@ -1167,6 +1161,14 @@ body:has(#blood-lineage[style*="display: block"]) {
             firstInnerBtn.classList.add('active');
           }
         }
+      } else {
+        // Case B: Project DOES NOT have sub-tabs (like Tower Defense / Dark Side)
+        // Ensure any internal content blocks are forced visible
+        activeTab.querySelectorAll('div').forEach(div => {
+          if (div.style.display === 'none') {
+            div.style.display = 'block';
+          }
+        });
       }
     }
   }
