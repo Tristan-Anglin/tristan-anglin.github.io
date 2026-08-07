@@ -737,188 +737,205 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <!-- Left Side: Title Badge + C++ Logo -->
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge" height="35" alt="Tower Defense"/>
-    <img src="https://skillicons.dev/icons?i=cpp" height="30" style="display: block;" alt="C++" />
-  </div>
-  
-  <!-- Right Side: Year/Date Badge -->
-  <img src="https://img.shields.io/badge/Dec%202024-333333?style=for-the-badge" height="35" alt="Dec 2024"/>
-</div>
-  
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Strategy TD</b>
-    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
-  </div>
-  
-  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
-  </div>
-  <div align="center" style="margin: 25px 0;">
-    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      <iframe 
-        src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
-        title="Tower Defense Gameplay"
-        loading="lazy"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        allow="autoplay; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+  <!-- Added Wrapper Sub-Tab -->
+  <div class="tab-content" style="display: block;">
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Side: Title Badge + C++ Logo -->
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.shields.io/badge/Tower%20Defense-a5472d?style=for-the-badge" height="35" alt="Tower Defense"/>
+        <img src="https://skillicons.dev/icons?i=cpp" height="30" style="display: block;" alt="C++" />
+      </div>
+      
+      <!-- Right Side: Year/Date Badge -->
+      <img src="https://img.shields.io/badge/Dec%202024-333333?style=for-the-badge" height="35" alt="Dec 2024"/>
     </div>
-  </div>
+    
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Strategy TD</b>
+      <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
+    </div>
+    
+    <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
+      A technical exercise in engine-level programming, built from the ground up using C++ and OpenGL. The project focused on efficient spatial partitioning and real-time path manipulation within a custom rendering pipeline.
+    </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div align="center" style="margin: 25px 0;">
+      <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
+          title="Tower Defense Gameplay"
+          loading="lazy"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allow="autoplay; encrypted-media; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Custom OpenGL Engine & Y-Sorting</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a lightweight 2D rendering engine from the ground up using Modern C++ and OpenGL.</li>
-      <li><b>Implemented</b> a dynamic Top-Down Depth Sorting (Y-sorting) system to manage draw call ordering.</li>
-      <li><b>Optimized</b> visual layering to ensure foreground structures naturally overlap background entities.</li>
-    </ul>
-  </div>
+    <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Dynamic Pathfinding</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Engineered</b> a tile-based grid system utilizing the A* Search Algorithm for enemy navigation.</li>
-      <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place walls.</li>
-      <li><b>Integrated</b> validation logic to ensure a valid path to the objective is maintained at all times.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Custom OpenGL Engine & Y-Sorting</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Developed</b> a lightweight 2D rendering engine from the ground up using Modern C++ and OpenGL.</li>
+        <li><b>Implemented</b> a dynamic Top-Down Depth Sorting (Y-sorting) system to manage draw call ordering.</li>
+        <li><b>Optimized</b> visual layering to ensure foreground structures naturally overlap background entities.</li>
+      </ul>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Tower Mechanics & Evolution</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Created</b> a hover-state system for real-time range visualization and player feedback.</li>
-      <li><b>Built</b> a kill-based progression system that triggers dynamic stat scaling for towers.</li>
-      <li><b>Programmed</b> visual transformations via automated sprite swaps to reflect tower "level up" states.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Dynamic Pathfinding</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Engineered</b> a tile-based grid system utilizing the A* Search Algorithm for enemy navigation.</li>
+        <li><b>Implemented</b> real-time path recalculation, allowing AI to adapt instantly as players place walls.</li>
+        <li><b>Integrated</b> validation logic to ensure a valid path to the objective is maintained at all times.</li>
+      </ul>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Grid & Placement Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a robust snapping and validation system for tile-based structure placement.</li>
-      <li><b>Architected</b> interaction logic between player-built obstacles and the underlying navigation mesh.</li>
-      <li><b>Managed</b> collision detection to ensure accurate interactions with enemy hitboxes.</li>
-    </ul>
-  </div>
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Tower Mechanics & Evolution</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Created</b> a hover-state system for real-time range visualization and player feedback.</li>
+        <li><b>Built</b> a kill-based progression system that triggers dynamic stat scaling for towers.</li>
+        <li><b>Programmed</b> visual transformations via automated sprite swaps to reflect tower "level up" states.</li>
+      </ul>
+    </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
-      <b style="color: #ffffff;">The Challenge: Math Shaders & Pathing Depth</b>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Grid & Placement Logic</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Developed</b> a robust snapping and validation system for tile-based structure placement.</li>
+        <li><b>Architected</b> interaction logic between player-built obstacles and the underlying navigation mesh.</li>
+        <li><b>Managed</b> collision detection to ensure accurate interactions with enemy hitboxes.</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+        <b style="color: #ffffff;">The Challenge: Math Shaders & Pathing Depth</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Building an engine from scratch meant handling raw matrices. I encountered geometric complications getting vertex shaders to accurately rotate projectiles toward target headings, alongside performance bottlenecks when multiple active entities computed A* path calculations on a mutable grid simultaneously.
+        </p>
+      </div>
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+        <b style="color: #ffffff;">The Resolution: Matrix Transforms & Caching</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Resolved sprite transformation defects by normalizing directional vectors and feeding precise arctangent orientations directly into the shader pipeline. Optimized navigation data by caching computed paths, only forcing an A* re-evaluation when structural map changes invalidated the current grid node layout.
+        </p>
+      </div>
+    </div>
+
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+      <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
       <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Building an engine from scratch meant handling raw matrices. I encountered geometric complications getting vertex shaders to accurately rotate projectiles toward target headings, alongside performance bottlenecks when multiple active entities computed A* path calculations on a mutable grid simultaneously.
+        To maximize lower-level execution efficiency, I would swap out standard pathfinding references for a <b>Flow Field / Vector Field navigation model</b>. This would allow an infinite number of swarm entities to share a single directional vector grid, completely eliminating per-unit CPU overhead.
       </p>
     </div>
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Matrix Transforms & Caching</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Resolved sprite transformation defects by normalizing directional vectors and feeding precise arctangent orientations directly into the shader pipeline. Optimized navigation data by caching computed paths, only forcing an A* re-evaluation when structural map changes invalidated the current grid node layout.
-      </p>
-    </div>
-  </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
-    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
-    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      To maximize lower-level execution efficiency, I would swap out standard pathfinding references for a <b>Flow Field / Vector Field navigation model</b>. This would allow an infinite number of swarm entities to share a single directional vector grid, completely eliminating per-unit CPU overhead.
-    </p>
-  </div>
+
+  </div> <!-- End of wrapper sub-tab -->
 </div>
 
 <div id="darkside" class="portfolio-tab" style="display: none;">
-<div style="display: flex; justify-content: space-between; align-items: center;">
+  <!-- Added Wrapper Sub-Tab -->
+  <div class="tab-content" style="display: block;">
 
-  <div style="display: flex; align-items: center; gap: 8px;">
-    <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge" height="35" alt="Your Dark Side"/>
-    <img src="https://skillicons.dev/icons?i=java&theme=dark" height="30" style="display: block;" alt="Java" />
-  </div>
-  
-  <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35" alt="2023"/>
-</div>
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Fantasy RPG</b>
-    <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
-  </div>
-  <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
-    Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
-  </div>
-  <div align="center" style="margin: 25px 0;">
-    <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
-      <iframe 
-        src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
-        title="Your Dark Side Gameplay"
-        loading="lazy"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        allow="autoplay; encrypted-media; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.shields.io/badge/Your%20Dark%20Side-a5472d?style=for-the-badge" height="35" alt="Your Dark Side"/>
+        <img src="https://skillicons.dev/icons?i=java&theme=dark" height="30" style="display: block;" alt="Java" />
+      </div>
+      
+      <img src="https://img.shields.io/badge/2023-333333?style=for-the-badge" height="35" alt="2023"/>
     </div>
-  </div>
+    
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #f0f6fc; font-size: 1.1em;">2D Tile-Based Fantasy RPG</b>
+      <b style="color: #da765b; font-size: 1.1em;">Solo Developer</b>
+    </div>
+    
+    <div style="background: #161b22; padding: 12px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 15px; margin-top: 15px; color: #f0f6fc;">
+      Built entirely from the ground up in Java, Your Dark Side represents my final major project before transitioning into formal game development studies. Driven by pure passion and self-teaching, it served as a technical playground for implementing the core pillars of the RPG genre—including complex state management, A* pathfinding, and integrated merchant economies.
+    </div>
+    
+    <div align="center" style="margin: 25px 0;">
+      <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
+          title="Your Dark Side Gameplay"
+          loading="lazy"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+          allow="autoplay; encrypted-media; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <h3 style="margin-bottom: 5px; color: #ffffff;">Core Contributions</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Modular Class Framework</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Engineered</b> a multi-class selection system as the foundation for character state management.</li>
-      <li><b>Implemented</b> attribute scaling logic to handle unique progression paths for different classes.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Modular Class Framework</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Engineered</b> a multi-class selection system as the foundation for character state management.</li>
+        <li><b>Implemented</b> attribute scaling logic to handle unique progression paths for different classes.</li>
+      </ul>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Inventory & Economy Logic</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Developed</b> a robust inventory system and NPC interaction framework for merchant economies.</li>
-      <li><b>Programmed</b> complex item valuation and transactional logic for buying/selling mechanics.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Inventory & Economy Logic</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Developed</b> a robust inventory system and NPC interaction framework for merchant economies.</li>
+        <li><b>Programmed</b> complex item valuation and transactional logic for buying/selling mechanics.</li>
+      </ul>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">A* Pathfinding Implementation</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Integrated</b> advanced A* pathfinding algorithms to ensure intelligent enemy AI navigation.</li>
-      <li><b>Optimized</b> path calculation for complex, tile-based fantasy environments.</li>
-    </ul>
-  </div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">A* Pathfinding Implementation</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Integrated</b> advanced A* pathfinding algorithms to ensure intelligent enemy AI navigation.</li>
+        <li><b>Optimized</b> path calculation for complex, tile-based fantasy environments.</li>
+      </ul>
+    </div>
 
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
-    <b style="color: #ffffff;">Spell Framework & Minimap</b>
-    <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
-      <li><b>Designed</b> an extensible spell architecture for easy integration of new combat mechanics and effects.</li>
-      <li><b>Developed</b> a real-time minimap system featuring entity tracking and dynamic zoom capabilities.</li>
-    </ul>
-  </div>
-  <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 12px; color: #f0f6fc;">
+      <b style="color: #ffffff;">Spell Framework & Minimap</b>
+      <ul style="margin-top: 5px; margin-bottom: 0; padding-left: 20px;">
+        <li><b>Designed</b> an extensible spell architecture for easy integration of new combat mechanics and effects.</li>
+        <li><b>Developed</b> a real-time minimap system featuring entity tracking and dynamic zoom capabilities.</li>
+      </ul>
+    </div>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
-      <b style="color: #ffffff;">The Challenge: The Scope Creep Trap</b>
+    <h3 style="margin-top: 30px; margin-bottom: 5px; color: #ffffff;">Technical Post-Mortem</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 15px 0 25px 0; opacity: 0.7;"></div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #bd4c2a;">
+        <b style="color: #ffffff;">The Challenge: The Scope Creep Trap</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          As an early project, the initial vision over-scoped heavily on content scale. Trying to build multiple sweeping features simultaneously without a concrete framework threatened to leave the project completely unplayable and fractured.
+        </p>
+      </div>
+      <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
+        <b style="color: #ffffff;">The Resolution: Pivoting to System Foundations</b>
+        <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
+          Halted wide-scale asset development and shifted focus to isolating core modular data. Successfully targeted and polished the underlying mechanics: creating an extensible inventory loop, working out class selection persistence, and stabilizing the mathematical equations governing RPG stat scaling.
+        </p>
+      </div>
+    </div>
+    
+    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
+      <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
       <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        As an early project, the initial vision over-scoped heavily on content scale. Trying to build multiple sweeping features simultaneously without a concrete framework threatened to leave the project completely unplayable and fractured.
+        This project taught me the vital importance of producing a <b>Minimum Viable Product (MVP)</b>. I would now implement a strict milestone pipeline, ensuring the core transactional loop and gameplay states are rock-solid before mapping out extensive horizontal mechanics or game content blocks.
       </p>
     </div>
-    <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #28a745;">
-      <b style="color: #ffffff;">The Resolution: Pivoting to System Foundations</b>
-      <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-        Halted wide-scale asset development and shifted focus to isolating core modular data. Successfully targeted and polished the underlying mechanics: creating an extensible inventory loop, working out class selection persistence, and stabilizing the mathematical equations governing RPG stat scaling.
-      </p>
-    </div>
-  </div>
-  <div style="background: #161b22; padding: 15px; border-radius: 8px; border-left: 5px solid #4285F4; margin-bottom: 10px;">
-    <b style="color: #ffffff;">Future Approach & Architectural Evolution</b>
-    <p style="margin-top: 5px; margin-bottom: 0; font-size: 0.95em; line-height: 1.5; color: #c9d1d9;">
-      This project taught me the vital importance of producing a **Minimum Viable Product (MVP)**. I would now implement a strict milestone pipeline, ensuring the core transactional loop and gameplay states are rock-solid before mapping out extensive horizontal mechanics or game content blocks.
-    </p>
-  </div>
+
+  </div> <!-- End of wrapper sub-tab -->
 </div>
 
 <div id="dungeon" class="portfolio-tab" style="display: none;">
