@@ -1093,43 +1093,35 @@ body:has(#blood-lineage[style*="display: block"]) {
   </div>
 </div>
 
+<!-- JavaScript tab switcher script -->
 <script>
-function switchTab(tabId, btnElement) {
-  var targetId = typeof tabId === 'string' ? tabId : btnElement;
-  var targetBtn = (btnElement && btnElement.nodeType) ? btnElement : (event ? event.currentTarget : null);
+  function switchTab(tabId, btn) {
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.style.display = 'none');
 
-  // 1. Hide ONLY actual content panels (do NOT target .portfolio-tab wrappers)
-  var allTabs = document.querySelectorAll('.tab-content');
-  for (var i = 0; i < allTabs.length; i++) {
-    allTabs[i].style.display = 'none';
-    allTabs[i].classList.remove('active-content');
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(button => {
+      button.style.background = '#0d1117';
+      button.style.color = '#8b949e';
+      button.style.border = '1px solid transparent';
+      button.classList.remove('active');
+    });
+
+    const activeTab = document.getElementById(tabId);
+    if (activeTab) {
+      activeTab.style.display = 'block';
+    }
+
+    btn.style.background = '#161b22';
+    btn.style.color = '#ffffff';
+    btn.style.border = '1px solid #30363d';
+    btn.style.borderBottom = '3px solid #a5472d';
+    btn.classList.add('active');
   }
 
-  // 2. Reset inline styles on all tab buttons
-  var allButtons = document.querySelectorAll('.tab-btn');
-  for (var j = 0; j < allButtons.length; j++) {
-    allButtons[j].classList.remove('active', 'active-tab');
-    allButtons[j].style.background = '#0d1117';
-    allButtons[j].style.color = '#8b949e';
-    allButtons[j].style.border = '1px solid transparent';
+  function zoomImage(img) {
+    window.open(img.src, '_blank');
   }
-
-  // 3. Display the requested tab panel
-  var targetTab = document.getElementById(targetId);
-  if (targetTab) {
-    targetTab.style.display = 'block';
-    targetTab.classList.add('active-content');
-  }
-
-  // 4. Highlight the clicked button
-  if (targetBtn) {
-    targetBtn.classList.add('active', 'active-tab');
-    targetBtn.style.background = '#161b22';
-    targetBtn.style.color = '#ffffff';
-    targetBtn.style.border = '1px solid #30363d';
-    targetBtn.style.borderBottom = '3px solid #a5472d';
-  }
-}
 </script>
 
 <script>
