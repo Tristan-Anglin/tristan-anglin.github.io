@@ -1094,42 +1094,63 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-  function switchTab(tabId, btn) {
-    // 1. Find the target tab first
+  function switchTab(arg1, arg2) {
+    let tabId, btn;
+
+    // 1. Auto-detect how the HTML passed the parameters
+    if (typeof arg1 === 'string') {
+      // Handles sub-tabs: switchTab('bl-tab-overview', this)
+      tabId = arg1;
+      btn = arg2;
+    } else {
+      // Handles main tabs: switchTab(event, 'blood-lineage')
+      tabId = arg2;
+      btn = arg1.currentTarget;
+    }
+
+    // 2. Find the tab we want to open
     const activeTab = document.getElementById(tabId);
-    if (!activeTab) return; // Stop if the tab doesn't exist to prevent crashes
+    if (!activeTab) {
+      console.warn("Could not find a tab with the ID:", tabId);
+      return; 
+    }
 
-    // 2. Find the specific portfolio project this tab belongs to
-    // By using the tab itself to find the container, we don't rely on the button!
-    const projectContainer = activeTab.closest('.portfolio-tab') || document;
+    // 3. Determine if this is a main project tab or a sub-tab
+    const isSubTab = activeTab.classList.contains('tab-content');
+    
+    // Find the correct boundary container
+    const container = isSubTab ? activeTab.closest('.portfolio-tab') : document;
+    
+    // Find the correct class to hide
+    const selectorToHide = isSubTab ? '.tab-content' : '.portfolio-tab';
 
-    // 3. Hide ONLY the tabs within this specific project
-    const contents = projectContainer.querySelectorAll('.tab-content');
+    // 4. Hide all active panels in this scope
+    const contents = container.querySelectorAll(selectorToHide);
     contents.forEach(content => content.style.display = 'none');
 
-    // 4. Reset ONLY the buttons within this specific project
-    const buttons = projectContainer.querySelectorAll('.tab-btn');
-    buttons.forEach(button => {
-      button.style.background = '#0d1117';
-      button.style.color = '#8b949e';
-      button.style.border = '1px solid transparent';
-      button.classList.remove('active');
-    });
+    // 5. Safely reset ONLY the buttons in the same menu group
+    if (btn && btn.parentElement) {
+      const buttons = btn.parentElement.querySelectorAll('.tab-btn');
+      buttons.forEach(button => {
+        button.style.background = 'transparent'; // Resets to default
+        button.style.color = '#8b949e';
+        button.style.border = '1px solid transparent';
+        button.classList.remove('active', 'active-tab');
+      });
 
-    // 5. Show the target tab
-    activeTab.style.display = 'block';
-
-    // 6. Safely highlight the clicked button (only if it was properly passed)
-    if (btn && typeof btn.style !== 'undefined') {
+      // Apply active styling to the clicked button
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
       btn.style.border = '1px solid #30363d';
       btn.style.borderBottom = '3px solid #a5472d';
-      btn.classList.add('active');
+      btn.classList.add('active', 'active-tab');
     }
+
+    // 6. Show the selected tab
+    activeTab.style.display = 'block';
   }
 
-  // Safely initialize canvas
+  // Safe Canvas Initialization
   document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particle-canvas');
     if (!canvas) return; 
