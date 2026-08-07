@@ -1134,75 +1134,84 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-  function switchTab(arg1, arg2) {
-    let tabId, btn;
+  function switchTab(tabId, btn) {
+    const target = document.getElementById(tabId);
+    if (!target) {
+      console.warn("Tab not found:", tabId);
+      return;
+    }
 
-    // 1. Auto-detect parameters
-    if (typeof arg1 === 'string') {
-      tabId = arg1;
-      btn = arg2;
+    // Determine if the target is a sub-tab (.tab-content) or a main tab (.portfolio-tab)
+    const isSub = target.classList.contains('tab-content');
+
+    if (!isSub) {
+      // --- MAIN PROJECT / SECTION TAB ---
+      // 1. Hide all main portfolio tabs
+      document.querySelectorAll('.portfolio-tab').forEach(tab => {
+        tab.style.setProperty('display', 'none', 'important');
+      });
+
+      // 2. Show the selected main tab
+      target.style.setProperty('display', 'block', 'important');
+
+      // 3. If this main tab has sub-tabs inside it, show the first one by default
+      const subTabs = target.querySelectorAll('.tab-content');
+      if (subTabs.length > 0) {
+        subTabs.forEach((sub, idx) => {
+          sub.style.setProperty('display', idx === 0 ? 'block' : 'none', 'important');
+        });
+
+        // Reset and highlight the first sub-tab's button
+        const firstSubBtn = target.querySelector('.tab-btn');
+        if (firstSubBtn && firstSubBtn.parentElement) {
+          const subBtns = firstSubBtn.parentElement.querySelectorAll('.tab-btn');
+          subBtns.forEach((b, idx) => {
+            if (idx === 0) {
+              b.style.background = '#161b22';
+              b.style.color = '#ffffff';
+              b.style.border = '1px solid #30363d';
+              b.style.borderBottom = '3px solid #a5472d';
+              b.classList.add('active', 'active-tab');
+            } else {
+              b.style.background = 'transparent';
+              b.style.color = '#8b949e';
+              b.style.border = '1px solid transparent';
+              b.classList.remove('active', 'active-tab');
+            }
+          });
+        }
+      }
     } else {
-      tabId = arg2;
-      btn = arg1 ? arg1.currentTarget : null;
+      // --- SUB-TAB ---
+      // Find the parent portfolio container
+      const parentPortfolioTab = target.closest('.portfolio-tab');
+      if (parentPortfolioTab) {
+        // Hide all sibling sub-tabs within this specific project
+        parentPortfolioTab.querySelectorAll('.tab-content').forEach(sub => {
+          sub.style.setProperty('display', 'none', 'important');
+        });
+      }
+
+      // Show the target sub-tab
+      target.style.setProperty('display', 'block', 'important');
     }
 
-    // 2. Find the target tab
-    const activeTab = document.getElementById(tabId);
-    if (!activeTab) {
-      console.warn("Could not find a tab with the ID:", tabId);
-      return; 
-    }
-
-    // 3. Determine if main project tab or sub-tab
-    const isSubTab = activeTab.classList.contains('tab-content');
-    const container = isSubTab ? activeTab.closest('.portfolio-tab') : document;
-    const selectorToHide = isSubTab ? '.tab-content' : '.portfolio-tab';
-
-    // 4. Hide all active panels in this scope
-    const contents = container.querySelectorAll(selectorToHide);
-    contents.forEach(content => {
-      content.style.setProperty('display', 'none', 'important');
-    });
-
-    // 5. Reset button styles in this group
+    // --- BUTTON STYLING FOR THE CLICKED BUTTON GROUP ---
     if (btn && btn.parentElement) {
-      const buttons = btn.parentElement.querySelectorAll('.tab-btn');
-      buttons.forEach(button => {
+      const groupButtons = btn.parentElement.querySelectorAll('.tab-btn');
+      groupButtons.forEach(button => {
         button.style.background = 'transparent';
         button.style.color = '#8b949e';
         button.style.border = '1px solid transparent';
         button.classList.remove('active', 'active-tab');
       });
 
-      // Style active button
+      // Style the active button
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
       btn.style.border = '1px solid #30363d';
       btn.style.borderBottom = '3px solid #a5472d';
       btn.classList.add('active', 'active-tab');
-    }
-
-    // 6. Force show the selected tab container
-    activeTab.style.setProperty('display', 'block', 'important');
-
-    // 7. Handle Sub-Tabs vs Single-Page Projects
-    if (!isSubTab) {
-      const innerTabs = activeTab.querySelectorAll('.tab-content');
-      
-      if (innerTabs.length > 0) {
-        let anyVisible = Array.from(innerTabs).some(tab => window.getComputedStyle(tab).display !== 'none');
-        if (!anyVisible) {
-          innerTabs[0].style.setProperty('display', 'block', 'important');
-          const firstInnerBtn = activeTab.querySelector('.tab-btn');
-          if (firstInnerBtn) {
-            firstInnerBtn.style.background = '#161b22';
-            firstInnerBtn.style.color = '#ffffff';
-            firstInnerBtn.style.border = '1px solid #30363d';
-            firstInnerBtn.style.borderBottom = '3px solid #a5472d';
-            firstInnerBtn.classList.add('active');
-          }
-        }
-      }
     }
   }
 
