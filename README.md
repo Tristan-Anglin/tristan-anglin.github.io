@@ -1094,29 +1094,37 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-function switchTab(event, tabId) {
-  // Hide all active tab containers safely
-  var tabs = document.getElementsByClassName("portfolio-tab");
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].style.display = "none";
-    tabs[i].classList.remove("active-content");
-  }
-  
-  // Clear the active class flag from all layout buttons
-  var buttons = document.getElementsByClassName("tab-btn");
-  for (var j = 0; j < buttons.length; j++) {
-    buttons[j].classList.remove("active-tab");
-  }
-  
-  // Show target selection layout and activate target button item
-  var targetTab = document.getElementById(tabId);
+function switchTab(tabId, btnElement) {
+  // 1. Hide all tab content containers
+  const contents = document.querySelectorAll('.tab-content');
+  contents.forEach(content => {
+    content.style.display = 'none';
+    content.classList.remove('active-content');
+  });
+
+  // 2. Reset active tab button styles
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(btn => {
+    btn.classList.remove('active');
+    btn.style.background = '#0d1117';
+    btn.style.color = '#8b949e';
+    btn.style.border = '1px solid transparent';
+  });
+
+  // 3. Display target tab content
+  const targetTab = document.getElementById(tabId);
   if (targetTab) {
-    targetTab.style.display = "block";
-    targetTab.classList.add("active-content");
+    targetTab.style.display = 'block';
+    targetTab.classList.add('active-content');
   }
-  
-  if (event && event.currentTarget) {
-    event.currentTarget.classList.add("active-tab");
+
+  // 4. Highlight target tab button
+  if (btnElement) {
+    btnElement.classList.add('active');
+    btnElement.style.background = '#161b22';
+    btnElement.style.color = '#ffffff';
+    btnElement.style.border = '1px solid #30363d';
+    btnElement.style.borderBottom = '3px solid #a5472d';
   }
 }
 </script>
