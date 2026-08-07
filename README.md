@@ -1134,7 +1134,30 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-  function switchTab(tabId, btn) {
+  function switchTab(arg1, arg2) {
+    let tabId = null;
+    let btn = null;
+
+    // Smart argument parser: automatically detects strings, events, and DOM elements in any order
+    [arg1, arg2].forEach(arg => {
+      if (typeof arg === 'string') {
+        tabId = arg;
+      } else if (arg instanceof Element) {
+        btn = arg;
+      } else if (arg && typeof arg === 'object') {
+        if (arg.currentTarget instanceof Element) {
+          btn = arg.currentTarget;
+        } else if (arg.target instanceof Element && !btn) {
+          btn = arg.target;
+        }
+      }
+    });
+
+    if (!tabId) {
+      console.warn("Could not determine tabId from arguments:", arg1, arg2);
+      return;
+    }
+
     const target = document.getElementById(tabId);
     if (!target) {
       console.warn("Tab not found:", tabId);
@@ -1146,22 +1169,18 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     if (!isSub) {
       // --- MAIN PROJECT / SECTION TAB ---
-      // 1. Hide all main portfolio tabs
       document.querySelectorAll('.portfolio-tab').forEach(tab => {
         tab.style.setProperty('display', 'none', 'important');
       });
 
-      // 2. Show the selected main tab
       target.style.setProperty('display', 'block', 'important');
 
-      // 3. If this main tab has sub-tabs inside it, show the first one by default
       const subTabs = target.querySelectorAll('.tab-content');
       if (subTabs.length > 0) {
         subTabs.forEach((sub, idx) => {
           sub.style.setProperty('display', idx === 0 ? 'block' : 'none', 'important');
         });
 
-        // Reset and highlight the first sub-tab's button
         const firstSubBtn = target.querySelector('.tab-btn');
         if (firstSubBtn && firstSubBtn.parentElement) {
           const subBtns = firstSubBtn.parentElement.querySelectorAll('.tab-btn');
@@ -1183,20 +1202,20 @@ body:has(#blood-lineage[style*="display: block"]) {
       }
     } else {
       // --- SUB-TAB ---
-      // Find the parent portfolio container
       const parentPortfolioTab = target.closest('.portfolio-tab');
       if (parentPortfolioTab) {
-        // Hide all sibling sub-tabs within this specific project
         parentPortfolioTab.querySelectorAll('.tab-content').forEach(sub => {
           sub.style.setProperty('display', 'none', 'important');
         });
       }
-
-      // Show the target sub-tab
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- BUTTON STYLING FOR THE CLICKED BUTTON GROUP ---
+    // --- BUTTON STYLING ---
+    if (!btn) {
+      btn = document.querySelector(`[onclick*="${tabId}"]`);
+    }
+
     if (btn && btn.parentElement) {
       const groupButtons = btn.parentElement.querySelectorAll('.tab-btn');
       groupButtons.forEach(button => {
@@ -1206,7 +1225,6 @@ body:has(#blood-lineage[style*="display: block"]) {
         button.classList.remove('active', 'active-tab');
       });
 
-      // Style the active button
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
       btn.style.border = '1px solid #30363d';
