@@ -1097,39 +1097,35 @@ body:has(#blood-lineage[style*="display: block"]) {
 function switchTab(tabId, btnElement) {
   if (!btnElement) return;
 
-  // 1. Find the outer wrapper containing ONLY this game's section
-  const container = btnElement.closest('.portfolio-tab') || btnElement.closest('.tab-content') || btnElement.parentElement.parentElement;
-  
-  if (!container) return;
+  // 1. Get the local wrapper holding both the tab navigation and content divs for THIS game
+  const localSection = btnElement.parentElement.parentElement;
+  if (!localSection) return;
 
-  // 2. Hide only tab content panels inside THIS specific container
-  const contents = container.querySelectorAll(':scope > .tab-content, .tab-content');
-  contents.forEach(content => {
-    // Only toggle content blocks belonging to this container group
-    if (content.parentElement === container || content.id === tabId || content.classList.contains('tab-content')) {
-      content.style.display = 'none';
-      content.classList.remove('active-content');
-    }
+  // 2. Hide ONLY the tab-content panels inside this specific game wrapper
+  const localTabs = localSection.querySelectorAll('.tab-content');
+  localTabs.forEach(tab => {
+    tab.style.display = 'none';
+    tab.classList.remove('active-content');
   });
 
-  // 3. Reset styles ONLY for buttons in this specific tab navigation bar
+  // 3. Reset ONLY the buttons inside this specific game's navigation bar
   const navBar = btnElement.parentElement;
-  const buttons = navBar.querySelectorAll('.tab-btn');
-  buttons.forEach(btn => {
+  const localButtons = navBar.querySelectorAll('.tab-btn');
+  localButtons.forEach(btn => {
     btn.classList.remove('active');
     btn.style.background = '#0d1117';
     btn.style.color = '#8b949e';
     btn.style.border = '1px solid transparent';
   });
 
-  // 4. Reveal the selected target tab
+  // 4. Reveal the target tab panel
   const targetTab = document.getElementById(tabId);
   if (targetTab) {
     targetTab.style.display = 'block';
     targetTab.classList.add('active-content');
   }
 
-  // 5. Highlight the clicked button
+  // 5. Highlight the active button
   btnElement.classList.add('active');
   btnElement.style.background = '#161b22';
   btnElement.style.color = '#ffffff';
