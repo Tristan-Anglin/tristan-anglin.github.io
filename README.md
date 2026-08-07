@@ -1164,32 +1164,33 @@ body:has(#blood-lineage[style*="display: block"]) {
           }
         }
       } else {
-        // Case B: Project DOES NOT have sub-tabs (Tower Defense, Dark Side, Dungeon, Hit & Run)
-        // Force all child structural wrappers to display properly
-        activeTab.querySelectorAll('div').forEach(div => {
-          const currentDisplay = window.getComputedStyle(div).display;
-          if (currentDisplay === 'none') {
-            div.style.setProperty('display', 'block', 'important');
-          }
-        });
-      }
+  // Case B: Project DOES NOT have sub-tabs 
+  // Target a specific wrapper class instead of all generic divs
+  activeTab.querySelectorAll('.project-main-content').forEach(wrapper => {
+    wrapper.style.setProperty('display', 'block', 'important');
+  });
+}
     }
   }
 
-  // Safe Canvas Initialization
+ // Safe Canvas & Default Tab Initialization
   document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particle-canvas');
-    if (!canvas) return; 
+    if (canvas) {
+      const ctx = canvas.getContext('2d');
+      let particlesArray = [];
+      const numberOfParticles = 45; 
 
-    const ctx = canvas.getContext('2d');
-    let particlesArray = [];
-    const numberOfParticles = 45; 
-
-    function setCanvasSize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      function setCanvasSize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      }
+      setCanvasSize();
+      window.addEventListener('resize', setCanvasSize);
     }
-    setCanvasSize();
-    window.addEventListener('resize', setCanvasSize);
+    
+    if (document.getElementById(defaultTabId)) {
+      switchTab(defaultTabId, defaultButton);
+    }
   });
 </script>
