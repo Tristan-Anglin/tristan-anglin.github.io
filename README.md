@@ -434,61 +434,65 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <div id="round-based-survival" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
-  
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-    <!-- Left Side: Title Badge + Unity Logo -->
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <img src="https://img.shields.io/badge/Round%20Based%20Survival-a5472d?style=for-the-badge" height="35" alt="Round Based Survival"/>
-      <img src="https://skillicons.dev/icons?i=unity" height="30" style="display: block;" alt="Unity Engine" />
-    </div>
+  <!-- Added Inner Wrapper to Match Your Other Tabs -->
+  <div class="tab-content" style="display: block;">
     
-    <!-- Middle: Steam Release Badge -->
-    <div>
-      <span class="steam-badge" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 8px; font-weight: bold;">
-        <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Planned Steam Release"></i>
-        Planned Steam Release
-      </span>
+    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <!-- Left Side: Title Badge + Unity Logo -->
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <img src="https://img.shields.io/badge/Round%20Based%20Survival-a5472d?style=for-the-badge" height="35" alt="Round Based Survival"/>
+        <img src="https://skillicons.dev/icons?i=unity" height="30" style="display: block;" alt="Unity Engine" />
+      </div>
+       
+      <!-- Middle: Steam Release Badge -->
+      <div>
+        <span class="steam-badge" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #8b949e; display: inline-flex; align-items: center; gap: 8px; font-weight: bold;">
+          <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Planned Steam Release"></i>
+          Planned Steam Release
+        </span>
+      </div>
+       
+      <!-- Right Side: Status Badge -->
+      <img src="https://img.shields.io/badge/Status--In%20Development-333333?style=for-the-badge" height="35" alt="In Development"/>
     </div>
-    
-    <!-- Right Side: Status Badge -->
-    <img src="https://img.shields.io/badge/Status--In%20Development-333333?style=for-the-badge" height="35" alt="In Development"/>
-  </div>
 
-  <!-- Sub-Header Metadata Line -->
-  <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
-    <b style="color: #f0f6fc; font-size: 1.1em;">3D Action Survival Loop</b>
-    <b style="color: #da765b; font-size: 1.1em;">Solo Systems & Gameplay Programmer</b>
-  </div>
-
-  <!-- Summary Box and Metric Display Split Grid -->
-  <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 20px 0; align-items: center;">
-    <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
-      Architecting a modular and scalable round-based survival loop framework from scratch using <b>Unity</b> and decoupled <b>C#</b> architecture. Engineering finite state machines for wave progression, dynamic enemy spawning algorithms, and fluid weapon/inventory management profiles configured for a commercial desktop deployment.
+    <!-- Sub-Header Metadata Line -->
+    <div style="display: flex; justify-content: space-between; margin-top: 12px; padding-bottom: 4px; flex-wrap: wrap; gap: 5px;">
+      <b style="color: #f0f6fc; font-size: 1.1em;">3D Action Survival Loop</b>
+      <b style="color: #da765b; font-size: 1.1em;">Solo Systems & Gameplay Programmer</b>
     </div>
-    <div style="background: #0d1117; border: 1px solid #30363d; padding: 12px; border-radius: 8px; text-align: center;">
-      <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">C#</div>
-      <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">OOP Architecture</div>
-      <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">Unity</div>
-      <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px;">Input System / UIElements</div>
-    </div>
-  </div>
 
-  <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Technical Features</h3>
-  <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
-
-  <!-- Detailed Contributions Card -->
-  <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
-    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
-      <b style="color: #ffffff; font-size: 1.1em;">Gameplay Framework & Core State Machines</b>
-      <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">C# Scripting / State Architecture</span>
+    <!-- Summary Box and Metric Display Split Grid -->
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 20px 0; align-items: center;">
+      <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
+        Architecting a modular and scalable round-based survival loop framework from scratch using <b>Unity</b> and decoupled <b>C#</b> architecture. Engineering finite state machines for wave progression, dynamic enemy spawning algorithms, and fluid weapon/inventory management profiles configured for a commercial desktop deployment.
+      </div>
+      <div style="background: #0d1117; border: 1px solid #30363d; padding: 12px; border-radius: 8px; text-align: center;">
+        <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">C#</div>
+        <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">OOP Architecture</div>
+        <div style="font-size: 1.8em; font-weight: bold; color: #f0f6fc; margin-bottom: 2px;">Unity</div>
+        <div style="font-size: 0.75em; color: #8b949e; text-transform: uppercase; letter-spacing: 0.5px;">Input System / UIElements</div>
+      </div>
     </div>
-    
-    <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-      <li><b>Round Transition Automation:</b> Programmed a centralized Game Director manager using an state-driven architecture to dynamically control round scaling curves, grace periods, and clear conditions.</li>
-      <li><b>Decoupled ScriptableObject Databases:</b> Created data-driven configuration arrays for items, enemy scaling variations, and progressive round modifiers to maximize code reusability.</li>
-      <li><b>Robust Input Management:</b> Implemented smooth mechanics built natively around the updated Unity Input System for modular control handling profiles.</li>
-    </ul>
-  </div>
+
+    <h3 style="margin-bottom: 5px; color: #ffffff; font-size: 1.3em;">Technical Features</h3>
+    <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 0%, #bd4c2a 50%, transparent 100%); margin: 10px 0 25px 0; opacity: 0.7;"></div>
+
+    <!-- Detailed Contributions Card -->
+    <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+        <b style="color: #ffffff; font-size: 1.1em;">Gameplay Framework & Core State Machines</b>
+        <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">C# Scripting / State Architecture</span>
+      </div>
+       
+      <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
+        <li><b>Round Transition Automation:</b> Programmed a centralized Game Director manager using an state-driven architecture to dynamically control round scaling curves, grace periods, and clear conditions.</li>
+        <li><b>Decoupled ScriptableObject Databases:</b> Created data-driven configuration arrays for items, enemy scaling variations, and progressive round modifiers to maximize code reusability.</li>
+        <li><b>Robust Input Management:</b> Implemented smooth mechanics built natively around the updated Unity Input System for modular control handling profiles.</li>
+      </ul>
+    </div>
+
+  </div> <!-- End of inner tab-content wrapper -->
 </div>
 
 <div id="blood-lineage" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
