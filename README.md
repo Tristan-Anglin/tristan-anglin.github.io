@@ -736,35 +736,6 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 </div>
 
-<!-- Inline JavaScript for Tab Switch Logic -->
-<script>
-  function switchTab(tabId, btn) {
-    // Hide all tab content
-    const contents = document.querySelectorAll('.tab-content');
-    contents.forEach(content => content.style.display = 'none');
-
-    // Reset styles for all tab buttons
-    const buttons = document.querySelectorAll('.tab-btn');
-    buttons.forEach(b => {
-      b.style.background = '#0d1117';
-      b.style.color = '#8b949e';
-      b.style.border = '1px solid transparent';
-      b.style.borderBottom = 'none';
-      b.classList.remove('active');
-    });
-
-    // Show active tab
-    document.getElementById(tabId).style.display = 'block';
-
-    // Highlight active button
-    btn.style.background = '#161b22';
-    btn.style.color = '#ffffff';
-    btn.style.border = '1px solid #30363d';
-    btn.style.borderBottom = '3px solid #a5472d';
-    btn.classList.add('active');
-  }
-</script>
-
 <div id="tower-defense" class="portfolio-tab" style="display: none;">
 <div style="display: flex; justify-content: space-between; align-items: center;">
   <!-- Left Side: Title Badge + C++ Logo -->
