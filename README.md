@@ -1222,8 +1222,8 @@ body:has(#blood-lineage[style*="display: block"]) {
       window.addEventListener('resize', setCanvasSize);
     }
     
-    // Automatically load Blood & Lineage on page start
-    const defaultTabId = 'blood-lineage';
+
+    const defaultTabId = 'about-tab';
     const defaultButton = document.querySelector('.tab-btn');
     if (document.getElementById(defaultTabId)) {
       switchTab(defaultTabId, defaultButton);
