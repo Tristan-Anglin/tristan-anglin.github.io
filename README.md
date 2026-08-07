@@ -1118,9 +1118,11 @@ body:has(#blood-lineage[style*="display: block"]) {
     const container = isSubTab ? activeTab.closest('.portfolio-tab') : document;
     const selectorToHide = isSubTab ? '.tab-content' : '.portfolio-tab';
 
-    // 4. Hide all active panels in this scope
+    // 4. Hide all active panels in this scope (using !important to override CSS)
     const contents = container.querySelectorAll(selectorToHide);
-    contents.forEach(content => content.style.display = 'none');
+    contents.forEach(content => {
+      content.style.setProperty('display', 'none', 'important');
+    });
 
     // 5. Reset button styles in this group
     if (btn && btn.parentElement) {
@@ -1140,8 +1142,8 @@ body:has(#blood-lineage[style*="display: block"]) {
       btn.classList.add('active', 'active-tab');
     }
 
-    // 6. Show the selected tab container
-    activeTab.style.display = 'block';
+    // 6. Force show the selected tab container (bypassing CSS !important conflicts)
+    activeTab.style.setProperty('display', 'block', 'important');
 
     // 7. ROBUST CONTENT SAFETY NET
     if (!isSubTab) {
@@ -1149,9 +1151,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       
       if (innerTabs.length > 0) {
         // Case A: Project HAS sub-tabs (like Blood & Lineage)
-        let anyVisible = Array.from(innerTabs).some(tab => tab.style.display === 'block');
+        let anyVisible = Array.from(innerTabs).some(tab => window.getComputedStyle(tab).display !== 'none');
         if (!anyVisible) {
-          innerTabs[0].style.display = 'block';
+          innerTabs[0].style.setProperty('display', 'block', 'important');
           const firstInnerBtn = activeTab.querySelector('.tab-btn');
           if (firstInnerBtn) {
             firstInnerBtn.style.background = '#161b22';
@@ -1162,11 +1164,12 @@ body:has(#blood-lineage[style*="display: block"]) {
           }
         }
       } else {
-        // Case B: Project DOES NOT have sub-tabs (like Tower Defense / Dark Side)
-        // Ensure any internal content blocks are forced visible
+        // Case B: Project DOES NOT have sub-tabs (Tower Defense, Dark Side, Dungeon, Hit & Run)
+        // Force all child structural wrappers to display properly
         activeTab.querySelectorAll('div').forEach(div => {
-          if (div.style.display === 'none') {
-            div.style.display = 'block';
+          const currentDisplay = window.getComputedStyle(div).display;
+          if (currentDisplay === 'none') {
+            div.style.setProperty('display', 'block', 'important');
           }
         });
       }
