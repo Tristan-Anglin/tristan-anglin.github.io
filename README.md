@@ -1095,15 +1095,26 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <script>
 function switchTab(tabId, btnElement) {
-  // 1. Hide all tab content containers
-  const contents = document.querySelectorAll('.tab-content');
+  if (!btnElement) return;
+
+  // 1. Find the outer wrapper containing ONLY this game's section
+  const container = btnElement.closest('.portfolio-tab') || btnElement.closest('.tab-content') || btnElement.parentElement.parentElement;
+  
+  if (!container) return;
+
+  // 2. Hide only tab content panels inside THIS specific container
+  const contents = container.querySelectorAll(':scope > .tab-content, .tab-content');
   contents.forEach(content => {
-    content.style.display = 'none';
-    content.classList.remove('active-content');
+    // Only toggle content blocks belonging to this container group
+    if (content.parentElement === container || content.id === tabId || content.classList.contains('tab-content')) {
+      content.style.display = 'none';
+      content.classList.remove('active-content');
+    }
   });
 
-  // 2. Reset active tab button styles
-  const buttons = document.querySelectorAll('.tab-btn');
+  // 3. Reset styles ONLY for buttons in this specific tab navigation bar
+  const navBar = btnElement.parentElement;
+  const buttons = navBar.querySelectorAll('.tab-btn');
   buttons.forEach(btn => {
     btn.classList.remove('active');
     btn.style.background = '#0d1117';
@@ -1111,21 +1122,19 @@ function switchTab(tabId, btnElement) {
     btn.style.border = '1px solid transparent';
   });
 
-  // 3. Display target tab content
+  // 4. Reveal the selected target tab
   const targetTab = document.getElementById(tabId);
   if (targetTab) {
     targetTab.style.display = 'block';
     targetTab.classList.add('active-content');
   }
 
-  // 4. Highlight target tab button
-  if (btnElement) {
-    btnElement.classList.add('active');
-    btnElement.style.background = '#161b22';
-    btnElement.style.color = '#ffffff';
-    btnElement.style.border = '1px solid #30363d';
-    btnElement.style.borderBottom = '3px solid #a5472d';
-  }
+  // 5. Highlight the clicked button
+  btnElement.classList.add('active');
+  btnElement.style.background = '#161b22';
+  btnElement.style.color = '#ffffff';
+  btnElement.style.border = '1px solid #30363d';
+  btnElement.style.borderBottom = '3px solid #a5472d';
 }
 </script>
 
