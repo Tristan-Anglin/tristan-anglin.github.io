@@ -1095,12 +1095,11 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <script>
 function switchTab(tabId, btnElement) {
-  // Handle cases where parameters might be passed in either order or as event
   var targetId = typeof tabId === 'string' ? tabId : btnElement;
   var targetBtn = (btnElement && btnElement.nodeType) ? btnElement : (event ? event.currentTarget : null);
 
-  // 1. Hide all tab content elements across the page
-  var allTabs = document.querySelectorAll('.tab-content, .portfolio-tab');
+  // 1. Hide ONLY actual content panels (do NOT target .portfolio-tab wrappers)
+  var allTabs = document.querySelectorAll('.tab-content');
   for (var i = 0; i < allTabs.length; i++) {
     allTabs[i].style.display = 'none';
     allTabs[i].classList.remove('active-content');
