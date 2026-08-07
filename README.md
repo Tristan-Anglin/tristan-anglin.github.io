@@ -531,21 +531,21 @@ body:has(#blood-lineage[style*="display: block"]) {
     <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
   </div>
 
-  <!-- Tab Navigation Buttons -->
-  <div style="display: flex; gap: 8px; margin: 20px 0 15px 0; border-bottom: 2px solid #21262d; padding-bottom: 0px; flex-wrap: wrap;">
-    <button onclick="switchTab('tab-overview', this)" class="tab-btn active" style="padding: 10px 18px; background: #161b22; color: #ffffff; border: 1px solid #30363d; border-bottom: 3px solid #a5472d; border-radius: 6px 6px 0 0; cursor: pointer; font-weight: bold; font-size: 0.9em; transition: all 0.2s;">
-      📋 Overview & Post-Mortem
-    </button>
-    <button onclick="switchTab('tab-ui', this)" class="tab-btn" style="padding: 10px 18px; background: #0d1117; color: #8b949e; border: 1px solid transparent; border-radius: 6px 6px 0 0; cursor: pointer; font-weight: bold; font-size: 0.9em; transition: all 0.2s;">
-      🖥️ Technical UI Engineering
-    </button>
-    <button onclick="switchTab('tab-gameplay', this)" class="tab-btn" style="padding: 10px 18px; background: #0d1117; color: #8b949e; border: 1px solid transparent; border-radius: 6px 6px 0 0; cursor: pointer; font-weight: bold; font-size: 0.9em; transition: all 0.2s;">
-      ⚙️ Gameplay & Systems
-    </button>
-  </div>
+<!-- Tab Navigation Buttons -->
+<div style="display: flex; gap: 8px; margin: 20px 0 15px 0; border-bottom: 2px solid #21262d; padding-bottom: 0px; flex-wrap: wrap;">
+  <button onclick="switchTab('bl-tab-overview', this)" class="tab-btn active" style="...">
+    Overview & Post-Mortem
+  </button>
+  <button onclick="switchTab('bl-tab-ui', this)" class="tab-btn" style="...">
+    Technical UI Engineering
+  </button>
+  <button onclick="switchTab('bl-tab-gameplay', this)" class="tab-btn" style="...">
+    Gameplay & Systems
+  </button>
+</div>
 
   <!-- ================= TAB 1: OVERVIEW ================= -->
-  <div id="tab-overview" class="tab-content" style="display: block;">
+<div id="bl-tab-overview" class="tab-content" style="display: block;">
     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 15px; margin: 15px 0; align-items: center;">
       <div style="background: #161b22; padding: 16px; border-radius: 8px; border-left: 5px solid #a5472d; color: #f0f6fc; line-height: 1.5;">
         Led the technical roadmap and framework development for an 11-person team. Personally architected the core gameplay loops, server-sided multiplayer infrastructure, and a comprehensive suite of UI/UX systems. Managed cross-department stability and build delivery utilizing <b>Jira</b> and <b>GitHub</b>.
@@ -603,7 +603,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   </div>
 
   <!-- ================= TAB 2: TECHNICAL UI ================= -->
-  <div id="tab-ui" class="tab-content" style="display: none;">
+<div id="bl-tab-ui" class="tab-content" style="display: none;">
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
         <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Unified Drag-and-Drop</b>
@@ -650,7 +650,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   </div>
 
   <!-- ================= TAB 3: GAMEPLAY & SYSTEMS ================= -->
-  <div id="tab-gameplay" class="tab-content" style="display: none;">
+<div id="bl-tab-gameplay" class="tab-content" style="display: none;">
     <!-- Section 1: Multiplayer Framework -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
@@ -1093,13 +1093,17 @@ body:has(#blood-lineage[style*="display: block"]) {
   </div>
 </div>
 
-<!-- JavaScript tab switcher script -->
 <script>
   function switchTab(tabId, btn) {
-    const contents = document.querySelectorAll('.tab-content');
+    // 1. Find the specific portfolio project this button belongs to
+    const projectContainer = btn.closest('.portfolio-tab') || document;
+
+    // 2. Hide ONLY the tab contents within this specific project
+    const contents = projectContainer.querySelectorAll('.tab-content');
     contents.forEach(content => content.style.display = 'none');
 
-    const buttons = document.querySelectorAll('.tab-btn');
+    // 3. Reset ONLY the buttons within this specific project
+    const buttons = projectContainer.querySelectorAll('.tab-btn');
     buttons.forEach(button => {
       button.style.background = '#0d1117';
       button.style.color = '#8b949e';
@@ -1107,11 +1111,13 @@ body:has(#blood-lineage[style*="display: block"]) {
       button.classList.remove('active');
     });
 
+    // 4. Show the target tab
     const activeTab = document.getElementById(tabId);
     if (activeTab) {
       activeTab.style.display = 'block';
     }
 
+    // 5. Highlight the clicked button
     if (btn) {
       btn.style.background = '#161b22';
       btn.style.color = '#ffffff';
@@ -1121,26 +1127,19 @@ body:has(#blood-lineage[style*="display: block"]) {
     }
   }
 
-  function zoomImage(img) {
-    if (img && img.src) {
-      window.open(img.src, '_blank');
-    }
-  }
-
-  // Safely initialize canvas once the DOM is fully loaded
+  // Safely initialize canvas without crashing the rest of the page
   document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particle-canvas');
-    if (!canvas) return; // Prevents null reference errors if the canvas element is missing or renamed
+    if (!canvas) return; 
 
     const ctx = canvas.getContext('2d');
     let particlesArray = [];
-    const numberOfParticles = 45;
+    const numberOfParticles = 45; 
 
     function setCanvasSize() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     }
-
     setCanvasSize();
     window.addEventListener('resize', setCanvasSize);
   });
