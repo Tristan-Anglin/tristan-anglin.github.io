@@ -606,22 +606,22 @@ body:has(#blood-lineage[style*="display: block"]) {
     </div>
   </div>
 
-  <!-- ================= TAB 2: TECHNICAL UI ================= -->
+<!-- ================= TAB 2: TECHNICAL UI ================= -->
 <div id="bl-tab-ui" class="tab-content" style="display: none;">
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
-        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Unified Drag-and-Drop</b>
+        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Data-Driven Layouts</b>
         <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">UMG / Slate / C++</span>
       </div>
       
       <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-        <li><b>Data-Driven Interface Suite:</b> Programmed over 20+ dynamic screens in C++ and UMG including a networked 4-Player Match Lobby, Keybind Remapper, Save Profile Manager, and Armory/Forge interfaces.</li>
-        <li><b>Engineered Custom Visual Payloads:</b> Subclassed <code style="color: #da765b;">UDragDropOperation</code> in C++ to pass raw <code style="color: #da765b;">FItemData</code> memory frames across distinct inventory, forge, and vendor viewports without tight UI coupling.</li>
-        <li><b>Event-Driven Attribute Bindings:</b> Built responsive UI event delegates triggered by state changes (e.g., intelligence attributes dynamically recalculating spell cost displays in real time) to eliminate expensive tick-based UMG bindings.</li>
-        <li><b>Proactive Memory Culling:</b> Engineered proactive cleanup routines that systematically unbind input listeners, cull active viewports, and mark non-viewport widgets for garbage collection prior to level streaming.</li>
+        <li><b>Comprehensive Screen Suite:</b> Programmed over 20+ dynamic UI screens in C++ and UMG, featuring a networked 4-Player Match Lobby, modular Save Management Suite, interactive "How to Play" tutorial, custom Keybind Remapper, and Armory/Forge interfaces.</li>
+        <li><b>Engineered Custom Visual Payloads:</b> Subclassed <code style="color: #da765b;">UDragDropOperation</code> in C++ to pass raw <code style="color: #da765b;">FItemData</code> memory frames across distinct inventory, armory, and forge viewports with zero tight UI coupling.</li>
+        <li><b>Event-Driven Attribute Bindings:</b> Built responsive UI event delegates triggered by state changes (e.g., intelligence attributes dynamically recalculating spell cost displays and actual mana consumption in real time) to eliminate expensive tick-based UMG evaluations.</li>
+        <li><b>3D Skeletal Preview Integration:</b> Embedded a real-time 3D skeletal mesh preview inside the inventory interface that dynamically updates based on the player's class selection and equipped gear.</li>
       </ul>
 
-      <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">UI System Architecture: Wireframe to Production Assets</b>
+      <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">UI Pipeline: Wireframe to Production Assets</b>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
         <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
           <img src="InventoryWireframe.png" alt="UX Wireframe Layout" loading="lazy" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
@@ -643,7 +643,7 @@ body:has(#blood-lineage[style*="display: block"]) {
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">UI Culling & Lifecycle Safety</b>
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
         <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
-          World destruction without proactive UI tracking causes fatal engine null-pointer references. This architectural cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
+          World destruction without proactive UI tracking causes fatal engine null-pointer references during level transitions. This architectural cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
         </p>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
           <img src="Clean UI.PNG" alt="UI Culling" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 250px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
@@ -663,10 +663,10 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
       
       <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-        <li><b>Architected Core Separation:</b> Refactored codebase into a clean model splitting logic across <i>Character</i> (combat/movement), <i>Player Controller</i> (UI/Inputs), and <i>Player State</i> (persistent multiplayer variables).</li>
-        <li><b>Engineered Seamless Travel Persistence:</b> Overrode <code style="color: #da765b;">APlayerState::CopyProperties</code> to safely carry player data (stats, inventory, meta-progression) across seamless travel level transitions.</li>
-        <li><b>Implemented Server Authority:</b> Developed server-sided logic for synchronized loot drops, currency accumulation, and player interactions for up to 4 concurrent clients.</li>
-        <li><b>Prevented Design Soft-locks:</b> Built an automated, scaling Class-Locked Signature Weapon system ensuring players remain continuously viable without the risk of destroying primary gear.</li>
+        <li><b>Architected Core Separation:</b> Refactored codebase into a clean model splitting responsibilities across <i>Character Class</i> (movement, combat, and damage logic), <i>Player Controller</i> (UI management and networked interactions), and <i>Player State</i> (persistent multiplayer variables).</li>
+        <li><b>Engineered Seamless Travel Persistence:</b> Overrode <code style="color: #da765b;">APlayerState::CopyProperties</code> to intercept tear-down loops and safely carry player data, stats, inventory, and meta-progression across seamless travel level transitions.</li>
+        <li><b>Implemented Server Authority:</b> Developed secure server-sided logic for synchronized loot drops, currency pools, bulk armory transactions, and 4-player lobby state management.</li>
+        <li><b>Class-Locked Signature Weapons:</b> Designed a scaling weapon system unique to each class (Nemesis, Ares, Aphrodite, Artemis) that grows with the player to ensure continuous combat viability and eliminate soft-locks.</li>
       </ul>
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
@@ -689,9 +689,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
       
       <ul style="margin: 0 0 15px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-        <li><b>Modular Optimization:</b> Programmed a decoupled Inventory Component separating item processing into a light, flat replication struct data block (<code style="color: #da765b;">FItemData</code>) inside a single <code style="color: #da765b;">UItemObject</code> wrapper to protect network bandwidth.</li>
-        <li><b>Cross-Item Forging Logic:</b> Created an algebraic upgrading suite handling dual-input asset compression that handles custom rarity distributions using secure, server-side weighted tables.</li>
-        <li><b>Secure Transaction Loop:</b> Enforced strict server validation across all vendor shops, protecting inventory state changes and bulk item clearances.</li>
+        <li><b>Modular Inventory Optimization:</b> Programmed a decoupled Inventory Component separating item processing into a light, flat replication struct data block (<code style="color: #da765b;">FItemData</code>) inside a single <code style="color: #da765b;">UItemObject</code> wrapper to protect network bandwidth.</li>
+        <li><b>Cross-Item Forging Suite:</b> Created an algebraic upgrading engine allowing any two items to be merged regardless of type, level, or rarity, utilizing secure server-side weighted probability tables to determine output stats and rarity tiers.</li>
+        <li><b>Secure Global Shop Loop:</b> Enforced strict server validation across the Armory vendor pool, supporting bulk sell features ("Sell All by Rarity") while blocking unauthorized state manipulation.</li>
       </ul>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 15px; margin-top: 10px;">
@@ -712,10 +712,10 @@ body:has(#blood-lineage[style*="display: block"]) {
           <div>
             <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Server-Side Probability Math</b>
             <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
-              The item combination system compresses dual items down to singular upward-tier elements. All logic resolves deterministically via random probability weighting algorithms locked behind authority barriers.
+              The item combination system compresses dual inputs down to upward-tier elements. All logic resolves deterministically via random probability weighting algorithms locked behind authority barriers.
             </p>
           </div>
-          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <div style="text-align: center; background: #161b22; padding: 18px; border-radius: 4px; border: 1px solid #21262d;">
             <img src="ForgeCalculation.PNG" alt="Forge Fusion" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 200px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.style.display='none'">
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand</span>
           </div>
@@ -731,9 +731,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
       
       <ul style="margin: 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-        <li><b>Multi-Phase State Machinery:</b> Programmed the multi-tiered Hades encounter sequencing behaviors, custom animation blends, and phase transition logic.</li>
-        <li><b>Network Prediction Meshes:</b> Engineered an original approach generating synchronized visual telegraph projections locally across clients instantly, keeping combat tight under latency.</li>
-        <li><b>Adaptive Combat Scaling:</b> Constructed real-time algorithmic triggers adapting sweep speeds, rotation frequencies, and projectile volume attributes tied directly to lobby-wide difficulty settings.</li>
+        <li><b>Multi-Phase Encounter Architecture:</b> Programmed the full multi-tiered Hades boss sequence, integrating custom animation blends, cinematic opening introductions for the Obelisk mechanics, and phase transition logic.</li>
+        <li><b>Networked Telegraph Prediction:</b> Engineered an original approach generating synchronized visual telegraph projections locally across clients instantly, keeping high-frequency fireball volleys and shockwave phases tight under latency.</li>
+        <li><b>Adaptive Difficulty Scaling:</b> Constructed real-time algorithmic triggers adapting sweep speeds, rotation frequencies, and projectile damage attributes tied directly to lobby difficulty tiers (Boar, Bull, Lion, Hydra, Cerberus).</li>
       </ul>
     </div>
   </div>
