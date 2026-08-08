@@ -189,3 +189,15 @@ hr {
 .portfolio-tab li {
   background-color: transparent !important;
 }
+
+/* ==========================================
+   HIDE GITHUB PAGES FOOTER
+   ========================================== */
+
+/* Target standard footer tags and GitHub Pages default classes */
+footer, 
+.site-footer, 
+#footer, 
+.page-footer {
+  display: none !important;
+}
