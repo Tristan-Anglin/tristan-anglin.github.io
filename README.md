@@ -56,13 +56,29 @@
     box-sizing: border-box !important;
   }
 
-  .link-container {
-    margin: 20px auto 20px auto !important;
-  }
+/* Update the Link Container to a horizontal bar */
+.link-container {
+  display: flex !important; /* Switch from Grid to Flex */
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 10px !important;
+  margin: 20px auto !important;
+}
 
-  .tab-container {
-    margin: 20px 0 25px 0 !important;
-  }
+/* Make these buttons thinner and more "pill-like" */
+.custom-link-btn {
+  width: auto !important; /* Remove the 100% width grid sizing */
+  min-height: 40px !important; /* Smaller than project buttons */
+  padding: 6px 16px !important;
+  flex-direction: row !important; /* Align icon/text horizontally */
+  gap: 8px !important;
+}
+
+/* Reset the project section to ensure it stays a Grid */
+.tab-container {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+}
 
   /* Dynamic portfolio section divider line matching highlight colors */
   .section-divider {
@@ -271,28 +287,22 @@ body:has(#blood-lineage[style*="display: block"]) {
 <!-- Global External Link Grid Container -->
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
-    <span>Resume</span>
-    <span class="link-meta">PDF</span>
+    <i class="fa-solid fa-file-pdf"></i> Resume
   </a>
   <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
-    <span>LinkedIn</span>
-    <span class="link-meta">Professional Network</span>
+    <i class="fa-brands fa-linkedin"></i> LinkedIn
   </a>
   <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
-    <span>Email</span>
-    <span class="link-meta">Reach out</span>
+    <i class="fa-solid fa-envelope"></i> Email
   </a>
   <a class="custom-link-btn" href="https://github.com/TristanAnglin" target="_blank">
-    <span>GitHub</span>
-    <span class="link-meta">Source Code</span>
+    <i class="fa-brands fa-github"></i> GitHub
   </a>
   <a class="custom-link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
-    <span>Instagram</span>
-    <span class="link-meta">Dev Logs</span>
+    <i class="fa-brands fa-instagram"></i> Instagram
   </a>
   <a class="custom-link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
-    <span>YouTube</span>
-    <span class="link-meta">Gameplay Showcases</span>
+    <i class="fa-brands fa-youtube"></i> YouTube
   </a>
 </div>
 
