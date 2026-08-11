@@ -649,24 +649,31 @@ body:has(#blood-lineage[style*="display: block"]) {
         Engineered a fully replicated pre-game match lobby supporting seamless 4-player coordination, real-time class selection syncing, host-restricted authority settings, and local area network (LAN) session discovery.
       </p>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px; margin-bottom: 15px;">
         <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
           <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Class Selection & Dynamic Stats</b>
-          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 0;">
             Interactive character selection buttons instantly query and display class-specific attributes, previewing passive bonuses, health pools, and offensive scaling factors dynamically upon selection.
           </p>
         </div>
         <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
           <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Authority-Gated Match Settings</b>
-          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 0;">
             Difficulty configuration toggles restrict write permissions strictly to the lobby host via network RPCs, broadcasting updated difficulty parameters to all connected clients in real time.
           </p>
         </div>
         <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
           <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">LAN Lobby Search & Discovery</b>
-          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 0;">
             Integrated a session search pipeline allowing players to scan for active local servers, parse ping data, and populate open lobby slots instantly upon query execution.
           </p>
+        </div>
+      </div>
+
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+        <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="placeholder-lobby.PNG" alt="Networked Lobby UI" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Networked Lobby Interface</span>
         </div>
       </div>
     </div>
@@ -675,10 +682,14 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Meta-Progression & Persistent Upgrade Tree</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
-        Designed and implemented a meta-progression architecture linking accumulated player leveling metrics directly to account-wide stat bonuses, empowering players to spend earned progression currency to permanently enhance character performance between runs.
+        Designed and implemented a meta-progression architecture linking accumulated player leveling metrics directly to account-wide stat bonuses, empowering players to spend earned progression currency to permanently enhance character performance between runs. The system hooks into the modular save management framework to guarantee atomic writes of purchased milestone nodes.
       </p>
-      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; color: #8b949e; font-size: 0.85em; line-height: 1.5;">
-        The system hooks into the modular save management framework to guarantee atomic writes of purchased milestone nodes, ensuring player investment is securely retained across game sessions and map restarts.
+
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+        <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="placeholder-meta-progression.PNG" alt="Meta-Progression Menu" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Meta-Progression Menu</span>
+        </div>
       </div>
     </div>
 
@@ -686,8 +697,15 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Settings Suite & TileView Keybind Remapper</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
-        Built a robust settings interface featuring a dedicated keybindings subsystem driven by a scrollable <code style="color: #da765b;">UTileView</code> list. Players can instantly select actions, bind custom keys through real-time input listening events, and handle conflict validation seamlessly.
+        Built a robust settings interface featuring a dedicated keybindings subsystem driven by a scrollable <code style="color: #da765b;">UTileView</code> list widget. Players can instantly select actions, bind custom keys through real-time input listening events, and handle conflict validation seamlessly.
       </p>
+
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+        <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="placeholder-settings.PNG" alt="Settings & Keybinds Interface" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Keybinds Remapper Interface</span>
+        </div>
+      </div>
     </div>
 
     <!-- SECTION 5: UI Animations & Motion Graphics Showcase -->
