@@ -1355,6 +1355,24 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
+    // --- IFRAME LAZY-LOAD / UNLOAD (memory-leak fix) ---
+    // Stop every iframe that is now hidden by fully detaching its src.
+    // (display:none alone does NOT stop a playing YouTube embed.)
+    document.querySelectorAll('.portfolio-tab iframe').forEach(frame => {
+      const isVisible = frame.offsetParent !== null;
+      if (!isVisible) {
+        if (frame.src && !frame.dataset.src) {
+          frame.dataset.src = frame.src; // safety net: remember URL before clearing
+        }
+        if (frame.src) frame.src = '';
+      }
+    });
+
+    // (Re)load the iframe(s) inside whichever tab is now visible.
+    target.querySelectorAll('iframe[data-src]').forEach(frame => {
+      if (!frame.src) frame.src = frame.dataset.src;
+    });
+
     // --- BUTTON STYLING ---
     if (!btn) {
       btn = document.querySelector(`[onclick*="${tabId}"]`);
@@ -1435,7 +1453,14 @@ body:has(#blood-lineage[style*="display: block"]) {
       initParticles();
       animateParticles();
     }
-    
+
+    // Convert every project iframe's initial `src` into `data-src` so nothing
+    // autoplays/loads until its tab is actually opened.
+    document.querySelectorAll('.portfolio-tab iframe[src]').forEach(frame => {
+      frame.dataset.src = frame.src;
+      frame.removeAttribute('src');
+    });
+
     // Automatically load About Tab on page start
     const defaultTabId = 'about-tab';
     const defaultButton = document.querySelector(`[onclick*="${defaultTabId}"]`) || document.querySelector('.tab-btn');
