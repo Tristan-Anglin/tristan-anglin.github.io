@@ -1275,12 +1275,33 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
+  // Helper: Check if an element or any of its parent containers are currently hidden
+  function isElementVisible(el) {
+    let curr = el;
+    while (curr && curr !== document.body) {
+      if (curr.style.display === 'none') return false;
+      if (window.getComputedStyle(curr).display === 'none') return false;
+      curr = curr.parentElement;
+    }
+    return true;
+  }
+
   // Helper: Create and inject a fresh iframe to avoid Chromium memory leaks
   function loadVideoFrame(wrapper) {
-    if (wrapper.querySelector('iframe')) return; // Already loaded
+    // If dataset.src isn't set yet, grab it from any existing iframe
+    if (!wrapper.dataset.src) {
+      const existingIframe = wrapper.querySelector('iframe');
+      if (existingIframe && existingIframe.src) {
+        wrapper.dataset.src = existingIframe.src;
+      }
+    }
+
     const src = wrapper.dataset.src;
     if (!src) return;
-    
+
+    // If iframe already exists inside this wrapper, do nothing
+    if (wrapper.querySelector('iframe')) return;
+
     const iframe = document.createElement('iframe');
     iframe.src = src;
     iframe.style.width = '100%';
@@ -1375,10 +1396,9 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- DYNAMIC IFRAME RECYCLING (Memory Leak & Playback Fix) ---
+    // --- UPDATE ALL VIDEO FRAMES BASED ON ACTUAL VISIBILITY ---
     document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
-      const isVisible = wrapper.offsetParent !== null;
-      if (isVisible) {
+      if (isElementVisible(wrapper)) {
         loadVideoFrame(wrapper);
       } else {
         destroyVideoFrame(wrapper);
@@ -1469,14 +1489,14 @@ body:has(#blood-lineage[style*="display: block"]) {
       animateParticles();
     }
 
-    // Capture initial iframe URLs into data-attributes on their wrappers and clear them
+    // Capture initial iframe URLs into data-attributes and clean up initial DOM
     document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
       const iframe = wrapper.querySelector('iframe');
       if (iframe) {
         if (iframe.src) {
           wrapper.dataset.src = iframe.src;
         }
-        iframe.remove(); // Strip out on load so nothing autoplays
+        iframe.remove();
       }
     });
 
