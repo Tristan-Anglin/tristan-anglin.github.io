@@ -1275,57 +1275,6 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-  // Helper: Check if element or its parents are visible
-  function isElementVisible(el) {
-    let curr = el;
-    while (curr && curr !== document.body) {
-      const style = window.getComputedStyle(curr);
-      if (style.display === 'none' || style.visibility === 'hidden') return false;
-      curr = curr.parentElement;
-    }
-    return true;
-  }
-
-  // Helper: Safely load video frame, checking multiple sources for the URL
-  function loadVideoFrame(wrapper) {
-    // If iframe already exists and is active, do nothing
-    if (wrapper.querySelector('iframe')) return;
-
-    // Retrieve URL from dataset, HTML attribute, or any existing iframe
-    let src = wrapper.dataset.src || wrapper.getAttribute('data-src');
-    if (!src) {
-      const existing = wrapper.querySelector('iframe');
-      if (existing && existing.src) src = existing.src;
-    }
-
-    if (!src) return; // No URL found anywhere
-
-    // Cache the URL back to dataset for future recreations
-    wrapper.dataset.src = src;
-
-    // Clean out any lingering empty elements
-    const oldIframe = wrapper.querySelector('iframe');
-    if (oldIframe) oldIframe.remove();
-
-    // Create fresh iframe to prevent Chromium memory leaks
-    const iframe = document.createElement('iframe');
-    iframe.src = src;
-    iframe.style.width = '100%';
-    iframe.style.height = '100%';
-    iframe.style.border = 'none';
-    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-    iframe.setAttribute('allowfullscreen', '');
-    wrapper.appendChild(iframe);
-  }
-
-  // Helper: Remove iframe to release memory and stop playback when hidden
-  function destroyVideoFrame(wrapper) {
-    const iframe = wrapper.querySelector('iframe');
-    if (iframe) {
-      iframe.remove();
-    }
-  }
-
   function switchTab(arg1, arg2) {
     let tabId = null;
     let btn = null;
@@ -1396,16 +1345,39 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- DELAYED VISIBILITY CHECK TO ALLOW REFLOW ---
+    // --- DIRECT IFRAME VISIBILITY & MEMORY MANAGEMENT ---
     setTimeout(() => {
-      document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
-        if (isElementVisible(wrapper)) {
-          loadVideoFrame(wrapper);
+      document.querySelectorAll('.portfolio-tab iframe').forEach(iframe => {
+        // Check if this iframe is inside a currently visible tab/sub-tab
+        let curr = iframe;
+        let isVisible = true;
+        while (curr && curr !== document.body) {
+          const style = window.getComputedStyle(curr);
+          if (style.display === 'none' || style.visibility === 'hidden') {
+            isVisible = false;
+            break;
+          }
+          curr = curr.parentElement;
+        }
+
+        if (isVisible) {
+          // Load video if not already active
+          if (!iframe.src || iframe.src === 'about:blank' || iframe.src === window.location.href) {
+            if (iframe.dataset.src) {
+              iframe.src = iframe.dataset.src;
+            }
+          }
         } else {
-          destroyVideoFrame(wrapper);
+          // Unload video to stop playback and free up memory
+          if (iframe.src && iframe.src !== 'about:blank') {
+            if (!iframe.dataset.src) {
+              iframe.dataset.src = iframe.src;
+            }
+            iframe.src = 'about:blank';
+          }
         }
       });
-    }, 10);
+    }, 20);
 
     // --- BUTTON STYLING ---
     if (!btn) {
@@ -1491,14 +1463,11 @@ body:has(#blood-lineage[style*="display: block"]) {
       animateParticles();
     }
 
-    // Safely harvest iframe URLs before stripping them from initial render
-    document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
-      const iframe = wrapper.querySelector('iframe');
-      if (iframe && iframe.src) {
-        wrapper.dataset.src = iframe.src;
-        iframe.remove();
-      } else if (wrapper.getAttribute('data-src')) {
-        wrapper.dataset.src = wrapper.getAttribute('data-src');
+    // Harvest initial iframe URLs straight from the HTML tags and clear them out
+    document.querySelectorAll('.portfolio-tab iframe').forEach(iframe => {
+      if (iframe.src) {
+        iframe.dataset.src = iframe.src;
+        iframe.src = 'about:blank';
       }
     });
 
