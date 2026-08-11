@@ -639,17 +639,54 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
     </div>
 
-    <!-- SECTION 2: Hover Animation & Dynamic Tooltips (Combined Showcase) -->
+    <!-- SECTION 2: UI Animations & Motion Graphics Showcase -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
-      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Hover Feedback & Dynamic Tooltips</b>
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">UI Animations & Motion Graphics Showcase</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
-        Designed responsive, arcade-style micro-interactions. Unexamined "New Item" indicators trigger subtle hover-shake animations and dynamic rarity glow borders, pairing seamlessly with replicated tooltip structs that instantly project detailed stats and descriptions on hover.
+        Designed responsive, arcade-style feedback loops utilizing custom UMG widgets, motion graphics sequences, and state-driven mouse events for seamless player engagement.
       </p>
 
-      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
-        <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="placeholder-hover-and-tooltips.gif" alt="Hover Shake and Dynamic Tooltips Showcase" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161b22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%238b949e%22 font-size=%2214%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip Video/GIF Placeholder</text></svg>'">
-          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">▶ Combined Hover Shake, Glow Border & Dynamic Tooltip Showcase</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
+        <!-- Animation 1: Item Hover & Tooltips -->
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Item Hover & Dynamic Tooltips</b>
+            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+              Unexamined "New Item" indicators trigger subtle hover-shake animations and rarity glow borders, pairing with replicated structs that display detailed tooltips on hover.
+            </p>
+          </div>
+          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+            <img src="placeholder-item-hover.gif" alt="Item Hover and Tooltip Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip GIF</text></svg>'">
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Hover Shake & Tooltip Flow</span>
+          </div>
+        </div>
+
+        <!-- Animation 2: Level Up Banner -->
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Level Up Banner Sequence</b>
+            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+              Engineered cinematic milestone notifications triggered by player progression events, featuring scale-in transitions, glowing typography overlays, and particle bursts.
+            </p>
+          </div>
+          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+            <img src="placeholder-levelup-banner.gif" alt="Level Up Banner Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Level Up Banner GIF</text></svg>'">
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Cinematic Milestone Notification</span>
+          </div>
+        </div>
+
+        <!-- Animation 3: Crafting Forge Sequence -->
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Crafting Forge Sequence</b>
+            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+              Implemented interactive upgrade motion sequences within the Forge interface, synchronizing material consumption animations with audio cues and stat output preview renders.
+            </p>
+          </div>
+          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
+            <img src="placeholder-forge-sequence.gif" alt="Crafting Forge Sequence Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Forge Sequence GIF</text></svg>'">
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Forge Upgrade & Particle Flow</span>
+          </div>
         </div>
       </div>
     </div>
