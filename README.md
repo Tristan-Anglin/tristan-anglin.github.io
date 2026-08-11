@@ -1275,6 +1275,30 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
+  // Helper: Create and inject a fresh iframe to avoid Chromium memory leaks
+  function loadVideoFrame(wrapper) {
+    if (wrapper.querySelector('iframe')) return; // Already loaded
+    const src = wrapper.dataset.src;
+    if (!src) return;
+    
+    const iframe = document.createElement('iframe');
+    iframe.src = src;
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.border = 'none';
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+    iframe.setAttribute('allowfullscreen', '');
+    wrapper.appendChild(iframe);
+  }
+
+  // Helper: Completely remove iframe from DOM to free up memory and stop playback
+  function destroyVideoFrame(wrapper) {
+    const iframe = wrapper.querySelector('iframe');
+    if (iframe) {
+      iframe.remove();
+    }
+  }
+
   function switchTab(arg1, arg2) {
     let tabId = null;
     let btn = null;
@@ -1309,22 +1333,18 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     if (!isSub) {
       // --- MAIN PROJECT / SECTION TAB ---
-      // 1. Hide all main portfolio tabs
       document.querySelectorAll('.portfolio-tab').forEach(tab => {
         tab.style.setProperty('display', 'none', 'important');
       });
 
-      // 2. Show the selected main tab container
       target.style.setProperty('display', 'block', 'important');
 
-      // 3. Handle inner sub-tabs IF they exist, otherwise ensure children are visible
       const subTabs = target.querySelectorAll('.tab-content');
       if (subTabs.length > 0) {
         subTabs.forEach((sub, idx) => {
           sub.style.setProperty('display', idx === 0 ? 'block' : 'none', 'important');
         });
 
-        // Highlight first sub-tab button if present
         const firstSubBtn = target.querySelector('.tab-btn');
         if (firstSubBtn && firstSubBtn.parentElement) {
           const subBtns = firstSubBtn.parentElement.querySelectorAll('.tab-btn');
@@ -1355,25 +1375,14 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- IFRAME DESTROY / RECREATE (memory-leak fix) ---
-    // Repeatedly changing `.src` on the SAME <iframe> node that points at a
-    // cross-origin site (YouTube) is a known Chromium leak: each src change
-    // spins up a new embedded renderer context for that frame, and the old
-    // one is not reliably reclaimed just by clearing src. Simply toggling
-    // src back and forth as you click between tabs lets these pile up.
-    //
-    // The fix: fully REMOVE the iframe element from the DOM when its tab is
-    // hidden (destroyVideoFrame), and build a brand-new iframe element only
-    // when its tab becomes visible (loadVideoFrame). Actual node removal
-    // lets the browser release the cross-origin frame's memory instead of
-    // just orphaning it.
-    document.querySelectorAll('.portfolio-tab .yt-frame-wrapper').forEach(wrapper => {
+    // --- DYNAMIC IFRAME RECYCLING (Memory Leak & Playback Fix) ---
+    document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
       const isVisible = wrapper.offsetParent !== null;
-      if (!isVisible) destroyVideoFrame(wrapper);
-    });
-
-    target.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
-      loadVideoFrame(wrapper);
+      if (isVisible) {
+        loadVideoFrame(wrapper);
+      } else {
+        destroyVideoFrame(wrapper);
+      }
     });
 
     // --- BUTTON STYLING ---
@@ -1400,6 +1409,9 @@ body:has(#blood-lineage[style*="display: block"]) {
 
   // Safe Canvas, Particle Engine & Default Tab Initialization
   document.addEventListener('DOMContentLoaded', () => {
+    // Set Browser Tab Title
+    document.title = "Tristan Anglin's Portfolio";
+
     const canvas = document.getElementById('particle-canvas');
     if (canvas) {
       const ctx = canvas.getContext('2d');
@@ -1457,11 +1469,15 @@ body:has(#blood-lineage[style*="display: block"]) {
       animateParticles();
     }
 
-    // Convert every project iframe's initial `src` into `data-src` so nothing
-    // autoplays/loads until its tab is actually opened.
-    document.querySelectorAll('.portfolio-tab iframe[src]').forEach(frame => {
-      frame.dataset.src = frame.src;
-      frame.removeAttribute('src');
+    // Capture initial iframe URLs into data-attributes on their wrappers and clear them
+    document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
+      const iframe = wrapper.querySelector('iframe');
+      if (iframe) {
+        if (iframe.src) {
+          wrapper.dataset.src = iframe.src;
+        }
+        iframe.remove(); // Strip out on load so nothing autoplays
+      }
     });
 
     // Automatically load About Tab on page start
