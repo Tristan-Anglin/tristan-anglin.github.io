@@ -725,7 +725,7 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="placeholder-item-hover.gif" alt="Item Hover and Tooltip Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip GIF</text></svg>'">
+            <img src="ItemHoverGif.gif" alt="Item Hover and Tooltip Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip GIF</text></svg>'">
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Hover Shake & Tooltip Flow</span>
           </div>
         </div>
