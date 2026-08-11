@@ -1358,19 +1358,26 @@ body:has(#blood-lineage[style*="display: block"]) {
     // --- IFRAME LAZY-LOAD / UNLOAD (memory-leak fix) ---
     // Stop every iframe that is now hidden by fully detaching its src.
     // (display:none alone does NOT stop a playing YouTube embed.)
-    document.querySelectorAll('.portfolio-tab iframe').forEach(frame => {
+    //
+    // IMPORTANT: we check/clear the raw `src` ATTRIBUTE (getAttribute/
+    // removeAttribute), never the `.src` PROPERTY. Reading `.src` back
+    // after setting it to '' does NOT give you '' — the browser resolves
+    // it as a URL relative to the current page, so `.src` silently becomes
+    // the page's own URL. That falsely-truthy value was breaking reloads
+    // after the first pause. getAttribute('src') has no such resolution
+    // and reflects exactly what's on the tag.
+    document.querySelectorAll('.portfolio-tab iframe[data-src]').forEach(frame => {
       const isVisible = frame.offsetParent !== null;
-      if (!isVisible) {
-        if (frame.src && !frame.dataset.src) {
-          frame.dataset.src = frame.src; // safety net: remember URL before clearing
-        }
-        if (frame.src) frame.src = '';
+      if (!isVisible && frame.getAttribute('src')) {
+        frame.removeAttribute('src');
       }
     });
 
     // (Re)load the iframe(s) inside whichever tab is now visible.
     target.querySelectorAll('iframe[data-src]').forEach(frame => {
-      if (!frame.src) frame.src = frame.dataset.src;
+      if (!frame.getAttribute('src')) {
+        frame.src = frame.dataset.src;
+      }
     });
 
     // --- BUTTON STYLING ---
