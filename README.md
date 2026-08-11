@@ -521,9 +521,9 @@ body:has(#blood-lineage[style*="display: block"]) {
     </div>
     
 <div>
-  <a href="https://store.steampowered.com/app/4653740/Blood__Lineage/" target="_blank" rel="noopener noreferrer" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #c9d1d9; display: inline-flex; align-items: center; gap: 8px; font-weight: bold; text-decoration: none; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#66c0f4'; this.style.color='#ffffff';" onmouseout="this.style.borderColor='#333'; this.style.color='#c9d1d9';">
-    <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="View on Steam"></i>
-    Wishlist on Steam
+  <a href="https://store.steampowered.com/app/4653740/Blood__Lineage/" target="_blank" rel="noopener noreferrer" style="padding: 6px 14px; background: #161b22; border: 1px solid #333; border-radius: 20px; font-size: 0.85em; color: #c9d1d9; display: inline-flex; align-items: center; gap: 8px; font-weight: bold; text-decoration: none !important; transition: all 0.2s ease;" onmouseover="this.style.borderColor='#66c0f4'; this.style.color='#ffffff';" onmouseout="this.style.borderColor='#333'; this.style.color='#c9d1d9';">
+    <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em; margin-left: 6px; margin-right: 2px; margin-top: -1px; text-decoration: none !important;" title="View on Steam"></i>
+    Free on Steam
   </a>
 </div>
     
