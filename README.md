@@ -566,7 +566,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div align="center" style="margin: 20px 0;">
       <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
         <iframe 
-          src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=1&modestbranding=1" 
+          data-src="https://www.youtube.com/embed/tgr0kjX5Q0Q?autoplay=1&mute=1&loop=1&playlist=tgr0kjX5Q0Q&controls=1&modestbranding=1" 
           title="Blood & Lineage Gameplay"
           loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
@@ -904,7 +904,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div align="center" style="margin: 25px 0;">
       <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
         <iframe 
-          src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
+          data-src="https://www.youtube.com/embed/cCLGPVTF1Aw?autoplay=1&mute=1&loop=1&playlist=cCLGPVTF1Aw&controls=1&modestbranding=1&rel=0" 
           title="Tower Defense Gameplay"
           loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
@@ -1006,7 +1006,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div align="center" style="margin: 25px 0;">
       <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
         <iframe 
-          src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
+          data-src="https://www.youtube.com/embed/8z6vDdhrYUA?autoplay=1&mute=1&loop=1&playlist=8z6vDdhrYUA&controls=1&modestbranding=1&rel=0" 
           title="Your Dark Side Gameplay"
           loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
@@ -1106,7 +1106,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div align="center" style="margin: 25px 0;">
       <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
         <iframe 
-          src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
+          data-src="https://www.youtube.com/embed/HNQjJI9nPDQ?autoplay=1&mute=1&loop=1&playlist=HNQjJI9nPDQ&controls=1&modestbranding=1&rel=0" 
           title="Dungeon Crawler Gameplay"
           loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
@@ -1206,7 +1206,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div align="center" style="margin: 25px 0;">
       <div style="position: relative; width: 100%; max-width: 850px; aspect-ratio: 16 / 9; border-radius: 12px; border: 2px solid #a5472d; box-shadow: 0px 0px 20px rgba(165, 71, 45, 0.2); overflow: hidden;">
         <iframe 
-          src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
+          data-src="https://www.youtube.com/embed/FSjgXKFcKIo?autoplay=1&mute=1&loop=1&playlist=FSjgXKFcKIo&controls=1&modestbranding=1&rel=0" 
           title="Hit & Run Gameplay"
           loading="lazy"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
