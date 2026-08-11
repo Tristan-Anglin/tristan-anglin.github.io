@@ -609,15 +609,15 @@ body:has(#blood-lineage[style*="display: block"]) {
 <!-- ================= TAB 2: TECHNICAL UI ================= -->
 <div id="bl-tab-ui" class="tab-content" style="display: none;">
     
-    <!-- SECTION 1: Core Screen Architecture & Pipeline (Inventory & HUD) -->
+    <!-- SECTION 1: Core Screen Architecture & TileView Inventory Pipeline -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
-        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Inventory Systems</b>
+        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & TileView Inventory Systems</b>
         <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">UMG / Slate / C++</span>
       </div>
       
       <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
-        <li><b>Comprehensive Screen Suite:</b> Programmed over 20+ dynamic UI screens in C++ and UMG, featuring a networked 4-Player Match Lobby, modular Save Management Suite, interactive "How to Play" tutorial, custom Keybind Remapper, and Armory/Forge interfaces.</li>
+        <li><b>Dynamic TileView Inventory Architecture:</b> Built the core inventory framework utilizing a high-performance <code style="color: #da765b;">UTileView</code> list widget, enabling seamless, stutter-free dynamic adding, removing, and sorting of items across inventory grids with automated data-bound updates.</li>
         <li><b>Event-Driven Attribute Bindings:</b> Built responsive UI event delegates triggered by state changes (e.g., intelligence attributes dynamically recalculating spell cost displays and actual mana consumption in real time) to eliminate expensive tick-based UMG evaluations.</li>
         <li><b>3D Skeletal Preview Integration:</b> Embedded a real-time 3D skeletal mesh preview inside the inventory interface that dynamically updates based on the player's class selection and equipped gear.</li>
       </ul>
@@ -639,7 +639,58 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
     </div>
 
-    <!-- SECTION 2: UI Animations & Motion Graphics Showcase -->
+    <!-- SECTION 2: Networked 4-Player Match Lobby -->
+    <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
+        <b style="color: #ffffff; font-size: 1.1em;">Networked 4-Player Match Lobby & Session Discovery</b>
+        <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">Multiplayer / RPC / Sessions</span>
+      </div>
+      <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
+        Engineered a fully replicated pre-game match lobby supporting seamless 4-player coordination, real-time class selection syncing, host-restricted authority settings, and local area network (LAN) session discovery.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 15px;">
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Class Selection & Dynamic Stats</b>
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+            Interactive character selection buttons instantly query and display class-specific attributes, previewing passive bonuses, health pools, and offensive scaling factors dynamically upon selection.
+          </p>
+        </div>
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Authority-Gated Match Settings</b>
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+            Difficulty configuration toggles restrict write permissions strictly to the lobby host via network RPCs, broadcasting updated difficulty parameters to all connected clients in real time.
+          </p>
+        </div>
+        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+          <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">LAN Lobby Search & Discovery</b>
+          <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
+            Integrated a session search pipeline allowing players to scan for active local servers, parse ping data, and populate open lobby slots instantly upon query execution.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3: Meta-Progression & Enhancement Menu -->
+    <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Meta-Progression & Persistent Upgrade Tree</b>
+      <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
+        Designed and implemented a meta-progression architecture linking accumulated player leveling metrics directly to account-wide stat bonuses, empowering players to spend earned progression currency to permanently enhance character performance between runs.
+      </p>
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; color: #8b949e; font-size: 0.85em; line-height: 1.5;">
+        The system hooks into the modular save management framework to guarantee atomic writes of purchased milestone nodes, ensuring player investment is securely retained across game sessions and map restarts.
+      </div>
+    </div>
+
+    <!-- SECTION 4: Settings & Keybind Remapper Architecture -->
+    <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Settings Suite & TileView Keybind Remapper</b>
+      <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
+        Built a robust settings interface featuring a dedicated keybindings subsystem driven by a scrollable <code style="color: #da765b;">UTileView</code> list. Players can instantly select actions, bind custom keys through real-time input listening events, and handle conflict validation seamlessly.
+      </p>
+    </div>
+
+    <!-- SECTION 5: UI Animations & Motion Graphics Showcase -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">UI Animations & Motion Graphics Showcase</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
@@ -691,7 +742,7 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
     </div>
 
-    <!-- SECTION 3: Custom Cross-Window Drag-and-Drop System -->
+    <!-- SECTION 6: Custom Cross-Window Drag-and-Drop System -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Cross-Window Drag-and-Drop Architecture</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
@@ -706,13 +757,13 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
     </div>
 
-    <!-- SECTION 4: UI Culling & Lifecycle Safety -->
+    <!-- SECTION 7: Additional Core Systems (Main Menu, Save Suite & Lifecycle Culling) -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
-      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">UI Culling & Lifecycle Safety</b>
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">Supporting Systems: Main Menu, Save Suite & UI Lifecycle Safety</b>
+      <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
+        Beyond the core HUD and inventory, considerable systems engineering was dedicated to foundational architectural loops—including the responsive Main Menu, a robust Save File Management suite, and proactive UI lifecycle safety routines. World destruction without proactive UI tracking causes fatal engine null-pointer references during level transitions. This cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
+      </p>
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-        <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
-          World destruction without proactive UI tracking causes fatal engine null-pointer references during level transitions. This architectural cleanup routine systematically unbinds input frames, culls active viewports, and marks non-viewport/3D widgets directly for clean garbage collection before map streams clear.
-        </p>
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
           <img src="Clean UI.PNG" alt="UI Culling" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 250px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand C++ Routine</span>
