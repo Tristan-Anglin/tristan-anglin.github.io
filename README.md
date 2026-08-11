@@ -687,7 +687,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="placeholder-meta-progression.PNG" alt="Meta-Progression Menu" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="MetaUpgrades.png" alt="Meta-Progression Menu" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Meta-Progression Menu</span>
         </div>
       </div>
@@ -702,7 +702,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
         <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="placeholder-settings.PNG" alt="Settings & Keybinds Interface" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
+          <img src="Settings.png" alt="Settings & Keybinds Interface" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 260px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'">
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Keybinds Remapper Interface</span>
         </div>
       </div>
