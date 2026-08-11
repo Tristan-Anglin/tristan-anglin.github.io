@@ -56,22 +56,38 @@
     box-sizing: border-box !important;
   }
 
-/* Update the Link Container to a horizontal bar */
+/* --- SINGLE LINE SOCIAL BAR --- */
 .link-container {
-  display: flex !important; /* Switch from Grid to Flex */
-  flex-wrap: wrap; 
-  justify-content: center;
-  gap: 10px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important; /* Forces all items onto one line */
+  justify-content: space-between !important;
+  gap: 8px !important;
+  width: 100% !important;
+  max-width: 900px !important;
   margin: 20px auto !important;
+  box-sizing: border-box !important;
 }
 
-/* Make these buttons thinner and more "pill-like" */
 .custom-link-btn {
-  width: auto !important; /* Remove the 100% width grid sizing */
-  min-height: 40px !important; /* Smaller than project buttons */
-  padding: 6px 16px !important;
-  flex-direction: row !important; /* Align icon/text horizontally */
-  gap: 8px !important;
+  flex: 1 !important;           /* Distributes all 6 equally across the row */
+  width: auto !important;         /* Clears out the 100% width override */
+  min-height: 64px !important;
+  padding: 8px 4px !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+}
+
+/* Responsive fallback for mobile screens so they don't squish */
+@media (max-width: 768px) {
+  .link-container {
+    flex-wrap: wrap !important;
+  }
+  .custom-link-btn {
+    flex: 1 1 30% !important; /* Switch to a clean 3-column grid on mobile */
+  }
 }
 
 /* Reset the project section to ensure it stays a Grid */
@@ -287,22 +303,28 @@ body:has(#blood-lineage[style*="display: block"]) {
 <!-- Global External Link Grid Container -->
 <div class="link-container">
   <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
-    <i class="fa-solid fa-file-pdf"></i> Resume
+    <i class="fa-solid fa-file-pdf" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">Resume</span>
   </a>
   <a class="custom-link-btn" href="https://linkedin.com/in/TristanAnglin" target="_blank">
-    <i class="fa-brands fa-linkedin"></i> LinkedIn
+    <i class="fa-brands fa-linkedin" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">LinkedIn</span>
   </a>
   <a class="custom-link-btn" href="mailto:tmanglin00@gmail.com">
-    <i class="fa-solid fa-envelope"></i> Email
+    <i class="fa-solid fa-envelope" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">Email</span>
   </a>
   <a class="custom-link-btn" href="https://github.com/TristanAnglin" target="_blank">
-    <i class="fa-brands fa-github"></i> GitHub
+    <i class="fa-brands fa-github" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">GitHub</span>
   </a>
   <a class="custom-link-btn" href="https://www.instagram.com/tristananglin_" target="_blank">
-    <i class="fa-brands fa-instagram"></i> Instagram
+    <i class="fa-brands fa-instagram" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">Instagram</span>
   </a>
   <a class="custom-link-btn" href="https://www.youtube.com/@TristanAnglin" target="_blank">
-    <i class="fa-brands fa-youtube"></i> YouTube
+    <i class="fa-brands fa-youtube" style="font-size: 1.1em; margin-bottom: 3px;"></i>
+    <span style="font-size: 0.85em;">YouTube</span>
   </a>
 </div>
 
