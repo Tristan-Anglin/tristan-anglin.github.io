@@ -1275,33 +1275,39 @@ body:has(#blood-lineage[style*="display: block"]) {
 </div>
 
 <script>
-  // Helper: Check if an element or any of its parent containers are currently hidden
+  // Helper: Check if element or its parents are visible
   function isElementVisible(el) {
     let curr = el;
     while (curr && curr !== document.body) {
-      if (curr.style.display === 'none') return false;
-      if (window.getComputedStyle(curr).display === 'none') return false;
+      const style = window.getComputedStyle(curr);
+      if (style.display === 'none' || style.visibility === 'hidden') return false;
       curr = curr.parentElement;
     }
     return true;
   }
 
-  // Helper: Create and inject a fresh iframe to avoid Chromium memory leaks
+  // Helper: Safely load video frame, checking multiple sources for the URL
   function loadVideoFrame(wrapper) {
-    // If dataset.src isn't set yet, grab it from any existing iframe
-    if (!wrapper.dataset.src) {
-      const existingIframe = wrapper.querySelector('iframe');
-      if (existingIframe && existingIframe.src) {
-        wrapper.dataset.src = existingIframe.src;
-      }
-    }
-
-    const src = wrapper.dataset.src;
-    if (!src) return;
-
-    // If iframe already exists inside this wrapper, do nothing
+    // If iframe already exists and is active, do nothing
     if (wrapper.querySelector('iframe')) return;
 
+    // Retrieve URL from dataset, HTML attribute, or any existing iframe
+    let src = wrapper.dataset.src || wrapper.getAttribute('data-src');
+    if (!src) {
+      const existing = wrapper.querySelector('iframe');
+      if (existing && existing.src) src = existing.src;
+    }
+
+    if (!src) return; // No URL found anywhere
+
+    // Cache the URL back to dataset for future recreations
+    wrapper.dataset.src = src;
+
+    // Clean out any lingering empty elements
+    const oldIframe = wrapper.querySelector('iframe');
+    if (oldIframe) oldIframe.remove();
+
+    // Create fresh iframe to prevent Chromium memory leaks
     const iframe = document.createElement('iframe');
     iframe.src = src;
     iframe.style.width = '100%';
@@ -1312,7 +1318,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     wrapper.appendChild(iframe);
   }
 
-  // Helper: Completely remove iframe from DOM to free up memory and stop playback
+  // Helper: Remove iframe to release memory and stop playback when hidden
   function destroyVideoFrame(wrapper) {
     const iframe = wrapper.querySelector('iframe');
     if (iframe) {
@@ -1339,16 +1345,10 @@ body:has(#blood-lineage[style*="display: block"]) {
       }
     });
 
-    if (!tabId) {
-      console.warn("Could not determine tabId from arguments:", arg1, arg2);
-      return;
-    }
+    if (!tabId) return;
 
     const target = document.getElementById(tabId);
-    if (!target) {
-      console.warn("Tab not found:", tabId);
-      return;
-    }
+    if (!target) return;
 
     const isSub = target.classList.contains('tab-content');
 
@@ -1396,14 +1396,16 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- UPDATE ALL VIDEO FRAMES BASED ON ACTUAL VISIBILITY ---
-    document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
-      if (isElementVisible(wrapper)) {
-        loadVideoFrame(wrapper);
-      } else {
-        destroyVideoFrame(wrapper);
-      }
-    });
+    // --- DELAYED VISIBILITY CHECK TO ALLOW REFLOW ---
+    setTimeout(() => {
+      document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
+        if (isElementVisible(wrapper)) {
+          loadVideoFrame(wrapper);
+        } else {
+          destroyVideoFrame(wrapper);
+        }
+      });
+    }, 10);
 
     // --- BUTTON STYLING ---
     if (!btn) {
@@ -1489,22 +1491,24 @@ body:has(#blood-lineage[style*="display: block"]) {
       animateParticles();
     }
 
-    // Capture initial iframe URLs into data-attributes and clean up initial DOM
+    // Safely harvest iframe URLs before stripping them from initial render
     document.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
       const iframe = wrapper.querySelector('iframe');
-      if (iframe) {
-        if (iframe.src) {
-          wrapper.dataset.src = iframe.src;
-        }
+      if (iframe && iframe.src) {
+        wrapper.dataset.src = iframe.src;
         iframe.remove();
+      } else if (wrapper.getAttribute('data-src')) {
+        wrapper.dataset.src = wrapper.getAttribute('data-src');
       }
     });
 
     // Automatically load About Tab on page start
-    const defaultTabId = 'about-tab';
-    const defaultButton = document.querySelector(`[onclick*="${defaultTabId}"]`) || document.querySelector('.tab-btn');
-    if (document.getElementById(defaultTabId)) {
-      switchTab(defaultTabId, defaultButton);
-    }
+    setTimeout(() => {
+      const defaultTabId = 'about-tab';
+      const defaultButton = document.querySelector(`[onclick*="${defaultTabId}"]`) || document.querySelector('.tab-btn');
+      if (document.getElementById(defaultTabId)) {
+        switchTab(defaultTabId, defaultButton);
+      }
+    }, 50);
   });
 </script>
