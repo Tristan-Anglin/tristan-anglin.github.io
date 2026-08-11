@@ -1355,29 +1355,25 @@ body:has(#blood-lineage[style*="display: block"]) {
       target.style.setProperty('display', 'block', 'important');
     }
 
-    // --- IFRAME LAZY-LOAD / UNLOAD (memory-leak fix) ---
-    // Stop every iframe that is now hidden by fully detaching its src.
-    // (display:none alone does NOT stop a playing YouTube embed.)
+    // --- IFRAME DESTROY / RECREATE (memory-leak fix) ---
+    // Repeatedly changing `.src` on the SAME <iframe> node that points at a
+    // cross-origin site (YouTube) is a known Chromium leak: each src change
+    // spins up a new embedded renderer context for that frame, and the old
+    // one is not reliably reclaimed just by clearing src. Simply toggling
+    // src back and forth as you click between tabs lets these pile up.
     //
-    // IMPORTANT: we check/clear the raw `src` ATTRIBUTE (getAttribute/
-    // removeAttribute), never the `.src` PROPERTY. Reading `.src` back
-    // after setting it to '' does NOT give you '' — the browser resolves
-    // it as a URL relative to the current page, so `.src` silently becomes
-    // the page's own URL. That falsely-truthy value was breaking reloads
-    // after the first pause. getAttribute('src') has no such resolution
-    // and reflects exactly what's on the tag.
-    document.querySelectorAll('.portfolio-tab iframe[data-src]').forEach(frame => {
-      const isVisible = frame.offsetParent !== null;
-      if (!isVisible && frame.getAttribute('src')) {
-        frame.removeAttribute('src');
-      }
+    // The fix: fully REMOVE the iframe element from the DOM when its tab is
+    // hidden (destroyVideoFrame), and build a brand-new iframe element only
+    // when its tab becomes visible (loadVideoFrame). Actual node removal
+    // lets the browser release the cross-origin frame's memory instead of
+    // just orphaning it.
+    document.querySelectorAll('.portfolio-tab .yt-frame-wrapper').forEach(wrapper => {
+      const isVisible = wrapper.offsetParent !== null;
+      if (!isVisible) destroyVideoFrame(wrapper);
     });
 
-    // (Re)load the iframe(s) inside whichever tab is now visible.
-    target.querySelectorAll('iframe[data-src]').forEach(frame => {
-      if (!frame.getAttribute('src')) {
-        frame.src = frame.dataset.src;
-      }
+    target.querySelectorAll('.yt-frame-wrapper').forEach(wrapper => {
+      loadVideoFrame(wrapper);
     });
 
     // --- BUTTON STYLING ---
