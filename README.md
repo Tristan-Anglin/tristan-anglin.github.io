@@ -608,20 +608,21 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <!-- ================= TAB 2: TECHNICAL UI ================= -->
 <div id="bl-tab-ui" class="tab-content" style="display: none;">
+    
+    <!-- SECTION 1: Core Screen Architecture & Pipeline (Inventory & HUD) -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 5px; margin-bottom: 10px;">
-        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Interactive Systems</b>
+        <b style="color: #ffffff; font-size: 1.1em;">Full-Stack Technical UI Architecture & Inventory Systems</b>
         <span style="font-size: 0.75em; background: #21262d; border: 1px solid #30363d; padding: 3px 8px; border-radius: 20px; color: #8b949e; font-weight: bold;">UMG / Slate / C++</span>
       </div>
       
       <ul style="margin: 0 0 20px 0; padding-left: 20px; line-height: 1.6; color: #c9d1d9;">
         <li><b>Comprehensive Screen Suite:</b> Programmed over 20+ dynamic UI screens in C++ and UMG, featuring a networked 4-Player Match Lobby, modular Save Management Suite, interactive "How to Play" tutorial, custom Keybind Remapper, and Armory/Forge interfaces.</li>
-        <li><b>Engineered Custom Visual Payloads:</b> Subclassed <code style="color: #da765b;">UDragDropOperation</code> in C++ to pass raw <code style="color: #da765b;">FItemData</code> memory frames across distinct inventory, armory, and forge viewports with zero tight UI coupling.</li>
         <li><b>Event-Driven Attribute Bindings:</b> Built responsive UI event delegates triggered by state changes (e.g., intelligence attributes dynamically recalculating spell cost displays and actual mana consumption in real time) to eliminate expensive tick-based UMG evaluations.</li>
         <li><b>3D Skeletal Preview Integration:</b> Embedded a real-time 3D skeletal mesh preview inside the inventory interface that dynamically updates based on the player's class selection and equipped gear.</li>
       </ul>
 
-      <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">UI Pipeline: Wireframe to Production Assets</b>
+      <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 10px; padding-left: 5px;">Inventory & HUD Pipeline: Wireframe to Production Assets</b>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
         <div style="text-align: center; background: #0d1117; padding: 10px; border-radius: 6px; border: 1px solid #30363d;">
           <img src="InventoryWireframe.png" alt="UX Wireframe Layout" loading="lazy" onclick="zoomImage(this)" style="width: 100%; height: auto; aspect-ratio: 16/10; object-fit: contain; background: #161b22; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
@@ -638,73 +639,37 @@ body:has(#blood-lineage[style*="display: block"]) {
       </div>
     </div>
 
-    <!-- Interactive UI Micro-Animations & Mechanics Showcase -->
+    <!-- SECTION 2: Hover Animation & Dynamic Tooltips (Combined Showcase) -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
-      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">Interactive UX Polish & Micro-Interactions</b>
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Hover Feedback & Dynamic Tooltips</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
-        Designed responsive, arcade-style feedback loops across inventory panels, utilizing custom UMG widgets, motion graphics, and state-driven mouse events.
+        Designed responsive, arcade-style micro-interactions. Unexamined "New Item" indicators trigger subtle hover-shake animations and dynamic rarity glow borders, pairing seamlessly with replicated tooltip structs that instantly project detailed stats and descriptions on hover.
       </p>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px;">
-        <!-- Feature 1: Hover Shake & Highlight -->
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Hover Shake & Border Highlight</b>
-            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
-              Engineered custom hover feedback states. Unexamined "New Item" indicators trigger subtle shake animations and dynamic rarity glow borders.
-            </p>
-          </div>
-          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="placeholder-hover-shake.gif" alt="Inventory Hover Shake Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2212%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover Shake GIF Placeholder</text></svg>'">
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Hover & Highlight Feedback</span>
-          </div>
-        </div>
-
-        <!-- Feature 2: Custom Drag-and-Drop UDragDropOperation -->
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Custom C++ Drag-and-Drop</b>
-            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
-              Subclassed <code style="color: #da765b;">UDragDropOperation</code> to carry serialized <code style="color: #da765b;">FItemData</code> payloads seamlessly between inventory slots, armory grids, and forge inputs.
-            </p>
-          </div>
-          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="placeholder-drag-drop.gif" alt="Drag and Drop Operation GIF" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2212%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Drag & Drop GIF Placeholder</text></svg>'">
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ UDragDropOperation Payload Flow</span>
-          </div>
-        </div>
-
-        <!-- Feature 3: Context Click Options Menu -->
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Item Context Action Popups</b>
-            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
-              Implemented instant click-to-action contextual menus allowing players to rapidly equip, inspect, drop, or sell items directly from any grid slot.
-            </p>
-          </div>
-          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="placeholder-click-menu.gif" alt="Item Context Click Menu GIF" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2212%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Click Menu GIF Placeholder</text></svg>'">
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Contextual Action Popup</span>
-          </div>
-        </div>
-
-        <!-- Feature 4: Dynamic Tooltips (Stats & Items) -->
-        <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
-          <div>
-            <b style="color: #ffffff; font-size: 0.95em; display: block; margin-bottom: 4px;">Dynamic Replicated Tooltips</b>
-            <p style="font-size: 0.82em; color: #8b949e; line-height: 1.4; margin-bottom: 10px;">
-              Created a standardized tooltip framework binding replicated structs to instantly display detailed stat distributions, rarity tiers, and ability descriptions on hover.
-            </p>
-          </div>
-          <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="placeholder-dynamic-tooltips.gif" alt="Dynamic Tooltips GIF" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2212%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Tooltips GIF Placeholder</text></svg>'">
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Stat & Item Tooltip Framework</span>
-          </div>
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+        <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="placeholder-hover-and-tooltips.gif" alt="Hover Shake and Dynamic Tooltips Showcase" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161b22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%238b949e%22 font-size=%2214%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip Video/GIF Placeholder</text></svg>'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">▶ Combined Hover Shake, Glow Border & Dynamic Tooltip Showcase</span>
         </div>
       </div>
     </div>
 
-    <!-- UI Memory Culling Code Breakdown -->
+    <!-- SECTION 3: Custom Cross-Window Drag-and-Drop System -->
+    <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
+      <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 6px;">Cross-Window Drag-and-Drop Architecture</b>
+      <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 15px;">
+        Engineered custom visual payloads by subclassing <code style="color: #da765b;">UDragDropOperation</code> in C++. This allows items to fluidly pass raw <code style="color: #da765b;">FItemData</code> memory frames across completely decoupled interface viewports—enabling smooth dragging between the player inventory, equipment armory, and crafting forge windows with zero tight coupling.
+      </p>
+
+      <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
+        <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
+          <img src="placeholder-cross-window-drag.gif" alt="Cross-Window Drag and Drop GIF" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161b22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%238b949e%22 font-size=%2214%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Cross-Window Drag & Drop GIF Placeholder</text></svg>'">
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">▶ Cross-Window Payload Flow (Inventory ⇄ Forge ⇄ Armory)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: UI Culling & Lifecycle Safety -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">UI Culling & Lifecycle Safety</b>
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px; display: flex; flex-direction: column; justify-content: space-between;">
