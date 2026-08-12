@@ -533,14 +533,46 @@ body:has(#blood-lineage[style*="display: block"]) {
     <img id="modal-target-img" style="max-width: 90%; max-height: 90%; border-radius: 8px; border: 2px solid #a5472d; box-shadow: 0 0 30px rgba(165, 71, 45, 0.4);">
   </div>
 
-  <script>
-    function zoomImage(imgElement) {
-      const modal = document.getElementById('image-zoom-modal');
-      const modalImg = document.getElementById('modal-target-img');
-      modal.style.display = "flex";
-      modalImg.src = imgElement.src;
+<script>
+  function zoomImage(element) {
+    const modal = document.getElementById('image-zoom-modal');
+    const modalImg = document.getElementById('modal-target-img');
+    modal.style.display = "flex";
+
+    // Check if the clicked element is a video
+    if (element.tagName && element.tagName.toLowerCase() === 'video') {
+      let modalVideo = document.getElementById('modal-target-video');
+      
+      // If the modal video element doesn't exist yet, create it dynamically
+      if (!modalVideo) {
+        modalVideo = document.createElement('video');
+        modalVideo.id = 'modal-target-video';
+        modalVideo.autoplay = true;
+        modalVideo.loop = true;
+        modalVideo.muted = true;
+        modalVideo.playsInline = true;
+        modalVideo.style.maxWidth = '90vw';
+        modalVideo.style.maxHeight = '85vh';
+        modalVideo.style.objectFit = 'contain';
+        modalVideo.style.borderRadius = '6px';
+        modalImg.parentNode.insertBefore(modalVideo, modalImg);
+      }
+      
+      modalVideo.src = element.src;
+      modalVideo.style.display = 'block';
+      modalImg.style.display = 'none';
+    } else {
+      // Standard static image handling
+      modalImg.src = element.src;
+      modalImg.style.display = 'block';
+      
+      const modalVideo = document.getElementById('modal-target-video');
+      if (modalVideo) {
+        modalVideo.style.display = 'none';
+      }
     }
-  </script>
+  }
+</script>
 
 <!-- Outer Container -->
 <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
@@ -757,10 +789,7 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
-              <source src="ItemHover.mp4" type="video/mp4">
-              Your browser does not support video.
-            </video>
+            <video src="ItemHover.mp4" autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;"></video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Hover & Tooltip Animation</span>
           </div>
         </div>
@@ -774,10 +803,7 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
-              <source src="LevelUpBanner.mp4" type="video/mp4">
-              Your browser does not support video.
-            </video>
+            <video src="LevelUpBanner.mp4" autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;"></video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Level Up Banner Sequence</span>
           </div>
         </div>
@@ -791,10 +817,7 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
-              <source src="Forging.mp4" type="video/mp4">
-              Your browser does not support video.
-            </video>
+            <video src="Forging.mp4" autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;"></video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Crafting Forge Sequence</span>
           </div>
         </div>
@@ -810,16 +833,13 @@ body:has(#blood-lineage[style*="display: block"]) {
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
         <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
-          <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
-            <source src="CrossWindowDrag.mp4" type="video/mp4">
-            Your browser does not support video.
-          </video>
+          <video src="CrossWindowDrag.mp4" autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;"></video>
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">🔍 Click to expand Cross-Window Payload Flow</span>
         </div>
       </div>
     </div>
 
-    <!-- SECTION 7: Additional Core Systems (Main Menu, Save Suite & Lifecycle Culling) -->
+    <!-- SECTION 7: Supporting Systems -->
     <div style="background: #161b22; padding: 18px; border-radius: 8px; border-left: 5px solid #a5472d; margin-bottom: 25px; color: #f0f6fc;">
       <b style="color: #ffffff; font-size: 1.05em; display: block; margin-bottom: 8px;">Supporting Systems: Main Menu, Save Suite & UI Lifecycle Safety</b>
       <p style="font-size: 0.85em; color: #8b949e; line-height: 1.4; margin-bottom: 12px;">
