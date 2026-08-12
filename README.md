@@ -757,7 +757,10 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="ItemHoverGif.gif" alt="Item Hover and Tooltip Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Hover & Tooltip GIF</text></svg>'">
+            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+              <source src="ItemHover.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Hover Shake & Tooltip Flow</span>
           </div>
         </div>
@@ -771,7 +774,10 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="LevelUpGif.gif" alt="Level Up Banner Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Level Up Banner GIF</text></svg>'">
+            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+              <source src="LevelUpBanner.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Cinematic Milestone Notification</span>
           </div>
         </div>
@@ -785,7 +791,10 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <img src="ForgeSequenceGif.gif" alt="Crafting Forge Sequence Animation" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22120%22><rect width=%22100%22 height=%22100%22 fill=%22%23161b22%22/><text x=%2250%%22 y=%2250%%22 fill=%22%238b949e%22 font-size=%2211%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Forge Sequence GIF</text></svg>'">
+            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+              <source src="Forging.mp4" type="video/mp4">
+              Your browser does not support video.
+            </video>
             <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Forge Upgrade & Particle Flow</span>
           </div>
         </div>
@@ -801,7 +810,10 @@ body:has(#blood-lineage[style*="display: block"]) {
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
         <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
-          <img src="placeholder-cross-window-drag.gif" alt="Cross-Window Drag and Drop GIF" loading="lazy" onclick="zoomImage(this)" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; cursor: zoom-in;" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22200%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23161b22%22/><text x=%2250%25%22 y=%2250%25%22 fill=%22%238b949e%22 font-size=%2214%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>Cross-Window Drag & Drop GIF Placeholder</text></svg>'">
+          <video autoplay loop muted playsinline style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+            <source src="CrossWindowDrag.mp4" type="video/mp4">
+            Your browser does not support video.
+          </video>
           <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">▶ Cross-Window Payload Flow (Inventory ⇄ Forge ⇄ Armory)</span>
         </div>
       </div>
@@ -820,7 +832,7 @@ body:has(#blood-lineage[style*="display: block"]) {
         </div>
       </div>
     </div>
-  </div>
+</div>
 
   <!-- ================= TAB 3: GAMEPLAY & SYSTEMS ================= -->
 <div id="bl-tab-gameplay" class="tab-content" style="display: none;">
