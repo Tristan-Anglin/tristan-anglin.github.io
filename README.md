@@ -757,11 +757,11 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
               <source src="ItemHover.mp4" type="video/mp4">
               Your browser does not support video.
             </video>
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Hover Shake & Tooltip Flow</span>
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Hover & Tooltip Animation</span>
           </div>
         </div>
 
@@ -774,11 +774,11 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
               <source src="LevelUpBanner.mp4" type="video/mp4">
               Your browser does not support video.
             </video>
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Cinematic Milestone Notification</span>
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Level Up Banner Sequence</span>
           </div>
         </div>
 
@@ -791,11 +791,11 @@ body:has(#blood-lineage[style*="display: block"]) {
             </p>
           </div>
           <div style="text-align: center; background: #161b22; padding: 6px; border-radius: 4px; border: 1px solid #21262d;">
-            <video autoplay loop muted playsinline style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+            <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 180px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
               <source src="Forging.mp4" type="video/mp4">
               Your browser does not support video.
             </video>
-            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">▶ Forge Upgrade & Particle Flow</span>
+            <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Crafting Forge Sequence</span>
           </div>
         </div>
       </div>
@@ -810,11 +810,11 @@ body:has(#blood-lineage[style*="display: block"]) {
 
       <div style="background: #0d1117; border: 1px solid #30363d; border-radius: 6px; padding: 12px;">
         <div style="text-align: center; background: #161b22; padding: 8px; border-radius: 4px; border: 1px solid #21262d;">
-          <video autoplay loop muted playsinline style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22;">
+          <video autoplay loop muted playsinline onclick="zoomImage(this)" onmouseover="this.style.transform='scale(1.01)'" onmouseout="this.style.transform='scale(1)'" style="max-width: 100%; max-height: 280px; width: auto; height: auto; object-fit: contain; border-radius: 4px; background: #161b22; cursor: zoom-in; transition: transform 0.2s;">
             <source src="CrossWindowDrag.mp4" type="video/mp4">
             Your browser does not support video.
           </video>
-          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">▶ Cross-Window Payload Flow (Inventory ⇄ Forge ⇄ Armory)</span>
+          <span style="font-size: 0.75em; color: #da765b; display: block; margin-top: 8px; font-weight: bold;">🔍 Click to expand Cross-Window Payload Flow</span>
         </div>
       </div>
     </div>
