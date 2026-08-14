@@ -454,21 +454,11 @@ body:has(#blood-lineage[style*="display: block"]) {
 
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Presentation Frame: Photo & Side-by-Side Game Vault Showcase -->
+<!-- Presentation Frame: Side-by-Side Game Vault Showcase & Photo -->
 <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
     
-    <!-- Photo Column -->
-    <div style="flex: 1 1 45%; min-width: 280px;">
-      <img src="myselfLevelup.jpg" 
-           alt="Tristan Anglin - Level Up Showcase" 
-           loading="lazy"
-           style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
-           onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
-           onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
-    </div>
-
-    <!-- Game Vault Feature Card Column -->
+    <!-- Game Vault Feature Card Column (Left Side) -->
     <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: center; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
          onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
@@ -481,7 +471,7 @@ body:has(#blood-lineage[style*="display: block"]) {
         Build a personalized database of your board game collection. Effortlessly filter and pick the perfect game for game night based on player count, duration, mechanics, and more.
       </p>
 
-      <a href="https://ai.studio/apps/5a72212d-5143-4ce5-91df-c28a8872d608" 
+      <a href="https://boardgamevault.ai.studio" 
          target="_blank" 
          rel="noopener noreferrer"
          style="display: inline-block; padding: 10px 18px; border-radius: 6px; background: linear-gradient(135deg, #bd4c2a, #e6633e); color: #ffffff; font-weight: bold; text-decoration: none; font-size: 0.9em; box-shadow: 0px 4px 12px rgba(189, 76, 42, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;"
@@ -490,6 +480,16 @@ body:has(#blood-lineage[style*="display: block"]) {
         Launch Game Vault <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px;"></i>
       </a>
 
+    </div>
+
+    <!-- Photo Column (Right Side) -->
+    <div style="flex: 1 1 45%; min-width: 280px;">
+      <img src="myselfLevelup.jpg" 
+           alt="Tristan Anglin - Level Up Showcase" 
+           loading="lazy"
+           style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
+           onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
+           onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
     </div>
 
   </div>
