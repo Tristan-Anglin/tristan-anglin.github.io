@@ -461,7 +461,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <!-- Game Vault Feature Card Column (Left Side) -->
     <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: center; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
-         onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
+         onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" >
       
       <h3 style="margin-top: 0; color: #ffffff; font-size: 1.4em; display: flex; align-items: center; gap: 8px;">
         <i class="fa-solid fa-dice-d20" style="color: #e6633e;"></i> Game Vault
@@ -476,7 +476,7 @@ body:has(#blood-lineage[style*="display: block"]) {
          rel="noopener noreferrer"
          style="display: inline-block; padding: 10px 18px; border-radius: 6px; background: linear-gradient(135deg, #bd4c2a, #e6633e); color: #ffffff; font-weight: bold; text-decoration: none; font-size: 0.9em; box-shadow: 0px 4px 12px rgba(189, 76, 42, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;"
          onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 16px rgba(230, 99, 62, 0.6)';"
-         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(189, 76, 42, 0.4)';" />
+         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(189, 76, 42, 0.4)';" >
         Launch Game Vault <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px;"></i>
       </a>
 
