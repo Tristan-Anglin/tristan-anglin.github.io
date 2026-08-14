@@ -494,6 +494,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 
   </div>
 </div>
+</div>
 
 <div id="round-based-survival" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
   <!-- Added Inner Wrapper to Match Your Other Tabs -->
