@@ -471,13 +471,13 @@ body:has(#blood-lineage[style*="display: block"]) {
         Build a personalized database of your board game collection. Effortlessly filter and pick the perfect game for game night based on player count, duration, mechanics, and more.
       </p>
 
-      <a href="https://boardgamevault.ai.studio" 
+<a href="https://boardgamevault.ai.studio" 
          target="_blank" 
          rel="noopener noreferrer"
          style="display: inline-block; padding: 10px 18px; border-radius: 6px; background: linear-gradient(135deg, #bd4c2a, #e6633e); color: #ffffff; font-weight: bold; text-decoration: none; font-size: 0.9em; box-shadow: 0px 4px 12px rgba(189, 76, 42, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;"
          onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 16px rgba(230, 99, 62, 0.6)';"
          onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(189, 76, 42, 0.4)';" >
-        Launch Game Vault <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px;"></i>
+        <span style="color: #ffffff; text-decoration: none;">Launch Game Vault</span> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px; color: #ffffff;"></i>
       </a>
 
     </div>
