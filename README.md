@@ -454,9 +454,11 @@ body:has(#blood-lineage[style*="display: block"]) {
 
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
+<!-- Presentation Frame: Side-by-Side Game Vault Showcase & Photo -->
 <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
     
+    <!-- Game Vault Feature Card Column (Left Side) -->
     <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
          onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" >
@@ -471,14 +473,20 @@ body:has(#blood-lineage[style*="display: block"]) {
         </p>
       </div>
 
+      <!-- Video Preview Block matching UI Animations style -->
       <div style="margin: 10px 0 20px 0; width: 100%;">
-        <video src="GameVault.mp4" 
-               autoplay 
-               loop 
-               muted 
-               playsinline 
-               onclick="zoomImage(this)" 
-               style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(165, 71, 45, 0.4); cursor: zoom-in;" ></video>
+        <div style="text-align: center; background: rgba(15, 15, 15, 0.8); padding: 8px; border-radius: 6px; border: 1px solid rgba(165, 71, 45, 0.3);">
+          <video src="GameVault.mp4" 
+                 autoplay 
+                 loop 
+                 muted 
+                 playsinline 
+                 onclick="zoomImage(this)" 
+                 onmouseover="this.style.transform='scale(1.01)'" 
+                 onmouseout="this.style.transform='scale(1)'" 
+                 style="width: 100%; max-height: 180px; object-fit: contain; border-radius: 4px; cursor: zoom-in; transition: transform 0.2s;"></video>
+          <span style="font-size: 0.75em; color: #e6633e; display: block; margin-top: 6px; font-weight: bold;">🔍 Click to expand Game Vault Preview</span>
+        </div>
       </div>
 
       <div style="display: flex; gap: 10px; flex-wrap: wrap;">
@@ -494,6 +502,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     </div>
 
+    <!-- Personal Photo Column (Right Side) -->
     <div style="flex: 1 1 45%; min-width: 280px;">
       <img src="myselfLevelup.jpg" 
            alt="Tristan Anglin - Level Up Showcase" 
