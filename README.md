@@ -630,15 +630,14 @@ body:has(#blood-lineage[style*="display: block"]) {
     <b style="color: #da765b; font-size: 1.1em;">Lead Systems Architect & UI Programmer</b>
   </div>
 
-<!-- Tab Navigation Buttons -->
-<div style="display: flex; flex-direction: row; gap: 8px; margin: 20px 0 15px 0; border-bottom: 2px solid #21262d; padding-bottom: 0px; width: 100%;">
-  <button onclick="switchTab('bl-tab-overview', this)" class="tab-btn active" style="flex: 1; width: auto; text-align: center; white-space: nowrap; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
+<div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; margin: 20px 0 15px 0; border-bottom: 2px solid #21262d; padding-bottom: 0px; width: 100%;">
+  <button onclick="switchTab('bl-tab-overview', this)" class="tab-btn active" style="flex: 1 1 200px; text-align: center; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
     Overview & Post-Mortem
   </button>
-  <button onclick="switchTab('bl-tab-ui', this)" class="tab-btn" style="flex: 1; width: auto; text-align: center; white-space: nowrap; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
+  <button onclick="switchTab('bl-tab-ui', this)" class="tab-btn" style="flex: 1 1 200px; text-align: center; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
     Technical UI Engineering
   </button>
-  <button onclick="switchTab('bl-tab-gameplay', this)" class="tab-btn" style="flex: 1; width: auto; text-align: center; white-space: nowrap; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
+  <button onclick="switchTab('bl-tab-gameplay', this)" class="tab-btn" style="flex: 1 1 200px; text-align: center; background-color: #161b22; color: #c9d1d9; border: 1px solid #30363d; padding: 8px 12px; font-size: 0.9em; font-weight: bold; border-radius: 6px; cursor: pointer;">
     Gameplay & Systems
   </button>
 </div>
