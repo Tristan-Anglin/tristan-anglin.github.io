@@ -584,47 +584,6 @@ body:has(#blood-lineage[style*="display: block"]) {
     <img id="modal-target-img" style="max-width: 90%; max-height: 90%; border-radius: 8px; border: 2px solid #a5472d; box-shadow: 0 0 30px rgba(165, 71, 45, 0.4);">
   </div>
 
-<script>
-  function zoomImage(element) {
-    const modal = document.getElementById('image-zoom-modal');
-    const modalImg = document.getElementById('modal-target-img');
-    modal.style.display = "flex";
-
-    // Check if the clicked element is a video
-    if (element.tagName && element.tagName.toLowerCase() === 'video') {
-      let modalVideo = document.getElementById('modal-target-video');
-      
-      // If the modal video element doesn't exist yet, create it dynamically
-      if (!modalVideo) {
-        modalVideo = document.createElement('video');
-        modalVideo.id = 'modal-target-video';
-        modalVideo.autoplay = true;
-        modalVideo.loop = true;
-        modalVideo.muted = true;
-        modalVideo.playsInline = true;
-        modalVideo.style.maxWidth = '90vw';
-        modalVideo.style.maxHeight = '85vh';
-        modalVideo.style.objectFit = 'contain';
-        modalVideo.style.borderRadius = '6px';
-        modalImg.parentNode.insertBefore(modalVideo, modalImg);
-      }
-      
-      modalVideo.src = element.src;
-      modalVideo.style.display = 'block';
-      modalImg.style.display = 'none';
-    } else {
-      // Standard static image handling
-      modalImg.src = element.src;
-      modalImg.style.display = 'block';
-      
-      const modalVideo = document.getElementById('modal-target-video');
-      if (modalVideo) {
-        modalVideo.style.display = 'none';
-      }
-    }
-  }
-</script>
-
 <!-- Outer Container -->
 <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
 
@@ -1594,4 +1553,45 @@ body:has(#blood-lineage[style*="display: block"]) {
       }
     }, 50);
   });
+</script>
+
+<script>
+  function zoomImage(element) {
+    const modal = document.getElementById('image-zoom-modal');
+    const modalImg = document.getElementById('modal-target-img');
+    modal.style.display = "flex";
+
+    // Check if the clicked element is a video
+    if (element.tagName && element.tagName.toLowerCase() === 'video') {
+      let modalVideo = document.getElementById('modal-target-video');
+      
+      // If the modal video element doesn't exist yet, create it dynamically
+      if (!modalVideo) {
+        modalVideo = document.createElement('video');
+        modalVideo.id = 'modal-target-video';
+        modalVideo.autoplay = true;
+        modalVideo.loop = true;
+        modalVideo.muted = true;
+        modalVideo.playsInline = true;
+        modalVideo.style.maxWidth = '90vw';
+        modalVideo.style.maxHeight = '85vh';
+        modalVideo.style.objectFit = 'contain';
+        modalVideo.style.borderRadius = '6px';
+        modalImg.parentNode.insertBefore(modalVideo, modalImg);
+      }
+      
+      modalVideo.src = element.src;
+      modalVideo.style.display = 'block';
+      modalImg.style.display = 'none';
+    } else {
+      // Standard static image handling
+      modalImg.src = element.src;
+      modalImg.style.display = 'block';
+      
+      const modalVideo = document.getElementById('modal-target-video');
+      if (modalVideo) {
+        modalVideo.style.display = 'none';
+      }
+    }
+  }
 </script>
