@@ -457,17 +457,29 @@ body:has(#blood-lineage[style*="display: block"]) {
 <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
     
-    <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: center; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
+    <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: space-between; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
          onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" >
       
-      <h3 style="margin-top: 0; color: #ffffff; font-size: 1.4em; display: flex; align-items: center; gap: 8px;">
-        <i class="fa-solid fa-dice-d20" style="color: #e6633e;"></i> Game Vault
-      </h3>
-      
-      <p style="color: #cccccc; font-size: 0.95em; line-height: 1.5; margin-bottom: 20px;">
-        Since I frequently host game nights with family and friends, I developed this app to help select, organize, and track our games. Still very much a work in progress, it allows visitors to view my personal collection or create and manage their own custom vaults, filtering effortlessly by player count, duration, mechanics, and more.
-      </p>
+      <div>
+        <h3 style="margin-top: 0; color: #ffffff; font-size: 1.4em; display: flex; align-items: center; gap: 8px;">
+          <i class="fa-solid fa-dice-d20" style="color: #e6633e;"></i> Game Vault
+        </h3>
+        
+        <p style="color: #cccccc; font-size: 0.95em; line-height: 1.5; margin-bottom: 15px;">
+          Since I frequently host game nights with family and friends, I developed this app to help select, organize, and track our games. Still very much a work in progress, it allows visitors to view my personal collection or create and manage their own custom vaults, filtering effortlessly by player count, duration, mechanics, and more.
+        </p>
+      </div>
+
+      <div style="margin: 10px 0 20px 0; width: 100%;">
+        <video src="GameVault.mp4" 
+               autoplay 
+               loop 
+               muted 
+               playsinline 
+               onclick="zoomImage(this)" 
+               style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(165, 71, 45, 0.4); cursor: zoom-in;" ></video>
+      </div>
 
       <div style="display: flex; gap: 10px; flex-wrap: wrap;">
         <a href="https://boardgamevault.ai.studio" 
@@ -482,16 +494,13 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     </div>
 
-    <div style="flex: 1 1 45%; min-width: 280px; display: flex; align-items: center;">
-      <video src="GameVault.mp4" 
-             autoplay 
-             loop 
-             muted 
-             playsinline 
-             onclick="zoomImage(this)" 
-             style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); cursor: zoom-in; transition: all 0.4s ease;"
-             onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
-             onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" ></video>
+    <div style="flex: 1 1 45%; min-width: 280px;">
+      <img src="myselfLevelup.jpg" 
+           alt="Tristan Anglin - Level Up Showcase" 
+           loading="lazy"
+           style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
+           onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
+           onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
     </div>
 
   </div>
