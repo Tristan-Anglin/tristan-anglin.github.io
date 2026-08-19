@@ -454,11 +454,9 @@ body:has(#blood-lineage[style*="display: block"]) {
 
   <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
-<!-- Presentation Frame: Side-by-Side Game Vault Showcase & Photo -->
 <div align="center" style="width: 100%; padding-bottom: 30px; padding-top: 5px;">
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; justify-content: center; width: 100%;">
     
-    <!-- Game Vault Feature Card Column (Left Side) -->
     <div style="flex: 1 1 45%; min-width: 280px; display: flex; flex-direction: column; justify-content: center; padding: 25px; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); background: rgba(20, 20, 20, 0.6); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); text-align: left; transition: all 0.4s ease;"
          onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
          onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" >
@@ -468,21 +466,22 @@ body:has(#blood-lineage[style*="display: block"]) {
       </h3>
       
       <p style="color: #cccccc; font-size: 0.95em; line-height: 1.5; margin-bottom: 20px;">
-        Build a personalized database of your board game collection. Effortlessly filter and pick the perfect game for game night based on player count, duration, mechanics, and more.
+        Since I frequently host game nights with family and friends, I developed this app to help select, organize, and track our games. Still very much a work in progress, it allows visitors to view my personal collection or create and manage their own custom vaults, filtering effortlessly by player count, duration, mechanics, and more.
       </p>
 
-<a href="https://boardgamevault.ai.studio" 
-         target="_blank" 
-         rel="noopener noreferrer"
-         style="display: inline-block; padding: 10px 18px; border-radius: 6px; background: linear-gradient(135deg, #bd4c2a, #e6633e); color: #ffffff; font-weight: bold; text-decoration: none; font-size: 0.9em; box-shadow: 0px 4px 12px rgba(189, 76, 42, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;"
-         onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 16px rgba(230, 99, 62, 0.6)';"
-         onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(189, 76, 42, 0.4)';" >
-        <span style="color: #ffffff; text-decoration: none;">Launch Game Vault</span> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px; color: #ffffff;"></i>
-      </a>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="https://boardgamevault.ai.studio" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="display: inline-block; padding: 10px 18px; border-radius: 6px; background: linear-gradient(135deg, #bd4c2a, #e6633e); color: #ffffff; font-weight: bold; text-decoration: none; font-size: 0.9em; box-shadow: 0px 4px 12px rgba(189, 76, 42, 0.4); transition: transform 0.2s ease, box-shadow 0.2s ease;"
+           onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0px 6px 16px rgba(230, 99, 62, 0.6)';"
+           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0px 4px 12px rgba(189, 76, 42, 0.4)';" >
+          <span style="color: #ffffff; text-decoration: none;">Launch Game Vault</span> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.85em; margin-left: 5px; color: #ffffff;"></i>
+        </a>
+      </div>
 
     </div>
 
-    <!-- Photo Column (Right Side) -->
     <div style="flex: 1 1 45%; min-width: 280px;">
       <img src="myselfLevelup.jpg" 
            alt="Tristan Anglin - Level Up Showcase" 
@@ -493,7 +492,6 @@ body:has(#blood-lineage[style*="display: block"]) {
     </div>
 
   </div>
-</div>
 </div>
 
 <div id="round-based-survival" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
