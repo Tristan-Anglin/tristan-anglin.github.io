@@ -482,16 +482,20 @@ body:has(#blood-lineage[style*="display: block"]) {
 
     </div>
 
-    <div style="flex: 1 1 45%; min-width: 280px;">
-      <img src="myselfLevelup.jpg" 
-           alt="Tristan Anglin - Level Up Showcase" 
-           loading="lazy"
-           style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); transition: all 0.4s ease;"
-           onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
-           onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" />
+    <div style="flex: 1 1 45%; min-width: 280px; display: flex; align-items: center;">
+      <video src="GameVault.mp4" 
+             autoplay 
+             loop 
+             muted 
+             playsinline 
+             onclick="zoomImage(this)" 
+             style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; border: 1px solid rgba(165, 71, 45, 0.4); box-shadow: 0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15); cursor: zoom-in; transition: all 0.4s ease;"
+             onmouseover="this.style.borderColor='rgba(230, 99, 62, 0.7)'; this.style.boxShadow='0px 20px 45px rgba(0,0,0,0.7), 0px 0px 25px rgba(165, 71, 45, 0.35)';"
+             onmouseout="this.style.borderColor='rgba(165, 71, 45, 0.4)'; this.style.boxShadow='0px 15px 35px rgba(0,0,0,0.6), 0px 0px 20px rgba(165, 71, 45, 0.15)';" ></video>
     </div>
 
   </div>
+</div>
 </div>
 
 <div id="round-based-survival" class="portfolio-tab" style="display: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #c9d1d9;">
