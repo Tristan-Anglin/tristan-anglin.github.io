@@ -348,35 +348,35 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 1. Round Based Survival -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'round-based-survival')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="22" alt="Unity" title="Unity" />
+      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="26" alt="Unity" title="Unity" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Round Based Survival</span>
       <span class="tab-meta">In Development</span>
     </div>
     <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.2em;" title="Planned Steam Release"></i>
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.4em;" title="Planned Steam Release"></i>
     </div>
   </button>
 
   <!-- 2. Blood & Lineage -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'blood-lineage')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="22" alt="UE5" title="Unreal Engine 5" />
+      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="26" alt="UE5" title="Unreal Engine 5" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Blood & Lineage</span>
       <span class="tab-meta">Sept 2025 - April 2026</span>
     </div>
     <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.2em;" title="Coming to Steam"></i>
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.4em;" title="Coming to Steam"></i>
     </div>
   </button>
   
   <!-- 3. Tower Defense -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'tower-defense')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="22" alt="C++" title="C++" />
+      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="26" alt="C++" title="C++" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Tower Defense</span>
@@ -388,7 +388,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 4. Your Dark Side -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'darkside')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="22" alt="Java" title="Java" />
+      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="26" alt="Java" title="Java" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Your Dark Side</span>
@@ -400,7 +400,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 5. Dungeon Crawler -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'dungeon')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="22" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="26" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Dungeon Crawler</span>
@@ -412,7 +412,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 6. Hit & Run -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'hit-run')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="22" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="26" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Hit & Run</span>
