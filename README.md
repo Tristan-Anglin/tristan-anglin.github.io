@@ -306,7 +306,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 
 <!-- Global External Link Grid Container -->
 <div class="link-container">
-  <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - GAME DEVELOPMENT.pdf" target="_blank">
+  <a class="custom-link-btn" href="https://tristananglin.github.io/RESUME - SOFTWARE DEVELOPER - Portfolio.pdf" target="_blank">
     <i class="fa-solid fa-file-pdf" style="font-size: 1.1em; margin-bottom: 3px;"></i>
     <span style="font-size: 0.85em;">Resume</span>
   </a>
