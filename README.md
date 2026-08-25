@@ -343,12 +343,12 @@ body:has(#blood-lineage[style*="display: block"]) {
     <span class="tab-meta" style="font-size: 0.85em; opacity: 0.8;">Core Profile</span>
   </button>
   
-  <!-- Project Tabs with Seamless Integrated Left Icon -->
+  <!-- Project Tabs with Full-Height Left Panel and Left-Aligned Text -->
   
   <!-- 1. Round Based Survival -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'round-based-survival')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="34" alt="Unity" title="Unity" />
+      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="32" alt="Unity" title="Unity" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Round Based Survival</span>
@@ -359,7 +359,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 2. Blood & Lineage -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'blood-lineage')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="34" alt="UE5" title="Unreal Engine 5" />
+      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="32" alt="UE5" title="Unreal Engine 5" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Blood & Lineage</span>
@@ -370,7 +370,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 3. Tower Defense -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'tower-defense')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="34" alt="C++" title="C++" />
+      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="32" alt="C++" title="C++" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Tower Defense</span>
@@ -381,7 +381,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 4. Your Dark Side -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'darkside')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="34" alt="Java" title="Java" />
+      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="32" alt="Java" title="Java" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Your Dark Side</span>
@@ -392,7 +392,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 5. Dungeon Crawler -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'dungeon')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="34" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="32" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Dungeon Crawler</span>
@@ -403,7 +403,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 6. Hit & Run -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'hit-run')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="34" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="32" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Hit & Run</span>
@@ -412,7 +412,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   </button>
 </div>
 
-<!-- Supporting CSS updated to remove the box background and border -->
+<!-- Supporting CSS for full-height left panel and left-aligned text -->
 <style>
   .custom-project-btn {
     display: flex !important;
@@ -434,21 +434,21 @@ body:has(#blood-lineage[style*="display: block"]) {
     bottom: 0 !important;
     left: 0 !important;
     width: 58px !important;
-    background: transparent !important; /* Seamless look with zero background box */
-    border-right: none !important; /* Removed divider line */
+    background: rgba(15, 18, 24, 0.7) !important;
+    border-right: 1px solid rgba(165, 71, 45, 0.4) !important;
     z-index: 2 !important;
   }
   .btn-center-content {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
+    align-items: flex-start !important; /* Left aligns the text */
     justify-content: center !important;
-    margin-left: 58px !important; /* Keeps text balanced in the remaining space */
-    margin-right: 0 !important;
+    margin-left: 72px !important; /* Pushes text past the bright edge divider */
+    margin-right: 12px !important;
     height: 100% !important;
     z-index: 1 !important;
-    text-align: center !important;
+    text-align: left !important;
   }
   .btn-title {
     font-weight: bold;
@@ -457,6 +457,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     margin-bottom: 2px;
   }
 </style>
+
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
 <div id="about-tab" class="portfolio-tab" style="display: block;">
