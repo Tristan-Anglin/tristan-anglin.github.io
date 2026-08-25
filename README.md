@@ -343,7 +343,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     <span class="tab-meta" style="font-size: 0.85em; opacity: 0.8;">Core Profile</span>
   </button>
   
-  <!-- Project Tabs with Full-Height Left Engine and Right Steam Panels -->
+  <!-- Project Tabs with Seamless Integrated Left Icon -->
   
   <!-- 1. Round Based Survival -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'round-based-survival')">
@@ -353,9 +353,6 @@ body:has(#blood-lineage[style*="display: block"]) {
     <div class="btn-center-content">
       <span class="btn-title">Round Based Survival</span>
       <span class="tab-meta">In Development</span>
-    </div>
-    <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.7em;" title="Planned Steam Release"></i>
     </div>
   </button>
 
@@ -368,9 +365,6 @@ body:has(#blood-lineage[style*="display: block"]) {
       <span class="btn-title">Blood & Lineage</span>
       <span class="tab-meta">Sept 2025 - April 2026</span>
     </div>
-    <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.7em;" title="Coming to Steam"></i>
-    </div>
   </button>
   
   <!-- 3. Tower Defense -->
@@ -382,7 +376,6 @@ body:has(#blood-lineage[style*="display: block"]) {
       <span class="btn-title">Tower Defense</span>
       <span class="tab-meta">Dec 2024</span>
     </div>
-    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
   <!-- 4. Your Dark Side -->
@@ -394,7 +387,6 @@ body:has(#blood-lineage[style*="display: block"]) {
       <span class="btn-title">Your Dark Side</span>
       <span class="tab-meta">2023</span>
     </div>
-    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
   <!-- 5. Dungeon Crawler -->
@@ -406,7 +398,6 @@ body:has(#blood-lineage[style*="display: block"]) {
       <span class="btn-title">Dungeon Crawler</span>
       <span class="tab-meta">2017</span>
     </div>
-    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
   <!-- 6. Hit & Run -->
@@ -418,11 +409,10 @@ body:has(#blood-lineage[style*="display: block"]) {
       <span class="btn-title">Hit & Run</span>
       <span class="tab-meta">2016</span>
     </div>
-    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
 </div>
 
-<!-- Supporting CSS with explicit margins for true center alignment -->
+<!-- Supporting CSS updated to remove the box background and border -->
 <style>
   .custom-project-btn {
     display: flex !important;
@@ -442,22 +432,11 @@ body:has(#blood-lineage[style*="display: block"]) {
     position: absolute !important;
     top: 0 !important;
     bottom: 0 !important;
-    width: 58px !important;
-    background: rgba(15, 18, 24, 0.7) !important;
-    z-index: 2 !important;
-  }
-  .left-panel {
     left: 0 !important;
-    border-right: 1px solid rgba(165, 71, 45, 0.35) !important;
-  }
-  .right-panel {
-    right: 0 !important;
-    border-left: 1px solid rgba(165, 71, 45, 0.35) !important;
-  }
-  .empty-panel {
-    background: transparent !important;
-    border-left: none !important;
-    pointer-events: none !important;
+    width: 58px !important;
+    background: transparent !important; /* Seamless look with zero background box */
+    border-right: none !important; /* Removed divider line */
+    z-index: 2 !important;
   }
   .btn-center-content {
     flex: 1 !important;
@@ -465,8 +444,8 @@ body:has(#blood-lineage[style*="display: block"]) {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-left: 58px !important;
-    margin-right: 58px !important;
+    margin-left: 58px !important; /* Keeps text balanced in the remaining space */
+    margin-right: 0 !important;
     height: 100% !important;
     z-index: 1 !important;
     text-align: center !important;
@@ -478,7 +457,6 @@ body:has(#blood-lineage[style*="display: block"]) {
     margin-bottom: 2px;
   }
 </style>
-
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
 <div id="about-tab" class="portfolio-tab" style="display: block;">
