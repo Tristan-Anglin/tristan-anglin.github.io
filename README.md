@@ -404,13 +404,13 @@ body:has(#blood-lineage[style*="display: block"]) {
     <tr style="border: none;">
       <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
         <div class="bio-card">
-          Growing up surrounded by complex systems engineering and an extensive collection of tabletop games gave me an intuitive grasp of data architecture, balancing, and rigorous logic design long before writing my first line of code.
+          Growing up surrounded by complex systems and an extensive collection of tabletop games gave me an intuitive grasp of data architecture, balancing, and rigorous logic design long before writing my first line of code.
         </div>
         <div class="bio-card">
           My programming journey began in 2016 with Python, quickly expanding into self-taught Java development with projects like "Your Dark Side." This foundation evolved into a formal passion for robust software architecture, high-performance computing, and clean code principles.
         </div>
         <div class="bio-card">
-          A 2026 Honors Graduate in Game Development with a 3.86 GPA, I specialize in building modular systems, multi-threaded pipelines, and dynamic UI architectures with a highly efficient, AI-accelerated workflow.
+          A 2026 Honors Graduate in Game Development with a 3.86 GPA, I specialize in building modular systems, dynamic UI architectures with a highly efficient, and AI-accelerated workflow.
         </div>
       </td>
 
