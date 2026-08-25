@@ -422,7 +422,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   </button>
 </div>
 
-<!-- Supporting CSS with adjusted panel widths and text padding -->
+<!-- Supporting CSS with explicit margins for true center alignment -->
 <style>
   .custom-project-btn {
     display: flex !important;
@@ -465,9 +465,11 @@ body:has(#blood-lineage[style*="display: block"]) {
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 100% !important;
-    padding: 0 62px !important; /* Safely clears both side panels so text stays centered */
+    margin-left: 58px !important;
+    margin-right: 58px !important;
+    height: 100% !important;
     z-index: 1 !important;
+    text-align: center !important;
   }
   .btn-title {
     font-weight: bold;
