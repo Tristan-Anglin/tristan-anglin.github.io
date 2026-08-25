@@ -433,9 +433,9 @@ body:has(#blood-lineage[style*="display: block"]) {
     top: 0 !important;
     bottom: 0 !important;
     left: 0 !important;
-    width: 58px !important;
+    width: 72px !important;
     background: rgba(15, 18, 24, 0.7) !important;
-    border-right: 1px solid rgba(165, 71, 45, 0.4) !important;
+    border-right: 1px solid rgba(0, 0, 0, 0.4) !important;
     z-index: 2 !important;
   }
   .btn-center-content {
