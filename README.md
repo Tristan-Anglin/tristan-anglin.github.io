@@ -444,7 +444,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     flex-direction: column !important;
     align-items: flex-start !important; /* Left aligns the text */
     justify-content: center !important;
-    margin-left: 72px !important; /* Pushes text past the bright edge divider */
+    margin-left: 95px !important; /* Pushes text past the bright edge divider */
     margin-right: 12px !important;
     height: 100% !important;
     z-index: 1 !important;
