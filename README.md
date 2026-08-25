@@ -348,35 +348,35 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 1. Round Based Survival -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'round-based-survival')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="28" alt="Unity" title="Unity" />
+      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="34" alt="Unity" title="Unity" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Round Based Survival</span>
       <span class="tab-meta">In Development</span>
     </div>
     <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em;" title="Planned Steam Release"></i>
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.7em;" title="Planned Steam Release"></i>
     </div>
   </button>
 
   <!-- 2. Blood & Lineage -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'blood-lineage')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="28" alt="UE5" title="Unreal Engine 5" />
+      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="34" alt="UE5" title="Unreal Engine 5" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Blood & Lineage</span>
       <span class="tab-meta">Sept 2025 - April 2026</span>
     </div>
     <div class="btn-side-panel right-panel">
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.5em;" title="Coming to Steam"></i>
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.7em;" title="Coming to Steam"></i>
     </div>
   </button>
   
   <!-- 3. Tower Defense -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'tower-defense')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="28" alt="C++" title="C++" />
+      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="34" alt="C++" title="C++" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Tower Defense</span>
@@ -388,7 +388,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 4. Your Dark Side -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'darkside')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="28" alt="Java" title="Java" />
+      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="34" alt="Java" title="Java" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Your Dark Side</span>
@@ -400,7 +400,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 5. Dungeon Crawler -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'dungeon')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="28" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="34" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Dungeon Crawler</span>
@@ -412,7 +412,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   <!-- 6. Hit & Run -->
   <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'hit-run')">
     <div class="btn-side-panel left-panel">
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="28" alt="Python" title="Python" />
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="34" alt="Python" title="Python" />
     </div>
     <div class="btn-center-content">
       <span class="btn-title">Hit & Run</span>
@@ -422,7 +422,7 @@ body:has(#blood-lineage[style*="display: block"]) {
   </button>
 </div>
 
-<!-- Supporting CSS with explicit height enforcement overrides -->
+<!-- Supporting CSS with adjusted panel widths and text padding -->
 <style>
   .custom-project-btn {
     display: flex !important;
@@ -442,7 +442,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     position: absolute !important;
     top: 0 !important;
     bottom: 0 !important;
-    width: 52px !important;
+    width: 58px !important;
     background: rgba(15, 18, 24, 0.7) !important;
     z-index: 2 !important;
   }
@@ -466,7 +466,7 @@ body:has(#blood-lineage[style*="display: block"]) {
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
-    padding: 0 55px !important; /* Prevents text from slipping under the absolute side panels */
+    padding: 0 62px !important; /* Safely clears both side panels so text stays centered */
     z-index: 1 !important;
   }
   .btn-title {
