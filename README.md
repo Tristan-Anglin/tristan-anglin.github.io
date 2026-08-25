@@ -297,7 +297,7 @@ body:has(#blood-lineage[style*="display: block"]) {
 <div align="center" class="hero-banner-container">
   <h1 style="font-size: 3.2em; margin-bottom: 0px; color: #ffffff !important; opacity: 1 !important; text-shadow: 0px 2px 8px rgba(0,0,0,0.8); font-weight: 800;">Tristan Anglin</h1>
   <p style="font-size: 1.2em; margin-top: 10px; margin-bottom: 6px; color: #ffffff !important; opacity: 0.9 !important; background: transparent !important; letter-spacing: 0.8px;">
-    <strong style="color: #ffffff !important;">Gameplay Programmer | Systems & UI Architect</strong>
+    <strong style="color: #ffffff !important;">Software Engineer | Systems & UI Architect</strong>
   </p>
   <p style="font-size: 0.95em; margin-top: 0px; color: #da765b !important; opacity: 0.95 !important; background: transparent !important; letter-spacing: 0.4px;">
     Actively seeking opportunities
@@ -404,13 +404,13 @@ body:has(#blood-lineage[style*="display: block"]) {
     <tr style="border: none;">
       <td width="55%" valign="top" style="border: none; background: transparent; padding-right: 15px;">
         <div class="bio-card">
-          Growing up in a household with a 300+ board game collection gave me an intuitive grasp of game balance and systems design long before I wrote my first line of code.
+          Growing up surrounded by complex systems engineering and an extensive collection of tabletop games gave me an intuitive grasp of data architecture, balancing, and rigorous logic design long before writing my first line of code.
         </div>
         <div class="bio-card">
-          My programming journey began in 2016 with Python, but my curiosity quickly outpaced the classroom. This drive led me to self-teach Java to develop "Your Dark Side." I soon realized my true calling was in the technical architecture and creative heart of game design.
+          My programming journey began in 2016 with Python, quickly expanding into self-taught Java development with projects like "Your Dark Side." This foundation evolved into a formal passion for robust software architecture, high-performance computing, and clean code principles.
         </div>
         <div class="bio-card">
-          A 2026 Honors Graduate in Game Development, I have maintained a 3.86 GPA while dedicating myself to building a portfolio of modular core systems and dynamic user interfaces.
+          A 2026 Honors Graduate in Game Development with a 3.86 GPA, I specialize in building modular systems, multi-threaded pipelines, and dynamic UI architectures with a highly efficient, AI-accelerated workflow.
         </div>
       </td>
 
@@ -473,7 +473,7 @@ body:has(#blood-lineage[style*="display: block"]) {
         </h3>
         
         <p style="color: #cccccc; font-size: 0.95em; line-height: 1.5; margin-bottom: 15px;">
-          Since I frequently host game nights with family and friends, I developed this app to help select, organize, and track our games. Still very much a work in progress, it allows visitors to view my personal collection or create and manage their own custom vaults, filtering effortlessly by player count, duration, mechanics, and more.
+          An AI-accelerated full-stack web application built via Google AI Studio to organize, track, and filter a 300+ item board game collection. Featuring vision-based box detection prompts and custom vault management, it enables users to seamlessly filter by player count, duration, and mechanics.
         </p>
       </div>
 
