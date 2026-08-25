@@ -338,64 +338,133 @@ body:has(#blood-lineage[style*="display: block"]) {
 <!-- Unified Grid Layout Wrapper with Full-Width Overview -->
 <div class="tab-container">
   <!-- Full-Width Overview Tab (Spans all 3 columns) -->
-  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')" style="grid-column: 1 / -1 !important;">
-    <span style="display: inline-flex; align-items: center; line-height: 1; font-size: 1.1em;">
-      Overview & Skills
-    </span>
-    <span class="tab-meta">Core Profile</span>
+  <button class="tab-btn active-tab" onclick="switchTab(event, 'about-tab')" style="grid-column: 1 / -1 !important; display: flex !important; align-items: center; justify-content: space-between; padding: 12px 20px;">
+    <span style="font-size: 1.1em; font-weight: bold;">Overview & Skills</span>
+    <span class="tab-meta" style="font-size: 0.85em; opacity: 0.8;">Core Profile</span>
   </button>
   
-  <!-- Project Tabs (Perfectly distributed 3x2 grid underneath) -->
-  <button class="tab-btn" onclick="switchTab(event, 'round-based-survival')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Round Based Survival 
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 0.95em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Planned Steam Release"></i>
-      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="18" style="margin-top: -2px;" alt="Unity" />
-    </span>
-    <span class="tab-meta">In Development</span>
+  <!-- Project Tabs with Left-Engine / Right-Steam Structure -->
+  
+  <!-- 1. Round Based Survival -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'round-based-survival')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=unity&theme=dark" height="22" alt="Unity" title="Unity" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Round Based Survival</span>
+      <span class="tab-meta">In Development</span>
+    </div>
+    <div class="btn-side-panel right-panel">
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.2em;" title="Planned Steam Release"></i>
+    </div>
   </button>
 
-  <button class="tab-btn" onclick="switchTab(event, 'blood-lineage')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Blood & Lineage 
-      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 0.95em; margin-left: 6px; margin-right: 6px; margin-top: -1px;" title="Coming to Steam"></i>
-      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="18" style="margin-top: -2px;" alt="UE5" />
-    </span>
-    <span class="tab-meta">Sept 2025 - April 2026</span>
+  <!-- 2. Blood & Lineage -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'blood-lineage')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=unreal&theme=dark" height="22" alt="UE5" title="Unreal Engine 5" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Blood & Lineage</span>
+      <span class="tab-meta">Sept 2025 - April 2026</span>
+    </div>
+    <div class="btn-side-panel right-panel">
+      <i class="fa-brands fa-steam" style="color: #66c0f4; font-size: 1.2em;" title="Coming to Steam"></i>
+    </div>
   </button>
   
-  <button class="tab-btn" onclick="switchTab(event, 'tower-defense')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Tower Defense 
-      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="C++" />
-    </span>
-    <span class="tab-meta">Dec 2024</span>
+  <!-- 3. Tower Defense -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'tower-defense')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=cpp&theme=dark" height="22" alt="C++" title="C++" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Tower Defense</span>
+      <span class="tab-meta">Dec 2024</span>
+    </div>
+    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
-  <button class="tab-btn" onclick="switchTab(event, 'darkside')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Your Dark Side 
-      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Java" />
-    </span>
-    <span class="tab-meta">2023</span>
+  <!-- 4. Your Dark Side -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'darkside')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=java&theme=dark" height="22" alt="Java" title="Java" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Your Dark Side</span>
+      <span class="tab-meta">2023</span>
+    </div>
+    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
-  <button class="tab-btn" onclick="switchTab(event, 'dungeon')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Dungeon Crawler 
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Python" />
-    </span>
-    <span class="tab-meta">2017</span>
+  <!-- 5. Dungeon Crawler -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'dungeon')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="22" alt="Python" title="Python" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Dungeon Crawler</span>
+      <span class="tab-meta">2017</span>
+    </div>
+    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
   
-  <button class="tab-btn" onclick="switchTab(event, 'hit-run')">
-    <span style="display: inline-flex; align-items: center; line-height: 1;">
-      Hit & Run 
-      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="18" style="margin-left: 6px; margin-top: -2px;" alt="Python" />
-    </span>
-    <span class="tab-meta">2016</span>
+  <!-- 6. Hit & Run -->
+  <button class="tab-btn custom-project-btn" onclick="switchTab(event, 'hit-run')">
+    <div class="btn-side-panel left-panel">
+      <img src="https://skillicons.dev/icons?i=py&theme=dark" height="22" alt="Python" title="Python" />
+    </div>
+    <div class="btn-center-content">
+      <span class="btn-title">Hit & Run</span>
+      <span class="tab-meta">2016</span>
+    </div>
+    <div class="btn-side-panel right-panel empty-panel"></div>
   </button>
 </div>
+
+<!-- Supporting CSS for the split-panel button layout -->
+<style>
+  .custom-project-btn {
+    display: flex !important;
+    align-items: stretch !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    text-align: left !important;
+  }
+  .btn-side-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    min-width: 50px;
+    background: rgba(15, 18, 24, 0.5);
+    border-color: rgba(165, 71, 45, 0.2);
+  }
+  .left-panel {
+    border-right: 1px solid rgba(165, 71, 45, 0.25);
+  }
+  .right-panel {
+    border-left: 1px solid rgba(165, 71, 45, 0.25);
+  }
+  .empty-panel {
+    background: transparent;
+    border-left: none;
+  }
+  .btn-center-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+  }
+  .btn-title {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 0.95em;
+    margin-bottom: 2px;
+  }
+</style>
 
 <div style="width: 100%; height: 2px; background: linear-gradient(90deg, transparent 5%, #bd4c2a 50%, transparent 95%); margin: 25px 0; opacity: 0.7;"></div>
 
